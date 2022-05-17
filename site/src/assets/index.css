@@ -22,7 +22,7 @@ body {
 
 .big-header {
   font-size: 2.625rem;
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.5rem 0;
 }
 
 .landing-left {
@@ -45,6 +45,49 @@ body {
   text-align: left;
   line-height: 1.5rem;
   width: 60%;
+}
+
+.button {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  background-color: #034D57;
+  color: #FCFCFF; 
+  border: 0;
+  padding: .65rem 1.25rem .65rem 1.25rem;
+  border-radius: 3rem;
+}
+
+.button:hover {
+  background-color: #FCFCFF;
+  color: #034D57; 
+  border: solid;
+  border-width: 1px;
+  border-color: #034D57;
+}
+
+.NavBar {
+  height: 3rem;
+  width: 100%;
+  /* filter: drop-shadow(0px 1px 4px #eeeeee); */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* z-index: 1; */
+}
+
+.nav-button {
+  border: none;
+  background-color: #FCFCFF;
+  font-family: 'Inter', sans-serif;
+  margin: 1.5rem 1.5rem 0 1.5rem;
+  font-size: 1rem;
+}
+
+.nav-button:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #034D57; 
+  text-decoration-thickness: 2px;
 }
 
 /* OLD PROJECT CODE*/
