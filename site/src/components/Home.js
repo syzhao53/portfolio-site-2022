@@ -20,7 +20,7 @@ function Home() {
       <NavBar />
       <div className="landing">
         <div className="landing-left">
-          <div className="big-header">
+          <div className="typing-header">
             Hi, I&apos;m Sylvia Zhao
           </div>
           <div className="paragraph">

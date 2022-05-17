@@ -92,6 +92,29 @@ body {
   cursor: pointer;
 }
 
+/* TYPING ANIMATION */
+.typing-header {
+  animation: typing 2s steps(19), blink .5s step-end infinite alternate;
+  width: 19ch;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
 /* OLD PROJECT CODE*/
 .nav {
   height: 80px;
