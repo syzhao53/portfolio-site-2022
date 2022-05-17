@@ -63,6 +63,7 @@ body {
   border: solid;
   border-width: 1px;
   border-color: #034D57;
+  cursor: pointer;
 }
 
 .NavBar {
@@ -88,6 +89,7 @@ body {
   text-underline-offset: 4px;
   text-decoration-color: #034D57; 
   text-decoration-thickness: 2px;
+  cursor: pointer;
 }
 
 /* OLD PROJECT CODE*/

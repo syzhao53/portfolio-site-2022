@@ -7,6 +7,8 @@ import '../assets/index.css';
 function NavBar() {
   const navigate = useNavigate();
 
+  // TODO: ADD PROP AT APP LEVEL TO TRACK CURRENT PAGE TO ADD STYLING
+
   return (
     <div className="NavBar">
       <button
