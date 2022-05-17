@@ -30,21 +30,21 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: 60%;
-  margin: 17rem 3rem 17rem 7rem;
+  margin: 16rem 3rem 0 7rem;
 }
 
 .landing-right {
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin: 10rem 7rem 17rem 3rem;
+  margin: 9rem 7rem 0 3rem;
 }
 
 .paragraph {
   font-size: 1rem;
   text-align: left;
   line-height: 1.5rem;
-  width: 60%;
+  width: 80%;
 }
 
 .button {
@@ -68,8 +68,8 @@ body {
 
 .NavBar {
   height: 3rem;
-  width: 100%;
-  /* filter: drop-shadow(0px 1px 4px #eeeeee); */
+  margin: 2rem 7rem 0 0;
+  /* filter: drop-shadow(0px 1px 4px #000000); */
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -80,11 +80,37 @@ body {
   border: none;
   background-color: #FCFCFF;
   font-family: 'Inter', sans-serif;
-  margin: 1.5rem 1.5rem 0 1.5rem;
-  font-size: 1rem;
+  margin: 1.5rem 0 0 1.5rem;
+  font-size: .875rem;
+  letter-spacing: .25px;
+  font-weight: 500;
+  color: #787878;
 }
 
 .nav-button:hover {
+  /* text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #034D57; 
+  text-decoration-thickness: 2px; */
+  color: #000000;
+  cursor: pointer;
+}
+
+.nav-button-bold {
+  border: none;
+  background-color: #FCFCFF;
+  font-family: 'Inter', sans-serif;
+  margin: 1.5rem 0 0 1.5rem;
+  font-size: .875rem;
+  font-weight: 500;
+  letter-spacing: .25px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #034D57; 
+  text-decoration-thickness: 2px;
+}
+
+.nav-button-bold:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-color: #034D57; 
@@ -95,11 +121,11 @@ body {
 /* TYPING ANIMATION */
 .typing-header {
   animation: typing 2s steps(19), blink .5s step-end infinite alternate;
-  width: 19ch;
+  width: 15ch;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid;
-  font-family: monospace;
+  /* font-family: monospace; */
   font-size: 2em;
 }
 

@@ -10,6 +10,8 @@ import Home from './components/Home';
 import Project from './components/Project';
 
 function App() {
+  const [currPage, setCurrPage] = useState('home');
+
   // const [user, setUser] = useState({
   //   username: 'participant',
   //   password: 'participantpass',
@@ -29,8 +31,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/project" element={<Project />} />
+        <Route exact path="/" element={<Home currPage={currPage} setCurrPage={setCurrPage} />} />
+        <Route exact path="/project" element={<Project currPage={currPage} setCurrPage={setCurrPage} />} />
       </Routes>
     </div>
   );

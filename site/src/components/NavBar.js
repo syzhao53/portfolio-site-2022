@@ -4,16 +4,17 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
 
-function NavBar() {
+function NavBar({ currPage }) {
   const navigate = useNavigate();
 
   // TODO: ADD PROP AT APP LEVEL TO TRACK CURRENT PAGE TO ADD STYLING
+  console.log(currPage);
 
   return (
     <div className="NavBar">
       <button
         type="button"
-        className="nav-button"
+        className={currPage === 'home' ? 'nav-button-bold' : 'nav-button'}
         onClick={async () => {
           navigate('/');
         }}
@@ -22,7 +23,7 @@ function NavBar() {
       </button>
       <button
         type="button"
-        className="nav-button"
+        className={currPage === 'project' ? 'nav-button-bold' : 'nav-button'}
         onClick={async () => {
           navigate('/project');
         }}
