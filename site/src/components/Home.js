@@ -33,7 +33,7 @@ function Home({ currPage, setCurrPage }) {
             I&apos;m a UX and visual designer currently majoring
             in Cognitive Science and Computer Science at the University of Pennsylvania.
           </div>
-          <button className="button" type="button" onClick={goToProject}>Project</button>
+          <button className="button" type="button" onClick={goToProject}>View my work</button>
         </div>
         <div className="landing-right">
           <img src={illustration} alt="temp illustration" />
