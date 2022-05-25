@@ -14,18 +14,27 @@ body {
   font-size: 1rem;
 }
 
+#home-illus {
+  align-self: center;
+  margin: 0 0 5rem 0;
+}
+
 .landing {
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  /* margin: 7rem 10rem 0 10rem; */
+  /* background-color:white; */
 }
 
 .big-header {
-  font-size: 2.625rem;
-  margin: 0 0 1.5rem 0;
+  font-size: 2rem;
+  text-align: left;
+  margin: 6rem 0 0.75rem 0;
 }
 
-.landing-left {
+/* .landing-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -38,13 +47,12 @@ body {
   flex-direction: column;
   width: 40%;
   margin: 9rem 7rem 0 3rem;
-}
+} */
 
 .paragraph {
-  font-size: 1rem;
+  font-size: 1.125rem;
   text-align: left;
-  line-height: 1.5rem;
-  width: 80%;
+  line-height: 1.75rem;
 }
 
 .button {
@@ -116,6 +124,31 @@ body {
   text-decoration-color: #034D57; 
   text-decoration-thickness: 2px;
   cursor: pointer;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+
+.grid-row {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 1rem 0;
+}
+
+.grid-lcard {
+  background-color: antiquewhite;
+  margin: 0 2.25rem 0 0 ;
+  padding: 12rem 12rem;
+}
+
+.grid-rcard {
+  background-color: antiquewhite;
+  padding: 12rem 12rem;
 }
 
 /* TYPING ANIMATION */
