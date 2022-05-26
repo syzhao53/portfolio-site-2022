@@ -1,30 +1,35 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
+
 import React, { useEffect } from 'react';
 // import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
 import NavBar from './NavBar';
 
-function Project({ currPage, setCurrPage }) {
+function Meetup({ currPage, setCurrPage }) {
   // const [error, setError] = useState({ message: '' });
   // const [lockoutUser, setLockoutUser] = useState('');
 //   const navigate = useNavigate();
 
-  // const goToProject = () => {
-  //  navigate('/project');
-  // };
+  console.log(currPage);
 
-  // TODO: ACTUALLY SET TO ''
+  const footerMessage = 'Made by Sylvia <3';
+
   useEffect(() => {
-    setCurrPage('project');
+    setCurrPage('home');
   }, []);
 
   return (
-    <div className="Project">
+    <div className="Meetup">
       <NavBar currPage={currPage} />
-      <div>PROJECT PAGE</div>
+      <div>MEETUP</div>
+      <div className="footer">
+        {footerMessage}
+      </div>
     </div>
+    // <button className="button" type="button" onClick={goToProject}>View my work</button>
+    // TODO: ADD FLOATING CARAT ARROW
   );
 }
 
-export default Project;
+export default Meetup;
