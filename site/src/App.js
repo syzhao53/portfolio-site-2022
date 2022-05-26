@@ -33,6 +33,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home currPage={currPage} setCurrPage={setCurrPage} />} />
         <Route exact path="/project" element={<Project currPage={currPage} setCurrPage={setCurrPage} />} />
+        <Route exact path="/meetup" element={<Project currPage={currPage} setCurrPage={setCurrPage} />} />
       </Routes>
     </div>
   );

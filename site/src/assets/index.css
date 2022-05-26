@@ -14,7 +14,6 @@ html {
   scroll-behavior: smooth
 }
 
-
 .Project {
   font-size: 1rem;
 }
@@ -58,21 +57,6 @@ html {
   /* background-color: red; */
 }
 
-/* .landing-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 60%;
-  margin: 16rem 3rem 0 7rem;
-}
-
-.landing-right {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  margin: 9rem 7rem 0 3rem;
-} */
-
 .paragraph {
   font-size: 1.125rem;
   text-align: left;
@@ -104,6 +88,7 @@ html {
   height: 3rem;
   margin: 2% 0 0 75%;
   min-width: 20%;
+  /* background-color: rgba(252, 252, 252, .9); */
   /* filter: drop-shadow(0px 1px 4px #000000); */
   /* display: flex;
   flex-direction: row;
@@ -153,29 +138,90 @@ html {
   cursor: pointer;
 }
 
+#work {
+  display: flex;
+  width: 60%;
+  flex-direction: row;
+  align-items: flex-start;
+  /* width: 51%; */
+  font-size: 1.5rem;
+  margin: auto;
+  padding: 2rem 0 0 0;
+  margin-bottom: 2rem;
+  /* text-align: left;
+  margin: 0 0 2rem 12rem; */
+}
+
 .grid {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 60%;
   margin: auto;
+  flex-wrap: wrap;
 }
 
 .grid-row {
   display: flex;
   flex-direction: row;
-  margin: 0 0 1rem 0;
+  margin: 0 0 3rem 0;
 }
 
-.grid-lcard {
-  background-color: antiquewhite;
-  margin: 0 2.25rem 0 0 ;
-  padding: 12rem 12rem;
+.grid-img {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
-.grid-rcard {
-  background-color: antiquewhite;
-  padding: 12rem 12rem;
+.gcard-lwrap {
+  display: flex;
+  flex-direction: column;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0px 2px 10px 2px rgba(150, 150, 150, 0.1);
+  /* box-shadow: 1px 1px 10px -2px #cbcbcb; */
+  background-color: #ffffff;
+  border-radius: 7px;
+  margin: 0 3rem 0 0;
+}
+
+.gcard-lwrap:hover {
+  box-shadow: 0px 2px 10px 2px rgba(150, 150, 150, 0.1);
+  cursor: pointer;
+}
+
+.gcard-rwrap {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 10px 2px rgba(150, 150, 150, 0.1);
+  background-color: #ffffff;
+  border-radius: 7px;
+}
+
+.gcard-rwrap:hover {
+  box-shadow: 0px 2px 10px 2px rgba(150, 150, 150, 0.1);
+  cursor: pointer;
+}
+
+.gcard-label {
+  padding: 2rem 2rem 2rem 2rem;
+  text-align: left;
+}
+
+.gcard-heading {
+  /* font-size: .9rem; */
+  font-weight: 600;
+  letter-spacing: .25px;
+  margin: 0 0 .5rem 0;
+}
+
+.gcard-text {
+  line-height: 1.4rem;
+}
+
+.footer {
+  height: 3rem;
+  color: #b7b7b7;
+  padding: 4rem 0 0 0;
+  font-size: .875rem;  
 }
 
 /* TYPING ANIMATION */
