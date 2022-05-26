@@ -48,9 +48,9 @@ function Home({ currPage, setCurrPage }) {
       <div id="work">Work</div>
       <div className="grid">
         <div className="grid-row">
-          <div className="gcard-lwrap">
-            <img className="grid-img" src={mockup} alt="temp mockup" onClick={goToProject('meetup')}/>
-            <div className="gcard-label" onClick={goToProject('meetup')}>
+          <div className="gcard-lwrap" onClick={() => goToProject('meetup')}>
+            <img className="grid-img" src={mockup} alt="temp mockup" />
+            <div className="gcard-label">
               <div className="gcard-heading">
                 Meetup
               </div>
