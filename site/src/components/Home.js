@@ -3,7 +3,8 @@
 import React, { useEffect } from 'react';
 // import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
-import illustration from '../assets/temp-illustration.png';
+import illustration from '../assets/landing-illustration.png';
+import Arrow from '../assets/arrow.svg';
 import mockup from '../assets/temp-mockup.png';
 import NavBar from './NavBar';
 
@@ -34,8 +35,12 @@ function Home({ currPage, setCurrPage }) {
           <br />
           Designing for PennApps & Wharton MUSE. Recent PM Intern for Logitech Design Ops
         </div>
-        <img id="home-illus" src={illustration} alt="temp illustration" />
+        <img id="home-illus" src={illustration} alt="landing illustration" />
       </div>
+      <a href="#work">
+        <img id="arrow" src={Arrow} alt="landing illustration" />
+      </a>
+      <div id="work">Work</div>
       <div className="grid">
         <div className="grid-row">
           <img src={mockup} alt="temp mockup" />

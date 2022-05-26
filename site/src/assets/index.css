@@ -10,19 +10,42 @@ body {
   /* line-height: 35px; */
 }
 
+html {
+  scroll-behavior: smooth
+}
+
+
 .Project {
   font-size: 1rem;
 }
 
 #home-illus {
+  width: 90%;
   align-self: center;
-  margin: 0 0 5rem 0;
+  margin: .5rem 0 1rem 0;
+  /* border-color: purple; */
 }
+
+#arrow {
+  width: 2.5%;
+  margin: 0 0 4rem 0;
+  animation: bounce 2s infinite;
+}
+
+#arrow:hover {
+  width: 2.6%;
+}
+
+@keyframes bounce {
+  50% {
+      transform: translateY(-10px);
+    }
+  }
 
 .landing {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 51%;
   margin: auto;
   /* margin: 7rem 10rem 0 10rem; */
   /* background-color:white; */
@@ -31,7 +54,8 @@ body {
 .big-header {
   font-size: 2rem;
   text-align: left;
-  margin: 6rem 0 0.75rem 0;
+  margin: 10rem 0 0.75rem 0;
+  /* background-color: red; */
 }
 
 /* .landing-left {
@@ -53,6 +77,7 @@ body {
   font-size: 1.125rem;
   text-align: left;
   line-height: 1.75rem;
+  /* background-color: blue; */
 }
 
 .button {
@@ -70,17 +95,19 @@ body {
   color: #034D57; 
   border: solid;
   border-width: 1px;
-  border-color: #034D57;
+  border-color: #7a8e91;
   cursor: pointer;
 }
 
 .NavBar {
+  position: fixed;
   height: 3rem;
-  margin: 1.25rem 7rem 0 0;
+  margin: 2% 0 0 75%;
+  min-width: 20%;
   /* filter: drop-shadow(0px 1px 4px #000000); */
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-end; */
   /* z-index: 1; */
 }
 
