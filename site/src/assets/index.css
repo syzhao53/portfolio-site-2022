@@ -83,10 +83,15 @@ html {
   cursor: pointer;
 }
 
+.NavBarWrap {
+  background-color: red;
+  background-color: rgba(252, 252, 252, .8);
+}
+
 .NavBar {
   position: fixed;
   height: 3rem;
-  margin: 2% 0 0 75%;
+  margin: 2% 0 0 76%;
   min-width: 20%;
   /* background-color: rgba(252, 252, 252, .9); */
   /* filter: drop-shadow(0px 1px 4px #000000); */
@@ -98,7 +103,7 @@ html {
 
 .nav-button {
   border: none;
-  background-color: #FCFCFF;
+  background-color: transparent;
   font-family: 'Inter', sans-serif;
   margin: 1.5rem 0 0 1.5rem;
   font-size: .875rem;
@@ -118,7 +123,7 @@ html {
 
 .nav-button-bold {
   border: none;
-  background-color: #FCFCFF;
+  background-color: transparent;
   font-family: 'Inter', sans-serif;
   margin: 1.5rem 0 0 1.5rem;
   font-size: .875rem;
@@ -239,10 +244,10 @@ html {
   font-size: 2rem;
   text-align: left;
   margin: 9rem 0 2rem 0;
-  text-decoration: underline;
+  /* text-decoration: underline;
   text-underline-offset: 12px;
   text-decoration-color: #034D57; 
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 2px; */
 }
 
 .project-info {
@@ -264,6 +269,14 @@ html {
   text-align: left;
   margin: 0 0 0.75rem 0;
 }
+
+.project-text {
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.55rem;
+  color: #2c2c2c;
+}
+
 /* TYPING ANIMATION */
 .typing-header {
   animation: typing 2s steps(19), blink .5s step-end infinite alternate;

@@ -11,34 +11,42 @@ function NavBar({ currPage }) {
   console.log(currPage);
 
   return (
-    <div className="NavBar">
-      <button
-        type="button"
-        className={currPage === 'home' ? 'nav-button-bold' : 'nav-button'}
-        onClick={async () => {
-          navigate('/');
-        }}
-      >
-        HOME
-      </button>
-      <button
-        type="button"
-        className={currPage === 'project' ? 'nav-button-bold' : 'nav-button'}
-        onClick={async () => {
-          navigate('/project');
-        }}
-      >
-        RESUME
-      </button>
-      <button
-        type="button"
-        className="nav-button"
-        onClick={async () => {
-          navigate('/project');
-        }}
-      >
-        CONTACT
-      </button>
+    <div className="NavBarWrap">
+      <div className="NavBar">
+        {/* <button
+          type="button"
+          className="nav-button-bold"
+        >
+          TABLE OF CONTENTS
+        </button> */}
+        <button
+          type="button"
+          className={currPage === 'home' ? 'nav-button-bold' : 'nav-button'}
+          onClick={async () => {
+            navigate('/');
+          }}
+        >
+          HOME
+        </button>
+        <button
+          type="button"
+          className={currPage === 'project' ? 'nav-button-bold' : 'nav-button'}
+          onClick={async () => {
+            navigate('/project');
+          }}
+        >
+          RESUME
+        </button>
+        <button
+          type="button"
+          className="nav-button"
+          onClick={async () => {
+            navigate('/project');
+          }}
+        >
+          CONTACT
+        </button>
+      </div>
     </div>
   );
 }
