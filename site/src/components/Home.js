@@ -1,12 +1,13 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
-
+/* eslint-disable */
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
 import illustration from '../assets/landing-illustration.png';
 import Arrow from '../assets/arrow.svg';
-import mockup from '../assets/temp-mockup.png';
+import meetup from '../assets/meetup-mockup.png';
+import temp from '../assets/temp-mockup.png';
 import NavBar from './NavBar';
 
 function Home({ currPage, setCurrPage }) {
@@ -49,7 +50,7 @@ function Home({ currPage, setCurrPage }) {
       <div className="grid">
         <div className="grid-row">
           <div className="gcard-lwrap" onClick={() => goToProject('meetup')}>
-            <img className="grid-img" src={mockup} alt="temp mockup" />
+            <img className="grid-img" src={meetup} alt="meetup mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
                 Meetup
@@ -60,7 +61,7 @@ function Home({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="gcard-rwrap">
-            <img className="grid-img" src={mockup} alt="temp mockup" />
+            <img className="grid-img" src={temp} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
                 PennInTouch
@@ -73,7 +74,7 @@ function Home({ currPage, setCurrPage }) {
         </div>
         <div className="grid-row">
           <div className="gcard-lwrap">
-            <img className="grid-img" src={mockup} alt="temp mockup" />
+            <img className="grid-img" src={temp} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
                 Meetup
@@ -84,7 +85,7 @@ function Home({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="gcard-rwrap">
-            <img className="grid-img" src={mockup} alt="temp mockup" />
+            <img className="grid-img" src={temp} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
                 PennInTouch
@@ -97,7 +98,7 @@ function Home({ currPage, setCurrPage }) {
         </div>
         <div className="grid-row">
           <div className="gcard-lwrap">
-            <img className="grid-img" src={mockup} alt="temp mockup" />
+            <img className="grid-img" src={temp} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
                 Meetup
@@ -108,7 +109,7 @@ function Home({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="gcard-rwrap">
-            <img className="grid-img" src={mockup} alt="temp mockup" />
+            <img className="grid-img" src={temp} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
                 PennInTouch
