@@ -26,7 +26,7 @@ function Meetup({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="project-header">Meetup</div>
         <div className="project-info">Designer &middot; 2 months (2022)</div>
-        <img className="grid-img" src={meetup} alt="meetup mockup" />
+        <img className="project-img" src={meetup} alt="meetup mockup" />
         <div className="section-header">Overview</div>
         <div className="project-text">
           Having used many meeting and event
