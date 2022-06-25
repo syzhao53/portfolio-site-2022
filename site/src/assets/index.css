@@ -253,7 +253,7 @@ html {
 .project-info {
   font-size: 1rem;
   text-align: left;
-  margin: 0 0 0.75rem 0;
+  margin: 0 0 2rem 0;
 }
 
 .section-header {
@@ -280,7 +280,95 @@ html {
 .project-img {
   width: 100%;
   border-radius: 7px;
+  margin: 0 0 3rem 0;
 }
+
+.graphs {
+  background-color: #F4FAFF;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 3rem 0 0 0;
+  flex-wrap: wrap;
+}
+
+.graphgrid-row {
+  display: flex;
+  flex-direction: row;
+  /* margin: 4rem 0 3rem 4rem; */
+  margin: auto;
+  max-width: 90%;
+}
+
+.card-lgraph {
+  display: flex;
+  flex-direction: column;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+  border-radius: 7px;
+  margin: 4rem 3rem 3rem 3rem;
+  max-width: 50%;
+}
+
+.card-rgraph {
+  display: flex;
+  flex-direction: column;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+  border-radius: 7px;
+  margin: 4rem 3rem 3rem 0;
+  max-width: 50%;
+}
+
+.card-lgraph-low {
+  display: flex;
+  flex-direction: column;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+  border-radius: 7px;
+  margin: 0 3rem 4rem 3rem;
+  max-width: 50%;
+}
+
+.card-rgraph-low {
+  display: flex;
+  flex-direction: column;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+  border-radius: 7px;
+  margin: 0 3rem 4rem 0;
+  max-width: 50%;
+}
+
+.graphcard-label {
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .25px;
+  text-align: left;
+  padding: 3rem 2rem 1rem 3rem;
+}
+
+.graphcard-ques {
+  /* font-size: .9rem; */
+  padding: 0 5rem 2rem 3rem;
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+.graphkey-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.graph-img {
+  width: 70%;
+  padding: 0 0 3rem 3rem;
+}
+
 
 /* TYPING ANIMATION */
 .typing-header {

@@ -21,12 +21,12 @@ function NavBar({ currPage }) {
         </button> */}
         <button
           type="button"
-          className={currPage === 'home' ? 'nav-button-bold' : 'nav-button'}
+          className={currPage === 'work' ? 'nav-button-bold' : 'nav-button'}
           onClick={async () => {
             navigate('/');
           }}
         >
-          HOME
+          WORK
         </button>
         <button
           type="button"
