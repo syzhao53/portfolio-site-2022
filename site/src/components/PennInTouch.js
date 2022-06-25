@@ -191,14 +191,14 @@ function PennInTouch({ currPage, setCurrPage }) {
             <div className="post-it-row">
               <div className="rpost-it">
                 <div className="post-it-text">
-                  Big learning curve using academic planning worksheet
+                  Big learning curve using Academic Planning Worksheet
                 </div>
               </div>
             </div>
             <div className="post-it-row">
               <div className="rpost-it">
                 <div className="post-it-text">
-                  Use academic planning worksheet to check requirements
+                  Use Academic Planning Worksheet to check requirements
                 </div>
               </div>
             </div>
@@ -260,12 +260,21 @@ function PennInTouch({ currPage, setCurrPage }) {
         <div className="subsection-header-sec">
           KEY RESEARCH INSIGHTS
         </div>
-        <div className="project-text">
-          I came away from my survey and interviews with the following insights:
+        <div className="project-text-single">
+          I came away from my survey and interviews with these main insights:
         </div>
         <ul>
-          <li>the Academic Planning Worksheet is the least effective feature</li>
+          <li>
+            <div className="list-text">students generally dislike the outdated UI of PennInTouch and find that it interferes with functionality</div>
+          </li>
+          <li>
+            <div className="list-text">the Academic Planning Worksheet feature is underused and is perceived the most negatively out of PennInTouch&apos;s main features</div>
+          </li>
         </ul>
+        <div className="project-text-low">
+          From this, I formed the following guiding question to redesign the Academic Planning
+          Worksheet feature.
+        </div>
         <div className="cap-card">
           <div className="cap">
             <div className="empty">c</div>
@@ -274,6 +283,36 @@ function PennInTouch({ currPage, setCurrPage }) {
             How might we streamline the Academic Planning Worksheet&apos;s interactions
             so that students use it for long-term planning?
           </div>
+        </div>
+        <div className="section-flex">
+          <div className="section-lflex">
+            <div className="section-header">Solution</div>
+            <div className="project-ltext">
+              For the redesign, I focused on the interaction of assigning specific
+              courses to fulfill a requirement since this was a pain point discussed
+              in multiple user interviews.
+            </div>
+          </div>
+          <div className="section-rflex">
+            <div className="subsection-rheader-top">
+              WIREFRAMES
+            </div>
+            <div className="project-rtext">
+              2 iterations
+            </div>
+            <div className="subsection-rheader">
+              UI DESIGN
+            </div>
+            <div className="project-rtext">
+              2 iterations
+            </div>
+          </div>
+        </div>
+        <div className="subsection-header">
+          WIREFRAMES: ITERATION 1
+        </div>
+        <div className="project-text">
+          Should I put existing interface analysis here, probably, or it goes in the beginning
         </div>
       </div>
       <div className="footer">{footerMessage}</div>
