@@ -12,34 +12,65 @@ function NavBar({ currPage }) {
 
   return (
     <div className="NavBar">
-      <button
-        type="button"
-        className={currPage === 'home' ? 'nav-button-bold' : 'nav-button'}
-        onClick={async () => {
-          navigate('/');
-        }}
-      >
-        HOME
-      </button>
-      <button
-        type="button"
-        className={currPage === 'project' ? 'nav-button-bold' : 'nav-button'}
-        onClick={async () => {
-          navigate('/project');
-        }}
-      >
-        RESUME
-      </button>
-      <button
-        type="button"
-        className="nav-button"
-        onClick={async () => {
-          navigate('/project');
-        }}
-      >
-        CONTACT
-      </button>
+      <div className="nav-row">
+        <button
+          type="button"
+          className={currPage === 'work' ? 'nav-button-bold' : 'nav-button'}
+          onClick={async () => {
+            navigate('/');
+          }}
+        >
+          WORK
+        </button>
+        <button
+          type="button"
+          className={currPage === 'project' ? 'nav-button-bold' : 'nav-button'}
+          onClick={async () => {
+            navigate('/project');
+          }}
+        >
+          RESUME
+        </button>
+        <button
+          type="button"
+          className="nav-button"
+          onClick={async () => {
+            navigate('/project');
+          }}
+        >
+          CONTACT
+        </button>
+      </div>
     </div>
+    // <div className="NavBar">
+    //   <button
+    //     type="button"
+    //     className={currPage === 'work' ? 'nav-button-bold' : 'nav-button'}
+    //     onClick={async () => {
+    //       navigate('/');
+    //     }}
+    //   >
+    //     WORK
+    //   </button>
+    //   <button
+    //     type="button"
+    //     className={currPage === 'project' ? 'nav-button-bold' : 'nav-button'}
+    //     onClick={async () => {
+    //       navigate('/project');
+    //     }}
+    //   >
+    //     RESUME
+    //   </button>
+    //   <button
+    //     type="button"
+    //     className="nav-button"
+    //     onClick={async () => {
+    //       navigate('/project');
+    //     }}
+    //   >
+    //     CONTACT
+    //   </button>
+    // </div>
   );
 }
 

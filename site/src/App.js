@@ -9,6 +9,7 @@ import React, { useState } from 'react';
 import Home from './components/Home';
 import Project from './components/Project';
 import Meetup from './components/Meetup';
+import PennInTouch from './components/PennInTouch';
 
 function App() {
   const [currPage, setCurrPage] = useState('home');
@@ -35,6 +36,7 @@ function App() {
         <Route exact path="/" element={<Home currPage={currPage} setCurrPage={setCurrPage} />} />
         <Route exact path="/project" element={<Project currPage={currPage} setCurrPage={setCurrPage} />} />
         <Route exact path="/meetup" element={<Meetup currPage={currPage} setCurrPage={setCurrPage} />} />
+        <Route exact path="/pennintouch" element={<PennInTouch currPage={currPage} setCurrPage={setCurrPage} />} />
       </Routes>
     </div>
   );
