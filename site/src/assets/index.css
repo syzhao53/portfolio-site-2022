@@ -10,9 +10,9 @@ body {
   /* line-height: 35px; */
 }
 
-html {
+/* html {
   scroll-behavior: smooth
-}
+} */
 
 .Project {
   font-size: 1rem;
@@ -308,7 +308,7 @@ html {
   background-color: #ffffff;
   border-radius: 7px;
   margin: 4rem 3rem 3rem 3rem;
-  max-width: 50%;
+  max-width: 45%;
 }
 
 .card-rgraph {
@@ -319,7 +319,7 @@ html {
   background-color: #ffffff;
   border-radius: 7px;
   margin: 4rem 3rem 3rem 0;
-  max-width: 50%;
+  max-width: 45%;
 }
 
 .card-lgraph-low {
@@ -330,7 +330,7 @@ html {
   background-color: #ffffff;
   border-radius: 7px;
   margin: 0 3rem 4rem 3rem;
-  max-width: 50%;
+  max-width: 45%;
 }
 
 .card-rgraph-low {
@@ -341,7 +341,7 @@ html {
   background-color: #ffffff;
   border-radius: 7px;
   margin: 0 3rem 4rem 0;
-  max-width: 50%;
+  max-width: 45%;
 }
 
 .graphcard-label {
@@ -353,7 +353,6 @@ html {
 }
 
 .graphcard-ques {
-  /* font-size: .9rem; */
   padding: 0 5rem 2rem 3rem;
   text-align: left;
   line-height: 1.5rem;

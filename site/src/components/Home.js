@@ -30,6 +30,7 @@ function Home({ currPage, setCurrPage }) {
 
   useEffect(() => {
     setCurrPage('work');
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -46,9 +47,10 @@ function Home({ currPage, setCurrPage }) {
         </div>
         <img id="home-illus" src={illustration} alt="landing illustration" />
       </div>
-      <a href="#work">
+      {/* <a href="#work">
         <img id="arrow" src={Arrow} alt="landing illustration" />
-      </a>
+      </a> */}
+      <img id="arrow" src={Arrow} alt="landing illustration" />
       <div id="work">Work</div>
       <div className="grid">
         <div className="grid-row">

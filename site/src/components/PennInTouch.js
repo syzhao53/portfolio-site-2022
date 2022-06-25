@@ -7,6 +7,8 @@ import '../assets/index.css';
 import pennintouch from '../assets/pennintouch-mockup.png';
 import generalexp from '../assets/general-exp.png';
 import easeinfo from '../assets/ease-info.png';
+import academicplan from '../assets/academic-plan.png';
+import mocksched from '../assets/mock-sched.png';
 import NavBar from './NavBar';
 
 function PennInTouch({ currPage, setCurrPage }) {
@@ -20,6 +22,7 @@ function PennInTouch({ currPage, setCurrPage }) {
 
   useEffect(() => {
     setCurrPage('');
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -74,18 +77,18 @@ function PennInTouch({ currPage, setCurrPage }) {
               QUESTION 3
             </div>
             <div className="graphcard-ques">
-              How do you feel about the general experience of using PennInTouch?
+              How would you rate the experience of using the “Academic Planning Worksheet” feature?
             </div>
-            <img className="graph-img" src={generalexp} alt="general-exp graph" />
+            <img className="graph-img" src={academicplan} alt="academic-plan graph" />
           </div>
           <div className="card-rgraph-low">
             <div className="graphcard-label">
               QUESTION 4
             </div>
             <div className="graphcard-ques">
-              How would you rate the ease of locating information you need on PennInTouch?
+              How would you rate the experience of using the “Mock Schedules” feature?
             </div>
-            <img className="graph-img" src={easeinfo} alt="ease-info graph" />
+            <img className="graph-img" src={mocksched} alt="mock-sched graph" />
           </div>
         </div>
       </div>
