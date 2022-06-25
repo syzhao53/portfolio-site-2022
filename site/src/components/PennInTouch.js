@@ -30,7 +30,7 @@ function PennInTouch({ currPage, setCurrPage }) {
       <NavBar currPage={currPage} />
       <div className="project-wrap">
         <div className="project-header">PennInTouch</div>
-        <div className="project-info">Redesigning the University of Pennsylvania&apos;s academic planning/registration site, PennInTouch</div>
+        <div className="project-info">Redesigning the University of Pennsylvania&apos;s academic planning & registration site, PennInTouch</div>
         <img className="project-img" src={pennintouch} alt="pennintouch mockup" />
         <div className="section-flex">
           <div className="section-lflex">
@@ -253,6 +253,26 @@ function PennInTouch({ currPage, setCurrPage }) {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="project-wrap">
+        <div className="subsection-header-sec">
+          KEY RESEARCH INSIGHTS
+        </div>
+        <div className="project-text">
+          I came away from my survey and interviews with the following insights:
+        </div>
+        <ul>
+          <li>the Academic Planning Worksheet is the least effective feature</li>
+        </ul>
+        <div className="cap-card">
+          <div className="cap">
+            <div className="empty">c</div>
+          </div>
+          <div className="cap-card-text">
+            How might we streamline the Academic Planning Worksheet&apos;s interactions
+            so that students use it for long-term planning?
           </div>
         </div>
       </div>
