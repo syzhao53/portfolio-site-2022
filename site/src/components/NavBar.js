@@ -11,14 +11,8 @@ function NavBar({ currPage }) {
   console.log(currPage);
 
   return (
-    <div className="NavBarWrap">
-      <div className="NavBar">
-        {/* <button
-          type="button"
-          className="nav-button-bold"
-        >
-          TABLE OF CONTENTS
-        </button> */}
+    <div className="NavBar">
+      <div className="nav-row">
         <button
           type="button"
           className={currPage === 'work' ? 'nav-button-bold' : 'nav-button'}
@@ -48,6 +42,35 @@ function NavBar({ currPage }) {
         </button>
       </div>
     </div>
+    // <div className="NavBar">
+    //   <button
+    //     type="button"
+    //     className={currPage === 'work' ? 'nav-button-bold' : 'nav-button'}
+    //     onClick={async () => {
+    //       navigate('/');
+    //     }}
+    //   >
+    //     WORK
+    //   </button>
+    //   <button
+    //     type="button"
+    //     className={currPage === 'project' ? 'nav-button-bold' : 'nav-button'}
+    //     onClick={async () => {
+    //       navigate('/project');
+    //     }}
+    //   >
+    //     RESUME
+    //   </button>
+    //   <button
+    //     type="button"
+    //     className="nav-button"
+    //     onClick={async () => {
+    //       navigate('/project');
+    //     }}
+    //   >
+    //     CONTACT
+    //   </button>
+    // </div>
   );
 }
 

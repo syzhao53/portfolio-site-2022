@@ -49,6 +49,14 @@ function PennInTouch({ currPage, setCurrPage }) {
           Let&apos;s Meet attempts to incorporate the positive functionality of when2meet
           while addressing usability, particularly on mobile.s
         </div>
+        <div className="section-header"> User Research</div>
+        <div className="subsection-header">SURVEY</div>
+        <div className="project-text">
+          I surveyed 16 Penn undergraduate students through Google Forms to collect data on
+          users&apos; attitudes toward PennInTouch. The responses showed a generally negative
+          feelings towards the platform, specifically the Academic Planning Worksheet. The
+          survey also confirmed the pain point of the site being difficult to navigate.
+        </div>
       </div>
       <div className="graphs">
         <div className="graphgrid-row">
