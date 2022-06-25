@@ -258,10 +258,26 @@ body {
   min-width: 125%;
 }
 
+.section-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-lflex {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+}
+
+.section-rflex {
+  display: flex;
+  flex-direction: column;
+}
+
 .section-header {
   font-size: 1.25rem;
   text-align: left;
-  margin: 0 0 0.75rem 0;
+  margin: 1rem 0 1.5rem 0;
 }
 
 .subsection-header {
@@ -269,7 +285,34 @@ body {
   letter-spacing: .5px;
   font-weight: 600;
   text-align: left;
-  margin: .75rem 0 0.75rem 0;
+  margin: 0 0 0.75rem 0;
+  color: #033E57;
+}
+
+.subsection-header-sec {
+  font-size: .875rem;
+  letter-spacing: .5px;
+  font-weight: 600;
+  text-align: left;
+  margin: 4rem 0 0.75rem 0;
+  color: #033E57;
+}
+
+.subsection-rheader-top {
+  font-size: .875rem;
+  letter-spacing: .5px;
+  font-weight: 600;
+  text-align: left;
+  margin: 3rem 0 0.5rem 1rem;
+  color: #033E57;
+}
+
+.subsection-rheader {
+  font-size: .875rem;
+  letter-spacing: .5px;
+  font-weight: 600;
+  text-align: left;
+  margin: 0 0 0.5rem 1rem;
   color: #033E57;
 }
 
@@ -278,13 +321,60 @@ body {
   text-align: left;
   line-height: 1.55rem;
   color: #2c2c2c;
-  margin: 0 0 4rem 0;
+  margin: 0 0 3rem 0;
+}
+
+.project-ltext {
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.55rem;
+  color: #2c2c2c;
+  margin: 0 7rem 4rem 0;
+}
+
+.project-rtext {
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.55rem;
+  color: #2c2c2c;
+  margin: 0 0 3rem 1rem;
 }
 
 .project-img {
   width: 100%;
   border-radius: 7px;
   margin: 0 0 3rem 0;
+}
+
+.cap-card {
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+  border-radius: 7px;
+  /* padding: 1.5rem 1.5rem 1.5rem 3rem; */
+  margin: 0 0 3rem 0;
+}
+
+.cap {
+  background-color: #033E57;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  max-width: .75%;
+}
+
+.cap-card-text {
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.55rem;
+  color: #2c2c2c;
+  padding: 1.75rem 1.5rem 1.75rem 3rem;
+  /* font-style: italic; */
+}
+
+.empty {
+  opacity: 0;
 }
 
 .graphs {
