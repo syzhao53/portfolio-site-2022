@@ -462,6 +462,90 @@ body {
   padding: 0 0 2.75rem 3rem;
 }
 
+.affinity {
+  background-color: #F4FAFF;
+  display: flex;
+  flex-direction: row;
+  padding: 4rem 0 4rem 0;
+  /* background-color: red; */
+  /* flex-wrap: wrap; */
+}
+
+.categories-wrap {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  /* background-color: aquamarine; */
+  flex-wrap: wrap;
+}
+
+.category-flex {
+  display: flex;
+  flex-direction: column;
+  margin: 0 6rem 0 0;
+  align-items: center;
+  /* background-color: blue; */
+}
+
+.category-rflex {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 0;
+}
+
+.category-name {
+  font-size: .75rem;
+  letter-spacing: .5px;
+  font-weight: 600;
+  text-align: center;
+  color: #033E57;
+  margin: 0 0 1.5rem 0;
+}
+
+.post-it-row {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 1.5rem 0;
+}
+
+.lpost-it {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+  border-radius: 7px;
+  /* padding: 3rem 3rem 3rem 3rem; */
+  margin: 0 1rem 0 0;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.rpost-it {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+  border-radius: 7px;
+  /* padding: 3rem 3rem 3rem 3rem; */
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-it-text-short {
+  font-size: .625rem;
+  /* padding: 1.5rem; */
+  min-width: 80%;
+  /* background-color: aliceblue; */
+}
+
+.post-it-text {
+  font-size: .625rem;
+  max-width: 60%;
+}
 
 /* TYPING ANIMATION */
 .typing-header {
@@ -484,168 +568,4 @@ body {
   50% {
     border-color: transparent
   }
-}
-
-/* OLD PROJECT CODE*/
-.nav {
-  height: 80px;
-  width: 100%;
-  background-color: #FAFCFD;
-  filter: drop-shadow(0px 1px 4px #eeeeee);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  z-index: 1;
-}
-
-.nav-btn {
-  border: none;
-  background-color: #FAFCFD;
-  font-family: 'Inter', sans-serif;
-  margin: 1rem;
-}
-
-.nav-btn:hover {
-  font-weight: bold;
-}
-
-.account-btn {
-  color: #5ABFB7;
-  border: solid 1px #5ABFB7;
-  border-radius: 20px;
-  background-color: #FAFCFD;
-  padding: 0.5rem;
-  height: 2rem;
-  margin: 1.5rem 3rem 1rem 1rem;
-}
-
-.account-btn:hover {
-  color: #FAFCFD;
-  background-color: #5ABFB7;
-}
-
-.acct-options {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  transform: translate(50%, 50%);
-  background-color: #FAFCFD;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1.5rem 2rem;
-  z-index: 5;
-  filter: drop-shadow(0px 1px 4px #d6d6d6);
-}
-
-.acct-options button {
-  margin: 1rem !important;
-}
-
-.logout-btn {
-  border: solid 1px #5ABFB7;
-  border-radius: 20px;
-  color: white;
-  background-color: #5ABFB7;
-  padding: 0.5rem;
-  height: 2rem;
-}
-
-.logout-btn:hover {
-  border: solid 1px #5ABFB7;
-  border-radius: 20px;
-  color: #5ABFB7;
-  background-color: white;
-  padding: 0.5rem;
-  height: 2rem;
-}
-
-
-/* dash */
-.dashboard h1 {
-  display: flex;
-  margin-left: 15%;
-  text-align: left;
-}
-
-.header-center {
-  font-size: 24px;
-  line-height: 40px;
-  font-weight: 500;
-  margin: 70px auto 30px 0;
-  text-align: center;
-}
-
-.dash-flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: space-around;
-  margin: 0 auto;
-  width: 75%;
-}
-
-.dash-card {
-  border-radius: 5px;
-  background-color: #FAFCFD;
-  filter: drop-shadow(0px 1px 4px #d6d6d6);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  min-height: 8rem;
-  width: 40%;
-  margin: 0.5rem;
-  padding: 1rem;
-  text-align: center;
-  z-index: -1;
-}
-
-.dash-card h4 {
-  color: #5ABFB7;
-}
-
-.dash-card h4, p {
-  width: 100%;
-  text-align: center;
-}
-
-@media screen and (max-width: 500px) {
-  .grid-row {
-    flex-wrap: wrap;
-  }
-
-  .gcard-lwrap {
-    margin: 0 0 3rem 0;
-  }
-
-  .graphgrid-row {
-    flex-wrap: wrap;
-  }
-
-  .card-lgraph {
-    margin: 4rem 0 3rem 3rem;
-    max-width: 80%;
-  }
-
-  .card-rgraph {
-    margin: 0 0 3rem 3rem;
-    max-width: 80%;
-  }
-  
-  .card-lgraph-low {
-    margin: 0 0 4rem 3rem;
-    max-width: 80%;
-  }
-  
-  .card-rgraph-low {
-    margin: 0 0 4rem 3rem;
-    max-width: 80%;
-  }
-
-  .project-img {
-    width: 125%;
-  }
-  
 }

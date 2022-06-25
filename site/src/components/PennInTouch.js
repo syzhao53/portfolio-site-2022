@@ -138,6 +138,124 @@ function PennInTouch({ currPage, setCurrPage }) {
           use of a crowded sidebar for navigation.
         </div>
       </div>
+      <div className="affinity">
+        <div className="categories-wrap">
+          <div className="category-flex">
+            <div className="category-name">EMOTIONS</div>
+            <div className="post-it-row">
+              <div className="lpost-it">
+                <div className="post-it-text-short">
+                  Terrible experience
+                </div>
+              </div>
+              <div className="rpost-it">
+                <div className="post-it-text-short">
+                  Feels awful
+                </div>
+              </div>
+            </div>
+            <div className="post-it-row">
+              <div className="lpost-it">
+                <div className="post-it-text">
+                  Sufficient, just could be better
+                </div>
+              </div>
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Lack of trust in product, feels unreliable
+                </div>
+              </div>
+            </div>
+            <div className="post-it-row">
+              <div className="lpost-it">
+                <div className="post-it-text">
+                  Became embittered with experience overtime
+                </div>
+              </div>
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  &ldquo;Words cannot describe how terrible [it] is&rdquo;
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="category-flex">
+            <div className="category-name">PLANNING</div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Does not use site for 4-year planning
+                </div>
+              </div>
+            </div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Big learning curve using academic planning worksheet
+                </div>
+              </div>
+            </div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Use academic planning worksheet to check requirements
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="category-flex">
+            <div className="category-name">NAVIGATION</div>
+            <div className="post-it-row">
+              <div className="lpost-it">
+                <div className="post-it-text">
+                  Lots of misclicking in sidebar
+                </div>
+              </div>
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  First time user would have a hard time
+                </div>
+              </div>
+            </div>
+            <div className="post-it-row">
+              <div className="lpost-it">
+                <div className="post-it-text">
+                  Difficult with everything collapsed in sidebar dropdowns
+                </div>
+              </div>
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Lots of trial and error navigating with sidebar
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="category-rflex">
+            <div className="category-name">UI DESIGN</div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Everything in sidebar is too small (web and mobile)
+                </div>
+              </div>
+            </div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Text is too small overall
+                </div>
+              </div>
+            </div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Strange unused space on right side of page
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="footer">{footerMessage}</div>
     </div>
     // <button className="button" type="button" onClick={goToProject}>View my work</button>
