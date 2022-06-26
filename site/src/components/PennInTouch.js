@@ -5,6 +5,10 @@ import React, { useEffect } from 'react';
 // import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
 import pennintouch from '../assets/pennintouch-mockup.png';
+import pithome from '../assets/pit-home.png';
+import pitmobile from '../assets/pit-home-mobile.png';
+import pitapw from '../assets/pit-apw.png';
+import pitapwbar from '../assets/pit-apw-bar.png';
 import generalexp from '../assets/general-exp.png';
 import easeinfo from '../assets/ease-info.png';
 import academicplan from '../assets/academic-plan.png';
@@ -62,6 +66,17 @@ function PennInTouch({ currPage, setCurrPage }) {
             </div>
           </div>
         </div>
+        <div className="section-header">Existing Interface</div>
+        <div className="project-text-single">
+          The current PennInTouch site uses a left sidebar as its main navigation and
+          has a text heavy interface. For the site&apos;s main purpose of academic planning
+          and registration, students use the &ldquo;Registration & Planning&rdquo; dropdown
+          section which includes the Academic Planning Worksheet, Course Search, and Mock
+          Schedules features.
+        </div>
+        <div className="graphs">hi</div>
+        <img className="project-img" src={pithome} alt="pit-home" />
+        <img className="project-img" src={pitmobile} alt="pit-home-mobile" />
         <div className="section-header"> User Research</div>
         <div className="cap-card">
           <div className="cap">
@@ -268,6 +283,9 @@ function PennInTouch({ currPage, setCurrPage }) {
             <div className="list-text">students generally dislike the outdated UI of PennInTouch and find that it interferes with functionality</div>
           </li>
           <li>
+            <div className="list-text">the left sidebar navigation is too cramped and most sections go unused</div>
+          </li>
+          <li>
             <div className="list-text">the Academic Planning Worksheet feature is underused and is perceived the most negatively out of PennInTouch&apos;s main features</div>
           </li>
         </ul>
@@ -314,6 +332,8 @@ function PennInTouch({ currPage, setCurrPage }) {
         <div className="project-text">
           Should I put existing interface analysis here, probably, or it goes in the beginning
         </div>
+        <img className="project-img" src={pitapw} alt="pit-apw" />
+        <img className="project-img" src={pitapwbar} alt="pit-apw-bar" />
       </div>
       <div className="footer">{footerMessage}</div>
     </div>

@@ -358,8 +358,9 @@ body {
 }
 
 ul {
-  max-width: 80%;
-  margin: .75rem 0 .75rem 2rem;
+  /* max-width: 80%; */
+  margin: .75rem 0 .75rem 0;
+  padding: 0 0 0 1rem;
 }
 
 .project-img {
