@@ -6,7 +6,7 @@ import React, { useEffect } from 'react';
 import '../assets/index.css';
 import pennintouch from '../assets/pennintouch-mockup.png';
 import pithome from '../assets/pit-home.png';
-import pitmobile from '../assets/pit-home-mobile.png';
+// import pitmobile from '../assets/pit-home-mobile.png';
 import pitapw from '../assets/pit-apw.png';
 import pitapwbar from '../assets/pit-apw-bar.png';
 import generalexp from '../assets/general-exp.png';
@@ -67,16 +67,14 @@ function PennInTouch({ currPage, setCurrPage }) {
           </div>
         </div>
         <div className="section-header">Existing Interface</div>
-        <div className="project-text-single">
+        <div className="project-text">
           The current PennInTouch site uses a left sidebar as its main navigation and
           has a text heavy interface. For the site&apos;s main purpose of academic planning
           and registration, students use the &ldquo;Registration & Planning&rdquo; dropdown
           section which includes the Academic Planning Worksheet, Course Search, and Mock
           Schedules features.
         </div>
-        <div className="graphs">hi</div>
         <img className="project-img" src={pithome} alt="pit-home" />
-        <img className="project-img" src={pitmobile} alt="pit-home-mobile" />
         <div className="section-header"> User Research</div>
         <div className="cap-card">
           <div className="cap">
