@@ -14,6 +14,13 @@ import PennInTouch from './components/PennInTouch';
 function App() {
   const [currPage, setCurrPage] = useState('home');
 
+  // const [title, setTitle] = useState("Sylvia Zhao");
+  
+  // useEffect(() => {
+  //   // This will run when the page first loads and whenever the title changes
+  //   document.title = title;
+  // }, [title]);
+
   // const [user, setUser] = useState({
   //   username: 'participant',
   //   password: 'participantpass',
