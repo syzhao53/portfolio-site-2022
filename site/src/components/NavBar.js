@@ -3,6 +3,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
+// import leaf from '../assets/leaf.png';
 
 function NavBar({ currPage }) {
   const navigate = useNavigate();
@@ -13,6 +14,7 @@ function NavBar({ currPage }) {
   return (
     <div className="NavBar">
       <div className="nav-row">
+        {/* <img id="leaf-icon" src={leaf} alt="leaf icon" /> */}
         <button
           type="button"
           className={currPage === 'work' ? 'nav-button-bold' : 'nav-button'}

@@ -41,7 +41,7 @@ function Home({ currPage, setCurrPage }) {
           Hi, I&apos;m Sylvia Zhao
         </div>
         <div className="paragraph">
-          UI/UX & Visual Designer. Student in Cognitive & Computer Science at UPenn.
+          UX & Visual Designer. Student in Cognitive & Computer Science at UPenn.
           <br />
           Designing for PennApps & Wharton MUSE. Recent PM Intern for Logitech Design Ops.
         </div>
@@ -61,7 +61,7 @@ function Home({ currPage, setCurrPage }) {
                 Meetup
               </div>
               <div className="gcard-text">
-                How might we streamline the process of scheduling group meetings?
+                Improving the scheduling of group meetings on mobile & web
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@ function Home({ currPage, setCurrPage }) {
                 PennInTouch
               </div>
               <div className="gcard-text">
-                How might we streamline the process of scheduling group meetings?
+                Redesigning the University of Pennsylvania&apos;s academic planning & registration site
               </div>
             </div>
           </div>
