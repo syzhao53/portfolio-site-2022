@@ -581,6 +581,20 @@ ul {
   line-height: .95rem;
 }
 
+.analysis {
+  background-color: #F4FAFF;
+  display: flex;
+  flex-direction: row;
+  padding: 4rem 2rem 4rem 4rem;
+  /* background-color: red; */
+  /* flex-wrap: wrap; */
+}
+
+.analysis-img {
+  width: 80%;
+  margin: auto;
+}
+
 /* .li {
   padding: 0;
 } */

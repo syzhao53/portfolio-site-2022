@@ -7,8 +7,9 @@ import '../assets/index.css';
 import pennintouch from '../assets/pennintouch-mockup.png';
 import pithome from '../assets/pit-home.png';
 // import pitmobile from '../assets/pit-home-mobile.png';
-import pitapw from '../assets/pit-apw.png';
-import pitapwbar from '../assets/pit-apw-bar.png';
+// import pitapw from '../assets/pit-apw.png';
+// import pitapwbar from '../assets/pit-apw-bar.png';
+import pitanalysis from '../assets/pit-analysis.png';
 import generalexp from '../assets/general-exp.png';
 import easeinfo from '../assets/ease-info.png';
 import academicplan from '../assets/academic-plan.png';
@@ -276,13 +277,13 @@ function PennInTouch({ currPage, setCurrPage }) {
         </div>
         <ul>
           <li>
-            <div className="list-text">students generally dislike the outdated UI of PennInTouch and find that it interferes with functionality</div>
+            <div className="list-text">Students generally dislike the outdated UI of PennInTouch and find that it interferes with functionality</div>
           </li>
           <li>
-            <div className="list-text">the left sidebar navigation is too cramped and most sections go unused</div>
+            <div className="list-text">The left sidebar navigation is too cramped and most sections go unused</div>
           </li>
           <li>
-            <div className="list-text">the Academic Planning Worksheet feature is underused and is perceived the most negatively out of PennInTouch&apos;s main features</div>
+            <div className="list-text">The Academic Planning Worksheet feature is underused and is perceived the most negatively out of PennInTouch&apos;s main features</div>
           </li>
         </ul>
         <div className="project-text-low">
@@ -323,13 +324,11 @@ function PennInTouch({ currPage, setCurrPage }) {
           </div>
         </div>
         <div className="subsection-header">
-          WIREFRAMES: ITERATION 1
+          ANALYSIS
         </div>
-        <div className="project-text">
-          Should I put existing interface analysis here, probably, or it goes in the beginning
-        </div>
-        <img className="project-img" src={pitapw} alt="pit-apw" />
-        <img className="project-img" src={pitapwbar} alt="pit-apw-bar" />
+      </div>
+      <div className="analysis">
+        <img className="analysis-img" src={pitanalysis} alt="pit-analysis" />
       </div>
       <div className="footer">{footerMessage}</div>
     </div>
