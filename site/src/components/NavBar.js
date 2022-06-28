@@ -8,9 +8,6 @@ import '../assets/index.css';
 function NavBar({ currPage }) {
   const navigate = useNavigate();
 
-  // TODO: ADD PROP AT APP LEVEL TO TRACK CURRENT PAGE TO ADD STYLING
-  console.log(currPage);
-
   return (
     <div className="NavBar">
       <div className="nav-row">

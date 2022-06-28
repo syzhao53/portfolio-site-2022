@@ -20,8 +20,6 @@ function PennInTouch({ currPage, setCurrPage }) {
   // const [lockoutUser, setLockoutUser] = useState('');
 //   const navigate = useNavigate();
 
-  console.log(currPage);
-
   const footerMessage = 'Made by Sylvia <3';
 
   useEffect(() => {

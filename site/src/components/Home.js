@@ -16,8 +16,6 @@ function Home({ currPage, setCurrPage }) {
   // const [lockoutUser, setLockoutUser] = useState('');
   const navigate = useNavigate();
 
-  console.log(currPage);
-
   const goToProject = (name) => {
     if (name === 'meetup') {
       navigate('/meetup');
