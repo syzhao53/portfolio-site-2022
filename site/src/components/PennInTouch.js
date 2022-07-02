@@ -10,6 +10,9 @@ import pithome from '../assets/pit-home.png';
 // import pitapw from '../assets/pit-apw.png';
 // import pitapwbar from '../assets/pit-apw-bar.png';
 import pitanalysis from '../assets/pit-analysis.png';
+import pitsketches from '../assets/pit-sketches.png';
+import pitwire1 from '../assets/pit-wire-1.png';
+import pitwire2 from '../assets/pit-wire-2.png';
 import generalexp from '../assets/general-exp.png';
 import easeinfo from '../assets/ease-info.png';
 import academicplan from '../assets/academic-plan.png';
@@ -25,7 +28,7 @@ function PennInTouch({ currPage, setCurrPage }) {
 
   useEffect(() => {
     setCurrPage('');
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -326,14 +329,83 @@ function PennInTouch({ currPage, setCurrPage }) {
         <div className="subsection-header">
           ANALYSIS
         </div>
+        <div className="project-text">
+          The existing PennInTouch interface for
+        </div>
       </div>
       <div className="analysis">
         <img className="analysis-img" src={pitanalysis} alt="pit-analysis" />
       </div>
+      <div className="project-wrap">
+        <img className="project-img" src={pitsketches} alt="pit-sketches" />
+        <div className="subsection-header">WIREFRAMES: ITERATION 1</div>
+        <div className="project-text">
+          My solution for an improved Academic Planning Worksheet introduced a
+          collapsible side panel where students would be able to assign courses to
+          fulfill requirements. This reduces the amount of information visually
+          overloading the interface and provides a more flexible way of planning
+          their requirements.
+          <br />
+          <br />
+          list of features ideated in initial wireframes
+        </div>
+      </div>
+      <div className="wire">
+        <img className="wire-img" src={pitwire1} alt="pit-wire-1" />
+      </div>
+      <div className="project-wrap">
+        <div className="subsection-header-sec">WIREFRAMES: ITERATION 2</div>
+        <div className="project-text">
+          After creating sketches and the first set of wireframes, I received feedback
+          on the structure of the collapsible side panel. Due to concern for the ease of
+          browsing through long lists of courses, searching and categories were added to the
+          dropdown menus. Additional changes included making the main cards collapsible and
+          also removing the certification cards. In place of the certifications, cards that
+          have all of their requirements fulfilled are filled green, marked with
+          &ldquo;Completed,&rdquo; and have a checkmark icon in the final design.
+          <br />
+          <br />
+          list of features improved in second iteration of wireframes
+        </div>
+      </div>
+      <div className="wire">
+        <img className="wire-img" src={pitwire2} alt="pit-wire-2" />
+      </div>
+      <div className="project-wrap">
+        <div className="subsection-header-sec">UI DESIGN: ITERATION 1</div>
+        <div className="project-text">
+          After finalizing the second round of wireframes, I styled the design across
+          two iterations. I chose a lighter color palette to modernize the interface.
+          Because of this departure from Penn&apos;s established colors, I used
+          Penn&apos;s branding for the fonts (EB Garamond and Roboto) in this first iteration.
+          I also used the core dark blue from Penn&apos;s logo to accent the filter checkboxes
+          and the radio buttons in the side panel.
+          list of style choices made in first iteration??
+        </div>
+      </div>
+      <div className="project-wrap">
+        <div className="subsection-header-sec">UI DESIGN: ITERATION 2</div>
+        <div className="project-text">
+          After receiving feedback, I changed all of the type to sans-serif (Proxima Nova)
+          since EB Garamond compromised the text&apos;s legibility. This change to all
+          sans-serif also improved the cohesive nature of the cleaner, updated design.
+          Additional edits included subtle color added to the left sidebar to unite that
+          navigation with the rest of the interface. The bubbles next to course names were
+          also lightened in color and reduced in size to not distract the user from other elements.
+        </div>
+      </div>
+      <div className="project-wrap">
+        <div className="section-header">Final Protoype</div>
+        <div className="project-text">
+          add link to figma or embed? or screen record, add actual device mockups?
+        </div>
+        <div className="section-header">Reflections</div>
+        <div className="project-text">
+          reflection statements
+        </div>
+      </div>
       <div className="footer">{footerMessage}</div>
     </div>
-    // <button className="button" type="button" onClick={goToProject}>View my work</button>
-    // TODO: ADD FLOATING CARAT ARROW
   );
 }
 

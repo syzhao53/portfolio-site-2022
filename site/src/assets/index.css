@@ -282,6 +282,7 @@ body {
   color: #033E57;
 }
 
+/* with extra space above */
 .subsection-header-sec {
   font-size: .875rem;
   letter-spacing: .5px;
@@ -591,9 +592,23 @@ ul {
 }
 
 .analysis-img {
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
+
+.wire {
+  background-color: #F4FAFF;
+  display: flex;
+  flex-direction: row;
+  padding: 4rem 2rem 4rem 4rem;
+}
+
+.wire-img {
+  width: 85%;
+  margin: auto;
+}
+
+
 
 /* .li {
   padding: 0;
