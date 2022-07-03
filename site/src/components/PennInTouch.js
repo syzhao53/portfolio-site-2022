@@ -13,6 +13,8 @@ import pitanalysis from '../assets/pit-analysis.png';
 import pitsketches from '../assets/pit-sketches.png';
 import pitwire1 from '../assets/pit-wire-1.png';
 import pitwire2 from '../assets/pit-wire-2.png';
+import pitui1 from '../assets/pit-ui-1.png';
+import pitui2 from '../assets/pit-ui-2.png';
 import generalexp from '../assets/general-exp.png';
 import easeinfo from '../assets/ease-info.png';
 import academicplan from '../assets/academic-plan.png';
@@ -330,7 +332,9 @@ function PennInTouch({ currPage, setCurrPage }) {
           ANALYSIS
         </div>
         <div className="project-text">
-          The existing PennInTouch interface for
+          Before creating wireframes, I analyzed the existing Academic Planning Worksheet
+          in relation to the pain points mentioned during user research. From these
+          observations, I created sketches for potential solutions.
         </div>
       </div>
       <div className="analysis">
@@ -340,59 +344,105 @@ function PennInTouch({ currPage, setCurrPage }) {
         <img className="project-img" src={pitsketches} alt="pit-sketches" />
         <div className="subsection-header">WIREFRAMES: ITERATION 1</div>
         <div className="project-text">
-          My solution for an improved Academic Planning Worksheet introduced a
-          collapsible side panel where students would be able to assign courses to
-          fulfill requirements. This reduces the amount of information visually
-          overloading the interface and provides a more flexible way of planning
-          their requirements.
-          <br />
-          <br />
-          list of features ideated in initial wireframes
+          My solution focused on creating more intuitive way to assign courses
+          to requirements as well as a layout that would visually emphasize the different
+          categories of requirements. The following features were incorporated into the redesign:
+          <ul>
+            <li>
+              <div className="list-text">Collapsible right side panel for assigning courses to requirements</div>
+            </li>
+            <li>
+              <div className="list-text">Cards for each requirement category (Foundational Approaches, Sectors, Free Electives, etc.)</div>
+            </li>
+            <li>
+              <div className="list-text">Cards for the two certifications (General Requirements and Major Requirements)</div>
+            </li>
+            <li>
+              <div className="list-text">Filters for customizing which requirement categories to view</div>
+            </li>
+          </ul>
         </div>
       </div>
-      <div className="wire">
-        <img className="wire-img" src={pitwire1} alt="pit-wire-1" />
+      <div className="mockup">
+        <img className="mockup-img" src={pitwire1} alt="pit-wire-1" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">WIREFRAMES: ITERATION 2</div>
         <div className="project-text">
-          After creating sketches and the first set of wireframes, I received feedback
-          on the structure of the collapsible side panel. Due to concern for the ease of
-          browsing through long lists of courses, searching and categories were added to the
-          dropdown menus. Additional changes included making the main cards collapsible and
-          also removing the certification cards. In place of the certifications, cards that
-          have all of their requirements fulfilled are filled green, marked with
-          &ldquo;Completed,&rdquo; and have a checkmark icon in the final design.
-          <br />
-          <br />
-          list of features improved in second iteration of wireframes
+          After receiving feedback from users on the first set of wireframes, I made changes
+          to the structure of the collapsible side panel and several minor features:
+          <ul>
+            <li>
+              <div className="list-text">Made side panel dropdown menus searchable</div>
+            </li>
+            <li>
+              <div className="list-text">
+                Changed selection of Course Category (Completed Courses, Currently Enrolled,
+                External Credit) from multiple dropdowns to single set of radio buttons in
+                side panel
+              </div>
+            </li>
+            <li>
+              <div className="list-text">Second displayed dropdown in side panel now depends on the selected radio button</div>
+            </li>
+            <li>
+              <div className="list-text">Removed certification cards (check mark icon added to cards in final UI to indicate certifications)</div>
+            </li>
+            <li>
+              <div className="list-text">Made all cards for requirenent categories collapsible</div>
+            </li>
+          </ul>
         </div>
       </div>
-      <div className="wire">
-        <img className="wire-img" src={pitwire2} alt="pit-wire-2" />
+      <div className="mockup">
+        <img className="mockup-img" src={pitwire2} alt="pit-wire-2" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">UI DESIGN: ITERATION 1</div>
         <div className="project-text">
-          After finalizing the second round of wireframes, I styled the design across
-          two iterations. I chose a lighter color palette to modernize the interface.
-          Because of this departure from Penn&apos;s established colors, I used
-          Penn&apos;s branding for the fonts (EB Garamond and Roboto) in this first iteration.
-          I also used the core dark blue from Penn&apos;s logo to accent the filter checkboxes
-          and the radio buttons in the side panel.
-          list of style choices made in first iteration??
+          After finalizing wireframes, I styled the design with the goal of modernizing the
+          interface while still keeping Penn&apos;s core branding in mind. The first iteration
+          focused on the the following key style choices:
+          <ul>
+            <li>
+              <div className="list-text">Lighter color palette overall for clean, modern feel</div>
+            </li>
+            <li>
+              <div className="list-text">
+                Fonts from Penn&apos;s core branding (EB Garamond and Roboto)
+              </div>
+            </li>
+            <li>
+              <div className="list-text">Selective use of main dark blue color from original interface to emaphsize features</div>
+            </li>
+          </ul>
         </div>
+      </div>
+      <div className="mockup">
+        <img className="mockup-img" src={pitui1} alt="pit-ui-1" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">UI DESIGN: ITERATION 2</div>
         <div className="project-text">
-          After receiving feedback, I changed all of the type to sans-serif (Proxima Nova)
-          since EB Garamond compromised the text&apos;s legibility. This change to all
-          sans-serif also improved the cohesive nature of the cleaner, updated design.
-          Additional edits included subtle color added to the left sidebar to unite that
-          navigation with the rest of the interface. The bubbles next to course names were
-          also lightened in color and reduced in size to not distract the user from other elements.
+          Based on further user feedback, the second iteration aimed to improve the cohesiveness
+          of the design:
+          <ul>
+            <li>
+              <div className="list-text">Changed all type to sans-serif font (Proxima Nova)</div>
+            </li>
+            <li>
+              <div className="list-text">
+                Subtle color added to left sidebar to match rest of design
+              </div>
+            </li>
+            <li>
+              <div className="list-text">Lightened and decreased size of bubbles next to course names</div>
+            </li>
+          </ul>
         </div>
+      </div>
+      <div className="mockup">
+        <img className="mockup-img" src={pitui2} alt="pit-ui-2" />
       </div>
       <div className="project-wrap">
         <div className="section-header">Final Protoype</div>

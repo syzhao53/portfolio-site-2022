@@ -360,7 +360,7 @@ body {
 
 ul {
   /* max-width: 80%; */
-  margin: .75rem 0 .75rem 0;
+  margin: .75rem 0 .75rem 1.5rem;
   padding: 0 0 0 1rem;
 }
 
@@ -596,14 +596,14 @@ ul {
   margin: auto;
 }
 
-.wire {
+.mockup {
   background-color: #F4FAFF;
   display: flex;
   flex-direction: row;
   padding: 4rem 2rem 4rem 4rem;
 }
 
-.wire-img {
+.mockup-img {
   width: 85%;
   margin: auto;
 }
