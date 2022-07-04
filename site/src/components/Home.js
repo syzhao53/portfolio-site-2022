@@ -59,7 +59,7 @@ function Home({ currPage, setCurrPage }) {
                 Meetup
               </div>
               <div className="gcard-text">
-                Improving the scheduling of group meetings on mobile & web
+                Improving group meeting scheduling on mobile & web
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ function Home({ currPage, setCurrPage }) {
             <img className="grid-img" src={temp} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                Meetup
+                AAC
               </div>
               <div className="gcard-text">
                 How might we streamline the process of scheduling group meetings?
@@ -91,7 +91,7 @@ function Home({ currPage, setCurrPage }) {
             <img className="grid-img" src={temp} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                PennInTouch
+                Case Study #4
               </div>
               <div className="gcard-text">
                 How might we streamline the process of scheduling group meetings?
