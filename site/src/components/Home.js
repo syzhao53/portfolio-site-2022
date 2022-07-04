@@ -83,7 +83,7 @@ function Home({ currPage, setCurrPage }) {
                 AAC
               </div>
               <div className="gcard-text">
-                How might we streamline the process of scheduling group meetings?
+                Placeholder text
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@ function Home({ currPage, setCurrPage }) {
                 Case Study #4
               </div>
               <div className="gcard-text">
-                How might we streamline the process of scheduling group meetings?
+                Placeholder text
               </div>
             </div>
           </div>
@@ -104,10 +104,10 @@ function Home({ currPage, setCurrPage }) {
             <img className="grid-img" src={temp} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                Meetup
+                Recurrent
               </div>
               <div className="gcard-text">
-                How might we streamline the process of scheduling group meetings?
+                Placeholder text
               </div>
             </div>
           </div>
@@ -115,10 +115,10 @@ function Home({ currPage, setCurrPage }) {
             <img className="grid-img" src={temp} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                PennInTouch
+                Personal Work
               </div>
               <div className="gcard-text">
-                How might we streamline the process of scheduling group meetings?
+                Placeholder text
               </div>
             </div>
           </div>
