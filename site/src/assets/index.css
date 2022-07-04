@@ -278,7 +278,7 @@ body {
   letter-spacing: .5px;
   font-weight: 600;
   text-align: left;
-  margin: 0 0 0.75rem 0;
+  margin: 0 0 1rem 0;
   color: #033E57;
 }
 
@@ -288,7 +288,7 @@ body {
   letter-spacing: .5px;
   font-weight: 600;
   text-align: left;
-  margin: 4rem 0 0.75rem 0;
+  margin: 4rem 0 1rem 0;
   color: #033E57;
 }
 
@@ -398,6 +398,10 @@ ul {
   /* font-style: italic; */
 }
 
+#how-might-card {
+  margin: 1.5rem 0 6rem 0;
+}
+
 .how-might-we {
   font-size: 1rem;
   font-weight: 500;
@@ -417,7 +421,7 @@ ul {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 3rem 0;
   flex-wrap: wrap;
 }
 
@@ -502,6 +506,7 @@ ul {
   display: flex;
   flex-direction: row;
   padding: 4rem 2rem 4rem 2rem;
+  margin: 1rem 0 3rem 0;
   /* background-color: red; */
   /* flex-wrap: wrap; */
 }
@@ -588,7 +593,7 @@ ul {
   display: flex;
   flex-direction: row;
   padding: 4rem 2rem 4rem 4rem;
-  margin: 0 0 3rem 0;
+  margin: 0 0 5rem 0;
   /* background-color: red; */
   /* flex-wrap: wrap; */
 }
@@ -603,6 +608,7 @@ ul {
   display: flex;
   flex-direction: row;
   padding: 4rem 2rem 4rem 4rem;
+  margin: 0 0 3rem 0;
 }
 
 .mockup-img {

@@ -295,7 +295,7 @@ function PennInTouch({ currPage, setCurrPage }) {
           From this, I formed the following guiding question to redesign the Academic Planning
           Worksheet feature.
         </div>
-        <div className="cap-card">
+        <div id="how-might-card" className="cap-card">
           <div className="cap">
             <div className="empty">c</div>
           </div>
