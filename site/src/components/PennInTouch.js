@@ -30,7 +30,7 @@ function PennInTouch({ currPage, setCurrPage }) {
 
   useEffect(() => {
     setCurrPage('');
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   return (

@@ -41,7 +41,7 @@ function Home({ currPage, setCurrPage }) {
         <div className="paragraph">
           UX & Visual Designer. Student in Cognitive & Computer Science at UPenn.
           <br />
-          Designing for PennApps & Wharton MUSE. Recent PM Intern for Logitech Design Ops.
+          Designing for PennApps & Wharton MUSE. Recent Design Ops Intern at Logitech.
         </div>
         <img id="home-illus" src={illustration} alt="landing illustration" />
       </div>
