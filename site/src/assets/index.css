@@ -291,8 +291,8 @@ body {
 }
 
 .subsection-header {
-  font-size: .875rem;
-  letter-spacing: .5px;
+  font-size: .9rem;
+  letter-spacing: .4px;
   font-weight: 600;
   text-align: left;
   margin: 0 0 1rem 0;
@@ -301,8 +301,8 @@ body {
 
 /* with extra space above */
 .subsection-header-sec {
-  font-size: .875rem;
-  letter-spacing: .5px;
+  font-size: .9rem;
+  letter-spacing: .4px;
   font-weight: 600;
   text-align: left;
   margin: 4rem 0 1rem 0;
@@ -310,8 +310,8 @@ body {
 }
 
 .subsection-rheader-top {
-  font-size: .875rem;
-  letter-spacing: .5px;
+  font-size: .9rem;
+  letter-spacing: .4px;
   font-weight: 600;
   text-align: left;
   margin: 3rem 0 0.5rem 1rem;
@@ -319,8 +319,8 @@ body {
 }
 
 .subsection-rheader {
-  font-size: .875rem;
-  letter-spacing: .5px;
+  font-size: .9rem;
+  letter-spacing: .4px;
   font-weight: 600;
   text-align: left;
   margin: 0 0 0.5rem 1rem;
@@ -629,7 +629,7 @@ ul {
 }
 
 .mockup-img {
-  width: 85%;
+  width: 65%;
   margin: auto;
 }
 

@@ -30,7 +30,7 @@ function PennInTouch({ currPage, setCurrPage }) {
 
   useEffect(() => {
     setCurrPage('');
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -85,7 +85,8 @@ function PennInTouch({ currPage, setCurrPage }) {
             <div className="empty">c</div>
           </div>
           <div className="cap-card-text">
-            &ldquo;Words cannot describe how terrible the current site is&rdquo; - Penn Student
+            &ldquo;Words cannot describe how terrible the current site is&rdquo;
+            <span style={{ 'font-style': 'italic' }}> &mdash; Penn Student</span>
           </div>
         </div>
         <div className="subsection-header">SURVEY</div>
@@ -349,16 +350,34 @@ function PennInTouch({ currPage, setCurrPage }) {
           categories of requirements. The following features were incorporated into the redesign:
           <ul>
             <li>
-              <div className="list-text">Collapsible right side panel for assigning courses to requirements</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Collapsible right side panel </span>
+                for assigning courses to requirements, indicated by
+                prominently displayed tab on side; clearer than previous interaction at bottom of
+                screen and collapsible for space-efficiency
+              </div>
             </li>
             <li>
-              <div className="list-text">Cards for each requirement category (Foundational Approaches, Sectors, Free Electives, etc.)</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Cards for each requirement category </span>
+                (Foundational Approaches, Sectors, Free Electives, etc.) to visually group
+                information for users and improve on pain point concerning visual clutter
+              </div>
             </li>
             <li>
-              <div className="list-text">Cards for the two certifications (General Requirements and Major Requirements)</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Cards for the two certifications </span>
+                (General Requirements and Major Requirements) to separate the checkpoints users
+                use to measure progress; originally styled the same as a general requirement
+              </div>
             </li>
             <li>
-              <div className="list-text">Filters for customizing which requirement categories to view</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Filters </span>
+                for customizing which requirement categories to view, gives user
+                control over experience and allows for more compact view eliminating
+                extra information (eg. completed categories)
+              </div>
             </li>
           </ul>
         </div>
@@ -413,7 +432,7 @@ function PennInTouch({ currPage, setCurrPage }) {
               </div>
             </li>
             <li>
-              <div className="list-text">Selective use of main dark blue color from original interface to emaphsize features</div>
+              <div className="list-text">Selective use of main dark blue color from original interface to emphasize features</div>
             </li>
           </ul>
         </div>
