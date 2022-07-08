@@ -31,9 +31,9 @@ body {
   animation: bounce 2s infinite;
 }
 
-#arrow:hover {
+/* #arrow:hover {
   width: 2.6%;
-}
+} */
 
 @keyframes bounce {
   50% {
