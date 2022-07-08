@@ -190,7 +190,7 @@ body {
 .gcard-lwrap {
   display: flex;
   flex-direction: column;
-  border-color: #eeeeee;
+  border-color: #ededed;
   border-width: 1px;
   border-style: solid;
   background-color: #ffffff;
@@ -200,14 +200,14 @@ body {
 
 .gcard-lwrap:hover {
   /* offset-x | offset-y | blur-radius | spread-radius | color */
-  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.05);
   cursor: pointer;
 }
 
 .gcard-rwrap {
   display: flex;
   flex-direction: column;
-  border-color: #eeeeee;
+  border-color: #ededed;
   border-width: 1px;
   border-style: solid;
   background-color: #ffffff;
@@ -216,7 +216,7 @@ body {
 
 .gcard-rwrap:hover {
   /* offset-x | offset-y | blur-radius | spread-radius | color */
-  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.05);
   cursor: pointer;
 }
 
@@ -230,10 +230,12 @@ body {
   font-weight: 600;
   letter-spacing: .25px;
   margin: 0 0 .5rem 0;
+  color: #2c2c2c;
 }
 
 .gcard-text {
   line-height: 1.4rem;
+  color: #2c2c2c;
 }
 
 .footer {
@@ -447,7 +449,7 @@ ul {
   flex-direction: row;
   /* margin: 4rem 0 3rem 4rem; */
   margin: auto;
-  max-width: 85%;
+  max-width: 75%;
 }
 
 .card-lgraph {
@@ -616,7 +618,7 @@ ul {
 }
 
 .analysis-img {
-  width: 85%;
+  width: 80%;
   margin: auto;
 }
 
