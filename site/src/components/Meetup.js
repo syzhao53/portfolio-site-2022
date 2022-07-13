@@ -30,6 +30,7 @@ function Meetup({ currPage, setCurrPage }) {
 
   useEffect(() => {
     setCurrPage('');
+    document.title = 'Meetup | Sylvia Zhao';
     // window.scrollTo(0, 0);
   }, []);
 

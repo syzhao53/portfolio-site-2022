@@ -30,6 +30,7 @@ function PennInTouch({ currPage, setCurrPage }) {
 
   useEffect(() => {
     setCurrPage('');
+    document.title = 'PennInTouch | Sylvia Zhao';
     // window.scrollTo(0, 0);
   }, []);
 
