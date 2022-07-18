@@ -56,9 +56,8 @@ body {
   margin: 10rem 0 0.75rem 4.8rem;
 
   letter-spacing: .3px;
-  font-weight: 700;
+  font-weight: 600;
   color: #033E57;
-  /* background-color: red; */
 }
 
 .landing-header {
@@ -156,10 +155,6 @@ body {
 }
 
 .nav-button:hover {
-  /* text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-color: #033E57; 
-  text-decoration-thickness: 2px; */
   color: #000000;
   cursor: pointer;
 }
@@ -175,14 +170,28 @@ body {
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-color: #033E57; 
+  -webkit-text-decoration: underline;
   text-decoration-thickness: 2px;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  -webkit-text-decoration-line:  underline !important;
+  -webkit-text-decoration-color: #033E57 !important;
+  -webkit-text-decoration-style: solid !important;
+  -webkit-text-decoration-thickness: 2px !important;
 }
 
 .nav-button-bold:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-color: #033E57; 
+  -webkit-text-decoration: underline;
   text-decoration-thickness: 2px;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  -webkit-text-decoration-line:  underline !important;
+  -webkit-text-decoration-color: #033E57 !important;
+  -webkit-text-decoration-style: solid !important;
+  -webkit-text-decoration-thickness: 2px !important;
   cursor: pointer;
 }
 
@@ -289,13 +298,18 @@ body {
 }
 
 .project-header {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: left;
-  margin: 9rem 0 2rem 0;
-  /* text-decoration: underline;
-  text-underline-offset: 12px;
-  text-decoration-color: #033E57; 
-  text-decoration-thickness: 2px; */
+  margin: 9rem 0 1rem 0;
+  
+/* 
+  font-size: 1.1rem;
+  text-align: left;
+  margin: 10rem 0 0.75rem 0;
+
+  letter-spacing: .3px;
+  font-weight: 700;
+  color: #033E57; */
 }
 
 .project-info {
@@ -768,12 +782,12 @@ ul {
     float: right;
     margin: 0 2rem 0 0;
     cursor: pointer;
-    width: 5%;
+    width: 6%;
   }
 
   #sidebar-leaf-icon {
-    margin: 0 0 1.5rem 1rem;
-    width: 9%;
+    margin: 0 0 1.5rem 1.6rem;
+    width: 10%;
   }
 
   #sidebar-leaf-icon:hover {
@@ -782,6 +796,7 @@ ul {
 
   #sidebar-close-icon {
     width: 8%;
+    height: 8%;
     padding-left: 78%;
     margin-bottom: 10%;
   }
@@ -803,35 +818,37 @@ ul {
     border-top: none;
     border-right: none;
     border-bottom: none;
-    border-bottom-left-radius: 7px;
+    border-width: .75px;
+    /* border-bottom-left-radius: 7px; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 6% 0 110% 1%;
+    padding: 5% 0 150% 1%;
     position: absolute;
     top: 0;
     right: 0;
-    max-width: 45%;
+    max-width: 55%;
+    z-index: 100000;
   }
 
   .sidebar-button {
     border: none;
     background-color: transparent;
     font-family: 'Inter', sans-serif;
-    margin: 0 0 1.5rem 1rem;
-    font-size: .875rem;
+    margin: 0 0 1.75rem 1rem;
+    font-size: 1rem;
     letter-spacing: .25px;
     font-weight: 500;
     color: #787878;
+
+    border-radius: 7px;
+    padding: .75rem 1rem .75rem 1rem;
   }
   
   .sidebar-button:hover {
-    /* text-decoration: underline;
-    text-underline-offset: 4px;
-    text-decoration-color: #033E57; 
-    text-decoration-thickness: 2px; */
     color: #000000;
     cursor: pointer;
+    background-color: #efeff7;
   }
   
   .sidebar-button-bold {
@@ -839,20 +856,39 @@ ul {
     background-color: transparent;
     font-family: 'Inter', sans-serif;
     margin: 0 0 1.75rem 1rem;
-    font-size: .875rem;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: .25px;
-    text-decoration: underline;
+    /* text-decoration: underline;
     text-underline-offset: 4px;
     text-decoration-color: #033E57; 
     text-decoration-thickness: 2px;
+    -webkit-text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-line: underline;
+    -webkit-text-decoration-line:  underline !important;
+    -webkit-text-decoration-color: #033E57 !important;
+    -webkit-text-decoration-style: solid !important;
+    -webkit-text-decoration-thickness: 2px !important; */
+
+    background-color: #f1f1f8;
+    border-radius: 7px;
+    padding: .75rem 1rem .75rem 1rem;
+    /* padding: 5% 64% 5% 5%; */
   }
   
   .sidebar-button-bold:hover {
-    text-decoration: underline;
+    /* text-decoration: underline;
     text-underline-offset: 4px;
     text-decoration-color: #033E57; 
     text-decoration-thickness: 2px;
+    -webkit-text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-line: underline;
+    -webkit-text-decoration-line:  underline !important;
+    -webkit-text-decoration-color: #033E57 !important;
+    -webkit-text-decoration-style: solid !important;
+    -webkit-text-decoration-thickness: 2px !important; */
     cursor: pointer;
   }
   
