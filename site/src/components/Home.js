@@ -8,6 +8,7 @@ import illustration from '../assets/landing-illustration.png';
 import Arrow from '../assets/arrow.svg';
 import meetup from '../assets/meetup-mockup.png';
 import pennintouch from '../assets/pennintouch-mockup.png';
+import speechconnect from '../assets/speechconnect-mockup.png';
 import temp from '../assets/temp-mockup.png';
 import NavBar from './NavBar';
 
@@ -29,6 +30,7 @@ function Home({ currPage, setCurrPage }) {
   useEffect(() => {
     setCurrPage('work');
     window.scrollTo(0, 0);
+    document.title = 'Sylvia Zhao';
   }, []);
 
   return (
@@ -70,20 +72,20 @@ function Home({ currPage, setCurrPage }) {
                 PennInTouch
               </div>
               <div className="gcard-text">
-                Redesigning the University of Pennsylvania&apos;s academic planning & registration site
+                Redesigning UPenn&apos;s academic planning & registration site
               </div>
             </div>
           </div>
         </div>
         <div className="grid-row">
           <div className="gcard-lwrap">
-            <img className="grid-img" src={temp} alt="temp mockup" />
+            <img className="grid-img" src={speechconnect} alt="speechconnect mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                AAC
+                SpeechConnect
               </div>
               <div className="gcard-text">
-                Placeholder text
+                Creating a customizable tablet experience for assistive communication technology
               </div>
             </div>
           </div>
@@ -91,7 +93,7 @@ function Home({ currPage, setCurrPage }) {
             <img className="grid-img" src={temp} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                Case Study #4
+                Chapter
               </div>
               <div className="gcard-text">
                 Placeholder text
@@ -104,10 +106,10 @@ function Home({ currPage, setCurrPage }) {
             <img className="grid-img" src={temp} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                Recurrent
+                Logitech (Internship Summer 2022)
               </div>
               <div className="gcard-text">
-                Placeholder text
+                Visual design for company intranet pages
               </div>
             </div>
           </div>

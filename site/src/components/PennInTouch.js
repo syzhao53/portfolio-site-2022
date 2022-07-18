@@ -57,17 +57,21 @@ function PennInTouch({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="section-rflex">
-            <div className="subsection-rheader-top">
-              ROLE
+            <div className="descrip-lflex">
+              <div className="subsection-rheader-top">
+                ROLE
+              </div>
+              <div className="project-rtext">
+                UX research & design
+              </div>
             </div>
-            <div className="project-rtext">
-              UX research & design
-            </div>
-            <div className="subsection-rheader">
-              TIMELINE
-            </div>
-            <div className="project-rtext">
-              1.5 months
+            <div className="descrip-rflex">
+              <div className="subsection-rheader">
+                TIMELINE
+              </div>
+              <div className="project-rtext">
+                1.5 months
+              </div>
             </div>
           </div>
         </div>
@@ -199,30 +203,6 @@ function PennInTouch({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="category-flex">
-            <div className="category-name">PLANNING</div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Does not use site for 4-year planning
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Big learning curve using Academic Planning Worksheet
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Use Academic Planning Worksheet to check requirements
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="category-flex">
             <div className="category-name">NAVIGATION</div>
             <div className="post-it-row">
               <div className="lpost-it">
@@ -245,6 +225,30 @@ function PennInTouch({ currPage, setCurrPage }) {
               <div className="rpost-it">
                 <div className="post-it-text">
                   Lots of trial and error navigating with sidebar
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="category-lflex">
+            <div className="category-name">PLANNING</div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Does not use site for 4-year planning
+                </div>
+              </div>
+            </div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Big learning curve using Academic Planning Worksheet
+                </div>
+              </div>
+            </div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Use Academic Planning Worksheet to check requirements
                 </div>
               </div>
             </div>
@@ -316,17 +320,21 @@ function PennInTouch({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="section-rflex">
-            <div className="subsection-rheader-top">
-              WIREFRAMES
+            <div className="descrip-lflex">
+              <div className="subsection-rheader-top">
+                WIREFRAMES
+              </div>
+              <div className="project-rtext">
+                2 iterations
+              </div>
             </div>
-            <div className="project-rtext">
-              2 iterations
-            </div>
-            <div className="subsection-rheader">
-              UI DESIGN
-            </div>
-            <div className="project-rtext">
-              2 iterations
+            <div className="descrip-rflex">
+              <div className="subsection-rheader">
+                UI DESIGN
+              </div>
+              <div className="project-rtext">
+                2 iterations
+              </div>
             </div>
           </div>
         </div>
