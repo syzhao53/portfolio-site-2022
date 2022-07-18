@@ -32,6 +32,7 @@ function PennInTouch({ currPage, setCurrPage }) {
   useEffect(() => {
     setCurrPage('');
     document.title = 'PennInTouch | Sylvia Zhao';
+    // document.documentElement.style.scrollBehavior = 'auto';
     window.scrollTo(0, 0);
   }, []);
 
@@ -78,6 +79,15 @@ function PennInTouch({ currPage, setCurrPage }) {
             <circle className="dot" cx="14.5" cy="19.5" r="1.5" fill="#bdbdbd" />
             <circle className="dot" cx="14.5" cy="28.5" r="1.5" fill="#bdbdbd" />
             <circle className="dot" cx="14.5" cy="37.5" r="1.5" fill="#bdbdbd" />
+          </svg>
+          <svg className="table-icon-dark" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle id="icon-border" cx="28" cy="28" r="27" stroke="#033E57" strokeWidth="2" />
+            <rect x="19" y="18.5" width="23" height="2" rx="1" fill="#033E57" />
+            <rect x="19" y="27.5" width="23" height="2" rx="1" fill="#033E57" />
+            <rect x="19" y="36.5" width="23" height="2" rx="1" fill="#033E57" />
+            <circle className="dot" cx="14.5" cy="19.5" r="1.5" fill="#033E57" />
+            <circle className="dot" cx="14.5" cy="28.5" r="1.5" fill="#033E57" />
+            <circle className="dot" cx="14.5" cy="37.5" r="1.5" fill="#033E57" />
           </svg>
         </div>
       </div>

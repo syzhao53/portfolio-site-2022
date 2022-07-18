@@ -15,7 +15,7 @@ button {
 }
 
 html {
-  scroll-behavior: smooth
+  scroll-behavior: auto;
 }
 
 .Project {
@@ -129,13 +129,27 @@ html {
   width: 80%;
 }
 
+.table-icon-dark {
+  color: white;
+  position: absolute;
+  top: 0;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  display: none;
+}
+
 #container-floating {
   position: fixed;
   width: 2.5rem;
   height: 2.5rem;
   bottom: 2rem;
   right: 3.5rem;
-  /* background-color: burlywood; */
   z-index: 50px;
 }
 
@@ -143,6 +157,14 @@ html {
   height: 12rem;
   width: 3.75rem;
   padding: 4rem;
+}
+
+#container-floating:hover .table-icon {
+  display: none;
+}
+
+#container-floating:hover .table-icon-dark {
+  display: block;
 }
 
 #container-floating svg:hover rect {
@@ -164,7 +186,13 @@ html {
   /* border-radius: 50%; */
   position: fixed;
   z-index: 300;
+  /* transform:  scale(0); */
   cursor: pointer;
+  display: none;
+}
+
+#container-floating:hover .nds {
+  display: block;
 }
 
 .table-text6 {
@@ -1134,6 +1162,10 @@ ul {
     width: 5.5%;
   }
 
+  #arrow:hover {
+    width: 5.5%;
+  }
+  
   #work {
     width: 80%;
   }
@@ -1288,4 +1320,19 @@ ul {
     width: 85%;
     margin: auto;
   }
+
+
+.analysis {
+  margin: 0 0 5rem 0;
+  padding: 4rem 1rem 4rem 1rem;
+  margin: 1rem 0 3rem 0;
+  /* background-color: red; */
+  /* flex-wrap: wrap; */
+}
+
+
+.analysis-img {
+  width: 95%;
+  margin: auto;
+}
 }

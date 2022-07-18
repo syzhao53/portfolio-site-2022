@@ -49,7 +49,7 @@ function Home({ currPage, setCurrPage }) {
         <img id="home-illus" src={illustration} alt="landing illustration" />
       </div>
       <Link to="/#work">
-        <img id="arrow" src={Arrow} alt="landing illustration" />
+        <img id="arrow" src={Arrow} alt="arrow svg" />
       </Link>
       {/* <a href="#work">
         <img id="arrow" src={Arrow} alt="landing illustration" />
