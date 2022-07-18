@@ -89,7 +89,7 @@ function Home({ currPage, setCurrPage }) {
                 SpeechConnect
               </div>
               <div className="gcard-text">
-                Creating a customizable tablet experience for assistive communication technology
+                Creating a tablet experience for alternative communication tech
               </div>
             </div>
           </div>
@@ -110,10 +110,10 @@ function Home({ currPage, setCurrPage }) {
             <img className="grid-img" src={temp} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                Logitech (Internship Summer 2022)
+                Logitech (Internship)
               </div>
               <div className="gcard-text">
-                Visual design for company intranet pages
+                Placeholder text
               </div>
             </div>
           </div>
