@@ -51,16 +51,29 @@ body {
 }
 
 .big-header {
-  font-size: 2rem;
+  font-size: 1rem;
   text-align: left;
   margin: 10rem 0 0.75rem 0;
+
+  letter-spacing: .3px;
+  font-weight: 700;
+  color: #033E57;
   /* background-color: red; */
+}
+
+.landing-header {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 9rem 0 .75rem 0;
 }
 
 .paragraph {
   font-size: 1.125rem;
   text-align: left;
   line-height: 1.75rem;
+  /* margin-left: -3.5rem; */
+  /* margin: 0 0 1rem 0; */
+  /* color: #787878; */
   /* background-color: blue; */
 }
 
@@ -85,36 +98,47 @@ body {
 
 .NavBar {
   position: fixed;
-  padding: 2% 0 0 76%;
+  padding: 3rem 0 2.2rem 0;
+  width: 100%;
   background-color: rgb(252, 252, 252, .87);
 }
 
+.NavBar button {
+  float: right;
+  /* display: block; */
+}
+
 #leaf-icon {
-  width: 10%;
-  margin-right: 500px;
+  width: 2%;
+  float: left;
+  margin: 0 0 0 20%;
+}
+
+.logo-text {
+  float: left;
+  /* padding-top: .5rem; */
+  margin-left: .5rem;
+  font-size: 1rem;
+  font-weight: 500;
+
+  letter-spacing: .2px;
+  font-weight: 600;
+  color: #033E57;
 }
 
 .nav-row {
-  /* display: flex; */
-  margin: 6% 15% 10% 0;
-  white-space: nowrap;
+  margin: 0 18% 0 0;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .nav-button {
   border: none;
   background-color: transparent;
   font-family: 'Inter', sans-serif;
-  margin: 0 0 0 12%;
-  font-size: .875rem;
-  letter-spacing: .25px;
-  font-weight: 500;
-  color: #787878;
-}
-.nav-button-last {
-  border: none;
-  background-color: transparent;
-  font-family: 'Inter', sans-serif;
-  margin: 0 100px 0 12%;
+  margin: 0 0 0 1.75rem;
   font-size: .875rem;
   letter-spacing: .25px;
   font-weight: 500;
@@ -134,7 +158,7 @@ body {
   border: none;
   background-color: transparent;
   font-family: 'Inter', sans-serif;
-  margin: 0 0 0 1.5rem;
+  margin: 0 0 0 1.75rem;
   font-size: .875rem;
   font-weight: 500;
   letter-spacing: .25px;
@@ -158,10 +182,11 @@ body {
   flex-direction: row;
   align-items: flex-start;
   /* width: 51%; */
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: auto;
   padding: 2rem 0 0 0;
   margin-bottom: 2rem;
+  
   /* text-align: left;
   margin: 0 0 2rem 12rem; */
 }
@@ -719,6 +744,54 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {
+  .nav-row {
+    display: none;
+  }
+
+  .NavBar {
+    position: fixed;
+    padding: 5% 0 4% 0;
+    width: 100%;
+  }
+
+  #hamburger {
+    float: right;
+    margin: 0 2rem 0 0;
+    cursor: pointer;
+    width: 5%;
+  }
+  
+  .mobile-nav {
+    display: inline;
+  }
+
+  .landing {
+    width: 80%;
+  }
+
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.55rem;
+  color: #2c2c2c;
+}
+
+  .grid {
+    width: 80%;
+  }
+
+  #home-illus {
+    width: 100%;
+  }
+
+  #arrow {
+    width: 5.5%;
+  }
+
+  #work {
+    width: 80%;
+  }
+
   .project-wrap {
     display: flex;
     flex-direction: column;
@@ -848,6 +921,16 @@ ul {
   
   .category-rflex {
     margin: auto;
+  }
+
+  .lpost-it {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .rpost-it {
+    width: 10rem;
+    height: 10rem;
   }
   
   .mockup {
