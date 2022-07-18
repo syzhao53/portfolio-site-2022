@@ -7,8 +7,14 @@ import '../assets/index.css';
 import pennintouch from '../assets/pennintouch-mockup.png';
 import pithome from '../assets/pit-home.png';
 // import pitmobile from '../assets/pit-home-mobile.png';
-import pitapw from '../assets/pit-apw.png';
-import pitapwbar from '../assets/pit-apw-bar.png';
+// import pitapw from '../assets/pit-apw.png';
+// import pitapwbar from '../assets/pit-apw-bar.png';
+import pitanalysis from '../assets/pit-analysis.png';
+import pitsketches from '../assets/pit-sketches.png';
+import pitwire1 from '../assets/pit-wire-1.png';
+import pitwire2 from '../assets/pit-wire-2.png';
+import pitui1 from '../assets/pit-ui-1.png';
+import pitui2 from '../assets/pit-ui-2.png';
 import generalexp from '../assets/general-exp.png';
 import easeinfo from '../assets/ease-info.png';
 import academicplan from '../assets/academic-plan.png';
@@ -20,13 +26,12 @@ function PennInTouch({ currPage, setCurrPage }) {
   // const [lockoutUser, setLockoutUser] = useState('');
 //   const navigate = useNavigate();
 
-  console.log(currPage);
-
   const footerMessage = 'Made by Sylvia <3';
 
   useEffect(() => {
     setCurrPage('');
-    window.scrollTo(0, 0);
+    document.title = 'PennInTouch | Sylvia Zhao';
+    // window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -52,17 +57,21 @@ function PennInTouch({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="section-rflex">
-            <div className="subsection-rheader-top">
-              ROLE
+            <div className="descrip-lflex">
+              <div className="subsection-rheader-top">
+                ROLE
+              </div>
+              <div className="project-rtext">
+                UX research & design
+              </div>
             </div>
-            <div className="project-rtext">
-              UX research & design
-            </div>
-            <div className="subsection-rheader">
-              TIMELINE
-            </div>
-            <div className="project-rtext">
-              1.5 months
+            <div className="descrip-rflex">
+              <div className="subsection-rheader">
+                TIMELINE
+              </div>
+              <div className="project-rtext">
+                1.5 months
+              </div>
             </div>
           </div>
         </div>
@@ -81,7 +90,8 @@ function PennInTouch({ currPage, setCurrPage }) {
             <div className="empty">c</div>
           </div>
           <div className="cap-card-text">
-            &ldquo;Words cannot describe how terrible the current site is&rdquo; - Penn Student
+            &ldquo;Words cannot describe how terrible the current site is&rdquo;
+            <span style={{ 'font-style': 'italic' }}> &mdash; Penn Student</span>
           </div>
         </div>
         <div className="subsection-header">SURVEY</div>
@@ -193,30 +203,6 @@ function PennInTouch({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="category-flex">
-            <div className="category-name">PLANNING</div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Does not use site for 4-year planning
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Big learning curve using Academic Planning Worksheet
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Use Academic Planning Worksheet to check requirements
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="category-flex">
             <div className="category-name">NAVIGATION</div>
             <div className="post-it-row">
               <div className="lpost-it">
@@ -239,6 +225,30 @@ function PennInTouch({ currPage, setCurrPage }) {
               <div className="rpost-it">
                 <div className="post-it-text">
                   Lots of trial and error navigating with sidebar
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="category-lflex">
+            <div className="category-name">PLANNING</div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Does not use site for 4-year planning
+                </div>
+              </div>
+            </div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Big learning curve using Academic Planning Worksheet
+                </div>
+              </div>
+            </div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Use Academic Planning Worksheet to check requirements
                 </div>
               </div>
             </div>
@@ -278,20 +288,20 @@ function PennInTouch({ currPage, setCurrPage }) {
         </div>
         <ul>
           <li>
-            <div className="list-text">students generally dislike the outdated UI of PennInTouch and find that it interferes with functionality</div>
+            <div className="list-text">Students generally dislike the outdated UI of PennInTouch and find that it interferes with functionality</div>
           </li>
           <li>
-            <div className="list-text">the left sidebar navigation is too cramped and most sections go unused</div>
+            <div className="list-text">The left sidebar navigation is too cramped and most sections go unused</div>
           </li>
           <li>
-            <div className="list-text">the Academic Planning Worksheet feature is underused and is perceived the most negatively out of PennInTouch&apos;s main features</div>
+            <div className="list-text">The Academic Planning Worksheet feature is underused and is perceived the most negatively out of PennInTouch&apos;s main features</div>
           </li>
         </ul>
         <div className="project-text-low">
           From this, I formed the following guiding question to redesign the Academic Planning
           Worksheet feature.
         </div>
-        <div className="cap-card">
+        <div id="how-might-card" className="cap-card">
           <div className="cap">
             <div className="empty">c</div>
           </div>
@@ -310,33 +320,170 @@ function PennInTouch({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="section-rflex">
-            <div className="subsection-rheader-top">
-              WIREFRAMES
+            <div className="descrip-lflex">
+              <div className="subsection-rheader-top">
+                WIREFRAMES
+              </div>
+              <div className="project-rtext">
+                2 iterations
+              </div>
             </div>
-            <div className="project-rtext">
-              2 iterations
-            </div>
-            <div className="subsection-rheader">
-              UI DESIGN
-            </div>
-            <div className="project-rtext">
-              2 iterations
+            <div className="descrip-rflex">
+              <div className="subsection-rheader">
+                UI DESIGN
+              </div>
+              <div className="project-rtext">
+                2 iterations
+              </div>
             </div>
           </div>
         </div>
         <div className="subsection-header">
-          WIREFRAMES: ITERATION 1
+          ANALYSIS
         </div>
         <div className="project-text">
-          Should I put existing interface analysis here, probably, or it goes in the beginning
+          Before creating wireframes, I analyzed the existing Academic Planning Worksheet
+          in relation to the pain points mentioned during user research. From these
+          observations, I created sketches for potential solutions.
         </div>
-        <img className="project-img" src={pitapw} alt="pit-apw" />
-        <img className="project-img" src={pitapwbar} alt="pit-apw-bar" />
+      </div>
+      <div className="analysis">
+        <img className="analysis-img" src={pitanalysis} alt="pit-analysis" />
+      </div>
+      <div className="project-wrap">
+        <img className="project-img" src={pitsketches} alt="pit-sketches" />
+        <div className="subsection-header">WIREFRAMES: ITERATION 1</div>
+        <div className="project-text">
+          My solution focused on creating more intuitive way to assign courses
+          to requirements as well as a layout that would visually emphasize the different
+          categories of requirements. The following features were incorporated into the redesign:
+          <ul>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Collapsible right side panel </span>
+                for assigning courses to requirements, indicated by
+                prominently displayed tab on side; clearer than previous interaction at bottom of
+                screen and collapsible for space-efficiency
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Cards for each requirement category </span>
+                (Foundational Approaches, Sectors, Free Electives, etc.) to visually group
+                information for users and improve on pain point concerning visual clutter
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Cards for the two certifications </span>
+                (General Requirements and Major Requirements) to separate the checkpoints users
+                use to measure progress; originally styled the same as a general requirement
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Filters </span>
+                for customizing which requirement categories to view, gives user
+                control over experience and allows for more compact view eliminating
+                extra information (eg. completed categories)
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="mockup">
+        <img className="mockup-img" src={pitwire1} alt="pit-wire-1" />
+      </div>
+      <div className="project-wrap">
+        <div className="subsection-header-sec">WIREFRAMES: ITERATION 2</div>
+        <div className="project-text">
+          After receiving feedback from users on the first set of wireframes, I made changes
+          to the structure of the collapsible side panel and several minor features:
+          <ul>
+            <li>
+              <div className="list-text">Made side panel dropdown menus searchable</div>
+            </li>
+            <li>
+              <div className="list-text">
+                Changed selection of Course Category (Completed Courses, Currently Enrolled,
+                External Credit) from multiple dropdowns to single set of radio buttons in
+                side panel
+              </div>
+            </li>
+            <li>
+              <div className="list-text">Second displayed dropdown in side panel now depends on the selected radio button</div>
+            </li>
+            <li>
+              <div className="list-text">Removed certification cards (check mark icon added to cards in final UI to indicate certifications)</div>
+            </li>
+            <li>
+              <div className="list-text">Made all cards for requirenent categories collapsible</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="mockup">
+        <img className="mockup-img" src={pitwire2} alt="pit-wire-2" />
+      </div>
+      <div className="project-wrap">
+        <div className="subsection-header-sec">UI DESIGN: ITERATION 1</div>
+        <div className="project-text">
+          After finalizing wireframes, I styled the design with the goal of modernizing the
+          interface while still keeping Penn&apos;s core branding in mind. The first iteration
+          focused on the the following key style choices:
+          <ul>
+            <li>
+              <div className="list-text">Lighter color palette overall for clean, modern feel</div>
+            </li>
+            <li>
+              <div className="list-text">
+                Fonts from Penn&apos;s core branding (EB Garamond and Roboto)
+              </div>
+            </li>
+            <li>
+              <div className="list-text">Selective use of main dark blue color from original interface to emphasize features</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="mockup">
+        <img className="mockup-img" src={pitui1} alt="pit-ui-1" />
+      </div>
+      <div className="project-wrap">
+        <div className="subsection-header-sec">UI DESIGN: ITERATION 2</div>
+        <div className="project-text">
+          Based on further user feedback, the second iteration aimed to improve the cohesiveness
+          of the design:
+          <ul>
+            <li>
+              <div className="list-text">Changed all type to sans-serif font (Proxima Nova)</div>
+            </li>
+            <li>
+              <div className="list-text">
+                Subtle color added to left sidebar to match rest of design
+              </div>
+            </li>
+            <li>
+              <div className="list-text">Lightened and decreased size of bubbles next to course names</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="mockup">
+        <img className="mockup-img" src={pitui2} alt="pit-ui-2" />
+      </div>
+      <div className="project-wrap">
+        <div className="section-header">Final Protoype</div>
+        <div className="project-text">
+          add link to figma or embed? or screen record, add actual device mockups?
+        </div>
+        <div className="section-header">Reflections</div>
+        <div className="project-text">
+          reflection statements
+        </div>
       </div>
       <div className="footer">{footerMessage}</div>
     </div>
-    // <button className="button" type="button" onClick={goToProject}>View my work</button>
-    // TODO: ADD FLOATING CARAT ARROW
   );
 }
 

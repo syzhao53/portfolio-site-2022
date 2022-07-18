@@ -8,6 +8,7 @@ import illustration from '../assets/landing-illustration.png';
 import Arrow from '../assets/arrow.svg';
 import meetup from '../assets/meetup-mockup.png';
 import pennintouch from '../assets/pennintouch-mockup.png';
+import speechconnect from '../assets/speechconnect-mockup.png';
 import temp from '../assets/temp-mockup.png';
 import NavBar from './NavBar';
 
@@ -15,8 +16,6 @@ function Home({ currPage, setCurrPage }) {
   // const [error, setError] = useState({ message: '' });
   // const [lockoutUser, setLockoutUser] = useState('');
   const navigate = useNavigate();
-
-  console.log(currPage);
 
   const goToProject = (name) => {
     if (name === 'meetup') {
@@ -31,6 +30,7 @@ function Home({ currPage, setCurrPage }) {
   useEffect(() => {
     setCurrPage('work');
     window.scrollTo(0, 0);
+    document.title = 'Sylvia Zhao';
   }, []);
 
   return (
@@ -43,7 +43,7 @@ function Home({ currPage, setCurrPage }) {
         <div className="paragraph">
           UX & Visual Designer. Student in Cognitive & Computer Science at UPenn.
           <br />
-          Designing for PennApps & Wharton MUSE. Recent PM Intern for Logitech Design Ops.
+          Designing for PennApps & Wharton MUSE. Recent Design Ops Intern at Logitech.
         </div>
         <img id="home-illus" src={illustration} alt="landing illustration" />
       </div>
@@ -61,7 +61,7 @@ function Home({ currPage, setCurrPage }) {
                 Meetup
               </div>
               <div className="gcard-text">
-                Improving the scheduling of group meetings on mobile & web
+                Improving group meeting scheduling on mobile & web
               </div>
             </div>
           </div>
@@ -72,7 +72,31 @@ function Home({ currPage, setCurrPage }) {
                 PennInTouch
               </div>
               <div className="gcard-text">
-                Redesigning the University of Pennsylvania&apos;s academic planning & registration site
+                Redesigning UPenn&apos;s academic planning & registration site
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="grid-row">
+          <div className="gcard-lwrap">
+            <img className="grid-img" src={speechconnect} alt="speechconnect mockup" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                SpeechConnect
+              </div>
+              <div className="gcard-text">
+                Creating a customizable tablet experience for assistive communication technology
+              </div>
+            </div>
+          </div>
+          <div className="gcard-rwrap">
+            <img className="grid-img" src={temp} alt="temp mockup" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                Chapter
+              </div>
+              <div className="gcard-text">
+                Placeholder text
               </div>
             </div>
           </div>
@@ -82,10 +106,10 @@ function Home({ currPage, setCurrPage }) {
             <img className="grid-img" src={temp} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                Meetup
+                Logitech (Internship Summer 2022)
               </div>
               <div className="gcard-text">
-                How might we streamline the process of scheduling group meetings?
+                Visual design for company intranet pages
               </div>
             </div>
           </div>
@@ -93,34 +117,10 @@ function Home({ currPage, setCurrPage }) {
             <img className="grid-img" src={temp} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                PennInTouch
+                Personal Work
               </div>
               <div className="gcard-text">
-                How might we streamline the process of scheduling group meetings?
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="grid-row">
-          <div className="gcard-lwrap">
-            <img className="grid-img" src={temp} alt="temp mockup" />
-            <div className="gcard-label">
-              <div className="gcard-heading">
-                Meetup
-              </div>
-              <div className="gcard-text">
-                How might we streamline the process of scheduling group meetings?
-              </div>
-            </div>
-          </div>
-          <div className="gcard-rwrap">
-            <img className="grid-img" src={temp} alt="temp mockup" />
-            <div className="gcard-label">
-              <div className="gcard-heading">
-                PennInTouch
-              </div>
-              <div className="gcard-text">
-                How might we streamline the process of scheduling group meetings?
+                Placeholder text
               </div>
             </div>
           </div>
