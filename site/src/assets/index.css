@@ -14,16 +14,12 @@ button {
   color: #000000;
 }
 
-/* html {
+html {
   scroll-behavior: smooth
-} */
+}
 
 .Project {
   font-size: 1rem;
-}
-
-a {
-
 }
 
 #home-illus {
@@ -62,7 +58,6 @@ a {
   font-size: 1.05rem;
   text-align: left;
   margin: 10rem 0 0.75rem 4.8rem;
-
   letter-spacing: .3px;
   font-weight: 600;
   color: #033E57;
@@ -104,54 +99,6 @@ a {
   cursor: pointer;
 }
 
-.table-container {
-  position: fixed;
-  bottom: 2.5rem;
-  right: 3rem;
-  height: 5%;
-  width: 3%;
-  /* background-color: red; */
-}
-
-.table-container:hover {
-  height: 40%;
-  width: 20%;
-}
-
-.table-text-wrap {
-  position: fixed;
-  bottom: 6rem;
-  right: 3rem;
-  text-align: right;
-  /* background-color: rgb(252, 252, 255, .96); */
-  /* padding: 1rem 1.5rem 1rem 3rem; */
-  /* background-color: #f4f4fb; */
-  /* background-color: burlywood; */
-  /* border-color: #eaeaea;
-  border-style: solid;
-  border-width: 1px; */
-  border-radius: 7px;
-}
-
-.table-icon {
-  position: fixed;
-  bottom: 2rem;
-  right: 3rem;
-  width: 3%;
-}
-
-.table-text {
-  margin: 1rem 0 1rem 0;
-  font-size: .9rem;
-
-  font-size: .9rem;
-  letter-spacing: .4px;
-  font-weight: 500;
-  color: #bdbdbd;
-  /* bottom: 2rem;
-  right: 3rem; */
-}
-
 
 /* TABLE ANIMATION TEST */
 #floating-button{
@@ -163,6 +110,10 @@ a {
   right: 3rem;
   cursor: pointer;
 }
+
+/* rect:hover {
+  fill: #033E57;
+} */
 
 .table-icon {
   color: white;
@@ -178,7 +129,7 @@ a {
   width: 80%;
 }
 
-#container-floating{
+#container-floating {
   position: fixed;
   width: 2.5rem;
   height: 2.5rem;
@@ -188,32 +139,23 @@ a {
   z-index: 50px;
 }
 
-#container-floating:hover{
-  height: 11rem;
-  width: 4.5rem;
+#container-floating:hover {
+  height: 12rem;
+  width: 3.75rem;
   padding: 4rem;
 }
 
-#container-floating:hover .table-icon{
-  /* animation: plus-in 0.15s linear;
-  animation-fill-mode: forwards; */
+#container-floating svg:hover rect {
+  fill: #033E57;
 }
-/* 
-.edit {
-  position: absolute;
-  top: 0;
-  display: block;
-  bottom: 0;
-  left: 0;
-  display: block;
-  right: 0;
-  padding: 0;
-  opacity: 0;
-  margin: auto;
-  line-height: 65px;
-  transform: rotateZ(-70deg);
-  transition: all 0.3s;
-} */
+
+#container-floating svg:hover #icon-border {
+  stroke: #033E57;
+}
+
+#container-floating svg:hover .dot {
+  fill: #033E57;
+}
 
 .nds {
   /* width: 40px;
@@ -1024,6 +966,10 @@ ul {
 }
 
 @media only screen and (max-width: 800px) {
+  #container-floating {
+    display: none;
+  }
+
   .nav-row {
     display: none;
   }
@@ -1057,13 +1003,18 @@ ul {
   #sidebar-close-icon {
     width: 8%;
     height: 8%;
-    padding-left: 78%;
+    margin-left: 78%;
     margin-bottom: 10%;
+    padding: .05rem;
   }
 
   #sidebar-close-icon:hover {
     cursor: pointer;
   }
+
+  /* #sidebar-close-icon svg:hover path {
+    fill: #033E57;
+  } */
 
   path:hover {
     fill: #033E57;
@@ -1096,19 +1047,19 @@ ul {
     background-color: transparent;
     font-family: 'Inter', sans-serif;
     margin: 0 0 1.75rem 1rem;
-    font-size: 1rem;
+    font-size: .95rem;
     letter-spacing: .25px;
     font-weight: 500;
     color: #787878;
 
     border-radius: 7px;
-    padding: .75rem 1rem .75rem 1rem;
+    padding: .7rem 1rem .7rem 1rem;
   }
   
   .sidebar-button:hover {
     color: #000000;
     cursor: pointer;
-    background-color: #efeff7;
+    background-color: #f1f1f8;
   }
   
   .sidebar-button-bold {
@@ -1116,7 +1067,7 @@ ul {
     background-color: transparent;
     font-family: 'Inter', sans-serif;
     margin: 0 0 1.75rem 1rem;
-    font-size: 1rem;
+    font-size: .95rem;
     font-weight: 500;
     letter-spacing: .25px;
     /* text-decoration: underline;
@@ -1133,7 +1084,7 @@ ul {
 
     background-color: #f1f1f8;
     border-radius: 7px;
-    padding: .75rem 1rem .75rem 1rem;
+    padding: .7rem 1rem .7rem 1rem;
     /* padding: 5% 64% 5% 5%; */
   }
   
