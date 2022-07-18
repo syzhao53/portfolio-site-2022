@@ -26,7 +26,7 @@ function Meetup({ currPage, setCurrPage }) {
   // const [lockoutUser, setLockoutUser] = useState('');
 //   const navigate = useNavigate();
 
-  const footerMessage = 'Made by Sylvia <3';
+  const footerMessage = 'Made by Sylvia';
 
   useEffect(() => {
     setCurrPage('');

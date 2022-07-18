@@ -25,7 +25,7 @@ function Home({ currPage, setCurrPage }) {
     }
   };
 
-  const footerMessage = 'Made by Sylvia <3';
+  const footerMessage = 'Made by Sylvia';
 
   useEffect(() => {
     setCurrPage('work');
@@ -38,19 +38,19 @@ function Home({ currPage, setCurrPage }) {
       <NavBar currPage={currPage} />
       <div className="landing">
         <div className="big-header">
-          Hi, I&apos;m Sylvia Zhao
+          HI, I&apos;M SYLVIA ZHAO
         </div>
         <div className="paragraph">
-          UX & Visual Designer. Student in Cognitive & Computer Science at UPenn.
+          UX & Visual Designer. Cognitive Science & Computer Science at UPenn
           <br />
-          Designing for PennApps & Wharton MUSE. Recent Design Ops Intern at Logitech.
+          PennApps Co-Head of Creative. Recent Design Ops Intern at Logitech
         </div>
         <img id="home-illus" src={illustration} alt="landing illustration" />
       </div>
       {/* <a href="#work">
         <img id="arrow" src={Arrow} alt="landing illustration" />
       </a> */}
-      <img id="arrow" src={Arrow} alt="landing illustration" />
+      <img id="arrow" src={Arrow} alt="arrow svg" />
       <div id="work">Work</div>
       <div className="grid">
         <div className="grid-row">

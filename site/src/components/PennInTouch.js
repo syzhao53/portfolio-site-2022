@@ -26,7 +26,7 @@ function PennInTouch({ currPage, setCurrPage }) {
   // const [lockoutUser, setLockoutUser] = useState('');
 //   const navigate = useNavigate();
 
-  const footerMessage = 'Made by Sylvia <3';
+  const footerMessage = 'Made by Sylvia';
 
   useEffect(() => {
     setCurrPage('');
@@ -39,7 +39,7 @@ function PennInTouch({ currPage, setCurrPage }) {
       <NavBar currPage={currPage} />
       <div className="project-wrap">
         <div className="project-header">PennInTouch</div>
-        <div className="project-info">Redesigning the University of Pennsylvania&apos;s academic planning & registration site, PennInTouch</div>
+        <div className="project-info">Redesigning UPenn&apos;s academic planning & registration site, PennInTouch</div>
         <img className="project-img" src={pennintouch} alt="pennintouch mockup" />
         <div className="section-flex">
           <div className="section-lflex">
