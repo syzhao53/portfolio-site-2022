@@ -69,8 +69,10 @@ function NavBar({ currPage }) {
         </div>
       </div>
       <div className="nav-row">
-        <img id="leaf-icon" src={leaf} alt="leaf icon" />
-        <div className="logo-text">SZ</div>
+        <img id="leaf-icon" src={leaf} alt="leaf icon"  onClick={async () => {navigate('/');}}/>
+        <div className="logo-text"  onClick={async () => {navigate('/');}}>
+          SZ
+        </div>
         <button
           type="button"
           className="nav-button"

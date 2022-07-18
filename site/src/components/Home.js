@@ -41,9 +41,9 @@ function Home({ currPage, setCurrPage }) {
           HI, I&apos;M SYLVIA ZHAO
         </div>
         <div className="paragraph">
-          UX & Visual Designer. Student in Cognitive & Computer Science at UPenn.
+          UX & Visual Designer. Cognitive Science & Computer Science at UPenn
           <br />
-          Designing for PennApps & Wharton MUSE. Recent Design Ops Intern at Logitech.
+          PennApps Co-Head of Creative. Recent Design Ops Intern at Logitech
         </div>
         <img id="home-illus" src={illustration} alt="landing illustration" />
       </div>
