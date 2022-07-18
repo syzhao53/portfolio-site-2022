@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-site-2022/static/css/main.e89644f6.css",
-    "main.js": "/portfolio-site-2022/static/js/main.62629706.js",
+    "main.css": "/portfolio-site-2022/static/css/main.cfae1f2e.css",
+    "main.js": "/portfolio-site-2022/static/js/main.b549e694.js",
     "static/js/787.37faa4c4.chunk.js": "/portfolio-site-2022/static/js/787.37faa4c4.chunk.js",
     "static/media/pit-ui-2.png": "/portfolio-site-2022/static/media/pit-ui-2.821f46984e7dad6d3fd0.png",
     "static/media/pit-ui-1.png": "/portfolio-site-2022/static/media/pit-ui-1.88b16f612a5784133d83.png",
@@ -22,12 +22,12 @@
     "index.html": "/portfolio-site-2022/index.html",
     "static/media/arrow.svg": "/portfolio-site-2022/static/media/arrow.6913a95c46e20a8824d643ab4fb6ee71.svg",
     "static/media/hamburger.svg": "/portfolio-site-2022/static/media/hamburger.6e4b8a13830a9b4834249fc89a5bbc06.svg",
-    "main.e89644f6.css.map": "/portfolio-site-2022/static/css/main.e89644f6.css.map",
-    "main.62629706.js.map": "/portfolio-site-2022/static/js/main.62629706.js.map",
+    "main.cfae1f2e.css.map": "/portfolio-site-2022/static/css/main.cfae1f2e.css.map",
+    "main.b549e694.js.map": "/portfolio-site-2022/static/js/main.b549e694.js.map",
     "787.37faa4c4.chunk.js.map": "/portfolio-site-2022/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e89644f6.css",
-    "static/js/main.62629706.js"
+    "static/css/main.cfae1f2e.css",
+    "static/js/main.b549e694.js"
   ]
 }
