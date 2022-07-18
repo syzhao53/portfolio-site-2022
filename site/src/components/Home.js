@@ -2,6 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable */
 import React, { useEffect } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
 import illustration from '../assets/landing-illustration.png';
@@ -41,16 +42,19 @@ function Home({ currPage, setCurrPage }) {
           HI, I&apos;M SYLVIA ZHAO
         </div>
         <div className="paragraph">
-          UX & Visual Designer. Cognitive Science & Computer Science at UPenn
+          UX & Visual Designer &middot; Senior in Cognitive & Computer Science at UPenn
           <br />
-          PennApps Co-Head of Creative. Recent Design Ops Intern at Logitech
+          PennApps Co-Head of Creative &middot; Recent Design Ops Intern at Logitech
         </div>
         <img id="home-illus" src={illustration} alt="landing illustration" />
       </div>
+      <Link to="/#work">
+        <img id="arrow" src={Arrow} alt="arrow svg" />
+      </Link>
       {/* <a href="#work">
         <img id="arrow" src={Arrow} alt="landing illustration" />
       </a> */}
-      <img id="arrow" src={Arrow} alt="arrow svg" />
+      {/* <img id="arrow" src={Arrow} alt="arrow svg" /> */}
       <div id="work">Work</div>
       <div className="grid">
         <div className="grid-row">
@@ -85,7 +89,7 @@ function Home({ currPage, setCurrPage }) {
                 SpeechConnect
               </div>
               <div className="gcard-text">
-                Creating a customizable tablet experience for assistive communication technology
+                Creating a tablet experience for alternative communication tech
               </div>
             </div>
           </div>
@@ -106,10 +110,10 @@ function Home({ currPage, setCurrPage }) {
             <img className="grid-img" src={temp} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                Logitech (Internship Summer 2022)
+                Logitech (Internship)
               </div>
               <div className="gcard-text">
-                Visual design for company intranet pages
+                Placeholder text
               </div>
             </div>
           </div>
