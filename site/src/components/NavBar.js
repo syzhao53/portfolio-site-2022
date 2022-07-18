@@ -26,9 +26,8 @@ function NavBar({ currPage }) {
         <path d="M21 21L0.999998 1" stroke="#787878" stroke-width="2" stroke-linecap="round"/>
       </svg> */}
       <svg id="sidebar-close-icon" onClick={async () => {toggleMenu();}} width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1.70711 0.292892C1.31658 -0.0976315 0.683416 -0.0976314 0.292891 0.292893C-0.0976328 0.683416 -0.0976328 1.31658 0.292892 1.70711L9.58579 11L0.292893 20.2929C-0.0976311 20.6834 -0.0976311 21.3166 0.292893 21.7071C0.683418 22.0976 1.31658 22.0976 1.70711 21.7071L11 12.4142L20.2929 21.7071C20.6834 22.0976 21.3166 22.0976 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L12.4142 11L21.7071 1.70711C22.0976 1.31658 22.0976 0.683416 21.7071 0.292893C21.3166 -0.0976313 20.6834 -0.0976312 20.2929 0.292893L11 9.58578L1.70711 0.292892Z" fill="#787878"/>
-</svg>
-      <img id="sidebar-leaf-icon" src={LeafSVG} alt="leaf icon" onClick={async () => {navigate('/');}}/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.70711 0.292892C1.31658 -0.0976315 0.683416 -0.0976314 0.292891 0.292893C-0.0976328 0.683416 -0.0976328 1.31658 0.292892 1.70711L9.58579 11L0.292893 20.2929C-0.0976311 20.6834 -0.0976311 21.3166 0.292893 21.7071C0.683418 22.0976 1.31658 22.0976 1.70711 21.7071L11 12.4142L20.2929 21.7071C20.6834 22.0976 21.3166 22.0976 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L12.4142 11L21.7071 1.70711C22.0976 1.31658 22.0976 0.683416 21.7071 0.292893C21.3166 -0.0976313 20.6834 -0.0976312 20.2929 0.292893L11 9.58578L1.70711 0.292892Z" fill="#787878"/>
+      </svg>
       <button
         type="button"
         className={currPage === 'work' ? 'sidebar-button-bold' : 'sidebar-button'}
@@ -63,6 +62,7 @@ function NavBar({ currPage }) {
     <div className="NavBar">
       <div className="mobile-nav">
         <div className="mobile-nav-row">
+          <img id="mobile-leaf-icon" src={LeafSVG} alt="leaf icon" onClick={async () => {navigate('/');}}/>
           <img id="hamburger" src={Hamburger} style={{ display: menuToggled ? 'none' : 'inline' }} alt="hamburger menu" onClick={async () => toggleMenu()} />
         </div>
       </div>
