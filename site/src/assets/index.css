@@ -10,6 +10,10 @@ body {
   /* line-height: 35px; */
 }
 
+button {
+  color: #000000;
+}
+
 /* html {
   scroll-behavior: smooth
 } */
@@ -18,8 +22,12 @@ body {
   font-size: 1rem;
 }
 
+a {
+
+}
+
 #home-illus {
-  width: 80%;
+  width: 82%;
   align-self: center;
   margin: 2rem 0 3rem 0;
   /* border-color: purple; */
@@ -27,13 +35,13 @@ body {
 
 #arrow {
   width: 2.5%;
-  margin: 0 0 4rem 0;
+  margin: 0 0 2rem 0;
   animation: bounce 2s infinite;
 }
 
-/* #arrow:hover {
+#arrow:hover {
   width: 2.6%;
-} */
+}
 
 @keyframes bounce {
   50% {
@@ -94,6 +102,235 @@ body {
   border-width: 1px;
   border-color: #7a8e91;
   cursor: pointer;
+}
+
+.table-container {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 3rem;
+  height: 5%;
+  width: 3%;
+  /* background-color: red; */
+}
+
+.table-container:hover {
+  height: 40%;
+  width: 20%;
+}
+
+.table-text-wrap {
+  position: fixed;
+  bottom: 6rem;
+  right: 3rem;
+  text-align: right;
+  /* background-color: rgb(252, 252, 255, .96); */
+  /* padding: 1rem 1.5rem 1rem 3rem; */
+  /* background-color: #f4f4fb; */
+  /* background-color: burlywood; */
+  /* border-color: #eaeaea;
+  border-style: solid;
+  border-width: 1px; */
+  border-radius: 7px;
+}
+
+.table-icon {
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  width: 3%;
+}
+
+.table-text {
+  margin: 1rem 0 1rem 0;
+  font-size: .9rem;
+
+  font-size: .9rem;
+  letter-spacing: .4px;
+  font-weight: 500;
+  color: #bdbdbd;
+  /* bottom: 2rem;
+  right: 3rem; */
+}
+
+
+/* TABLE ANIMATION TEST */
+#floating-button{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  cursor: pointer;
+}
+
+.table-icon {
+  color: white;
+  position: absolute;
+  top: 0;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+}
+
+#container-floating{
+  position: fixed;
+  width: 2.5rem;
+  height: 2.5rem;
+  bottom: 2rem;
+  right: 3.5rem;
+  /* background-color: burlywood; */
+  z-index: 50px;
+}
+
+#container-floating:hover{
+  height: 11rem;
+  width: 4.5rem;
+  padding: 4rem;
+}
+
+#container-floating:hover .table-icon{
+  /* animation: plus-in 0.15s linear;
+  animation-fill-mode: forwards; */
+}
+/* 
+.edit {
+  position: absolute;
+  top: 0;
+  display: block;
+  bottom: 0;
+  left: 0;
+  display: block;
+  right: 0;
+  padding: 0;
+  opacity: 0;
+  margin: auto;
+  line-height: 65px;
+  transform: rotateZ(-70deg);
+  transition: all 0.3s;
+} */
+
+.nds {
+  /* width: 40px;
+  height: 40px; */
+  width: 15%;
+  /* border-radius: 50%; */
+  position: fixed;
+  z-index: 300;
+  cursor: pointer;
+}
+
+.table-text6 {
+  right: 3.5rem;
+  bottom: 7rem;
+  animation-delay: 0.08s;
+  animation: bounce-out-nds 0.2s linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.table-text5 {
+  right: 3.5rem;
+  bottom: 9.75rem;
+  animation-delay: 0.15s;
+  animation: bounce-out-nds 0.2s linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.table-text4 {
+  right: 3.5rem;
+  bottom: 12.5rem;
+  animation-delay: 0.18s;
+  animation: bounce-out-nds 0.2s linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.table-text3 {
+  right: 3.5rem;
+  bottom: 15.25rem;
+  animation-delay: 0.21s;
+  animation: bounce-out-nds 0.2s linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.table-text2 {
+  right: 3.5rem;
+  bottom: 18rem;
+  animation-delay: 0.24s;
+  animation: bounce-out-nds 0.2s linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.table-text1 {
+  right: 3.5rem;
+  bottom: 20.75rem;
+  animation-delay: 0.27s;
+  animation: bounce-out-nds 0.2s linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+#container-floating:hover .nds {
+  animation: bounce-nds 0.2s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bounce-nds{
+    from {opacity: 0;}
+    to {opacity: 100%;}
+}
+
+@keyframes bounce-out-nds{
+    from {opacity: 100%;}
+    to {opacity: 0;}
+}
+
+#container-floating:hover .table-text6 {
+  animation-delay: 0.08s;
+}
+#container-floating:hover .table-text5 {
+  animation-delay: 0.15s;
+}
+#container-floating:hover .table-text4 {
+  animation-delay: 0.18s;
+}
+
+#container-floating:hover .table-text3 {
+  animation-delay: 0.21s;
+}
+#container-floating:hover .table-text2 {
+  animation-delay: 0.24s;
+}
+#container-floating:hover .table-text1 {
+  animation-delay: 0.27s;
+}
+
+.letter {
+  font-size: .9rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  text-align: right;
+  letter-spacing: .4px;
+  font-weight: 500;
+  color: #787878;
+}
+
+.letter:hover {
+  font-weight: 600;
+  color: #033E57;
 }
 
 .NavBar {
@@ -203,7 +440,7 @@ body {
   /* width: 51%; */
   font-size: 1.25rem;
   margin: auto;
-  padding: 2rem 0 0 0;
+  padding: 6.25rem 0 0 0;
   margin-bottom: 2rem;
   
   /* text-align: left;
@@ -350,7 +587,8 @@ body {
 .section-header {
   font-size: 1.25rem;
   text-align: left;
-  margin: 1rem 0 1.5rem 0;
+  margin: 0 0 1.5rem 0;
+  padding-top: 7rem;
 }
 
 .subsection-header {
@@ -377,7 +615,7 @@ body {
   letter-spacing: .4px;
   font-weight: 600;
   text-align: left;
-  margin: 3rem 0 0.5rem 1rem;
+  margin: 9rem 0 0.5rem 1rem;
   color: #033E57;
 }
 
@@ -419,7 +657,7 @@ body {
   text-align: left;
   line-height: 1.55rem;
   color: #2c2c2c;
-  margin: 0 7rem 6rem 0;
+  margin: 0 7rem 0 0;
 }
 
 .project-rtext {
@@ -445,6 +683,16 @@ ul {
 }
 
 .project-img {
+  width: 100%;
+  border-radius: 7px;
+  margin: 0 0 0 0;
+  border-color: #eaeaea;
+  border-style: solid;
+  border-width: 1px;
+  /* box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.03); */
+}
+
+#project-sketches {
   width: 100%;
   border-radius: 7px;
   margin: 0 0 6rem 0;
@@ -486,7 +734,7 @@ ul {
 }
 
 #how-might-card {
-  margin: 1.5rem 0 6rem 0;
+  margin: 1.5rem 0 0 0;
 }
 
 .how-might-we {
@@ -726,6 +974,14 @@ ul {
   margin: auto;
 }
 
+#last-mockup {
+  background-color: #F4FAFF;
+  display: flex;
+  flex-direction: row;
+  padding: 4rem 2rem 4rem 4rem;
+  margin: 0 0 0 0;
+}
+
 .mockup {
   background-color: #F4FAFF;
   display: flex;
@@ -814,7 +1070,7 @@ ul {
   }
 
   .sidebar {
-    background-color: rgb(252, 252, 252, .96);
+    background-color: rgb(252, 252, 255, .96);
     /* background-color: #f4f4fb; */
     /* background-color: burlywood; */
     border-left-color: #f3f3f3;

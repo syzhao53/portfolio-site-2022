@@ -2,6 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable */
 import React, { useEffect } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
 import illustration from '../assets/landing-illustration.png';
@@ -47,10 +48,13 @@ function Home({ currPage, setCurrPage }) {
         </div>
         <img id="home-illus" src={illustration} alt="landing illustration" />
       </div>
+      <Link to="/#work">
+        <img id="arrow" src={Arrow} alt="landing illustration" />
+      </Link>
       {/* <a href="#work">
         <img id="arrow" src={Arrow} alt="landing illustration" />
       </a> */}
-      <img id="arrow" src={Arrow} alt="arrow svg" />
+      {/* <img id="arrow" src={Arrow} alt="arrow svg" /> */}
       <div id="work">Work</div>
       <div className="grid">
         <div className="grid-row">

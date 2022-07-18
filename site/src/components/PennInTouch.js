@@ -2,6 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 
 import React, { useEffect } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 // import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
 import pennintouch from '../assets/pennintouch-mockup.png';
@@ -24,26 +25,69 @@ import NavBar from './NavBar';
 function PennInTouch({ currPage, setCurrPage }) {
   // const [error, setError] = useState({ message: '' });
   // const [lockoutUser, setLockoutUser] = useState('');
-//   const navigate = useNavigate();
+//   const navigate = useNavigate();;
 
   const footerMessage = 'Made by Sylvia';
 
   useEffect(() => {
     setCurrPage('');
     document.title = 'PennInTouch | Sylvia Zhao';
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="PennInTouch">
       <NavBar currPage={currPage} />
+      <div id="container-floating">
+        <div className="table-text1 nds">
+          <Link to="/pennintouch#overview">
+            <p className="letter">OVERVIEW</p>
+          </Link>
+        </div>
+        <div className="table-text2 nds">
+          <Link to="/pennintouch#existing-interface">
+            <p className="letter">EXISTING INTERFACE</p>
+          </Link>
+        </div>
+        <div className="table-text3 nds">
+          <Link to="/pennintouch#user-research">
+            <p className="letter">USER RESEARCH</p>
+          </Link>
+        </div>
+        <div className="table-text4 nds">
+          <Link to="/pennintouch#solution">
+            <p className="letter">SOLUTION</p>
+          </Link>
+        </div>
+        <div className="table-text5 nds">
+          <Link to="/pennintouch#prototype">
+            <p className="letter">PROTOTYPE</p>
+          </Link>
+        </div>
+        <div className="table-text6 nds">
+          <Link to="/pennintouch#reflections">
+            <p className="letter">REFLECTIONS</p>
+          </Link>
+        </div>
+        <div id="floating-button">
+          <svg className="table-icon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="28" cy="28" r="27" stroke="#bdbdbd" strokeWidth="2" />
+            <rect x="19" y="18.5" width="23" height="2" rx="1" fill="#bdbdbd" />
+            <rect x="19" y="27.5" width="23" height="2" rx="1" fill="#bdbdbd" />
+            <rect x="19" y="36.5" width="23" height="2" rx="1" fill="#bdbdbd" />
+            <circle cx="14.5" cy="19.5" r="1.5" fill="#bdbdbd" />
+            <circle cx="14.5" cy="28.5" r="1.5" fill="#bdbdbd" />
+            <circle cx="14.5" cy="37.5" r="1.5" fill="#bdbdbd" />
+          </svg>
+        </div>
+      </div>
       <div className="project-wrap">
         <div className="project-header">PennInTouch</div>
         <div className="project-info">Redesigning UPenn&apos;s academic planning & registration site, PennInTouch</div>
         <img className="project-img" src={pennintouch} alt="pennintouch mockup" />
         <div className="section-flex">
           <div className="section-lflex">
-            <div className="section-header">Overview</div>
+            <div className="section-header" id="overview">Overview</div>
             <div className="project-ltext">
               The University of Pennsylvania uses PennInTouch as its academic
               planning and course registration site. Students have constantly
@@ -75,7 +119,7 @@ function PennInTouch({ currPage, setCurrPage }) {
             </div>
           </div>
         </div>
-        <div className="section-header">Existing Interface</div>
+        <div className="section-header" id="existing-interface">Existing Interface</div>
         <div className="project-text">
           The current PennInTouch site uses a left sidebar as its main navigation and
           has a text heavy interface. For the site&apos;s main purpose of academic planning
@@ -84,7 +128,7 @@ function PennInTouch({ currPage, setCurrPage }) {
           Schedules features.
         </div>
         <img className="project-img" src={pithome} alt="pit-home" />
-        <div className="section-header"> User Research</div>
+        <div className="section-header" id="user-research"> User Research</div>
         <div className="cap-card">
           <div className="cap">
             <div className="empty">c</div>
@@ -312,7 +356,7 @@ function PennInTouch({ currPage, setCurrPage }) {
         </div>
         <div className="section-flex">
           <div className="section-lflex">
-            <div className="section-header">Solution</div>
+            <div className="section-header" id="solution">Solution</div>
             <div className="project-ltext">
               For the redesign, I focused on the interaction of assigning specific
               courses to fulfill a requirement since this was a pain point discussed
@@ -351,7 +395,7 @@ function PennInTouch({ currPage, setCurrPage }) {
         <img className="analysis-img" src={pitanalysis} alt="pit-analysis" />
       </div>
       <div className="project-wrap">
-        <img className="project-img" src={pitsketches} alt="pit-sketches" />
+        <img id="project-sketches" src={pitsketches} alt="pit-sketches" />
         <div className="subsection-header">WIREFRAMES: ITERATION 1</div>
         <div className="project-text">
           My solution focused on creating more intuitive way to assign courses
@@ -469,15 +513,15 @@ function PennInTouch({ currPage, setCurrPage }) {
           </ul>
         </div>
       </div>
-      <div className="mockup">
+      <div id="last-mockup">
         <img className="mockup-img" src={pitui2} alt="pit-ui-2" />
       </div>
       <div className="project-wrap">
-        <div className="section-header">Final Protoype</div>
+        <div className="section-header" id="prototype">Final Protoype</div>
         <div className="project-text">
           add link to figma or embed? or screen record, add actual device mockups?
         </div>
-        <div className="section-header">Reflections</div>
+        <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
           reflection statements
         </div>
