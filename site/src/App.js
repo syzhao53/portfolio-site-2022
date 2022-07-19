@@ -10,8 +10,8 @@ import Home from './components/Home';
 import Project from './components/Project';
 import Meetup from './components/Meetup';
 import PennInTouch from './components/PennInTouch';
-import Scroll from './components/Scroll';
-
+import Resume from './components/Resume';
+import About from './components/About';
 
 function App() {
   const [currPage, setCurrPage] = useState('home');
@@ -28,7 +28,8 @@ function App() {
       {/* <Scroll> */}
         <Routes>
           <Route exact path="/" element={<Home currPage={currPage} setCurrPage={setCurrPage} />} />
-          <Route exact path="/project" element={<Project currPage={currPage} setCurrPage={setCurrPage} />} />
+          <Route exact path="/resume" element={<Resume currPage={currPage} setCurrPage={setCurrPage} />} />
+          <Route exact path="/about" element={<About currPage={currPage} setCurrPage={setCurrPage} />} />
           <Route exact path="/meetup" element={<Meetup currPage={currPage} setCurrPage={setCurrPage} />} />
           <Route exact path="/pennintouch" element={<PennInTouch currPage={currPage} setCurrPage={setCurrPage} />} />
         </Routes>

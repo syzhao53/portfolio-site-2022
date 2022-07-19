@@ -43,12 +43,12 @@ function NavBar({ currPage }) {
         </button>
         <button
           type="button"
-          className="sidebar-button"
+          className={currPage === 'about' ? 'sidebar-button-bold' : 'sidebar-button'}
           onClick={async () => {
-            navigate('/project');
+            navigate('/about');
           }}
         >
-          CONTACT
+          ABOUT
         </button>
     </div>
   );
@@ -66,23 +66,23 @@ function NavBar({ currPage }) {
         <div id="logo">
           <img id="leaf-icon" src={Leaf} alt="leaf icon" onClick={async () => {navigate('/');}}/>
           <div className="logo-text"  onClick={async () => {navigate('/');}}>
-            SZ
+            SYZ
           </div>
         </div>
         <button
           type="button"
-          className="nav-button"
+          className={currPage === 'about' ? 'nav-button-bold' : 'nav-button'}
           onClick={async () => {
-            navigate('/project');
+            navigate('/about');
           }}
         >
-          CONTACT
+          ABOUT
         </button>
         <button
           type="button"
-          className={currPage === 'project' ? 'nav-button-bold' : 'nav-button'}
+          className={currPage === 'resume' ? 'nav-button-bold' : 'nav-button'}
           onClick={async () => {
-            navigate('/project');
+            navigate('/resume');
           }}
         >
           RESUME

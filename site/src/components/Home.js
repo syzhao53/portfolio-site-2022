@@ -7,11 +7,13 @@ import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
 import illustration from '../assets/landing-illustration.png';
 import Arrow from '../assets/arrow.svg';
+import Heart from '../assets/heart.svg';
 import meetup from '../assets/meetup-mockup.png';
 import pennintouch from '../assets/pennintouch-mockup.png';
 import speechconnect from '../assets/speechconnect-mockup.png';
 import temp from '../assets/temp-mockup.png';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 function Home({ currPage, setCurrPage }) {
   // const [error, setError] = useState({ message: '' });
@@ -130,9 +132,7 @@ function Home({ currPage, setCurrPage }) {
           </div>
         </div>
       </div>
-      <div className="footer">
-        {footerMessage}
-      </div>
+      <Footer />
     </div>
     // <button className="button" type="button" onClick={goToProject}>View my work</button>
     // TODO: ADD FLOATING CARAT ARROW
