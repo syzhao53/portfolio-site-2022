@@ -11,6 +11,7 @@ import Heart from '../assets/heart.svg';
 import meetup from '../assets/meetup-mockup.png';
 import pennintouch from '../assets/pennintouch-mockup.png';
 import speechconnect from '../assets/speechconnect-mockup.png';
+import pennapps from '../assets/pennapps-mockup.png';
 import temp from '../assets/temp-mockup.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
@@ -25,6 +26,12 @@ function Home({ currPage, setCurrPage }) {
       navigate('/meetup');
     } else if (name === 'pennintouch') {
       navigate('/pennintouch');
+    } else if (name === 'speechconnect') {
+      navigate('/speechconnect');
+    } else if (name === 'chapter') {
+      navigate('/chapter');
+    } else if (name === 'personal') {
+      navigate('/personal');
     }
   };
 
@@ -84,7 +91,7 @@ function Home({ currPage, setCurrPage }) {
           </div>
         </div>
         <div className="grid-row">
-          <div className="gcard-lwrap">
+          <div className="gcard-lwrap"  onClick={() => goToProject('speechconnect')}>
             <img className="grid-img" src={speechconnect} alt="speechconnect mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
@@ -95,7 +102,7 @@ function Home({ currPage, setCurrPage }) {
               </div>
             </div>
           </div>
-          <div className="gcard-rwrap">
+          <div className="gcard-rwrap"  onClick={() => goToProject('chapter')}>
             <img className="grid-img" src={temp} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
@@ -119,14 +126,14 @@ function Home({ currPage, setCurrPage }) {
               </div>
             </div>
           </div>
-          <div className="gcard-rwrap">
-            <img className="grid-img" src={temp} alt="temp mockup" />
+          <div className="gcard-rwrap"  onClick={() => goToProject('personal')}>
+            <img id="pennapps" className="grid-img" src={pennapps} alt="pennapps mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                Personal Work
+                Miscellaneous
               </div>
               <div className="gcard-text">
-                Placeholder text
+                Designs for personal projects, clubs, & more
               </div>
             </div>
           </div>

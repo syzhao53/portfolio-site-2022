@@ -6,21 +6,21 @@ import '../assets/index.css';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
-function Meetup({ currPage, setCurrPage }) {
+function Chapter({ currPage, setCurrPage }) {
 //   const navigate = useNavigate();
 
   useEffect(() => {
     setCurrPage('');
     window.scrollTo(0, 0);
-    document.title = 'Meetup | Sylvia Zhao';
+    document.title = 'Chapter | Sylvia Zhao';
   }, []);
 
   return (
-    <div className="Meetup">
+    <div className="Chapter">
       <NavBar currPage={currPage} />
       <div className="project-wrap">
         <div className="project-header">
-          Meetup
+          Chapter
         </div>
       </div>
       <Footer />
@@ -28,4 +28,4 @@ function Meetup({ currPage, setCurrPage }) {
   );
 }
 
-export default Meetup;
+export default Chapter;

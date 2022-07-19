@@ -426,6 +426,15 @@ html {
   border-top-right-radius: 7px;
 }
 
+#pennapps {
+  border-bottom: rgb(234, 234, 234, 1);
+  border-style: solid;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-width: 1px;
+}
+
 .gcard-lwrap {
   display: flex;
   flex-direction: column;
@@ -1203,7 +1212,7 @@ ul {
   .descrip-rflex {
     display: flex;
     flex-direction: column;
-    margin: 0 0 6rem 3rem;
+    margin: 0 0 0 3rem;
   }
 
   .gcard-lwrap {
