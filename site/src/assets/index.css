@@ -476,6 +476,18 @@ html {
   text-align: left;
 }
 
+.lined-gcard-label {
+  width: 100%;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: rgb(234, 234, 234, 1);
+  border-style: solid;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-width: 1px;
+}
+
 .gcard-heading {
   /* font-size: .9rem; */
   font-weight: 600;
