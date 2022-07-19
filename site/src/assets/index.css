@@ -426,7 +426,10 @@ html {
   border-top-right-radius: 7px;
 }
 
-#pennapps {
+.lined-grid-img {
+  width: 100%;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
   border-bottom: rgb(234, 234, 234, 1);
   border-style: solid;
   border-top: none;
@@ -1019,6 +1022,10 @@ ul {
 @media only screen and (max-width: 800px) {
   #container-floating {
     display: none;
+  }
+
+  .footer-wrap {
+    padding: 5rem 0 1rem 0;
   }
 
   .nav-row {

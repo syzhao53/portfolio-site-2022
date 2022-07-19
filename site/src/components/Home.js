@@ -12,6 +12,7 @@ import meetup from '../assets/meetup-mockup.png';
 import pennintouch from '../assets/pennintouch-mockup.png';
 import speechconnect from '../assets/speechconnect-mockup.png';
 import pennapps from '../assets/pennapps-mockup.png';
+import logi from '../assets/logi-mockup.png';
 import temp from '../assets/temp-mockup.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
@@ -116,18 +117,18 @@ function Home({ currPage, setCurrPage }) {
         </div>
         <div className="grid-row">
           <div className="gcard-lwrap">
-            <img className="grid-img" src={temp} alt="temp mockup" />
+            <img className="lined-grid-img" src={logi} alt="logi mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                Logitech (Internship)
+                Logitech Design Ops
               </div>
               <div className="gcard-text">
-                Placeholder text
+                Internship reflections (ask about showing work)
               </div>
             </div>
           </div>
           <div className="gcard-rwrap"  onClick={() => goToProject('personal')}>
-            <img id="pennapps" className="grid-img" src={pennapps} alt="pennapps mockup" />
+            <img className="lined-grid-img" src={pennapps} alt="pennapps mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
                 Miscellaneous

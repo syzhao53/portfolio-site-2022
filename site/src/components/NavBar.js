@@ -34,9 +34,9 @@ function NavBar({ currPage }) {
       </button>
       <button
           type="button"
-          className={currPage === 'project' ? 'sidebar-button-bold' : 'sidebar-button'}
+          className={currPage === 'resume' ? 'sidebar-button-bold' : 'sidebar-button'}
           onClick={async () => {
-            navigate('/project');
+            navigate('/resume');
           }}
         >
           RESUME
