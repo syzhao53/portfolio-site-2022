@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-site-2022/static/css/main.f44e756d.css",
-    "main.js": "/portfolio-site-2022/static/js/main.1f7eb684.js",
+    "main.css": "/portfolio-site-2022/static/css/main.7a308ebd.css",
+    "main.js": "/portfolio-site-2022/static/js/main.65665445.js",
     "static/js/787.37faa4c4.chunk.js": "/portfolio-site-2022/static/js/787.37faa4c4.chunk.js",
     "static/media/pit-ui-2.png": "/portfolio-site-2022/static/media/pit-ui-2.821f46984e7dad6d3fd0.png",
     "static/media/pit-ui-1.png": "/portfolio-site-2022/static/media/pit-ui-1.88b16f612a5784133d83.png",
@@ -13,6 +13,7 @@
     "static/media/pit-sketches.png": "/portfolio-site-2022/static/media/pit-sketches.3c01f380be784f6bde81.png",
     "static/media/pennintouch-mockup.png": "/portfolio-site-2022/static/media/pennintouch-mockup.c4e71c49013e0cb4c149.png",
     "static/media/meetup-mockup.png": "/portfolio-site-2022/static/media/meetup-mockup.7ef6246c38a6bb045e6d.png",
+    "static/media/pennapps-mockup.png": "/portfolio-site-2022/static/media/pennapps-mockup.ebe79f5eab7a8f8922a4.png",
     "static/media/landing-illustration.png": "/portfolio-site-2022/static/media/landing-illustration.1b25f7bcd4ef25ed78aa.png",
     "static/media/general-exp.png": "/portfolio-site-2022/static/media/general-exp.90a79234072b6a5e78ef.png",
     "static/media/academic-plan.png": "/portfolio-site-2022/static/media/academic-plan.dc88648a6042d9741317.png",
@@ -25,12 +26,12 @@
     "static/media/arrow.svg": "/portfolio-site-2022/static/media/arrow.6913a95c46e20a8824d643ab4fb6ee71.svg",
     "static/media/close.svg": "/portfolio-site-2022/static/media/close.362cb9d9be8638a592b8c0c488f10e76.svg",
     "static/media/hamburger.svg": "/portfolio-site-2022/static/media/hamburger.6e4b8a13830a9b4834249fc89a5bbc06.svg",
-    "main.f44e756d.css.map": "/portfolio-site-2022/static/css/main.f44e756d.css.map",
-    "main.1f7eb684.js.map": "/portfolio-site-2022/static/js/main.1f7eb684.js.map",
+    "main.7a308ebd.css.map": "/portfolio-site-2022/static/css/main.7a308ebd.css.map",
+    "main.65665445.js.map": "/portfolio-site-2022/static/js/main.65665445.js.map",
     "787.37faa4c4.chunk.js.map": "/portfolio-site-2022/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f44e756d.css",
-    "static/js/main.1f7eb684.js"
+    "static/css/main.7a308ebd.css",
+    "static/js/main.65665445.js"
   ]
 }
