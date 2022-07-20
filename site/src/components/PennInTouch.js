@@ -145,7 +145,7 @@ function PennInTouch({ currPage, setCurrPage }) {
           </div>
           <div className="cap-card-text">
             &ldquo;Words cannot describe how terrible the current site is&rdquo;
-            <span style={{ 'font-style': 'italic' }}> &mdash; Penn Student</span>
+            <span style={{ 'font-style': 'italic' }}>&mdash; Penn Student</span>
           </div>
         </div>
         <div className="subsection-header">SURVEY</div>
