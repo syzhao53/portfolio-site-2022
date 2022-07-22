@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-site-2022/static/css/main.0ab68992.css",
-    "main.js": "/portfolio-site-2022/static/js/main.cd10e80c.js",
+    "main.css": "/portfolio-site-2022/static/css/main.6bf05b80.css",
+    "main.js": "/portfolio-site-2022/static/js/main.c3078bf9.js",
     "static/js/787.37faa4c4.chunk.js": "/portfolio-site-2022/static/js/787.37faa4c4.chunk.js",
     "static/media/pit-ui-2.png": "/portfolio-site-2022/static/media/pit-ui-2.821f46984e7dad6d3fd0.png",
     "static/media/pit-ui-1.png": "/portfolio-site-2022/static/media/pit-ui-1.88b16f612a5784133d83.png",
@@ -11,15 +11,19 @@
     "static/media/speechconnect-mockup.png": "/portfolio-site-2022/static/media/speechconnect-mockup.804f8727d09b4f021ad4.png",
     "static/media/pit-home.png": "/portfolio-site-2022/static/media/pit-home.7c8b94ff7b2e4302de30.png",
     "static/media/pit-sketches.png": "/portfolio-site-2022/static/media/pit-sketches.3c01f380be784f6bde81.png",
+    "static/media/static-site-landing.png": "/portfolio-site-2022/static/media/static-site-landing.0a44b7dd5e7b3a937860.png",
     "static/media/pennintouch-mockup.png": "/portfolio-site-2022/static/media/pennintouch-mockup.c4e71c49013e0cb4c149.png",
     "static/media/meetup-mockup.png": "/portfolio-site-2022/static/media/meetup-mockup.7ef6246c38a6bb045e6d.png",
+    "static/media/ice-cream.png": "/portfolio-site-2022/static/media/ice-cream.82a96d6afb80fd6b9bfc.png",
     "static/media/logi-mockup.png": "/portfolio-site-2022/static/media/logi-mockup.0843fcde0b5b7b9f3240.png",
     "static/media/pennapps-mockup.png": "/portfolio-site-2022/static/media/pennapps-mockup.ebe79f5eab7a8f8922a4.png",
     "static/media/landing-illustration.png": "/portfolio-site-2022/static/media/landing-illustration.1b25f7bcd4ef25ed78aa.png",
+    "static/media/reishi-mushroom.png": "/portfolio-site-2022/static/media/reishi-mushroom.a683ae83fecae5270fa9.png",
     "static/media/general-exp.png": "/portfolio-site-2022/static/media/general-exp.90a79234072b6a5e78ef.png",
     "static/media/academic-plan.png": "/portfolio-site-2022/static/media/academic-plan.dc88648a6042d9741317.png",
     "static/media/ease-info.png": "/portfolio-site-2022/static/media/ease-info.14778aff51320a9d986b.png",
     "static/media/mock-sched.png": "/portfolio-site-2022/static/media/mock-sched.dc292b76349931631f46.png",
+    "static/media/shea-butter.png": "/portfolio-site-2022/static/media/shea-butter.3907bca9e70697742542.png",
     "static/media/temp-mockup.png": "/portfolio-site-2022/static/media/temp-mockup.4b47a99c2d533d8730b7.png",
     "index.html": "/portfolio-site-2022/index.html",
     "static/media/leaf.svg": "/portfolio-site-2022/static/media/leaf.c620423e7f5d6b3680faab7fe01dc697.svg",
@@ -27,12 +31,12 @@
     "static/media/arrow.svg": "/portfolio-site-2022/static/media/arrow.6913a95c46e20a8824d643ab4fb6ee71.svg",
     "static/media/close.svg": "/portfolio-site-2022/static/media/close.362cb9d9be8638a592b8c0c488f10e76.svg",
     "static/media/hamburger.svg": "/portfolio-site-2022/static/media/hamburger.6e4b8a13830a9b4834249fc89a5bbc06.svg",
-    "main.0ab68992.css.map": "/portfolio-site-2022/static/css/main.0ab68992.css.map",
-    "main.cd10e80c.js.map": "/portfolio-site-2022/static/js/main.cd10e80c.js.map",
+    "main.6bf05b80.css.map": "/portfolio-site-2022/static/css/main.6bf05b80.css.map",
+    "main.c3078bf9.js.map": "/portfolio-site-2022/static/js/main.c3078bf9.js.map",
     "787.37faa4c4.chunk.js.map": "/portfolio-site-2022/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ab68992.css",
-    "static/js/main.cd10e80c.js"
+    "static/css/main.6bf05b80.css",
+    "static/js/main.c3078bf9.js"
   ]
 }
