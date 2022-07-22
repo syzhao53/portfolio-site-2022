@@ -29,6 +29,9 @@ function Personal({ currPage, setCurrPage }) {
         <div className="project-header">
           Miscellaneous
         </div>
+        <div className="project-info">
+          Visual design work for personal projects, clubs, & more
+        </div>
         <img className="misc-img" src={icecream} alt="ice cream illustration" />
         <img className="misc-img" src={staticlanding} alt="pennapps static site landing illustration" />
         <img className="misc-img" src={pennapps} alt="pennapps static site small illustrations" />

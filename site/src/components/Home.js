@@ -12,6 +12,7 @@ import meetup from '../assets/meetup-mockup.png';
 import pennintouch from '../assets/pennintouch-mockup.png';
 import speechconnect from '../assets/speechconnect-mockup.png';
 import pennapps from '../assets/pennapps-mockup.png';
+import icecream from '../assets/ice-cream.png';
 import logi from '../assets/logi-mockup.png';
 import temp from '../assets/temp-mockup.png';
 import NavBar from './NavBar';
@@ -128,13 +129,13 @@ function Home({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="gcard-rwrap"  onClick={() => goToProject('personal')}>
-            <img className="lined-gcard-label" src={pennapps} alt="pennapps mockup" />
+            <img className="lined-gcard-label" src={icecream} alt="pennapps mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
                 Miscellaneous
               </div>
               <div className="gcard-text">
-                Designs for personal projects, clubs, & more
+                Visual design work for personal projects, clubs, & more
               </div>
             </div>
           </div>
