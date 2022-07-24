@@ -5,6 +5,8 @@ import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../assets/index.css';
 import meetup from '../assets/meetup-mockup.png';
+import easesched from '../assets/ease-scheduling.png';
+import schedmethod from '../assets/scheduling-method.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -139,6 +141,14 @@ function Meetup({ currPage, setCurrPage }) {
           19 university students to understand key factors and pain points in
           diverse scheduling processes and methods. Survey questions focused on both the meeting
           organizer and invitee sides of scheduling.
+          <br />
+          <br />
+          The survey responses showed a general trend of people finding scheduling group meetings
+          to be a difficult process. The most commonly used tool was when2meet (14 out of 19
+          respondents), matching the result that people prefer to collect availability before
+          proposing a meeting time. Responses also shouwed that from both the meeting organizer
+          side and the invitee side, people value fast communication and the ability to see
+          the everyone&apos;s availability in one place.
         </div>
       </div>
       <div id="graphs-meetup" className="graphs">
@@ -148,18 +158,21 @@ function Meetup({ currPage, setCurrPage }) {
               QUESTION 1
             </div>
             <div className="graphcard-ques">
-              How do you feel about the general experience of using PennInTouch?
+              When attempting to schedule a group meeting,
+              how difficult do you find it to settle on a
+              time that aligns with everyone&apos;s schedule?
             </div>
-            {/* <img className="graph-img" src={generalexp} alt="general-exp graph" /> */}
+            <img className="graph-img" src={easesched} alt="ease-sched graph" />
           </div>
           <div className="card-rgraph">
             <div className="graphcard-label">
               QUESTION 2
             </div>
             <div className="graphcard-ques">
-              How would you rate the ease of locating information you need on PennInTouch?
+              Select what you are more likely to do when attempting to schedule a
+              meeting with a group
             </div>
-            {/* <img className="graph-img" src={easeinfo} alt="ease-info graph" /> */}
+            <img className="graph-img" src={schedmethod} alt="scheduling-method graph" />
           </div>
         </div>
         <div className="graphgrid-row">
@@ -168,7 +181,9 @@ function Meetup({ currPage, setCurrPage }) {
               QUESTION 3
             </div>
             <div className="graphcard-ques">
-              How would you rate the experience of using the “Academic Planning Worksheet” feature?
+              Select all factors that you consider important to the
+              process of scheduling a meeting when you are IN CHARGE
+              of scheduling
             </div>
             {/* <img className="graph-img" src={academicplan} alt="academic-plan graph" /> */}
           </div>
@@ -177,7 +192,9 @@ function Meetup({ currPage, setCurrPage }) {
               QUESTION 4
             </div>
             <div className="graphcard-ques">
-              How would you rate the experience of using the “Mock Schedules” feature?
+              Select all factors that you consider important to the process of
+              scheduling a meeting when you are RESPONDING to someone else in charge
+              of scheduling
             </div>
             {/* <img className="graph-img" src={mocksched} alt="mock-sched graph" /> */}
           </div>
