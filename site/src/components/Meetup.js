@@ -4,9 +4,15 @@
 import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../assets/index.css';
-import meetup from '../assets/meetup-mockup.png';
+import meetup from '../assets/meetup-mockup (2).png';
+import when2meetdesk from '../assets/when2meet-desk.png';
+import when2meetmobile from '../assets/when2meet-mobile.png';
 import easesched from '../assets/ease-scheduling.png';
 import schedmethod from '../assets/scheduling-method.png';
+import schedresp from '../assets/scheduling-responding.png';
+import schedorg from '../assets/scheduling-organizing.png';
+import meetwire1 from '../assets/meet-wire-1.png';
+import meetwire2 from '../assets/meet-wire-2.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -14,7 +20,7 @@ function Meetup({ currPage, setCurrPage }) {
   useEffect(() => {
     setCurrPage('');
     document.title = 'Meetup | Sylvia Zhao';
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -93,11 +99,13 @@ function Meetup({ currPage, setCurrPage }) {
           </div>
           <div className="section-rflex">
             <div className="descrip-lflex">
-              <div className="subsection-rheader-top">
-                ROLE
-              </div>
-              <div className="project-rtext">
-                UX research & design
+              <div className="stage-wrap">
+                <div className="subsection-rheader-top">
+                  ROLE
+                </div>
+                <div className="project-rtext">
+                  UX research & design
+                </div>
               </div>
             </div>
             <div className="descrip-rflex">
@@ -116,14 +124,15 @@ function Meetup({ currPage, setCurrPage }) {
           groups meetings. Operating as a web app, When2meet has one person send out a link from
           the platform to the rest of their team members to gather their availability during a
           specified period of time. Although When2meet offers a convenient solution, the interface
-          suffers from poor usability, lacing a mobile responsive site.
+          suffers from poor usability, lacking a mobile responsive site.
           <br />
           <br />
           Despite simply starting off as personal inspiration for this project, When2meet
           was also then widely mentioned in user research, driving the general structure of the
           final interface I created.
         </div>
-        {/* <img className="project-img" src={pithome} alt="pit-home" /> */}
+        <img className="project-img" src={when2meetdesk} alt="when2meet-desk" />
+        <img id="when2meet-mobile" className="project-img" src={when2meetmobile} alt="when2meet-mobile" />
         <div className="section-header" id="user-research"> User Research</div>
         <div className="cap-card">
           <div className="cap">
@@ -144,9 +153,9 @@ function Meetup({ currPage, setCurrPage }) {
           <br />
           <br />
           The survey responses showed a general trend of people finding scheduling group meetings
-          to be a difficult process. The most commonly used tool was when2meet (14 out of 19
+          to be a difficult process. The most commonly used tool was When2meet (14 out of 19
           respondents), matching the result that people prefer to collect availability before
-          proposing a meeting time. Responses also shouwed that from both the meeting organizer
+          proposing a meeting time. Responses also showed that from both the meeting organizer
           side and the invitee side, people value fast communication and the ability to see
           the everyone&apos;s availability in one place.
         </div>
@@ -182,10 +191,11 @@ function Meetup({ currPage, setCurrPage }) {
             </div>
             <div className="graphcard-ques">
               Select all factors that you consider important to the
-              process of scheduling a meeting when you are IN CHARGE
-              of scheduling
+              process of scheduling a meeting when you are
+              <span style={{ 'font-weight': '600' }}> the organizer </span>
+              in charge of scheduling
             </div>
-            {/* <img className="graph-img" src={academicplan} alt="academic-plan graph" /> */}
+            <img className="graph-img" src={schedorg} alt="scheduling-organizing graph" />
           </div>
           <div className="card-rgraph-low">
             <div className="graphcard-label">
@@ -193,10 +203,11 @@ function Meetup({ currPage, setCurrPage }) {
             </div>
             <div className="graphcard-ques">
               Select all factors that you consider important to the process of
-              scheduling a meeting when you are RESPONDING to someone else in charge
-              of scheduling
+              scheduling a meeting when you are
+              <span style={{ 'font-weight': '600' }}> an invitee </span>
+              (responding to organizer)
             </div>
-            {/* <img className="graph-img" src={mocksched} alt="mock-sched graph" /> */}
+            <img className="graph-img" src={schedresp} alt="scheduling-responding graph" />
           </div>
         </div>
       </div>
@@ -210,125 +221,105 @@ function Meetup({ currPage, setCurrPage }) {
           when providing availability.
           <br />
           <br />
-          I synthesized recurring comments from the interviews under the categories of
-          academic planning, UI design, general emotions, and navigation issues. Across
-          all interviews, users expressed dissatisfaction with outdated UI design, difficulty
-          understanding the Academic Planning Worksheet&apos;s interactions, and the site&apos;s
-          use of a crowded sidebar for navigation.
+          Synthesis of comments from the interviews was consistent with survey results with people
+          emphasizing the need to see all availability in one place and the ease of using When2meet
+          in various workflows for scheduling meetings. The interviews confirmed When2meet&apos;s
+          pain points of poor mobile usability and tedious process to input availability.
         </div>
       </div>
       <div className="affinity">
         <div className="categories-wrap">
           <div className="category-flex">
-            <div className="category-name">EMOTIONS</div>
+            <div className="category-name">GENERAL FEELINGS</div>
             <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text-short">
-                  Terrible experience
-                </div>
-              </div>
               <div className="rpost-it">
-                <div className="post-it-text-short">
-                  Feels awful
+                <div className="post-it-text">
+                  Organizers value flexibility when compromises are needed
                 </div>
               </div>
             </div>
             <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Sufficient, just could be better
-                </div>
-              </div>
               <div className="rpost-it">
                 <div className="post-it-text">
-                  Lack of trust in product, feels unreliable
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Became embittered with experience overtime
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  &ldquo;Words cannot describe how terrible [it] is&rdquo;
+                  People find it difficult to schedule meetings
                 </div>
               </div>
             </div>
           </div>
           <div className="category-flex">
-            <div className="category-name">NAVIGATION</div>
+            <div className="category-name">WHEN2MEET</div>
             <div className="post-it-row">
               <div className="lpost-it">
                 <div className="post-it-text">
-                  Lots of misclicking in sidebar
+                  Commonly used to gather availability
                 </div>
               </div>
               <div className="rpost-it">
                 <div className="post-it-text">
-                  First time user would have a hard time
+                  Tedious to input availability
                 </div>
               </div>
             </div>
             <div className="post-it-row">
               <div className="lpost-it">
                 <div className="post-it-text">
-                  Difficult with everything collapsed in sidebar dropdowns
+                  Convenient, no account needed
                 </div>
               </div>
               <div className="rpost-it">
                 <div className="post-it-text">
-                  Lots of trial and error navigating with sidebar
+                  Bad mobile interface (everything too small, dragging doesn&apos;t work right)
                 </div>
               </div>
             </div>
           </div>
-          <div className="category-lflex">
-            <div className="category-name">PLANNING</div>
+          <div className="category-flex">
+            <div className="category-name">COMMON PRACTICES</div>
             <div className="post-it-row">
+              <div className="lpost-it">
+                <div className="post-it-text">
+                  Share GCal with people from a team
+                </div>
+              </div>
               <div className="rpost-it">
                 <div className="post-it-text">
-                  Does not use site for 4-year planning
+                  Preference for gathering availability vs sending out set times to choose from
                 </div>
               </div>
             </div>
             <div className="post-it-row">
-              <div className="rpost-it">
+              <div className="lpost-it">
                 <div className="post-it-text">
-                  Big learning curve using Academic Planning Worksheet
+                  GCal, email, & When2meet often used together
                 </div>
               </div>
-            </div>
-            <div className="post-it-row">
               <div className="rpost-it">
                 <div className="post-it-text">
-                  Use Academic Planning Worksheet to check requirements
+                  GCal useful when scheduling one-on-one meetings
                 </div>
               </div>
             </div>
           </div>
           <div className="category-rflex">
-            <div className="category-name">UI DESIGN</div>
+            <div className="category-name">IMPORTANT FACTORS</div>
             <div className="post-it-row">
               <div className="rpost-it">
                 <div className="post-it-text">
-                  Everything in sidebar is too small (web and mobile)
+                  Organizer: seeing all availablity in one place
                 </div>
               </div>
             </div>
             <div className="post-it-row">
               <div className="rpost-it">
                 <div className="post-it-text">
-                  Text is too small overall
+                  Invitee: prefer ability to compare with the rest of own calendar
                 </div>
               </div>
             </div>
             <div className="post-it-row">
               <div className="rpost-it">
                 <div className="post-it-text">
-                  Strange unused space on right side of page
+                  Both sides: emphasis on fast communication
                 </div>
               </div>
             </div>
@@ -340,149 +331,148 @@ function Meetup({ currPage, setCurrPage }) {
           KEY RESEARCH INSIGHTS
         </div>
         <div className="project-text-single">
-          I came away from my survey and interviews with these main insights:
+          Following user research, these observations framed my approach to a solution:
         </div>
         <ul>
           <li>
-            <div className="list-text">Students generally dislike the outdated UI of PennInTouch and find that it interferes with functionality</div>
+            <div className="list-text">People enjoy When2meet for its convenience since there is no need for any account sign-up/login</div>
           </li>
           <li>
-            <div className="list-text">The left sidebar navigation is too cramped and most sections go unused</div>
+            <div className="list-text">The ability to see availability for all people invited to a meeting is important to both the organizer & invitee sides</div>
           </li>
           <li>
-            <div className="list-text">The Academic Planning Worksheet feature is underused and is perceived the most negatively out of PennInTouch&apos;s main features</div>
+            <div className="list-text">Usability on mobile is important for convenience and facilitates the fast communication that both sides value as well</div>
           </li>
         </ul>
         <div className="project-text-low">
-          From this, I formed the following guiding question to redesign the Academic Planning
-          Worksheet feature.
+          As a result, my guiding question focused on convenience and organization of how people&s
+          availability would be presented in the design.
         </div>
         <div id="how-might-card" className="cap-card">
           <div className="cap">
             <div className="empty">c</div>
           </div>
           <div className="cap-card-text">
-            How might we streamline the Academic Planning Worksheet&apos;s interactions
-            so that students use it for long-term planning?
+            How might we create a user-friendly interface for group meeting scheduling from the
+            invitee side so that convenience & organization of information are prioritized?
           </div>
         </div>
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="solution">Solution</div>
             <div className="project-ltext">
-              For the redesign, I focused on the interaction of assigning specific
-              courses to fulfill a requirement since this was a pain point discussed
-              in multiple user interviews.
+              Due to pain points surrounding the process of providing availability, I chose to
+              design for the perspective of the invitee only for the scope of this project. To
+              specifically address mobile usability concerns, I designed for a mobile interface
+              before expanding to a desktop solution after finalizing a mobile solution.
+              <br />
+              <br />
+              Additionally, to maintain the convenience valued by users of When2meet, the interface
+              was framed as a web app without need for an account. User testing was conducted
+              after wireframing and the first iteration of a prototype with the full UI design.
             </div>
           </div>
           <div className="section-rflex">
             <div className="descrip-lflex">
-              <div className="subsection-rheader-top">
-                WIREFRAMES
+              <div className="stage-wrap">
+                <div className="subsection-rheader-top">
+                  WIREFRAMES
+                </div>
+                <div className="project-rtext">
+                  2 iterations
+                </div>
               </div>
-              <div className="project-rtext">
-                2 iterations
+              <div className="stage-lwrap">
+                <div className="subsection-rheader-top">
+                  PROTOTYPES
+                </div>
+                <div className="project-rtext">
+                  3 iterations
+                </div>
               </div>
             </div>
             <div className="descrip-rflex">
               <div className="subsection-rheader">
-                UI DESIGN
+                USER TESTING
               </div>
               <div className="project-rtext">
-                2 iterations
+                2 rounds
               </div>
             </div>
           </div>
         </div>
-        <div className="subsection-header">
-          ANALYSIS
-        </div>
-        <div className="project-text">
-          Before creating wireframes, I analyzed the existing Academic Planning Worksheet
-          in relation to the pain points mentioned during user research. From these
-          observations, I created sketches for potential solutions.
-        </div>
-      </div>
-      <div className="analysis">
-        {/* <img className="analysis-img" src={pitanalysis} alt="pit-analysis" /> */}
       </div>
       <div className="project-wrap">
-        {/* <img id="project-sketches" src={pitsketches} alt="pit-sketches" /> */}
         <div className="subsection-header">WIREFRAMES: ITERATION 1</div>
         <div className="project-text">
-          My solution focused on creating more intuitive way to assign courses
-          to requirements as well as a layout that would visually emphasize the different
-          categories of requirements. The following features were incorporated into the redesign:
+          The first iteration of my solution focused on displaying the group&apos;s
+          availability on the main page and having the user add their availability
+          for a given day by clicking “Edit” on a card in the “My availability” section. Primary
+          considerations in this first iteration included:
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Collapsible right side panel </span>
-                for assigning courses to requirements, indicated by
-                prominently displayed tab on side; clearer than previous interaction at bottom of
-                screen and collapsible for space-efficiency
+                <span style={{ 'font-weight': '600' }}>Visual representation of availability </span>
+                through differently shaded blocks (screen 1) to provide high-level information.
+                This follows When2meet&apos;s method of displaying availability where a darker
+                block indicates that more people in the group are available at the specified time.
+                User research showed that meeting invitees are not as concerned with specific
+                people&apos;s availability, only the number of people available at a given timeslot.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Cards for each requirement category </span>
-                (Foundational Approaches, Sectors, Free Electives, etc.) to visually group
-                information for users and improve on pain point concerning visual clutter
+                <span style={{ 'font-weight': '600' }}>Separate views for group and individual availability </span>
+                to maintain organization and a different space for the user to
+                update their own information
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Cards for the two certifications </span>
-                (General Requirements and Major Requirements) to separate the checkpoints users
-                use to measure progress; originally styled the same as a general requirement
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Filters </span>
-                for customizing which requirement categories to view, gives user
-                control over experience and allows for more compact view eliminating
-                extra information (eg. completed categories)
+                <span style={{ 'font-weight': '600' }}>Reliance on tapping and typing interactions </span>
+                to give the user more control over how they interact with the interface (screen 4).
+                The choice of interaction addresses how users disliked When2meet&apos;s imprecise
+                method of dragging in a grid to indicate availability. Tapping/typing into larger
+                input boxes would aim to increase precision and decrease frustration with errors.
               </div>
             </li>
           </ul>
         </div>
       </div>
       <div className="mockup">
-        {/* <img className="mockup-img" src={pitwire1} alt="pit-wire-1" /> */}
+        <img className="mockup-img" src={meetwire1} alt="meet-wire-1" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">WIREFRAMES: ITERATION 2</div>
         <div className="project-text">
-          After receiving feedback from users on the first set of wireframes, I made changes
-          to the structure of the collapsible side panel and several minor features:
+          The second iteration of wireframes made minor adjustments to the
+          way days were displayed in “My availability,” as well as the layout of buttons.
           <ul>
             <li>
-              <div className="list-text">Made side panel dropdown menus searchable</div>
-            </li>
-            <li>
               <div className="list-text">
-                Changed selection of Course Category (Completed Courses, Currently Enrolled,
-                External Credit) from multiple dropdowns to single set of radio buttons in
-                side panel
+                <span style={{ 'font-weight': '600' }}>&ldquo;Save changes&rdquo; button </span>
+                in &ldquo;My availability&rdquo; was changed to a back arrow in the upper-left
+                corner to better indicate to a user how to return to the main &ldquo;Group
+                availability&rdquo; view. A &ldquo;Cancel&rdquo; button and back arrow
+                were also added to the editing a day view.
               </div>
             </li>
             <li>
-              <div className="list-text">Second displayed dropdown in side panel now depends on the selected radio button</div>
-            </li>
-            <li>
-              <div className="list-text">Removed certification cards (check mark icon added to cards in final UI to indicate certifications)</div>
-            </li>
-            <li>
-              <div className="list-text">Made all cards for requirenent categories collapsible</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>&ldquo;Add timeslot&rdquo; button </span>
+                in the section for editing a specific day&apos;s availability was moved to be
+                grouped closer to the existing timeslots a user has. This better associates the
+                button&apos;s action with its results.
+              </div>
             </li>
           </ul>
         </div>
       </div>
       <div className="mockup">
-        {/* <img className="mockup-img" src={pitwire2} alt="pit-wire-2" /> */}
+        <img className="mockup-img" src={meetwire2} alt="meet-wire-2" />
       </div>
       <div className="project-wrap">
-        <div className="subsection-header-sec">UI DESIGN: ITERATION 1</div>
+        <div className="subsection-header-sec">PROTOTYPE: ITERATION 1</div>
         <div className="project-text">
           After finalizing wireframes, I styled the design with the goal of modernizing the
           interface while still keeping Penn&apos;s core branding in mind. The first iteration
@@ -506,7 +496,99 @@ function Meetup({ currPage, setCurrPage }) {
         {/* <img className="mockup-img" src={pitui1} alt="pit-ui-1" /> */}
       </div>
       <div className="project-wrap">
-        <div className="subsection-header-sec">UI DESIGN: ITERATION 2</div>
+        <div className="subsection-header-sec">USER TESTING: ROUND 1</div>
+        <div className="project-text">
+          Based on further user feedback, the second iteration aimed to improve the cohesiveness
+          of the design:
+          <ul>
+            <li>
+              <div className="list-text">Changed all type to sans-serif font (Proxima Nova)</div>
+            </li>
+            <li>
+              <div className="list-text">
+                Subtle color added to left sidebar to match rest of design
+              </div>
+            </li>
+            <li>
+              <div className="list-text">Lightened and decreased size of bubbles next to course names</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="mockup">
+        {/* <img className="mockup-img" src={pitui2} alt="pit-ui-2" /> */}
+      </div>
+      <div className="project-wrap">
+        <div className="subsection-header-sec">PROTOTYPE: ITERATION 2</div>
+        <div className="project-text">
+          Based on further user feedback, the second iteration aimed to improve the cohesiveness
+          of the design:
+          <ul>
+            <li>
+              <div className="list-text">Changed all type to sans-serif font (Proxima Nova)</div>
+            </li>
+            <li>
+              <div className="list-text">
+                Subtle color added to left sidebar to match rest of design
+              </div>
+            </li>
+            <li>
+              <div className="list-text">Lightened and decreased size of bubbles next to course names</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="mockup">
+        {/* <img className="mockup-img" src={pitui2} alt="pit-ui-2" /> */}
+      </div>
+      <div className="project-wrap">
+        <div className="subsection-header-sec">USER TESTING: ROUND 2</div>
+        <div className="project-text">
+          Based on further user feedback, the second iteration aimed to improve the cohesiveness
+          of the design:
+          <ul>
+            <li>
+              <div className="list-text">Changed all type to sans-serif font (Proxima Nova)</div>
+            </li>
+            <li>
+              <div className="list-text">
+                Subtle color added to left sidebar to match rest of design
+              </div>
+            </li>
+            <li>
+              <div className="list-text">Lightened and decreased size of bubbles next to course names</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="mockup">
+        {/* <img className="mockup-img" src={pitui2} alt="pit-ui-2" /> */}
+      </div>
+      <div className="project-wrap">
+        <div className="subsection-header-sec">PROTOTYPE: ITERATION 3</div>
+        <div className="project-text">
+          Based on further user feedback, the second iteration aimed to improve the cohesiveness
+          of the design:
+          <ul>
+            <li>
+              <div className="list-text">Changed all type to sans-serif font (Proxima Nova)</div>
+            </li>
+            <li>
+              <div className="list-text">
+                Subtle color added to left sidebar to match rest of design
+              </div>
+            </li>
+            <li>
+              <div className="list-text">Lightened and decreased size of bubbles next to course names</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="mockup">
+        {/* <img className="mockup-img" src={pitui2} alt="pit-ui-2" /> */}
+      </div>
+      <div className="project-wrap">
+        <div className="subsection-header-sec">DESKTOP VERSION</div>
         <div className="project-text">
           Based on further user feedback, the second iteration aimed to improve the cohesiveness
           of the design:

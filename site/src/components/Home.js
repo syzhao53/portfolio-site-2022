@@ -8,7 +8,7 @@ import '../assets/index.css';
 import illustration from '../assets/landing-illustration.png';
 import Arrow from '../assets/arrow.svg';
 import Heart from '../assets/heart.svg';
-import meetup from '../assets/meetup-mockup.png';
+import meetup from '../assets/meetup-mockup (2).png';
 import pennintouch from '../assets/pennintouch-mockup.png';
 import speechconnect from '../assets/speechconnect-mockup.png';
 import pennapps from '../assets/pennapps-mockup.png';
