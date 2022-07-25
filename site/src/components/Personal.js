@@ -35,7 +35,7 @@ function Personal({ currPage, setCurrPage }) {
         <img className="misc-img" src={icecream} alt="ice cream illustration" />
         <div className="img-wrap">
           <img className="misc-img" src={staticlanding} alt="pennapps static site landing illustration" />
-          <div className="caption">(In collaboration with Mia Kim)</div>
+          {/* <div className="caption">(In collaboration with Mia Kim)</div> */}
         </div>
         <img className="misc-img" src={pennapps} alt="pennapps static site small illustrations" />
         <img className="misc-img" src={shea} alt="shea butter illustration" />
