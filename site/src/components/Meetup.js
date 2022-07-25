@@ -13,6 +13,12 @@ import schedresp from '../assets/scheduling-responding.png';
 import schedorg from '../assets/scheduling-organizing.png';
 import meetwire1 from '../assets/meet-wire-1.png';
 import meetwire2 from '../assets/meet-wire-2.png';
+import meetproto1 from '../assets/meet-proto-1.png';
+import meetproto2 from '../assets/meet-proto-2.png';
+import meetproto3 from '../assets/meet-proto-3.png';
+import meetmobilecards from '../assets/meet-mobile-cards.png';
+import meetdesk1 from '../assets/meet-desk-1.png';
+import meetdesk2 from '../assets/meet-desk-2.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -474,26 +480,28 @@ function Meetup({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">PROTOTYPE: ITERATION 1</div>
         <div className="project-text">
-          After finalizing wireframes, I styled the design with the goal of modernizing the
-          interface while still keeping Penn&apos;s core branding in mind. The first iteration
-          focused on the the following key style choices:
+          To prepare for user testing, I created a simple prototype of the app for the user flow
+          of adding a timeslot to provide availability for a day. UI design choices involved:
           <ul>
             <li>
-              <div className="list-text">Lighter color palette overall for clean, modern feel</div>
-            </li>
-            <li>
               <div className="list-text">
-                Fonts from Penn&apos;s core branding (EB Garamond and Roboto)
+                <span style={{ 'font-weight': '600' }}>Green and mint color palette </span>
+                to create a calm appearance for the platform since research showed that scheduling
+                was considered difficult or stressful by most users.
               </div>
             </li>
             <li>
-              <div className="list-text">Selective use of main dark blue color from original interface to emphasize features</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Work Sans as the main font </span>
+                to maintain readability and professionalism with a sans serif font while still being
+                friendly
+              </div>
             </li>
           </ul>
         </div>
       </div>
       <div className="mockup">
-        {/* <img className="mockup-img" src={pitui1} alt="pit-ui-1" /> */}
+        <img className="mockup-img" src={meetproto1} alt="meet-proto-1" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">USER TESTING: ROUND 1</div>
@@ -515,7 +523,7 @@ function Meetup({ currPage, setCurrPage }) {
           </ul>
         </div>
       </div>
-      <div id="mockup">
+      <div className="mockup">
         {/* <img className="mockup-img" src={pitui2} alt="pit-ui-2" /> */}
       </div>
       <div className="project-wrap">
@@ -538,8 +546,8 @@ function Meetup({ currPage, setCurrPage }) {
           </ul>
         </div>
       </div>
-      <div id="mockup">
-        {/* <img className="mockup-img" src={pitui2} alt="pit-ui-2" /> */}
+      <div className="mockup">
+        <img className="mockup-img" src={meetproto2} alt="meet-proto-2" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">USER TESTING: ROUND 2</div>
@@ -561,7 +569,7 @@ function Meetup({ currPage, setCurrPage }) {
           </ul>
         </div>
       </div>
-      <div id="mockup">
+      <div className="mockup">
         {/* <img className="mockup-img" src={pitui2} alt="pit-ui-2" /> */}
       </div>
       <div className="project-wrap">
@@ -584,8 +592,9 @@ function Meetup({ currPage, setCurrPage }) {
           </ul>
         </div>
       </div>
-      <div id="mockup">
-        {/* <img className="mockup-img" src={pitui2} alt="pit-ui-2" /> */}
+      <div className="mockup">
+        <img className="mockup-img" src={meetproto3} alt="meet-proto-3" />
+        <img id="meet-mobile-cards" className="mockup-img" src={meetmobilecards} alt="meet-proto-3" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">DESKTOP VERSION</div>
@@ -608,7 +617,8 @@ function Meetup({ currPage, setCurrPage }) {
         </div>
       </div>
       <div id="last-mockup">
-        {/* <img className="mockup-img" src={pitui2} alt="pit-ui-2" /> */}
+        <img className="mockup-img" src={meetdesk1} alt="meet-desk-1" />
+        <img className="mockup-img" src={meetdesk2} alt="meet-desk-2" />
       </div>
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
