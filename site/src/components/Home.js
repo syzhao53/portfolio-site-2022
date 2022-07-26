@@ -7,11 +7,16 @@ import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
 import illustration from '../assets/landing-illustration.png';
 import Arrow from '../assets/arrow.svg';
-import meetup from '../assets/meetup-mockup.png';
+import Heart from '../assets/heart.svg';
+import meetup from '../assets/meetup-mockup (2).png';
 import pennintouch from '../assets/pennintouch-mockup.png';
 import speechconnect from '../assets/speechconnect-mockup.png';
+import pennapps from '../assets/pennapps-mockup.png';
+import icecream from '../assets/ice-cream.png';
+import logi from '../assets/logi-mockup.png';
 import temp from '../assets/temp-mockup.png';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 function Home({ currPage, setCurrPage }) {
   // const [error, setError] = useState({ message: '' });
@@ -23,6 +28,12 @@ function Home({ currPage, setCurrPage }) {
       navigate('/meetup');
     } else if (name === 'pennintouch') {
       navigate('/pennintouch');
+    } else if (name === 'speechconnect') {
+      navigate('/speechconnect');
+    } else if (name === 'chapter') {
+      navigate('/chapter');
+    } else if (name === 'personal') {
+      navigate('/personal');
     }
   };
 
@@ -82,7 +93,7 @@ function Home({ currPage, setCurrPage }) {
           </div>
         </div>
         <div className="grid-row">
-          <div className="gcard-lwrap">
+          <div className="gcard-lwrap"  onClick={() => goToProject('speechconnect')}>
             <img className="grid-img" src={speechconnect} alt="speechconnect mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
@@ -93,7 +104,7 @@ function Home({ currPage, setCurrPage }) {
               </div>
             </div>
           </div>
-          <div className="gcard-rwrap">
+          <div className="gcard-rwrap"  onClick={() => goToProject('chapter')}>
             <img className="grid-img" src={temp} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
@@ -107,32 +118,30 @@ function Home({ currPage, setCurrPage }) {
         </div>
         <div className="grid-row">
           <div className="gcard-lwrap">
-            <img className="grid-img" src={temp} alt="temp mockup" />
+            <img className="lined-gcard-label" src={logi} alt="logi mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                Logitech (Internship)
+                Logitech Design Ops
               </div>
               <div className="gcard-text">
-                Placeholder text
+                Internship reflections (ask about showing work)
               </div>
             </div>
           </div>
-          <div className="gcard-rwrap">
-            <img className="grid-img" src={temp} alt="temp mockup" />
+          <div className="gcard-rwrap"  onClick={() => goToProject('personal')}>
+            <img className="lined-gcard-label" src={icecream} alt="pennapps mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                Personal Work
+                Miscellaneous
               </div>
               <div className="gcard-text">
-                Placeholder text
+                Visual design work for personal projects, clubs, & more
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="footer">
-        {footerMessage}
-      </div>
+      <Footer />
     </div>
     // <button className="button" type="button" onClick={goToProject}>View my work</button>
     // TODO: ADD FLOATING CARAT ARROW

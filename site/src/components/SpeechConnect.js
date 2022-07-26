@@ -3,70 +3,54 @@
 
 import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-// import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
-import pennintouch from '../assets/pennintouch-mockup.png';
-import pithome from '../assets/pit-home.png';
-// import pitmobile from '../assets/pit-home-mobile.png';
-// import pitapw from '../assets/pit-apw.png';
-// import pitapwbar from '../assets/pit-apw-bar.png';
-import pitanalysis from '../assets/pit-analysis.png';
-import pitsketches from '../assets/pit-sketches.png';
-import pitwire1 from '../assets/pit-wire-1.png';
-import pitwire2 from '../assets/pit-wire-2.png';
-import pitui1 from '../assets/pit-ui-1.png';
-import pitui2 from '../assets/pit-ui-2.png';
-import generalexp from '../assets/general-exp.png';
-import easeinfo from '../assets/ease-info.png';
-import academicplan from '../assets/academic-plan.png';
-import mocksched from '../assets/mock-sched.png';
+import speechconnect from '../assets/speechconnect-mockup.png';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
-function PennInTouch({ currPage, setCurrPage }) {
-  // const [error, setError] = useState({ message: '' });
-  // const [lockoutUser, setLockoutUser] = useState('');
-//   const navigate = useNavigate();;
-
-  const footerMessage = 'Made by Sylvia';
-
+function SpeechConnect({ currPage, setCurrPage }) {
   useEffect(() => {
     setCurrPage('');
-    document.title = 'PennInTouch | Sylvia Zhao';
-    // document.documentElement.style.scrollBehavior = 'auto';
-    window.scrollTo(0, 0);
+    document.title = 'SpeechConnect | Sylvia Zhao';
+    // window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="PennInTouch">
+    <div className="SpeechConnect">
       <NavBar currPage={currPage} />
       <div id="container-floating">
         <div className="table-text1 nds">
-          <Link to="/pennintouch#overview">
+          <Link to="/speechconnect#overview">
             <p className="letter">OVERVIEW</p>
           </Link>
         </div>
         <div className="table-text2 nds">
-          <Link to="/pennintouch#existing-interface">
-            <p className="letter">EXISTING INTERFACE</p>
+          <Link to="/speechconnect#aac-devices">
+            <p className="letter">AAC DEVICES</p>
           </Link>
         </div>
         <div className="table-text3 nds">
-          <Link to="/pennintouch#user-research">
-            <p className="letter">USER RESEARCH</p>
+          <Link to="/speechconnect#research">
+            <p className="letter">RESEARCH</p>
           </Link>
         </div>
+        {/* <div className="table-text3 nds">
+          <Link to="/speechconnect#market-research">
+            <p className="letter">MARKET RESEARCH</p>
+          </Link>
+        </div> */}
         <div className="table-text4 nds">
-          <Link to="/pennintouch#solution">
+          <Link to="/speechconnect#solution">
             <p className="letter">SOLUTION</p>
           </Link>
         </div>
         <div className="table-text5 nds">
-          <Link to="/pennintouch#prototype">
+          <Link to="/speechconnect#prototype">
             <p className="letter">PROTOTYPE</p>
           </Link>
         </div>
         <div className="table-text6 nds">
-          <Link to="/pennintouch#reflections">
+          <Link to="/speechconnect#reflections">
             <p className="letter">REFLECTIONS</p>
           </Link>
         </div>
@@ -92,22 +76,22 @@ function PennInTouch({ currPage, setCurrPage }) {
         </div>
       </div>
       <div className="project-wrap">
-        <div className="project-header">PennInTouch</div>
-        <div className="project-info">Redesigning UPenn&apos;s academic planning & registration site, PennInTouch</div>
-        <img className="project-img" src={pennintouch} alt="pennintouch mockup" />
+        <div className="project-header">SpeechConnect</div>
+        <div className="project-info">Creating a tablet experience for alternative communication tech</div>
+        <img className="project-img" src={speechconnect} alt="speechconnect mockup" />
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>
             <div className="project-ltext">
-              The University of Pennsylvania uses PennInTouch as its academic
-              planning and course registration site. Students have constantly
-              complained about the unpleasant experience of using PennInTouch and
-              how it interferes with their planning processes.
+              Scheduling meetings can often become a laborious process of
+              coordination between organizers sending out invites and attendees
+              providing their availability.
               <br />
               <br />
-              The purpose of this project was to identify and redesign a key feature
-              PennInTouch. My research process led to a redesign of the Academic
-              Planning Worksheet feature that helps students plan for graduation requirements.
+              Inspired by past difficulties with the popular scheduling platform When2meet,
+              this project aimed to create a more efficient and usable solution for
+              people providing their availability for group meetings. The design procees began with
+              mobile first in order to focus on usability issues before expanding to desktop.
             </div>
           </div>
           <div className="section-rflex">
@@ -117,6 +101,8 @@ function PennInTouch({ currPage, setCurrPage }) {
               </div>
               <div className="project-rtext">
                 UX research & design
+                <br />
+                Visual design
               </div>
             </div>
             <div className="descrip-rflex">
@@ -124,39 +110,48 @@ function PennInTouch({ currPage, setCurrPage }) {
                 TIMELINE
               </div>
               <div className="project-rtext">
-                1.5 months
+                1 month
               </div>
             </div>
           </div>
         </div>
-        <div className="section-header" id="existing-interface">Existing Interface</div>
+        <div className="section-header" id="aac-devices">AAC Devices</div>
         <div className="project-text">
-          The current PennInTouch site uses a left sidebar as its main navigation and
-          has a text heavy interface. For the site&apos;s main purpose of academic planning
-          and registration, students use the &ldquo;Registration & Planning&rdquo; dropdown
-          section which includes the Academic Planning Worksheet, Course Search, and Mock
-          Schedules features.
+          Digital augmentative and alternative communication (AAC) devices are speech generating
+          devices that allow a user to communicate through a combination of words, images, and
+          phrases that the device &ldquo;says&rdquo; out loud. While many groups benefit
+          from AAC devices, core users include any individuals who have difficulty producing
+          speech due to neurological or physical conditions. This includes individuals with aphasia,
+          autism, apraxia, and traumatic brain injury.
+          <br />
+          <br />
+          Made to help users increase their everyday independence and connections with others, AAC
+          devices serve a crucial need. However, high tech AAC devices can cost upwards of $1000;
+          this barrier to access led me to consider how digital applications for ordinary tablets
+          can attempt to fill the same role.
         </div>
-        <img className="project-img" src={pithome} alt="pit-home" />
-        <div className="section-header" id="user-research"> User Research</div>
+        {/* <img className="project-img" src={pithome} alt="pit-home" /> */}
+        <div className="section-header" id="research"> Research</div>
         <div className="cap-card">
           <div className="cap">
             <div className="empty">c</div>
           </div>
           <div className="cap-card-text">
-            &ldquo;Words cannot describe how terrible the current site is&rdquo;
-            <span style={{ 'font-style': 'italic' }}>&mdash; Penn Student</span>
+            &ldquo;This is an area in the field that is so critical and underserved&rdquo;
+            {/* <br /> */}
+            <span style={{ 'font-style': 'italic' }}> &mdash; Speech-Language Pathologist</span>
           </div>
         </div>
-        <div className="subsection-header">SURVEY</div>
+        <div className="subsection-header">EXPERT INTERVIEWS</div>
         <div className="project-text">
-          I surveyed 16 Penn undergraduate students through Google Forms to collect data on
-          users&apos; attitudes toward PennInTouch. The responses showed a generally negative
-          feelings towards the platform, specifically the Academic Planning Worksheet. The
-          survey also confirmed the pain point of the site being difficult to navigate.
+          Given that students consistently need to schedule group meetings for clubs and projects
+          without the use of organized systems (like Microsoft Outlook), I surveyed
+          19 university students to understand key factors and pain points in
+          diverse scheduling processes and methods. Survey questions focused on both the meeting
+          organizer and invitee sides of scheduling.
         </div>
       </div>
-      <div className="graphs">
+      <div id="graphs-meetup" className="graphs">
         <div className="graphgrid-row">
           <div className="card-lgraph">
             <div className="graphcard-label">
@@ -165,7 +160,7 @@ function PennInTouch({ currPage, setCurrPage }) {
             <div className="graphcard-ques">
               How do you feel about the general experience of using PennInTouch?
             </div>
-            <img className="graph-img" src={generalexp} alt="general-exp graph" />
+            {/* <img className="graph-img" src={generalexp} alt="general-exp graph" /> */}
           </div>
           <div className="card-rgraph">
             <div className="graphcard-label">
@@ -174,7 +169,7 @@ function PennInTouch({ currPage, setCurrPage }) {
             <div className="graphcard-ques">
               How would you rate the ease of locating information you need on PennInTouch?
             </div>
-            <img className="graph-img" src={easeinfo} alt="ease-info graph" />
+            {/* <img className="graph-img" src={easeinfo} alt="ease-info graph" /> */}
           </div>
         </div>
         <div className="graphgrid-row">
@@ -185,7 +180,7 @@ function PennInTouch({ currPage, setCurrPage }) {
             <div className="graphcard-ques">
               How would you rate the experience of using the “Academic Planning Worksheet” feature?
             </div>
-            <img className="graph-img" src={academicplan} alt="academic-plan graph" />
+            {/* <img className="graph-img" src={academicplan} alt="academic-plan graph" /> */}
           </div>
           <div className="card-rgraph-low">
             <div className="graphcard-label">
@@ -194,18 +189,18 @@ function PennInTouch({ currPage, setCurrPage }) {
             <div className="graphcard-ques">
               How would you rate the experience of using the “Mock Schedules” feature?
             </div>
-            <img className="graph-img" src={mocksched} alt="mock-sched graph" />
+            {/* <img className="graph-img" src={mocksched} alt="mock-sched graph" /> */}
           </div>
         </div>
       </div>
       <div className="project-wrap">
-        <div className="subsection-header-sec">USER INTERVIEWS</div>
+        <div className="subsection-header-sec">MARKET RESEARCH</div>
         <div className="project-text">
-          I also conducted user interviews with 3 Penn undergraduate students.
-          The students all cames from different programs across the university and relied on
-          PennInTouch&apos;s planning features in various degrees. From the 12 questions I asked,
-          the general takeaway was that PennInTouch only sufficiently accomplishes its goals
-          and could be improved in various areas.
+          For interviews, I spoke with 2 undergraduate students and 1 graduate student who had
+          previous corporate work experience as well. These students were selected for their
+          experiences managing teams and clubs. I spoke with each of them on the factors that are
+          most important to consider when sending out a meeting invite as well as thought processes
+          when providing availability.
           <br />
           <br />
           I synthesized recurring comments from the interviews under the categories of
@@ -352,25 +347,37 @@ function PennInTouch({ currPage, setCurrPage }) {
           </li>
         </ul>
         <div className="project-text-low">
-          From this, I formed the following guiding question to redesign the Academic Planning
-          Worksheet feature.
+          After understanding the research results, I created two guiding questions for the design
+          process, one for UX design and one for visual design.
         </div>
         <div id="how-might-card" className="cap-card">
           <div className="cap">
             <div className="empty">c</div>
           </div>
           <div className="cap-card-text">
-            How might we streamline the Academic Planning Worksheet&apos;s interactions
-            so that students use it for long-term planning?
+            How might we create an organized & customizable AAC application so
+            that users can tailor the functionality to their own needs?
           </div>
         </div>
+        <div id="how-might-card" className="cap-card">
+          <div className="cap">
+            <div className="empty">c</div>
+          </div>
+          <div className="cap-card-text">
+            How might we create an accessible system of illustrations/icons so
+            that users do not need to depend only on written text?
+          </div>
+        </div>
+        {/* <div className="section-header" id="market-research">Market Research</div> */}
+        {/* WHERE DOES THE HOW MIGHT WE GO?? */}
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="solution">Solution</div>
             <div className="project-ltext">
-              For the redesign, I focused on the interaction of assigning specific
-              courses to fulfill a requirement since this was a pain point discussed
-              in multiple user interviews.
+              My solution focused on the user flows of speaking a sentence with the app,
+              adding a custom word to the app, and adding a custom set of vocabulary for
+              the main grid view. This was executed with a tablet size in mind for similarity
+              to actual AAC devices.
             </div>
           </div>
           <div className="section-rflex">
@@ -392,20 +399,9 @@ function PennInTouch({ currPage, setCurrPage }) {
             </div>
           </div>
         </div>
-        <div className="subsection-header">
-          ANALYSIS
-        </div>
-        <div className="project-text">
-          Before creating wireframes, I analyzed the existing Academic Planning Worksheet
-          in relation to the pain points mentioned during user research. From these
-          observations, I created sketches for potential solutions.
-        </div>
-      </div>
-      <div className="analysis">
-        <img className="analysis-img" src={pitanalysis} alt="pit-analysis" />
       </div>
       <div className="project-wrap">
-        <img id="project-sketches" src={pitsketches} alt="pit-sketches" />
+        {/* <img id="project-sketches" src={pitsketches} alt="pit-sketches" /> */}
         <div className="subsection-header">WIREFRAMES: ITERATION 1</div>
         <div className="project-text">
           My solution focused on creating more intuitive way to assign courses
@@ -446,7 +442,7 @@ function PennInTouch({ currPage, setCurrPage }) {
         </div>
       </div>
       <div className="mockup">
-        <img className="mockup-img" src={pitwire1} alt="pit-wire-1" />
+        {/* <img className="mockup-img" src={pitwire1} alt="pit-wire-1" /> */}
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">WIREFRAMES: ITERATION 2</div>
@@ -477,7 +473,7 @@ function PennInTouch({ currPage, setCurrPage }) {
         </div>
       </div>
       <div className="mockup">
-        <img className="mockup-img" src={pitwire2} alt="pit-wire-2" />
+        {/* <img className="mockup-img" src={pitwire2} alt="pit-wire-2" /> */}
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">UI DESIGN: ITERATION 1</div>
@@ -501,7 +497,7 @@ function PennInTouch({ currPage, setCurrPage }) {
         </div>
       </div>
       <div className="mockup">
-        <img className="mockup-img" src={pitui1} alt="pit-ui-1" />
+        {/* <img className="mockup-img" src={pitui1} alt="pit-ui-1" /> */}
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">UI DESIGN: ITERATION 2</div>
@@ -524,7 +520,7 @@ function PennInTouch({ currPage, setCurrPage }) {
         </div>
       </div>
       <div id="last-mockup">
-        <img className="mockup-img" src={pitui2} alt="pit-ui-2" />
+        {/* <img className="mockup-img" src={pitui2} alt="pit-ui-2" /> */}
       </div>
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
@@ -536,9 +532,9 @@ function PennInTouch({ currPage, setCurrPage }) {
           reflection statements
         </div>
       </div>
-      <div className="footer">{footerMessage}</div>
+      <Footer />
     </div>
   );
 }
 
-export default PennInTouch;
+export default SpeechConnect;
