@@ -1,7 +1,7 @@
 {
   "name": "portfolio-site",
   "version": "0.1.0",
-  "homepage": "https://syzhao53.github.io/portfolio-site-2022",
+  "homepage": "https://www.sylvia-zhao.com",
   "private": true,
   "proxy": "http://localhost:5000/",
   "dependencies": {
