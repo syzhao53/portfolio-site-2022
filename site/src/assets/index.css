@@ -1034,6 +1034,16 @@ ul {
   margin-top: 3rem;
 }
 
+#meet-desk-2 {
+  margin-top: 3rem;
+}
+
+#meet-desk-cards {
+  width: 35%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
 #last-mockup {
   /* background-color: #F4FAFF; */
   display: flex;

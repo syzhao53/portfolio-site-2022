@@ -16,7 +16,9 @@ import meetwire2 from '../assets/meet-wire-2.png';
 import meetproto1 from '../assets/meet-proto-1.png';
 import meetproto2 from '../assets/meet-proto-2.png';
 import meetproto3 from '../assets/meet-proto-3.png';
+import meettest1 from '../assets/meet-test-1.png';
 import meetmobilecards from '../assets/meet-mobile-cards.png';
+import meetdeskcards from '../assets/meet-desk-cards.png';
 import meetdesk1 from '../assets/meet-desk-1.png';
 import meetdesk2 from '../assets/meet-desk-2.png';
 import NavBar from './NavBar';
@@ -506,42 +508,78 @@ function Meetup({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">USER TESTING: ROUND 1</div>
         <div className="project-text">
-          Based on further user feedback, the second iteration aimed to improve the cohesiveness
-          of the design:
+          Using the initial prototype, I conduced user testing with 3 students, 1 from the user
+          interviews and 2 others who had responded to the survey and were
+          familiar with the project context. Users commented on:
           <ul>
             <li>
-              <div className="list-text">Changed all type to sans-serif font (Proxima Nova)</div>
-            </li>
-            <li>
               <div className="list-text">
-                Subtle color added to left sidebar to match rest of design
+                <span style={{ 'font-weight': '600' }}>Pleasant UI design </span>
+                with a simple aesthetic and clear emphasis on actionable areas
               </div>
             </li>
             <li>
-              <div className="list-text">Lightened and decreased size of bubbles next to course names</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Good clarity with tapping interaction </span>
+                for actually inputting availability, more mobile-friendly than dragging
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Lack of clarity with the home page </span>
+                in terms of not understanding whether the main view shows group or individual
+                availability
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>No visualization of &ldquo;My availability&rdquo; </span>
+                since timeslots are all displayed as text instead of colored blocks like the
+                group section
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Too many clicks </span>
+                required to even get to the adding/editing availability functionality (3 clicks
+                before availability is even added)
+              </div>
             </li>
           </ul>
         </div>
       </div>
       <div className="mockup">
-        {/* <img className="mockup-img" src={pitui2} alt="pit-ui-2" /> */}
+        <img className="mockup-img" src={meettest1} alt="meet-test-1" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">PROTOTYPE: ITERATION 2</div>
         <div className="project-text">
-          Based on further user feedback, the second iteration aimed to improve the cohesiveness
-          of the design:
+          Based on the comments from Round 1 of user testing, I reorganized how the &ldquo;
+          Add availability&rdquo; user flow begins:
+          streamlined
+          the “Add availability” user flow and created clear emphasis on separate
           <ul>
             <li>
-              <div className="list-text">Changed all type to sans-serif font (Proxima Nova)</div>
-            </li>
-            <li>
               <div className="list-text">
-                Subtle color added to left sidebar to match rest of design
+                <span style={{ 'font-weight': '600' }}>Separate &ldquo;Me&rdquo; & &ldquo;Group&rdquo; </span>
+                sections to address the confusion on what information the main
+                view is initially presenting; indicated by buttons at the top to toggle the view
               </div>
             </li>
             <li>
-              <div className="list-text">Lightened and decreased size of bubbles next to course names</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Reduced number of clicks </span>
+                for adding/editing availability to streamline interaction; both functions are
+                accessed with 1 click in this iteration
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Calendar layout </span>
+                to improve visualization of availability by highlighting days with provided
+                availability in bright mint and indicating the currently selected day with
+                an underline
+              </div>
             </li>
           </ul>
         </div>
@@ -552,42 +590,93 @@ function Meetup({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">USER TESTING: ROUND 2</div>
         <div className="project-text">
-          Based on further user feedback, the second iteration aimed to improve the cohesiveness
-          of the design:
+          Continuing with the same users from the first round of testing, I collected feedback on
+          the second prototype. With this second round, comments mostly focused on how information
+          could be better indicated visually:
           <ul>
             <li>
-              <div className="list-text">Changed all type to sans-serif font (Proxima Nova)</div>
-            </li>
-            <li>
               <div className="list-text">
-                Subtle color added to left sidebar to match rest of design
+                <span style={{ 'font-weight': '600' }}>No side-by-side comparision of group & personal availability </span>
+                limits the information a user has at their immediate disposal when inputting their
+                own information
               </div>
             </li>
             <li>
-              <div className="list-text">Lightened and decreased size of bubbles next to course names</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Preference for further visual representation of availability </span>
+                since calendar visualizes overall time period across days but not timeslots on
+                individual days; suggestions made for a grid view calendar
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Confusion with highlight vs. underline on date </span>
+                for which one is meant to indicate selected date or whether availability
+                was provided
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>One-click interaction </span>
+                for adding/editing availability improves previous flow and feels
+                less tedious
+              </div>
             </li>
           </ul>
         </div>
       </div>
-      <div className="mockup">
-        {/* <img className="mockup-img" src={pitui2} alt="pit-ui-2" /> */}
-      </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">PROTOTYPE: ITERATION 3</div>
         <div className="project-text">
-          Based on further user feedback, the second iteration aimed to improve the cohesiveness
-          of the design:
+          The final solution mainly addresses the confusions and concerns around visual
+          representation of information with the introduction of a secondary grid view calendar:
           <ul>
             <li>
-              <div className="list-text">Changed all type to sans-serif font (Proxima Nova)</div>
-            </li>
-            <li>
               <div className="list-text">
-                Subtle color added to left sidebar to match rest of design
+                <span style={{ 'font-weight': '600' }}>Grid view calendar </span>
+                to supplement the original calendar view; the grid shows individual days
+                while the original layout still gives an overview of all dates that a
+                user can select from
               </div>
             </li>
             <li>
-              <div className="list-text">Lightened and decreased size of bubbles next to course names</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Scrollable side-by-side comparison columns </span>
+                in the grid view to solve for the issue of not having the ability to compare
+                personal and group availability in the previous prototype; a key indicates the
+                two types of availability shown by the columns
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Highlighted date indicates selected date </span>
+                instead of a date with availability; this choice matches how a highlighted circle on
+                &ldquo;AM&rdquo; or &ldquo;PM&rdquo; indicates selection, so instead, a dot under
+                a date is used to show that a user previded availability
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Meeting information section </span>
+                at the top of the screen contextualizes the meeting invite and informs
+                how users should provide their availability based on the meeting length
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Tapping in the grid to add a timeslot </span>
+                in the grid view would allow for automatic population of the new timeslot&apos;s
+                starting time, helping counteract the additional tap added with the interaction
+                of swtiching from the main calendar to the grid view
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Info on number of people available </span>
+                shown when a user taps a block of availability; this addresses the point from
+                the original user research showing that people value general information about
+                the group availability
+              </div>
             </li>
           </ul>
         </div>
@@ -599,31 +688,38 @@ function Meetup({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">DESKTOP VERSION</div>
         <div className="project-text">
-          Based on further user feedback, the second iteration aimed to improve the cohesiveness
-          of the design:
+          After finalizing the mobile prototype, I created a desktop version to see how the mobile
+          version could scale. Some minor features/interactions were incorporated in the desktop
+          interface:
           <ul>
             <li>
-              <div className="list-text">Changed all type to sans-serif font (Proxima Nova)</div>
-            </li>
-            <li>
               <div className="list-text">
-                Subtle color added to left sidebar to match rest of design
+                <span style={{ 'font-weight': '600' }}>Timeslot preview when adding/editing availability </span>
+                shown when a user taps a block of availability; this addresses the point from
+                the original user research showing that people value general information about
+                the group availability
               </div>
             </li>
             <li>
-              <div className="list-text">Lightened and decreased size of bubbles next to course names</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Hover interactions for editing & group availability info </span>
+                shown when a user taps a block of availability; this addresses the point from
+                the original user research showing that people value general information about
+                the group availability
+              </div>
             </li>
           </ul>
         </div>
       </div>
       <div id="last-mockup">
         <img className="mockup-img" src={meetdesk1} alt="meet-desk-1" />
-        <img className="mockup-img" src={meetdesk2} alt="meet-desk-2" />
+        <img id="meet-desk-2" className="mockup-img" src={meetdesk2} alt="meet-desk-2" />
+        <img id="meet-desk-cards" className="mockup-img" src={meetdeskcards} alt="meet-desk-cards" />
       </div>
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
         <div className="project-text">
-          add link to figma or embed? or screen record, add actual device mockups?
+          Figma Prototype Link
         </div>
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
