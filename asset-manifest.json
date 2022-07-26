@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.dfa593b6.css",
-    "main.js": "/static/js/main.a355acd3.js",
+    "main.css": "/static/css/main.cb7d8942.css",
+    "main.js": "/static/js/main.a00d9efb.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/pit-ui-2.png": "/static/media/pit-ui-2.821f46984e7dad6d3fd0.png",
     "static/media/pit-ui-1.png": "/static/media/pit-ui-1.88b16f612a5784133d83.png",
@@ -18,10 +18,12 @@
     "static/media/meet-proto-2.png": "/static/media/meet-proto-2.b19bcde2a4fe7892fbd2.png",
     "static/media/meet-proto-3.png": "/static/media/meet-proto-3.af0c39723ca9742bc06c.png",
     "static/media/meet-wire-1.png": "/static/media/meet-wire-1.e20123d111585ca83d76.png",
+    "static/media/meet-device-mobile.png": "/static/media/meet-device-mobile.21eadec37ef8ffd93e66.png",
     "static/media/meet-desk-1.png": "/static/media/meet-desk-1.f2eb56cb39772f40abc8.png",
     "static/media/meet-wire-2.png": "/static/media/meet-wire-2.1ec78a4c8ff36ae382a7.png",
     "static/media/meet-desk-2.png": "/static/media/meet-desk-2.4ba1ecf1cf4a4602d7d8.png",
     "static/media/when2meet-desk.png": "/static/media/when2meet-desk.afe0d80961f93fbfc7b6.png",
+    "static/media/meet-device-desk.png": "/static/media/meet-device-desk.b64f4f2e9e4fad611600.png",
     "static/media/ice-cream.png": "/static/media/ice-cream.267f88c05ecb2103b98f.png",
     "static/media/meetup-mockup (2).png": "/static/media/meetup-mockup (2).ac9e7595a3d5702d371b.png",
     "static/media/when2meet-mobile.png": "/static/media/when2meet-mobile.c78f2877460efe8375df.png",
@@ -47,12 +49,12 @@
     "static/media/arrow.svg": "/static/media/arrow.6913a95c46e20a8824d643ab4fb6ee71.svg",
     "static/media/close.svg": "/static/media/close.362cb9d9be8638a592b8c0c488f10e76.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.6e4b8a13830a9b4834249fc89a5bbc06.svg",
-    "main.dfa593b6.css.map": "/static/css/main.dfa593b6.css.map",
-    "main.a355acd3.js.map": "/static/js/main.a355acd3.js.map",
+    "main.cb7d8942.css.map": "/static/css/main.cb7d8942.css.map",
+    "main.a00d9efb.js.map": "/static/js/main.a00d9efb.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfa593b6.css",
-    "static/js/main.a355acd3.js"
+    "static/css/main.cb7d8942.css",
+    "static/js/main.a00d9efb.js"
   ]
 }
