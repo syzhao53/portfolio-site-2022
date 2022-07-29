@@ -1044,6 +1044,27 @@ ul {
   margin-top: 3rem;
 }
 
+.proto-link {
+  color: #033E57;
+  text-underline-offset: 4.5px;
+}
+
+.proto-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.device-mock-mobile {
+  width: 35%;
+  margin: auto;
+}
+
+.device-mock-desk {
+  width: 50%;
+  margin: auto;
+}
+
+
 #last-mockup {
   /* background-color: #F4FAFF; */
   display: flex;
@@ -1064,8 +1085,6 @@ ul {
   width: 65%;
   margin: auto;
 }
-
-
 
 /* .li {
   padding: 0;

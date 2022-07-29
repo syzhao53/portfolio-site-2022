@@ -21,6 +21,8 @@ import meetmobilecards from '../assets/meet-mobile-cards.png';
 import meetdeskcards from '../assets/meet-desk-cards.png';
 import meetdesk1 from '../assets/meet-desk-1.png';
 import meetdesk2 from '../assets/meet-desk-2.png';
+import meetdevicemobile from '../assets/meet-device-mobile.png';
+import meetdevicedesk from '../assets/meet-device-desk.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -28,7 +30,7 @@ function Meetup({ currPage, setCurrPage }) {
   useEffect(() => {
     setCurrPage('');
     document.title = 'Meetup | Sylvia Zhao';
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -719,11 +721,44 @@ function Meetup({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
         <div className="project-text">
-          Figma Prototype Link
+          Interact with the final prototypes below at the links below:
+          <ul>
+            <li>
+              <div className="list-text">
+                <a className="proto-link" href="https://www.figma.com/proto/AHxq5BvD3YoUd5bdFdI9OC/Meetup-Prototype-(Mobile)?node-id=2%3A98&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A28">
+                  Mobile Solution Prototype
+                </a>
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <a className="proto-link" href="https://www.figma.com/proto/C9TwlLjWPRFaHFCLNZ32v2/Meetup-Prototype-(Desktop)?node-id=3%3A394&scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A21">
+                  Desktop Solution Prototype
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div className="proto-flex">
+          <img className="device-mock-mobile" src={meetdevicemobile} alt="meet-device-mobile" />
+          <img className="device-mock-desk" src={meetdevicedesk} alt="meet-device-desk" />
         </div>
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
-          reflection statements
+          As a student who has thought a lot about the pain points with group meeting scheduling,
+          this project provided an opportunity to understand how people think about
+          the digital tools and the factors that go into their processes. By conducting
+          user research and testing, I learned to translate those key factors into
+          visual representations of information that would be the most convenient to users.
+          <br />
+          <br />
+          While the final solution addresses the main pain point of mobile usability,
+          further exploration could be done on how the platform
+          would appear from the organizer side. Since
+          this project only focused on the invitee side, research on the
+          other perspective could be an interesting way to complete an understanding
+          of the problem. This current solution still explores a side of the problem
+          that is impactful to understanding how people work to collaborate efficiently.
         </div>
       </div>
       <Footer />
