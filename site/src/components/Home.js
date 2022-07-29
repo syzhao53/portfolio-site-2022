@@ -58,10 +58,10 @@ function Home({ currPage, setCurrPage }) {
           PennApps Co-Head of Creative &middot; Recent Design Ops Intern at Logitech
         </div>
         <img id="home-illus" src={illustration} alt="landing illustration" />
+        <Link to="/#work">
+          <img id="arrow" src={Arrow} alt="arrow svg" />
+        </Link>
       </div>
-      <Link to="/#work">
-        <img id="arrow" src={Arrow} alt="arrow svg" />
-      </Link>
       {/* <a href="#work">
         <img id="arrow" src={Arrow} alt="landing illustration" />
       </a> */}

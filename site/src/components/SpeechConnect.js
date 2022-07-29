@@ -83,26 +83,30 @@ function SpeechConnect({ currPage, setCurrPage }) {
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>
             <div className="project-ltext">
-              Scheduling meetings can often become a laborious process of
-              coordination between organizers sending out invites and attendees
-              providing their availability.
+              Language drives everyday interactions and is a tool that shapes
+              how people form connections with each other. Stemming from my interests
+              in psychology and linguistics, I wanted to explore how design and technology can
+              support different communication methods with accessibility in mind.
               <br />
               <br />
-              Inspired by past difficulties with the popular scheduling platform When2meet,
-              this project aimed to create a more efficient and usable solution for
-              people providing their availability for group meetings. The design procees began with
-              mobile first in order to focus on usability issues before expanding to desktop.
+              This project focused on creating a customizable experience in augmentative and
+              alternative communication to serve users who need technology to assist their
+              daily interactions with others due to speech difficulties. While specialized
+              hardware does exist, I framed this project as a software solution
+              for standard tablets.
             </div>
           </div>
           <div className="section-rflex">
             <div className="descrip-lflex">
-              <div className="subsection-rheader-top">
-                ROLE
-              </div>
-              <div className="project-rtext">
-                UX research & design
-                <br />
-                Visual design
+              <div className="stage-wrap">
+                <div className="subsection-rheader-top">
+                  ROLE
+                </div>
+                <div className="project-rtext">
+                  UX research & design
+                  <br />
+                  Visual design
+                </div>
               </div>
             </div>
             <div className="descrip-rflex">
@@ -126,9 +130,11 @@ function SpeechConnect({ currPage, setCurrPage }) {
           <br />
           <br />
           Made to help users increase their everyday independence and connections with others, AAC
-          devices serve a crucial need. However, high tech AAC devices can cost upwards of $1000;
-          this barrier to access led me to consider how digital applications for ordinary tablets
-          can attempt to fill the same role.
+          devices serve a crucial need but can cost upwards of $1000 for high-tech models.
+          This barrier to access led me to consider how digital applications
+          can attempt to fill the same role; for example, in the case where a
+          user already possesses a standard tablet, they could rely on an app instead of
+          purchasing a new device.
         </div>
         {/* <img className="project-img" src={pithome} alt="pit-home" /> */}
         <div className="section-header" id="research"> Research</div>
@@ -142,13 +148,17 @@ function SpeechConnect({ currPage, setCurrPage }) {
             <span style={{ 'font-style': 'italic' }}> &mdash; Speech-Language Pathologist</span>
           </div>
         </div>
-        <div className="subsection-header">EXPERT INTERVIEWS</div>
+        <div className="subsection-header">EXPERT KNOWLEDGE</div>
         <div className="project-text">
-          Given that students consistently need to schedule group meetings for clubs and projects
-          without the use of organized systems (like Microsoft Outlook), I surveyed
-          19 university students to understand key factors and pain points in
-          diverse scheduling processes and methods. Survey questions focused on both the meeting
-          organizer and invitee sides of scheduling.
+          To better understand the user groups and use cases for AAC devices, I surveyed 4
+          professional speech-language pathologists who have experience working with AAC
+          devices. Due to logistical constraints, information was collected via Google Forms
+          in long-form answers.
+          <br />
+          <br />
+          In addition to defining the user groups, I wanted to explore how traditional
+          AAC devices differ from apps, compile a list of professionally recommended apps,
+          and understand the challenges that people face with AAC devices.
         </div>
       </div>
       <div id="graphs-meetup" className="graphs">
@@ -208,12 +218,14 @@ function SpeechConnect({ currPage, setCurrPage }) {
           all interviews, users expressed dissatisfaction with outdated UI design, difficulty
           understanding the Academic Planning Worksheet&apos;s interactions, and the site&apos;s
           use of a crowded sidebar for navigation.
+          <br />
+          Observations on UI
         </div>
       </div>
       <div className="affinity">
         <div className="categories-wrap">
           <div className="category-flex">
-            <div className="category-name">EMOTIONS</div>
+            <div className="category-name">LAMP</div>
             <div className="post-it-row">
               <div className="lpost-it">
                 <div className="post-it-text-short">
@@ -252,7 +264,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="category-flex">
-            <div className="category-name">NAVIGATION</div>
+            <div className="category-name">TOUCHCHAT HD</div>
             <div className="post-it-row">
               <div className="lpost-it">
                 <div className="post-it-text">
@@ -279,7 +291,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="category-lflex">
-            <div className="category-name">PLANNING</div>
+            <div className="category-name">TD SNAP</div>
             <div className="post-it-row">
               <div className="rpost-it">
                 <div className="post-it-text">
@@ -303,7 +315,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="category-rflex">
-            <div className="category-name">UI DESIGN</div>
+            <div className="category-name">PROLOQUO2GO (add GOTALKNOW)</div>
             <div className="post-it-row">
               <div className="rpost-it">
                 <div className="post-it-text">
@@ -337,7 +349,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
         </div>
         <ul>
           <li>
-            <div className="list-text">Students generally dislike the outdated UI of PennInTouch and find that it interferes with functionality</div>
+            <div className="list-text">There is an extremely broad range of users with different needs who use AAC devices</div>
           </li>
           <li>
             <div className="list-text">The left sidebar navigation is too cramped and most sections go unused</div>
@@ -365,7 +377,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
           </div>
           <div className="cap-card-text">
             How might we create an accessible system of illustrations/icons so
-            that users do not need to depend only on written text?
+            that users do not need to depend only on text for navigation?
           </div>
         </div>
         {/* <div className="section-header" id="market-research">Market Research</div> */}
@@ -374,19 +386,32 @@ function SpeechConnect({ currPage, setCurrPage }) {
           <div className="section-lflex">
             <div className="section-header" id="solution">Solution</div>
             <div className="project-ltext">
-              My solution focused on the user flows of speaking a sentence with the app,
-              adding a custom word to the app, and adding a custom set of vocabulary for
-              the main grid view. This was executed with a tablet size in mind for similarity
-              to actual AAC devices.
+              My solution focused on the user flows of speaking a sentence with the app (Home),
+              allowing for customization (Customization),
+              adding a custom word to the app (Add Word), and adding a custom set of vocabulary for
+              the main grid view (Add Vocab Set). This was executed with a tablet size in mind
+              for similarity to actual AAC devices.
             </div>
           </div>
           <div className="section-rflex">
             <div className="descrip-lflex">
-              <div className="subsection-rheader-top">
-                WIREFRAMES
-              </div>
-              <div className="project-rtext">
-                2 iterations
+              <div className="stage-wrap">
+                <div className="subsection-rheader-top">
+                  WIREFRAMES
+                </div>
+                <div className="project-rtext">
+                  <span style={{ 'font-weight': '600' }}>Home: </span>
+                  3 iterations
+                  <br />
+                  <span style={{ 'font-weight': '600' }}>Customization: </span>
+                  2 iterations
+                  <br />
+                  <span style={{ 'font-weight': '600' }}>Add Word: </span>
+                  2 iterations
+                  <br />
+                  <span style={{ 'font-weight': '600' }}>Add Vocab Set: </span>
+                  2 iterations
+                </div>
               </div>
             </div>
             <div className="descrip-rflex">
@@ -404,6 +429,8 @@ function SpeechConnect({ currPage, setCurrPage }) {
         {/* <img id="project-sketches" src={pitsketches} alt="pit-sketches" /> */}
         <div className="subsection-header">WIREFRAMES: ITERATION 1</div>
         <div className="project-text">
+          Mention layout and motor planning considerations
+          <br />
           My solution focused on creating more intuitive way to assign courses
           to requirements as well as a layout that would visually emphasize the different
           categories of requirements. The following features were incorporated into the redesign:
@@ -529,7 +556,10 @@ function SpeechConnect({ currPage, setCurrPage }) {
         </div>
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
-          reflection statements
+          Hardware
+          User testing
+          Sound
+          Application of academic knowledge
         </div>
       </div>
       <Footer />

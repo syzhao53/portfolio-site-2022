@@ -111,7 +111,7 @@ function PennInTouch({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="section-rflex">
-            <div className="descrip-lflex">
+            <div className="stage-wrap">
               <div className="subsection-rheader-top">
                 ROLE
               </div>
@@ -375,11 +375,13 @@ function PennInTouch({ currPage, setCurrPage }) {
           </div>
           <div className="section-rflex">
             <div className="descrip-lflex">
-              <div className="subsection-rheader-top">
-                WIREFRAMES
-              </div>
-              <div className="project-rtext">
-                2 iterations
+              <div className="stage-wrap">
+                <div className="subsection-rheader-top">
+                  WIREFRAMES
+                </div>
+                <div className="project-rtext">
+                  2 iterations
+                </div>
               </div>
             </div>
             <div className="descrip-rflex">
@@ -529,7 +531,7 @@ function PennInTouch({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
         <div className="project-text">
-          add link to figma or embed? or screen record, add actual device mockups?
+          Links + mockups
         </div>
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
