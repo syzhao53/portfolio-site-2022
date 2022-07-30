@@ -123,10 +123,11 @@ function SpeechConnect({ currPage, setCurrPage }) {
         <div className="project-text">
           Digital augmentative and alternative communication (AAC) devices are speech generating
           devices that allow a user to communicate through a combination of words, images, and
-          phrases that the device &ldquo;says&rdquo; out loud. While many groups benefit
-          from AAC devices, core users include any individuals who have difficulty producing
-          speech due to neurological or physical conditions. This includes individuals with aphasia,
-          autism, apraxia, and traumatic brain injury.
+          phrases that the device &ldquo;says&rdquo; out loud. Words are generally presented in a
+          grid layout that users interact with either through touch, scanning, or eye gazing.
+          While many groups benefit from AAC devices, core users include any individuals
+          who have difficulty producing speech due to neurological or physical conditions.
+          This includes individuals with aphasia, autism, apraxia, and traumatic brain injury.
           <br />
           <br />
           Made to help users increase their everyday independence and connections with others, AAC
@@ -279,107 +280,74 @@ function SpeechConnect({ currPage, setCurrPage }) {
               </div>
             </div>
           </div>
-          {/* <div className="category-lflex">
-            <div className="category-name">AAC DEVICES VS. APPS</div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Devices: more durable & customizable hardware
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Devices: requires recommendation & assessment by SLP to purchase
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Apps: can be privately funded, widely available
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Apps: good option for people without mobility impairments
-                  (no special durability needed)
-                </div>
-              </div>
-            </div>
-          </div> */}
-          {/* <div className="category-rflex">
-            <div className="category-name">DESIGN NEEDS</div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Limited icon options for diverse representation
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Color scheme can be important with cerebral visual impairment
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Layout considerations for motor planning
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Ideally 60-70 words per page max. for non-writers
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">MARKET RESEARCH</div>
         <div className="project-text">
-          For interviews, I spoke with 2 undergraduate students and 1 graduate student who had
-          previous corporate work experience as well. These students were selected for their
-          experiences managing teams and clubs. I spoke with each of them on the factors that are
-          most important to consider when sending out a meeting invite as well as thought processes
-          when providing availability.
+          Based on the survey responses, I looked into 4 of the most popular AAC apps for tablets
+          that currently exist: LAMP Words For Life, TouchChatHD with WordPower, TD Snap, and
+          Proloquo2Go. For each app, I was mainly interested in the layout of the central grid view,
+          customization capabilities, and UI design.
           <br />
           <br />
-          I synthesized recurring comments from the interviews under the categories of
-          academic planning, UI design, general emotions, and navigation issues. Across
-          all interviews, users expressed dissatisfaction with outdated UI design, difficulty
-          understanding the Academic Planning Worksheet&apos;s interactions, and the site&apos;s
-          use of a crowded sidebar for navigation.
-          <br />
-          Observations on UI
+          Overall, AAC apps are structured through vocabulary sets for how the grid view
+          is organized. Sets vary in sophistication depending on what a
+          user would need to communicate and what they are capable of communicating with
+          a device based on their level of experience. For example, apps will usually
+          offer a basic/beginner set of vocabulary for users new to AAC, and then users
+          can adjust their set as they learn.
         </div>
       </div>
       <div id="graphs-meetup" className="graphs">
         <div className="graphgrid-row">
           <div className="card-lgraph">
             <div className="graphcard-label">
-              QUESTION 1
+              LAMP WORDS FOR LIFE
             </div>
             <div className="graphcard-ques">
-              How do you feel about the general experience of using PennInTouch?
+              <ul>
+                <li>
+                  <div className="list-text">
+                    3 vocab levels starting with basic set of 82 words
+                    that each only need 1 touch to speak
+                  </div>
+                </li>
+                <li>
+                  <div className="list-text">
+                    Customizable vocab sets that maintain target words in same positions in grid
+                    to help users form motor patterns
+                  </div>
+                </li>
+                <li>
+                  <div className="list-text">Icon system paired with words in grid to promote literacy</div>
+                </li>
+              </ul>
             </div>
             {/* <img className="graph-img" src={generalexp} alt="general-exp graph" /> */}
           </div>
           <div className="card-rgraph">
             <div className="graphcard-label">
-              QUESTION 2
+              TOUCHCHAT HD WITH WORDPOWER
             </div>
             <div className="graphcard-ques">
-              How would you rate the ease of locating information you need on PennInTouch?
+              <ul>
+                <li>
+                  <div className="list-text">
+                    3 vocab levels starting with basic set of 82 words
+                    that each only need 1 touch to speak
+                  </div>
+                </li>
+                <li>
+                  <div className="list-text">
+                    Customizable vocab sets that maintain target words in same positions in grid
+                    to help users form motor patterns
+                  </div>
+                </li>
+                <li>
+                  <div className="list-text">Icon system paired with words in grid to promote literacy</div>
+                </li>
+              </ul>
             </div>
             {/* <img className="graph-img" src={easeinfo} alt="ease-info graph" /> */}
           </div>
@@ -387,7 +355,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
         <div className="graphgrid-row">
           <div className="card-lgraph-low">
             <div className="graphcard-label">
-              QUESTION 3
+              TD SNAP
             </div>
             <div className="graphcard-ques">
               How would you rate the experience of using the “Academic Planning Worksheet” feature?
@@ -396,7 +364,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
           </div>
           <div className="card-rgraph-low">
             <div className="graphcard-label">
-              QUESTION 4
+              PROLOQUO2GO
             </div>
             <div className="graphcard-ques">
               How would you rate the experience of using the “Mock Schedules” feature?

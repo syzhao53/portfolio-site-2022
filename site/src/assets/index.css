@@ -849,7 +849,7 @@ ul {
   background-color: #ffffff;
   border-radius: 7px;
   margin: 4rem 3rem 3rem 3rem;
-  max-width: 45%;
+  width: 45%;
 }
 
 .card-rgraph {
@@ -865,7 +865,7 @@ ul {
   background-color: #ffffff;
   border-radius: 7px;
   margin: 4rem 3rem 3rem 0;
-  max-width: 45%;
+  width: 45%;
 }
 
 .card-lgraph-low {
@@ -881,7 +881,7 @@ ul {
   background-color: #ffffff;
   border-radius: 7px;
   margin: 0 3rem 4rem 3rem;
-  max-width: 45%;
+  width: 45%;
 }
 
 .card-rgraph-low {
@@ -897,7 +897,7 @@ ul {
   background-color: #ffffff;
   border-radius: 7px;
   margin: 0 3rem 4rem 0;
-  max-width: 45%;
+  width: 45%;
 }
 
 .graphcard-label {
