@@ -5,6 +5,7 @@ import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../assets/index.css';
 import speechconnect from '../assets/speechconnect-mockup.png';
+import speechicons from '../assets/speech-icons.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -402,9 +403,13 @@ function SpeechConnect({ currPage, setCurrPage }) {
           <div className="cap-card-text">
             How might we create an organized & customizable AAC application so
             that users can tailor the functionality to their own needs?
+            <br />
+            <br />
+            How might we create an accessible system of illustrations/icons so
+            that users do not need to depend only on text for navigation?
           </div>
         </div>
-        <div id="how-might-card" className="cap-card">
+        {/* <div id="how-might-card" className="cap-card">
           <div className="cap">
             <div className="empty">c</div>
           </div>
@@ -412,7 +417,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
             How might we create an accessible system of illustrations/icons so
             that users do not need to depend only on text for navigation?
           </div>
-        </div>
+        </div> */}
         {/* <div className="section-header" id="market-research">Market Research</div> */}
         {/* WHERE DOES THE HOW MIGHT WE GO?? */}
         <div className="section-flex">
@@ -460,13 +465,12 @@ function SpeechConnect({ currPage, setCurrPage }) {
       </div>
       <div className="project-wrap">
         {/* <img id="project-sketches" src={pitsketches} alt="pit-sketches" /> */}
-        <div className="subsection-header">WIREFRAMES: ITERATION 1</div>
+        <div className="subsection-header">HOME (GRID VIEW)</div>
         <div className="project-text">
-          Mention layout and motor planning considerations
-          <br />
-          My solution focused on creating more intuitive way to assign courses
-          to requirements as well as a layout that would visually emphasize the different
-          categories of requirements. The following features were incorporated into the redesign:
+          My solution started with the main grid view that acts as the homepage of the app.
+          In this part of the app, I focused on the user flow of how someone would speak a
+          sentence, paying attention to how words and categories are organized in the grid.
+          In addition to the words, the homepage featured:
           <ul>
             <li>
               <div className="list-text">
@@ -505,7 +509,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
         {/* <img className="mockup-img" src={pitwire1} alt="pit-wire-1" /> */}
       </div>
       <div className="project-wrap">
-        <div className="subsection-header-sec">WIREFRAMES: ITERATION 2</div>
+        <div className="subsection-header-sec">CUSTOMIZATION</div>
         <div className="project-text">
           After receiving feedback from users on the first set of wireframes, I made changes
           to the structure of the collapsible side panel and several minor features:
@@ -536,7 +540,69 @@ function SpeechConnect({ currPage, setCurrPage }) {
         {/* <img className="mockup-img" src={pitwire2} alt="pit-wire-2" /> */}
       </div>
       <div className="project-wrap">
-        <div className="subsection-header-sec">UI DESIGN: ITERATION 1</div>
+        <div className="subsection-header-sec">ADD WORD</div>
+        <div className="project-text">
+          After receiving feedback from users on the first set of wireframes, I made changes
+          to the structure of the collapsible side panel and several minor features:
+          <ul>
+            <li>
+              <div className="list-text">Made side panel dropdown menus searchable</div>
+            </li>
+            <li>
+              <div className="list-text">
+                Changed selection of Course Category (Completed Courses, Currently Enrolled,
+                External Credit) from multiple dropdowns to single set of radio buttons in
+                side panel
+              </div>
+            </li>
+            <li>
+              <div className="list-text">Second displayed dropdown in side panel now depends on the selected radio button</div>
+            </li>
+            <li>
+              <div className="list-text">Removed certification cards (check mark icon added to cards in final UI to indicate certifications)</div>
+            </li>
+            <li>
+              <div className="list-text">Made all cards for requirenent categories collapsible</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="mockup">
+        {/* <img className="mockup-img" src={pitwire2} alt="pit-wire-2" /> */}
+      </div>
+      <div className="project-wrap">
+        <div className="subsection-header-sec">ADD VOCAB SET</div>
+        <div className="project-text">
+          After receiving feedback from users on the first set of wireframes, I made changes
+          to the structure of the collapsible side panel and several minor features:
+          <ul>
+            <li>
+              <div className="list-text">Made side panel dropdown menus searchable</div>
+            </li>
+            <li>
+              <div className="list-text">
+                Changed selection of Course Category (Completed Courses, Currently Enrolled,
+                External Credit) from multiple dropdowns to single set of radio buttons in
+                side panel
+              </div>
+            </li>
+            <li>
+              <div className="list-text">Second displayed dropdown in side panel now depends on the selected radio button</div>
+            </li>
+            <li>
+              <div className="list-text">Removed certification cards (check mark icon added to cards in final UI to indicate certifications)</div>
+            </li>
+            <li>
+              <div className="list-text">Made all cards for requirenent categories collapsible</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="mockup">
+        {/* <img className="mockup-img" src={pitwire2} alt="pit-wire-2" /> */}
+      </div>
+      <div className="project-wrap">
+        <div className="subsection-header-sec">UI DESIGN</div>
         <div className="project-text">
           After finalizing wireframes, I styled the design with the goal of modernizing the
           interface while still keeping Penn&apos;s core branding in mind. The first iteration
@@ -556,36 +622,15 @@ function SpeechConnect({ currPage, setCurrPage }) {
           </ul>
         </div>
       </div>
-      <div className="mockup">
-        {/* <img className="mockup-img" src={pitui1} alt="pit-ui-1" /> */}
-      </div>
-      <div className="project-wrap">
-        <div className="subsection-header-sec">UI DESIGN: ITERATION 2</div>
-        <div className="project-text">
-          Based on further user feedback, the second iteration aimed to improve the cohesiveness
-          of the design:
-          <ul>
-            <li>
-              <div className="list-text">Changed all type to sans-serif font (Proxima Nova)</div>
-            </li>
-            <li>
-              <div className="list-text">
-                Subtle color added to left sidebar to match rest of design
-              </div>
-            </li>
-            <li>
-              <div className="list-text">Lightened and decreased size of bubbles next to course names</div>
-            </li>
-          </ul>
-        </div>
-      </div>
       <div id="last-mockup">
-        {/* <img className="mockup-img" src={pitui2} alt="pit-ui-2" /> */}
+        <img className="mockup-img" src={speechicons} alt="speech-icons" />
       </div>
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
         <div className="project-text">
-          add link to figma or embed? or screen record, add actual device mockups?
+          Figma links
+          <br />
+          Sound prototype
         </div>
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
