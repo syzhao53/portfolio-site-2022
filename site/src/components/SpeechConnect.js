@@ -130,7 +130,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
           <br />
           <br />
           Made to help users increase their everyday independence and connections with others, AAC
-          devices serve a crucial need but can cost upwards of $1000 for high-tech models.
+          devices serve a crucial need but can cost thousands of dollars for high-tech models.
           This barrier to access led me to consider how digital applications
           can attempt to fill the same role; for example, in the case where a
           user already possesses a standard tablet, they could rely on an app instead of
@@ -151,7 +151,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
         <div className="subsection-header">EXPERT KNOWLEDGE</div>
         <div className="project-text">
           To better understand the user groups and use cases for AAC devices, I surveyed 4
-          professional speech-language pathologists who have experience working with AAC
+          professional speech-language pathologists (SLPs) who have experience working with AAC
           devices. Due to logistical constraints, information was collected via Google Forms
           in long-form answers.
           <br />
@@ -159,6 +159,208 @@ function SpeechConnect({ currPage, setCurrPage }) {
           In addition to defining the user groups, I wanted to explore how traditional
           AAC devices differ from apps, compile a list of professionally recommended apps,
           and understand the challenges that people face with AAC devices.
+        </div>
+      </div>
+      <div className="affinity-col">
+        <div className="categories-wrap">
+          <div className="categories-row">
+            <div className="category-flex">
+              <div className="category-name">USER GROUPS</div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text-short">
+                    People with neurological/physical/
+                    <br />
+                    mental
+                    conditions
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Types of interactions with devices: touch, scanning, and/or eye gaze
+                  </div>
+                </div>
+              </div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Therapists, family, friends of AAC users
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    People with limited or no speech capability
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="category-rflex">
+              <div className="category-name">COMMON CHALLENGES</div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Lack of flexibility in devices (eg. needing to show photos in another app)
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Issues with speed and precision (saying exactly what you want to say)
+                  </div>
+                </div>
+              </div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Mobility impairments increase precision issues
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Very often geared towards children, lack of adult vocabulary
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="categories-row-last">
+            <div className="category-flex">
+              <div className="category-name">AAC DEVICES VS. APPS</div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text-short">
+                    Devices: more durable & customizable hardware
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Devices: requires recommendation & assessment by SLP to purchase
+                  </div>
+                </div>
+              </div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Apps: good for people without mobility impairments
+                    (no special durability needed)
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Apps: can be privately funded, widely available
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="category-rflex">
+              <div className="category-name">DESIGN NEEDS</div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Limited icon options for diverse representation
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Color scheme can be important with cerebral visual impairment
+                  </div>
+                </div>
+              </div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Layout considerations for motor planning
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Ideally 60-70 words per page max. for non-writers
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <div className="category-lflex">
+            <div className="category-name">AAC DEVICES VS. APPS</div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Devices: more durable & customizable hardware
+                </div>
+              </div>
+            </div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Devices: requires recommendation & assessment by SLP to purchase
+                </div>
+              </div>
+            </div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Apps: can be privately funded, widely available
+                </div>
+              </div>
+            </div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Apps: good option for people without mobility impairments
+                  (no special durability needed)
+                </div>
+              </div>
+            </div>
+          </div> */}
+          {/* <div className="category-rflex">
+            <div className="category-name">DESIGN NEEDS</div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Limited icon options for diverse representation
+                </div>
+              </div>
+            </div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Color scheme can be important with cerebral visual impairment
+                </div>
+              </div>
+            </div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Layout considerations for motor planning
+                </div>
+              </div>
+            </div>
+            <div className="post-it-row">
+              <div className="rpost-it">
+                <div className="post-it-text">
+                  Ideally 60-70 words per page max. for non-writers
+                </div>
+              </div>
+            </div>
+          </div> */}
+        </div>
+      </div>
+      <div className="project-wrap">
+        <div className="subsection-header-sec">MARKET RESEARCH</div>
+        <div className="project-text">
+          For interviews, I spoke with 2 undergraduate students and 1 graduate student who had
+          previous corporate work experience as well. These students were selected for their
+          experiences managing teams and clubs. I spoke with each of them on the factors that are
+          most important to consider when sending out a meeting invite as well as thought processes
+          when providing availability.
+          <br />
+          <br />
+          I synthesized recurring comments from the interviews under the categories of
+          academic planning, UI design, general emotions, and navigation issues. Across
+          all interviews, users expressed dissatisfaction with outdated UI design, difficulty
+          understanding the Academic Planning Worksheet&apos;s interactions, and the site&apos;s
+          use of a crowded sidebar for navigation.
+          <br />
+          Observations on UI
         </div>
       </div>
       <div id="graphs-meetup" className="graphs">
@@ -200,143 +402,6 @@ function SpeechConnect({ currPage, setCurrPage }) {
               How would you rate the experience of using the “Mock Schedules” feature?
             </div>
             {/* <img className="graph-img" src={mocksched} alt="mock-sched graph" /> */}
-          </div>
-        </div>
-      </div>
-      <div className="project-wrap">
-        <div className="subsection-header-sec">MARKET RESEARCH</div>
-        <div className="project-text">
-          For interviews, I spoke with 2 undergraduate students and 1 graduate student who had
-          previous corporate work experience as well. These students were selected for their
-          experiences managing teams and clubs. I spoke with each of them on the factors that are
-          most important to consider when sending out a meeting invite as well as thought processes
-          when providing availability.
-          <br />
-          <br />
-          I synthesized recurring comments from the interviews under the categories of
-          academic planning, UI design, general emotions, and navigation issues. Across
-          all interviews, users expressed dissatisfaction with outdated UI design, difficulty
-          understanding the Academic Planning Worksheet&apos;s interactions, and the site&apos;s
-          use of a crowded sidebar for navigation.
-          <br />
-          Observations on UI
-        </div>
-      </div>
-      <div className="affinity">
-        <div className="categories-wrap">
-          <div className="category-flex">
-            <div className="category-name">LAMP</div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text-short">
-                  Terrible experience
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text-short">
-                  Feels awful
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Sufficient, just could be better
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Lack of trust in product, feels unreliable
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Became embittered with experience overtime
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  &ldquo;Words cannot describe how terrible [it] is&rdquo;
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="category-flex">
-            <div className="category-name">TOUCHCHAT HD</div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Lots of misclicking in sidebar
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  First time user would have a hard time
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Difficult with everything collapsed in sidebar dropdowns
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Lots of trial and error navigating with sidebar
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="category-lflex">
-            <div className="category-name">TD SNAP</div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Does not use site for 4-year planning
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Big learning curve using Academic Planning Worksheet
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Use Academic Planning Worksheet to check requirements
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="category-rflex">
-            <div className="category-name">PROLOQUO2GO (add GOTALKNOW)</div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Everything in sidebar is too small (web and mobile)
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Text is too small overall
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Strange unused space on right side of page
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

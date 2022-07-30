@@ -824,9 +824,9 @@ ul {
   flex-wrap: wrap;
 }
 
-#graphs-meetup {
-  /* background-color: #EBF5F3; */
-}
+/* #graphs-meetup {
+  background-color: #EBF5F3;
+} */
 
 .graphgrid-row {
   display: flex;
@@ -932,6 +932,29 @@ ul {
   margin: 1rem 0 3rem 0;
   /* background-color: red; */
   /* flex-wrap: wrap; */
+}
+
+.affinity-col {
+  /* background-color: #F4FAFF; */
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem 4rem 2rem;
+  margin: 1rem 0 3rem 0;
+  /* background-color: red; */
+  /* flex-wrap: wrap; */
+}
+
+.categories-row {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.categories-row-last {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
 }
 
 .categories-wrap {
@@ -1398,7 +1421,6 @@ ul {
     flex-direction: row;
     padding: 4rem 2rem 4rem 2rem;
     margin: 1rem 0 3rem 0;
-    /* background-color: red; */
     /* flex-wrap: wrap; */
   }
   
@@ -1407,6 +1429,7 @@ ul {
     flex-direction: row;
     margin: auto;
     flex-wrap: wrap;
+    background-color: pink;
   }
   
   .category-flex {
