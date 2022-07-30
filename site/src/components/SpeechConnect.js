@@ -396,7 +396,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
           After understanding the research results, I created two guiding questions for the design
           process, one for UX design and one for visual design.
         </div>
-        <div id="how-might-card" className="cap-card">
+        <div id="how-might-card-double" className="cap-card">
           <div className="cap">
             <div className="empty">c</div>
           </div>
