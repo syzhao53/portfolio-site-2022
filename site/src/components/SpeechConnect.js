@@ -8,6 +8,8 @@ import speechconnect from '../assets/speechconnect-mockup.png';
 import speechicons from '../assets/speech-icons.png';
 import speechgridwire from '../assets/speech-grid-wire.png';
 import speechgridui from '../assets/speech-grid-ui.png';
+import speechcustomizewire from '../assets/speech-customize-wire.png';
+import speechcustomizeui from '../assets/speech-customize-ui.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -427,7 +429,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
             <div className="section-header" id="solution">Solution</div>
             <div className="project-ltext">
               My solution focused on the user flows of speaking a sentence with the app (Home),
-              allowing for customization (Customization),
+              allowing for customization (Customize),
               adding a custom word to the app (Add Word), and adding a custom set of vocabulary for
               the main grid view (Add Vocab Set).
               <br />
@@ -447,7 +449,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
                   <span style={{ 'font-weight': '600' }}>Home: </span>
                   3 iterations
                   <br />
-                  <span style={{ 'font-weight': '600' }}>Customization: </span>
+                  <span style={{ 'font-weight': '600' }}>Customize: </span>
                   2 iterations
                   <br />
                   <span style={{ 'font-weight': '600' }}>Add Word: </span>
@@ -539,35 +541,100 @@ function SpeechConnect({ currPage, setCurrPage }) {
         </div>
       </div>
       <div className="project-wrap">
-        <div className="subsection-header-sec">CUSTOMIZATION</div>
+        <div className="subsection-header-sec">CUSTOMIZE</div>
         <div className="project-text">
-          After receiving feedback from users on the first set of wireframes, I made changes
-          to the structure of the collapsible side panel and several minor features:
+          In the Customize page, the user sees options for customizing their experience with
+          the home grid view. Originally named the Edit page, I chose to rename the page for clarity
+          and to emphasize the idea of a custom experience. This includes:
           <ul>
             <li>
-              <div className="list-text">Made side panel dropdown menus searchable</div>
-            </li>
-            <li>
               <div className="list-text">
-                Changed selection of Course Category (Completed Courses, Currently Enrolled,
-                External Credit) from multiple dropdowns to single set of radio buttons in
-                side panel
+                <span style={{ 'font-weight': '600' }}>Adding a word to the database </span>
+                from the &ldquo;Add Word&rdquo; button
               </div>
             </li>
             <li>
-              <div className="list-text">Second displayed dropdown in side panel now depends on the selected radio button</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Adding a custom vocab set </span>
+                for the grid from the &ldquo;Add Vocab Set&rdquo; button
+              </div>
             </li>
             <li>
-              <div className="list-text">Removed certification cards (check mark icon added to cards in final UI to indicate certifications)</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Changing the vocab set for the grid </span>
+                in order to allow for users to control how they progress from basic to more advanced
+                set-ups. This also includes custom sets and sets that text-only (for users who
+                don&apos;t want or need visual aids).
+              </div>
             </li>
             <li>
-              <div className="list-text">Made all cards for requirenent categories collapsible</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Changing the theme for icons </span>
+                to accomodate for different visual needs or preferences
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Other quick actions </span>
+                for editing an existing word in the database (Edit Word) and changing the
+                voice that speaks the words a user selects (Change Voice)
+              </div>
             </li>
           </ul>
         </div>
       </div>
       <div className="mockup">
-        {/* <img className="mockup-img" src={pitwire2} alt="pit-wire-2" /> */}
+        <img className="mockup-img" src={speechcustomizewire} alt="speech-customize-wire" />
+        <div className="iteration-caption">
+          Wireframe iterations 1 & 2
+        </div>
+      </div>
+      <div className="project-wrap">
+        <div className="project-text">
+          UI design (mention that icons were added to cards, icons filled in,
+          selected set & theme more emphasized)
+          <ul>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Adding a word to the database </span>
+                from the &ldquo;Add Word&rdquo; button
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Adding a custom vocab set </span>
+                for the grid from the &ldquo;Add Vocab Set&rdquo; button
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Changing the vocab set for the grid </span>
+                in order to allow for users to control how they progress from basic to more advanced
+                set-ups. This also includes custom sets and sets that text-only (for users who
+                don&apos;t want or need visual aids).
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Changing the theme for icons </span>
+                to accomodate for different visual needs or preferences
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Other quick actions </span>
+                for editing an existing word in the database (Edit Word) and changing the
+                voice that speaks the words a user selects (Change Voice)
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="mockup">
+        <img className="mockup-img" src={speechcustomizeui} alt="speech-customize-ui" />
+        <div className="iteration-caption">
+          UI design iterations 1 & 2 (final)
+        </div>
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">ADD WORD</div>
