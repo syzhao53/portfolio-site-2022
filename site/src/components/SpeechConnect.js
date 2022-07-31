@@ -10,6 +10,7 @@ import speechgridwire from '../assets/speech-grid-wire.png';
 import speechgridui from '../assets/speech-grid-ui.png';
 import speechcustomizewire from '../assets/speech-customize-wire.png';
 import speechcustomizeui from '../assets/speech-customize-ui.png';
+import speechwordwire from '../assets/speech-word-wire.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -545,7 +546,9 @@ function SpeechConnect({ currPage, setCurrPage }) {
         <div className="project-text">
           In the Customize page, the user sees options for customizing their experience with
           the home grid view. Originally named the Edit page, I chose to rename the page for clarity
-          and to emphasize the idea of a custom experience. This includes:
+          and to emphasize the idea of a custom experience. Additionally, icons were added
+          to the cards in the second iteration to account for users who can&apos;t rely on
+          text for navigation. Features include:
           <ul>
             <li>
               <div className="list-text">
@@ -591,43 +594,8 @@ function SpeechConnect({ currPage, setCurrPage }) {
       </div>
       <div className="project-wrap">
         <div className="project-text">
-          UI design (mention that icons were added to cards, icons filled in,
-          selected set & theme more emphasized)
-          <ul>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Adding a word to the database </span>
-                from the &ldquo;Add Word&rdquo; button
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Adding a custom vocab set </span>
-                for the grid from the &ldquo;Add Vocab Set&rdquo; button
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Changing the vocab set for the grid </span>
-                in order to allow for users to control how they progress from basic to more advanced
-                set-ups. This also includes custom sets and sets that text-only (for users who
-                don&apos;t want or need visual aids).
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Changing the theme for icons </span>
-                to accomodate for different visual needs or preferences
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Other quick actions </span>
-                for editing an existing word in the database (Edit Word) and changing the
-                voice that speaks the words a user selects (Change Voice)
-              </div>
-            </li>
-          </ul>
+          For the UI design, changes between iterations mainly involved filling cards and icons to
+          better indicate interactive components.
         </div>
       </div>
       <div className="mockup">
@@ -665,7 +633,10 @@ function SpeechConnect({ currPage, setCurrPage }) {
         </div>
       </div>
       <div className="mockup">
-        {/* <img className="mockup-img" src={pitwire2} alt="pit-wire-2" /> */}
+        <img className="mockup-img" src={speechwordwire} alt="speech-word-wire" />
+        <div className="iteration-caption">
+          Wireframe iterations 1 & 2
+        </div>
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">ADD VOCAB SET</div>
