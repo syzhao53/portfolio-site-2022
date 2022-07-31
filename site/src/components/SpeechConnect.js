@@ -6,6 +6,8 @@ import { HashLink as Link } from 'react-router-hash-link';
 import '../assets/index.css';
 import speechconnect from '../assets/speechconnect-mockup.png';
 import speechicons from '../assets/speech-icons.png';
+import speechgridwire from '../assets/speech-grid-wire.png';
+import speechgridui from '../assets/speech-grid-ui.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -427,8 +429,12 @@ function SpeechConnect({ currPage, setCurrPage }) {
               My solution focused on the user flows of speaking a sentence with the app (Home),
               allowing for customization (Customization),
               adding a custom word to the app (Add Word), and adding a custom set of vocabulary for
-              the main grid view (Add Vocab Set). This was executed with a tablet size in mind
-              for similarity to actual AAC devices.
+              the main grid view (Add Vocab Set).
+              <br />
+              <br />
+              This was executed with a tablet size in mind
+              for similarity to actual AAC devices, and feedback from SLPs was provided between
+              first and second iterations for wireframes.
             </div>
           </div>
           <div className="section-rflex">
@@ -470,43 +476,67 @@ function SpeechConnect({ currPage, setCurrPage }) {
           My solution started with the main grid view that acts as the homepage of the app.
           In this part of the app, I focused on the user flow of how someone would speak a
           sentence, paying attention to how words and categories are organized in the grid.
-          In addition to the words, the homepage featured:
+          Across 3 iterations, the homepage ultimately featured:
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Collapsible right side panel </span>
-                for assigning courses to requirements, indicated by
-                prominently displayed tab on side; clearer than previous interaction at bottom of
-                screen and collapsible for space-efficiency
+                <span style={{ 'font-weight': '600' }}>Word & category buttons </span>
+                in the grid, organized based on how sentences would be commonly structured
+                (pronouns and nouns on far left of grid).
+                Category buttons were ultimately moved to the bottom right since SLPs noted that
+                users would benefit from commonly used words being in the first row instead,
+                especially if interacting through scanning or eye gazing.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Cards for each requirement category </span>
-                (Foundational Approaches, Sectors, Free Electives, etc.) to visually group
-                information for users and improve on pain point concerning visual clutter
+                <span style={{ 'font-weight': '600' }}>Keyboard & Search buttons </span>
+                included in the grid as additional buttons. SLPs recommend a keyboard feature to
+                allow flexibility in communication style if a user would prefer to type. The search
+                function would help users locate a word in the grid. Keyboard and Search were
+                moved from the navigation bar to the grid since they would be features contained in
+                the grid view, not separate pages in the app.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Cards for the two certifications </span>
-                (General Requirements and Major Requirements) to separate the checkpoints users
-                use to measure progress; originally styled the same as a general requirement
+                <span style={{ 'font-weight': '600' }}>Navigation to customization page </span>
+                included in bottom navigation bar to emphasize the app&apos;s ability to create a
+                custom experience.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Filters </span>
-                for customizing which requirement categories to view, gives user
-                control over experience and allows for more compact view eliminating
-                extra information (eg. completed categories)
+                <span style={{ 'font-weight': '600' }}>Top bar to display words </span>
+                that a user spoke, meant to promote literacy and to help user track what
+                they are communicating. This includes the option to clear a word from the bar.
               </div>
             </li>
           </ul>
         </div>
       </div>
       <div className="mockup">
-        {/* <img className="mockup-img" src={pitwire1} alt="pit-wire-1" /> */}
+        <img className="mockup-img" src={speechgridwire} alt="speech-grid-wire" />
+        <div className="iteration-caption">
+          Wireframe iterations 1, 2, & 3
+        </div>
+      </div>
+      <div className="project-wrap">
+        <div className="project-text">
+          The final design demonstrates an example of how a user&apos;s grid could
+          be set up with the general button layout outlined in the wireframes. Features
+          use the main orange color while word buttons are assigned a color based on the
+          part of speech. In the example of a category page, the Keyboard and Search
+          buttons remain in their original
+          position to enforce the idea from user research that buttons should generally
+          have one consistent motor pattern for interaction.
+        </div>
+      </div>
+      <div className="mockup">
+        <img className="mockup-img" src={speechgridui} alt="speech-grid-ui" />
+        <div className="iteration-caption">
+          Main grid view & &ldquo;Activities&rdquo; category page example
+        </div>
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">CUSTOMIZATION</div>
