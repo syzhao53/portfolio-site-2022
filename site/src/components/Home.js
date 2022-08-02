@@ -30,6 +30,8 @@ function Home({ currPage, setCurrPage }) {
       navigate('/pennintouch');
     } else if (name === 'speechconnect') {
       navigate('/speechconnect');
+    } else if (name === 'logitech') {
+      navigate('/logitech');
     } else if (name === 'chapter') {
       navigate('/chapter');
     } else if (name === 'personal') {
@@ -117,18 +119,18 @@ function Home({ currPage, setCurrPage }) {
           </div>
         </div>
         <div className="grid-row">
-          <div className="gcard-lwrap">
+          <div className="gcard-lwrap" onClick={() => goToProject('logitech')}>
             <img className="lined-gcard-label" src={logi} alt="logi mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
                 Logitech Design Ops
               </div>
               <div className="gcard-text">
-                Internship reflections (ask about showing work)
+                Summer 2022 internship reflections
               </div>
             </div>
           </div>
-          <div className="gcard-rwrap"  onClick={() => goToProject('personal')}>
+          <div className="gcard-rwrap" onClick={() => goToProject('personal')}>
             <img className="lined-gcard-label" src={icecream} alt="pennapps mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">

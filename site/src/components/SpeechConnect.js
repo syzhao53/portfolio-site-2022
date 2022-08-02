@@ -5,7 +5,9 @@ import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../assets/index.css';
 import speechconnect from '../assets/speechconnect-mockup.png';
-import speechicons from '../assets/speech-icons.png';
+import speechapps from '../assets/speech-apps.png';
+import aacexample from '../assets/aac-example.png';
+// import speechicons from '../assets/speech-icons.png';
 import speechgridwire from '../assets/speech-grid-wire.png';
 import speechgridui from '../assets/speech-grid-ui.png';
 import speechcustomizewire from '../assets/speech-customize-wire.png';
@@ -15,6 +17,8 @@ import speechwordui from '../assets/speech-word-ui.png';
 import speechsetwire1 from '../assets/speech-set-wire-1.png';
 import speechsetwire2 from '../assets/speech-set-wire-2.png';
 import speechsetui from '../assets/speech-set-ui.png';
+import speechui from '../assets/speech-ui.png';
+import speechdevicemock from '../assets/speech-device-mock.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -147,7 +151,10 @@ function SpeechConnect({ currPage, setCurrPage }) {
           user already possesses a standard tablet, they could rely on an app instead of
           purchasing a new device.
         </div>
-        {/* <img className="project-img" src={pithome} alt="pit-home" /> */}
+        {/* <img className="project-img" src={aacexample} alt="aac-example" /> */}
+        <div className="mockup">
+          <img className="mockup-img" src={aacexample} alt="speech-apps" />
+        </div>
         <div className="section-header" id="research"> Research</div>
         <div className="cap-card">
           <div className="cap">
@@ -344,18 +351,17 @@ function SpeechConnect({ currPage, setCurrPage }) {
               <ul>
                 <li>
                   <div className="list-text">
-                    3 vocab levels starting with basic set of 82 words
-                    that each only need 1 touch to speak
+                    Multiple preset vocab levels starting with the most basic 4 words per page
+                    set-up for users that need minimal targets
                   </div>
                 </li>
                 <li>
                   <div className="list-text">
-                    Customizable vocab sets that maintain target words in same positions in grid
-                    to help users form motor patterns
+                    Ability to customize words
                   </div>
                 </li>
                 <li>
-                  <div className="list-text">Icon system paired with words in grid to promote literacy</div>
+                  <div className="list-text">Very picture/icon-based for users with aphasia who have difficulty with written language</div>
                 </li>
               </ul>
             </div>
@@ -368,7 +374,22 @@ function SpeechConnect({ currPage, setCurrPage }) {
               TD SNAP
             </div>
             <div className="graphcard-ques">
-              How would you rate the experience of using the “Academic Planning Worksheet” feature?
+              <ul>
+                <li>
+                  <div className="list-text">
+                    Multiple preset vocab levels starting with core 63 word grid; additional sets
+                    available for purchase
+                  </div>
+                </li>
+                <li>
+                  <div className="list-text">
+                    Ability to customize words
+                  </div>
+                </li>
+                <li>
+                  <div className="list-text">Ability to edit icons on word buttons to adjust for skin color, hair color, and other personalized traits</div>
+                </li>
+              </ul>
             </div>
             {/* <img className="graph-img" src={academicplan} alt="academic-plan graph" /> */}
           </div>
@@ -377,10 +398,29 @@ function SpeechConnect({ currPage, setCurrPage }) {
               PROLOQUO2GO
             </div>
             <div className="graphcard-ques">
-              How would you rate the experience of using the “Mock Schedules” feature?
+              <ul>
+                <li>
+                  <div className="list-text">
+                    Recommended 7 x 11 starting grid size to limit need for page navigation
+                  </div>
+                </li>
+                <li>
+                  <div className="list-text">
+                    Ability to customize words and sets
+                  </div>
+                </li>
+                <li>
+                  <div className="list-text">Similar icon system/style as other apps</div>
+                </li>
+              </ul>
             </div>
-            {/* <img className="graph-img" src={mocksched} alt="mock-sched graph" /> */}
           </div>
+        </div>
+      </div>
+      <div className="mockup">
+        <img className="mockup-img" src={speechapps} alt="speech-apps" />
+        <div className="iteration-caption">
+          Left to right, top to bottom: LAMP, TouchChat, TDSnap, Proloquo2Go
         </div>
       </div>
       <div className="project-wrap">
@@ -395,10 +435,13 @@ function SpeechConnect({ currPage, setCurrPage }) {
             <div className="list-text">There is an extremely broad range of users with different needs who use AAC devices</div>
           </li>
           <li>
-            <div className="list-text">The left sidebar navigation is too cramped and most sections go unused</div>
+            <div className="list-text">Customizability of vocab sets is often limited by user&apos;s needing to pay for more advanced sets</div>
           </li>
           <li>
-            <div className="list-text">The Academic Planning Worksheet feature is underused and is perceived the most negatively out of PennInTouch&apos;s main features</div>
+            <div className="list-text">
+              Icons/pictures are important to guiding user&apos;s in AAC; icons
+              systems are often not cohesive and may appear childish to adults
+            </div>
           </li>
         </ul>
         <div className="project-text-low">
@@ -670,7 +713,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Ability to replace a word </span>
-                in a base set&apos;s grid. This function draws from the app&apos; existing
+                in a base set&apos;s grid. This function draws from the app&apos;s existing
                 word database.
               </div>
             </li>
@@ -697,40 +740,68 @@ function SpeechConnect({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">UI DESIGN</div>
         <div className="project-text">
-          After finalizing wireframes, I styled the design with the goal of modernizing the
-          interface while still keeping Penn&apos;s core branding in mind. The first iteration
-          focused on the the following key style choices:
+          The overall UI design of the project focused on the use of icons to aid the user&apos;s
+          navigation of the app. The following choices guided the use and creation of icons:
           <ul>
             <li>
-              <div className="list-text">Lighter color palette overall for clean, modern feel</div>
-            </li>
-            <li>
               <div className="list-text">
-                Fonts from Penn&apos;s core branding (EB Garamond and Roboto)
+                <span style={{ 'font-weight': '600' }}>Icons for each major feature/action </span>
+                to guide user&apos;s who cannot rely entirely on text. The same icons are used on
+                the cards that guide the user through each feature, maintaining consistency
+                throughout the interface to orient the user.
               </div>
             </li>
             <li>
-              <div className="list-text">Selective use of main dark blue color from original interface to emphasize features</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Limited, cohesive color palette </span>
+                for grid view icons to ensure that no icons compete for the user&apos;s attention
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Flat illustration style </span>
+                for grid view icons to maintain clarity at small sizes
+              </div>
             </li>
           </ul>
         </div>
       </div>
       <div id="last-mockup">
-        <img className="mockup-img" src={speechicons} alt="speech-icons" />
+        <img className="mockup-img" src={speechui} alt="speech-ui" />
       </div>
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
         <div className="project-text">
-          Figma links
-          <br />
-          Sound prototype
+          Interact with the final prototype at the link below:
+          <ul>
+            <li>
+              <div className="list-text">
+                <a className="proto-link" href="https://www.figma.com/proto/AHxq5BvD3YoUd5bdFdI9OC/Meetup-Prototype-(Mobile)?node-id=2%3A98&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A28">
+                  SpeechConnect Prototype
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div className="proto-flex">
+          <img className="device-mock" src={speechdevicemock} alt="speech-device-mock" />
         </div>
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
-          Hardware
-          User testing
-          Sound
-          Application of academic knowledge
+          Coming from a background in psychology and linguistics, this project was an interesting
+          way to explore how design and technology can serve accessibility needs related to
+          those areas. Speaking with speech-language pathologists through the process helped
+          demonstrate the challenges of designing for diverse needs and users. Overall, this
+          project helped me be more conscious of visual design choices that impact
+          an interface&apos;s usability.
+          <br />
+          <br />
+          Although my solution presents one example of an AAC device interface, my research
+          process showed the complexity of how effective AAC devices are designed. Digital
+          solutions address pain points concerning access and flexibility, but some users
+          still need special hardware for durability. This digital solution instead focuses on
+          the design needs that software can address, aiming to meet a wide range of communication
+          needs.
         </div>
       </div>
       <Footer />

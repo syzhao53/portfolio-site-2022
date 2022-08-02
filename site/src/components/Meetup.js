@@ -722,7 +722,7 @@ function Meetup({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
         <div className="project-text">
-          Interact with the final prototypes below at the links below:
+          Interact with the final prototypes at the links below:
           <ul>
             <li>
               <div className="list-text">
