@@ -11,6 +11,10 @@ import speechgridui from '../assets/speech-grid-ui.png';
 import speechcustomizewire from '../assets/speech-customize-wire.png';
 import speechcustomizeui from '../assets/speech-customize-ui.png';
 import speechwordwire from '../assets/speech-word-wire.png';
+import speechwordui from '../assets/speech-word-ui.png';
+import speechsetwire1 from '../assets/speech-set-wire-1.png';
+import speechsetwire2 from '../assets/speech-set-wire-2.png';
+import speechsetui from '../assets/speech-set-ui.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -607,29 +611,19 @@ function SpeechConnect({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">ADD WORD</div>
         <div className="project-text">
-          After receiving feedback from users on the first set of wireframes, I made changes
-          to the structure of the collapsible side panel and several minor features:
-          <ul>
-            <li>
-              <div className="list-text">Made side panel dropdown menus searchable</div>
-            </li>
-            <li>
-              <div className="list-text">
-                Changed selection of Course Category (Completed Courses, Currently Enrolled,
-                External Credit) from multiple dropdowns to single set of radio buttons in
-                side panel
-              </div>
-            </li>
-            <li>
-              <div className="list-text">Second displayed dropdown in side panel now depends on the selected radio button</div>
-            </li>
-            <li>
-              <div className="list-text">Removed certification cards (check mark icon added to cards in final UI to indicate certifications)</div>
-            </li>
-            <li>
-              <div className="list-text">Made all cards for requirenent categories collapsible</div>
-            </li>
-          </ul>
+          To add to the app&apos;s database of words that can be used in vocab sets,
+          I wanted to address the pain point mentioned by SLPs that apps often lack
+          enough advanced vocabulary for adults. By allowing users to add their own
+          words with custom pictures, the app creates a more tailored experience.
+          <br />
+          <br />
+          The final design has the user
+          specify the word and optional category before adding a picture. This decision
+          reflected feedback about how the first iteration made it confusing on whether
+          a picture was required for a word to be added (since some users may not want
+          to add a picture). The final design also uses the updated title &ldquo;Add Word To
+          Database&rdquo; since SLPs commented that &ldquo;Add Word&rdquo; could be confused
+          with adding to the current main grid view.
         </div>
       </div>
       <div className="mockup">
@@ -639,35 +633,66 @@ function SpeechConnect({ currPage, setCurrPage }) {
         </div>
       </div>
       <div className="project-wrap">
+        <div className="project-text">
+          The final design demonstrates a flow for creating new word in the app with the
+          ability to upload a photo for the icon.
+        </div>
+      </div>
+      <div className="mockup">
+        <img className="mockup-img" src={speechwordui} alt="speech-word-ui" />
+        <div className="iteration-caption">
+          Final UI design
+        </div>
+      </div>
+      <div className="project-wrap">
         <div className="subsection-header-sec">ADD VOCAB SET</div>
         <div className="project-text">
-          After receiving feedback from users on the first set of wireframes, I made changes
-          to the structure of the collapsible side panel and several minor features:
+          For the feature of adding a custom vocab set to configure the main grid view,
+          I wanted to address the pain point in existing apps concerning the flexibility
+          of standard sets. By allowing a user to create new vocab sets for their unique
+          communication needs, this feature gives users more control over how they progress
+          through different vocab sets as they learn. Key points include:
           <ul>
             <li>
-              <div className="list-text">Made side panel dropdown menus searchable</div>
-            </li>
-            <li>
               <div className="list-text">
-                Changed selection of Course Category (Completed Courses, Currently Enrolled,
-                External Credit) from multiple dropdowns to single set of radio buttons in
-                side panel
+                <span style={{ 'font-weight': '600' }}>Optional selection of a base set </span>
+                for the user to work off of when creating a custom vocab set. According to SLPs,
+                this can be useful in the case where a therapist wants to create a subset of
+                an existing set to train patterns for a few specific words only.
               </div>
             </li>
             <li>
-              <div className="list-text">Second displayed dropdown in side panel now depends on the selected radio button</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Ability to remove a word </span>
+                from a base set&apos;s grid
+              </div>
             </li>
             <li>
-              <div className="list-text">Removed certification cards (check mark icon added to cards in final UI to indicate certifications)</div>
-            </li>
-            <li>
-              <div className="list-text">Made all cards for requirenent categories collapsible</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Ability to replace a word </span>
+                in a base set&apos;s grid. This function draws from the app&apos; existing
+                word database.
+              </div>
             </li>
           </ul>
         </div>
       </div>
       <div className="mockup">
-        {/* <img className="mockup-img" src={pitwire2} alt="pit-wire-2" /> */}
+        <img className="mockup-img" src={speechsetwire1} alt="speech-set-wire-1" />
+        <div className="iteration-caption">Wireframes for iterations 1 & 2 of flow starting point</div>
+        <img id="mockup-img-margin" className="mockup-img" src={speechsetwire2} alt="speech-set-wire-2" />
+        <div className="iteration-caption">Wireframes for removing & replacing a word</div>
+      </div>
+      <div className="project-wrap">
+        <div className="project-text">
+          The final UI design based on wireframe iteration 2 follows the same
+          format as the &ldquo;Add Word&rdquo; feature in order to maintain consistency
+          throughout the app to help users learn patterns in the functionality.
+        </div>
+      </div>
+      <div className="mockup">
+        <img className="mockup-img" src={speechsetui} alt="speech-set-ui" />
+        <div className="iteration-caption">Final UI design for creating a custom vocab set</div>
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">UI DESIGN</div>

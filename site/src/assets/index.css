@@ -1129,6 +1129,10 @@ ul {
   margin: auto;
 }
 
+#mockup-img-margin {
+  margin-top: 5rem;
+}
+
 .iteration-caption {
   margin: 2rem auto 0 auto;
   color: #787878;
