@@ -26,7 +26,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
   useEffect(() => {
     setCurrPage('');
     document.title = 'SpeechConnect | Sylvia Zhao';
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   return (
