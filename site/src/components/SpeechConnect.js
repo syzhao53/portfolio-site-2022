@@ -776,7 +776,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
           <ul>
             <li>
               <div className="list-text">
-                <a className="proto-link" href="https://www.figma.com/proto/AHxq5BvD3YoUd5bdFdI9OC/Meetup-Prototype-(Mobile)?node-id=2%3A98&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A28">
+                <a className="proto-link" href="https://www.figma.com/proto/zNMKIm85MZyPw7ucAzFpLH/AAC-Case-Study?node-id=138%3A21244&scaling=scale-down&page-id=138%3A21027&starting-point-node-id=138%3A21244">
                   SpeechConnect Prototype
                 </a>
               </div>

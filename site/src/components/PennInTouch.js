@@ -21,13 +21,12 @@ import easeinfo from '../assets/ease-info.png';
 import academicplan from '../assets/academic-plan.png';
 import mocksched from '../assets/mock-sched.png';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 function PennInTouch({ currPage, setCurrPage }) {
   // const [error, setError] = useState({ message: '' });
   // const [lockoutUser, setLockoutUser] = useState('');
 //   const navigate = useNavigate();;
-
-  const footerMessage = 'Made by Sylvia';
 
   useEffect(() => {
     setCurrPage('');
@@ -538,7 +537,7 @@ function PennInTouch({ currPage, setCurrPage }) {
           reflection statements
         </div>
       </div>
-      <div className="footer">{footerMessage}</div>
+      <Footer />
     </div>
   );
 }
