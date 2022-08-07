@@ -1127,6 +1127,7 @@ ul {
 .mockup-img {
   width: 65%;
   margin: auto;
+  align-self: center;
 }
 
 #mockup-img-margin {
@@ -1137,6 +1138,7 @@ ul {
   margin: 2rem auto 0 auto;
   color: #787878;
   font-size: .9rem;
+  max-width: 90%;
 }
 
 /* .li {
@@ -1439,6 +1441,21 @@ ul {
     margin: 1rem 0 3rem 0;
     /* flex-wrap: wrap; */
   }
+
+  .categories-row {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+  }
+  
+  .categories-row-last {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+  }
   
   .categories-wrap {
     display: flex;
@@ -1479,6 +1496,11 @@ ul {
   .mockup-img {
     width: 85%;
     margin: auto;
+  }
+
+  #last-mockup {
+    padding: 1rem;
+    margin: 0 0 3rem 0;
   }
 
 .analysis {
