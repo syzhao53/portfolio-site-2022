@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ad973840.css",
-    "main.js": "/static/js/main.5f4957a2.js",
+    "main.css": "/static/css/main.2c410c07.css",
+    "main.js": "/static/js/main.c2c3d440.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/speech-apps.png": "/static/media/speech-apps.61558252f190968207fd.png",
     "static/media/aac-example.png": "/static/media/aac-example.7b76d1ae83e75aa7f4d6.png",
@@ -61,12 +61,12 @@
     "static/media/arrow.svg": "/static/media/arrow.6913a95c46e20a8824d643ab4fb6ee71.svg",
     "static/media/close.svg": "/static/media/close.362cb9d9be8638a592b8c0c488f10e76.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.6e4b8a13830a9b4834249fc89a5bbc06.svg",
-    "main.ad973840.css.map": "/static/css/main.ad973840.css.map",
-    "main.5f4957a2.js.map": "/static/js/main.5f4957a2.js.map",
+    "main.2c410c07.css.map": "/static/css/main.2c410c07.css.map",
+    "main.c2c3d440.js.map": "/static/js/main.c2c3d440.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad973840.css",
-    "static/js/main.5f4957a2.js"
+    "static/css/main.2c410c07.css",
+    "static/js/main.c2c3d440.js"
   ]
 }
