@@ -92,7 +92,7 @@ function Meetup({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="project-header">Meetup</div>
         <div className="project-info">Improving group meeting scheduling on mobile & web</div>
-        <img className="project-img" src={meetup} alt="pennintouch mockup" />
+        <img className="project-img" src={meetup} alt="meetup mockup" />
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>

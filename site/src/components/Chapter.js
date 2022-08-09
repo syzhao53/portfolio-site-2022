@@ -5,8 +5,7 @@ import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../assets/index.css';
 import meetup from '../assets/meetup-mockup (2).png';
-import when2meetdesk from '../assets/when2meet-desk.png';
-import when2meetmobile from '../assets/when2meet-mobile.png';
+// import chapter from '../assets/chapter-mockup.png';
 import easesched from '../assets/ease-scheduling.png';
 import schedmethod from '../assets/scheduling-method.png';
 import schedresp from '../assets/scheduling-responding.png';
@@ -31,40 +30,35 @@ function Chapter({ currPage, setCurrPage }) {
   useEffect(() => {
     setCurrPage('');
     document.title = 'Chapter | Sylvia Zhao';
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="Chapter">
       <NavBar currPage={currPage} />
       <div id="container-floating">
-        <div className="table-text1 nds">
-          <Link to="/meetup#overview">
+        <div className="table-text2 nds">
+          <Link to="/chapter#overview">
             <p className="letter">OVERVIEW</p>
           </Link>
         </div>
-        <div className="table-text2 nds">
-          <Link to="/meetup#when2meet">
-            <p className="letter">WHEN2MEET</p>
-          </Link>
-        </div>
         <div className="table-text3 nds">
-          <Link to="/meetup#user-research">
+          <Link to="/chapter#user-research">
             <p className="letter">USER RESEARCH</p>
           </Link>
         </div>
         <div className="table-text4 nds">
-          <Link to="/meetup#solution">
+          <Link to="/chapter#solution">
             <p className="letter">SOLUTION</p>
           </Link>
         </div>
         <div className="table-text5 nds">
-          <Link to="/meetup#prototype">
+          <Link to="/chapter#prototype">
             <p className="letter">PROTOTYPE</p>
           </Link>
         </div>
         <div className="table-text6 nds">
-          <Link to="/meetup#reflections">
+          <Link to="/chapter#reflections">
             <p className="letter">REFLECTIONS</p>
           </Link>
         </div>
@@ -91,8 +85,10 @@ function Chapter({ currPage, setCurrPage }) {
       </div>
       <div className="project-wrap">
         <div className="project-header">Chapter</div>
-        <div className="project-info">Improving group meeting scheduling on mobile & web</div>
-        <img className="project-img" src={meetup} alt="pennintouch mockup" />
+        <div className="project-info">
+          Designing a virtual book club app for readers
+        </div>
+        <img className="project-img" src={meetup} alt="chapter mockup" />
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>
@@ -124,26 +120,11 @@ function Chapter({ currPage, setCurrPage }) {
                 TIMELINE
               </div>
               <div className="project-rtext">
-                1.5 months
+                1 month
               </div>
             </div>
           </div>
         </div>
-        <div className="section-header" id="when2meet">When2meet</div>
-        <div className="project-text">
-          In work settings without shared calendars, many people rely on When2meet to coordinate
-          groups meetings. Operating as a web app, When2meet has one person send out a link from
-          the platform to the rest of their team members to gather their availability during a
-          specified period of time. Although When2meet offers a convenient solution, the interface
-          suffers from poor usability, lacking a mobile responsive site.
-          <br />
-          <br />
-          Despite simply starting off as personal inspiration for this project, When2meet
-          was also then widely mentioned in user research, driving the general structure of the
-          final interface I created.
-        </div>
-        <img className="project-img" src={when2meetdesk} alt="when2meet-desk" />
-        <img id="when2meet-mobile" className="project-img" src={when2meetmobile} alt="when2meet-mobile" />
         <div className="section-header" id="user-research"> User Research</div>
         <div className="cap-card">
           <div className="cap">
