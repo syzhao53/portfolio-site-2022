@@ -21,13 +21,12 @@ import easeinfo from '../assets/ease-info.png';
 import academicplan from '../assets/academic-plan.png';
 import mocksched from '../assets/mock-sched.png';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 function PennInTouch({ currPage, setCurrPage }) {
   // const [error, setError] = useState({ message: '' });
   // const [lockoutUser, setLockoutUser] = useState('');
 //   const navigate = useNavigate();;
-
-  const footerMessage = 'Made by Sylvia';
 
   useEffect(() => {
     setCurrPage('');
@@ -111,7 +110,7 @@ function PennInTouch({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="section-rflex">
-            <div className="descrip-lflex">
+            <div className="stage-wrap">
               <div className="subsection-rheader-top">
                 ROLE
               </div>
@@ -375,11 +374,13 @@ function PennInTouch({ currPage, setCurrPage }) {
           </div>
           <div className="section-rflex">
             <div className="descrip-lflex">
-              <div className="subsection-rheader-top">
-                WIREFRAMES
-              </div>
-              <div className="project-rtext">
-                2 iterations
+              <div className="stage-wrap">
+                <div className="subsection-rheader-top">
+                  WIREFRAMES
+                </div>
+                <div className="project-rtext">
+                  2 iterations
+                </div>
               </div>
             </div>
             <div className="descrip-rflex">
@@ -529,14 +530,14 @@ function PennInTouch({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
         <div className="project-text">
-          add link to figma or embed? or screen record, add actual device mockups?
+          Links + mockups
         </div>
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
           reflection statements
         </div>
       </div>
-      <div className="footer">{footerMessage}</div>
+      <Footer />
     </div>
   );
 }

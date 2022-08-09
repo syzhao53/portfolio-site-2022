@@ -21,8 +21,9 @@ import meetmobilecards from '../assets/meet-mobile-cards.png';
 import meetdeskcards from '../assets/meet-desk-cards.png';
 import meetdesk1 from '../assets/meet-desk-1.png';
 import meetdesk2 from '../assets/meet-desk-2.png';
-import meetdevicemobile from '../assets/meet-device-mobile.png';
-import meetdevicedesk from '../assets/meet-device-desk.png';
+// import meetdevicemobile from '../assets/meet-device-mobile.png';
+// import meetdevicedesk from '../assets/meet-device-desk.png';
+import meetdevicemock from '../assets/meet-device-mock.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -721,7 +722,7 @@ function Meetup({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
         <div className="project-text">
-          Interact with the final prototypes below at the links below:
+          Interact with the final prototypes at the links below:
           <ul>
             <li>
               <div className="list-text">
@@ -740,8 +741,8 @@ function Meetup({ currPage, setCurrPage }) {
           </ul>
         </div>
         <div className="proto-flex">
-          <img className="device-mock-mobile" src={meetdevicemobile} alt="meet-device-mobile" />
-          <img className="device-mock-desk" src={meetdevicedesk} alt="meet-device-desk" />
+          <img className="device-mock" src={meetdevicemock} alt="meet-device-mock" />
+          {/* <img className="device-mock-desk" src={meetdevicedesk} alt="meet-device-desk" /> */}
         </div>
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">

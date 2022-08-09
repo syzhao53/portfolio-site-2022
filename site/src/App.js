@@ -10,6 +10,7 @@ import Home from './components/Home';
 import Meetup from './components/Meetup';
 import PennInTouch from './components/PennInTouch';
 import SpeechConnect from './components/SpeechConnect';
+import Logitech from './components/Logitech';
 import Chapter from './components/Chapter';
 import Resume from './components/Resume';
 import About from './components/About';
@@ -35,6 +36,7 @@ function App() {
           <Route exact path="/meetup" element={<Meetup currPage={currPage} setCurrPage={setCurrPage} />} />
           <Route exact path="/pennintouch" element={<PennInTouch currPage={currPage} setCurrPage={setCurrPage} />} />
           <Route exact path="/speechconnect" element={<SpeechConnect currPage={currPage} setCurrPage={setCurrPage} />} />
+          <Route exact path="/logitech" element={<Logitech currPage={currPage} setCurrPage={setCurrPage} />} />
           <Route exact path="/chapter" element={<Chapter currPage={currPage} setCurrPage={setCurrPage} />} />
           <Route exact path="/personal" element={<Personal currPage={currPage} setCurrPage={setCurrPage} />} />
         </Routes>

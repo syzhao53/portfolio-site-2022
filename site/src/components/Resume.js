@@ -24,7 +24,7 @@ function Resume({ currPage, setCurrPage }) {
         <div className="project-header">
           Resume
         </div>
-        <button id="download" type="button">PDF</button>
+        {/* <button id="download" type="button">PDF</button> */}
         <Footer />
       </div>
     </div>
