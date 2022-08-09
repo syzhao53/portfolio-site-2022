@@ -96,9 +96,10 @@ html {
   color: #033E57; 
   border: 1.5px;
   border-style: solid;
-  padding: .75rem .2rem .75rem .2rem;
+  padding: .78rem .2rem .78rem .2rem;
   border-radius: 100px;
-  width: 13%;
+  width: 14%;
+  text-decoration: none;
 }
 
 #download:hover {
