@@ -6,10 +6,6 @@ import { HashLink as Link } from 'react-router-hash-link';
 import '../assets/index.css';
 import meetup from '../assets/meetup-mockup (2).png';
 // import chapter from '../assets/chapter-mockup.png';
-import easesched from '../assets/ease-scheduling.png';
-import schedmethod from '../assets/scheduling-method.png';
-import schedresp from '../assets/scheduling-responding.png';
-import schedorg from '../assets/scheduling-organizing.png';
 import meetwire1 from '../assets/meet-wire-1.png';
 import meetwire2 from '../assets/meet-wire-2.png';
 import meetproto1 from '../assets/meet-proto-1.png';
@@ -135,84 +131,18 @@ function Chapter({ currPage, setCurrPage }) {
             <span style={{ 'font-style': 'italic' }}> &mdash; Student Club Leader</span>
           </div>
         </div>
-        <div className="subsection-header">SURVEY</div>
+        <div className="subsection-header">USER INTERVIEWS</div>
         <div className="project-text">
-          Given that students consistently need to schedule group meetings for clubs and projects
-          without the use of organized systems (like Microsoft Outlook), I surveyed
-          19 university students to understand key factors and pain points in
-          diverse scheduling processes and methods. Survey questions focused on both the meeting
-          organizer and invitee sides of scheduling.
+          I interviewed 4 people who read frequently to understand what type of platform would be
+          the most beneficial to supporting social connections between readers. The interviewees
+          ranged in age from 20 to mid 50s, and questions focused on platforms that they currently
+          use related to reading, how they find books to read, and how they interact with people
+          virtually and in-person concerning books. One interviewee was an active member of a
+          book club.
           <br />
           <br />
-          The survey responses showed a general trend of people finding scheduling group meetings
-          to be a difficult process. The most commonly used tool was When2meet (14 out of 19
-          respondents), matching the result that people prefer to collect availability before
-          proposing a meeting time. Responses also showed that from both the meeting organizer
-          side and the invitee side, people value fast communication and the ability to see
-          the everyone&apos;s availability in one place.
-        </div>
-      </div>
-      <div id="graphs-meetup" className="graphs">
-        <div className="graphgrid-row">
-          <div className="card-lgraph">
-            <div className="graphcard-label">
-              QUESTION 1
-            </div>
-            <div className="graphcard-ques">
-              When attempting to schedule a group meeting,
-              how difficult do you find it to settle on a
-              time that aligns with everyone&apos;s schedule?
-            </div>
-            <img className="graph-img" src={easesched} alt="ease-sched graph" />
-          </div>
-          <div className="card-rgraph">
-            <div className="graphcard-label">
-              QUESTION 2
-            </div>
-            <div className="graphcard-ques">
-              Select what you are more likely to do when attempting to schedule a
-              meeting with a group
-            </div>
-            <img className="graph-img" src={schedmethod} alt="scheduling-method graph" />
-          </div>
-        </div>
-        <div className="graphgrid-row">
-          <div className="card-lgraph-low">
-            <div className="graphcard-label">
-              QUESTION 3
-            </div>
-            <div className="graphcard-ques">
-              Select all factors that you consider important to the
-              process of scheduling a meeting when you are
-              <span style={{ 'font-weight': '600' }}> the organizer </span>
-              in charge of scheduling
-            </div>
-            <img className="graph-img" src={schedorg} alt="scheduling-organizing graph" />
-          </div>
-          <div className="card-rgraph-low">
-            <div className="graphcard-label">
-              QUESTION 4
-            </div>
-            <div className="graphcard-ques">
-              Select all factors that you consider important to the process of
-              scheduling a meeting when you are
-              <span style={{ 'font-weight': '600' }}> an invitee </span>
-              (responding to organizer)
-            </div>
-            <img className="graph-img" src={schedresp} alt="scheduling-responding graph" />
-          </div>
-        </div>
-      </div>
-      <div className="project-wrap">
-        <div className="subsection-header-sec">USER INTERVIEWS</div>
-        <div className="project-text">
-          For interviews, I spoke with 2 undergraduate students and 1 graduate student who had
-          previous corporate work experience as well. These students were selected for their
-          experiences managing teams and clubs. I spoke with each of them on the factors that are
-          most important to consider when sending out a meeting invite as well as thought processes
-          when providing availability.
-          <br />
-          <br />
+          Comments from the interviews showed that people generally do not directly engage with
+          other readers online but prefer to discuss thoughts with friends/family.
           Synthesis of comments from the interviews was consistent with survey results with people
           emphasizing the need to see all availability in one place and the ease of using When2meet
           in various workflows for scheduling meetings. The interviews confirmed When2meet&apos;s
