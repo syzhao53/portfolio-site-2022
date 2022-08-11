@@ -305,7 +305,7 @@ function Chapter({ currPage, setCurrPage }) {
             <div className="empty">c</div>
           </div>
           <div className="cap-card-text">
-            How might we create a virtual book club experience that gives people a space to
+            How might we create a virtual experience that gives people a space to
             both interact with friends as well as access a larger community?
           </div>
         </div>
@@ -313,15 +313,18 @@ function Chapter({ currPage, setCurrPage }) {
           <div className="section-lflex">
             <div className="section-header" id="solution">Solution</div>
             <div className="project-ltext">
-              Due to pain points surrounding the process of providing availability, I chose to
-              design for the perspective of the invitee only for the scope of this project. To
-              specifically address mobile usability concerns, I designed for a mobile interface
-              before expanding to a desktop solution after finalizing a mobile solution.
+              I chose to design a mobile app for a virtual book club to help
+              readers engage with their friends on books they read. The app
+              allows users to track their reading progress, discuss books within
+              their private group, and discuss with a public community of readers.
+              I designed for mobile due to the convenience of people chatting with
+              friends on mobile devices on social apps.
               <br />
               <br />
-              Additionally, to maintain the convenience valued by users of When2meet, the interface
-              was framed as a web app without need for an account. User testing was conducted
-              after wireframing and the first iteration of a prototype with the full UI design.
+              My process involved wireframing and prototyping with user testing being conducted
+              after wireframing and the first prototype iteration. The final solution presents
+              user flows for updating reading progress in a group and posting a reply to a group
+              discussion.
             </div>
           </div>
           <div className="section-rflex">
@@ -354,41 +357,59 @@ function Chapter({ currPage, setCurrPage }) {
           </div>
         </div>
       </div>
+      <div className="project-text">USER FLOW DIAGRAM SECTION??</div>
       <div className="project-wrap">
         <div className="subsection-header">WIREFRAMES: ITERATION 1</div>
         <div className="project-text">
-          The first iteration of my solution focused on displaying the group&apos;s
-          availability on the main page and having the user add their availability
-          for a given day by clicking “Edit” on a card in the “My availability” section. Primary
-          considerations in this first iteration included:
+          The first iteration focused on the layout of the home and group pages
+          to explore the best way for users to navigate to important features
+          within the group book club section of the app. I also wireframed
+          the group progress page for what a group is currently reading.
+          Main sections on the pages included:
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Visual representation of availability </span>
-                through differently shaded blocks (screen 1) to provide high-level information.
-                This follows When2meet&apos;s method of displaying availability where a darker
-                block indicates that more people in the group are available at the specified time.
-                User research showed that meeting invitees are not as concerned with specific
-                people&apos;s availability, only the number of people available at a given timeslot.
+                <span style={{ 'font-weight': '600' }}>&ldquo;Currently Reading&rdquo; </span>
+                section at the top of the home page for users to quickly access the &ldquo;
+                Update My Progress&rdquo; feature and to provide summary of current reading
+                activity. Also included on the group page to access the group progress page.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Separate views for group and individual availability </span>
-                to maintain organization and a different space for the user to
-                update their own information
+                <span style={{ 'font-weight': '600' }}>&ldquo;Quick Actions&rdquo; </span>
+                on the home page for accessing the chat feature & the group progress page.
+                This aims to help the user easily access features they might engage with
+                frequently.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Reliance on tapping and typing interactions </span>
-                to give the user more control over how they interact with the interface (screen 4).
-                The choice of interaction addresses how users disliked When2meet&apos;s imprecise
-                method of dragging in a grid to indicate availability. Tapping/typing into larger
-                input boxes would aim to increase precision and decrease frustration with errors.
+                <span style={{ 'font-weight': '600' }}>&ldquo;My Progress&rdquo; </span>
+                section on the group page to give the user a summary of their activity
+                and to allow for updating their reading progress. This addresses comments
+                from user research about organizational tools.
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>&ldquo;Group Overview&rdquo; </span>
+                on the group page to show users how other people in their group are progressing
+                through their reading. The timeline format visualizes how far each group
+                member is in the book.
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>&ldquo;Discussions&rdquo; & &ldquo;Chat&rdquo; </span>
+                sections on the group progress page to allow users to engage in public community
+                discussions as well as private chatting with their group.
               </div>
             </li>
           </ul>
+        </div>
+        <div className="project-text">
+          TO DO: ADD USER FLOW DIAGRAM
         </div>
       </div>
       <div className="mockup">
@@ -397,6 +418,7 @@ function Chapter({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">WIREFRAMES: ITERATION 2</div>
         <div className="project-text">
+          EXPLAIN RATIONALE FOR CHAPTER BY CHAPTER UPDATING: SPOILERS AND GROUP OVERVIEW TIMELINE
           The second iteration of wireframes made minor adjustments to the
           way days were displayed in “My availability,” as well as the layout of buttons.
           <ul>
