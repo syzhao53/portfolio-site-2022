@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bc9547b5.css",
-    "main.js": "/static/js/main.4f119406.js",
+    "main.js": "/static/js/main.cd87e6f6.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/speech-apps.png": "/static/media/speech-apps.61558252f190968207fd.png",
     "static/media/headshot.png": "/static/media/headshot.c552e794afefc7ebdab7.png",
@@ -10,6 +10,7 @@
     "static/media/pit-ui-2.png": "/static/media/pit-ui-2.821f46984e7dad6d3fd0.png",
     "static/media/pit-ui-1.png": "/static/media/pit-ui-1.88b16f612a5784133d83.png",
     "static/media/speech-device-mock.png": "/static/media/speech-device-mock.46d7df1a5d12446dd4b1.png",
+    "static/media/chapter-mockup.png": "/static/media/chapter-mockup.5bac8985dddc9f4700bd.png",
     "static/media/pit-analysis.png": "/static/media/pit-analysis.cbd4a99e3e8ad427f6e3.png",
     "static/media/meet-device-mock.png": "/static/media/meet-device-mock.682b31665f46dbfb82f4.png",
     "static/media/speech-set-wire-2.png": "/static/media/speech-set-wire-2.09ea2dd54da4062c3a4c.png",
@@ -31,7 +32,7 @@
     "static/media/speech-set-wire-1.png": "/static/media/speech-set-wire-1.00323571d976fb76d303.png",
     "static/media/meet-proto-3.png": "/static/media/meet-proto-3.af0c39723ca9742bc06c.png",
     "static/media/speech-word-wire.png": "/static/media/speech-word-wire.61d3750453c09cc7f6b0.png",
-    "static/media/speechconnect-mockup.png": "/static/media/speechconnect-mockup.0e51a0eb1fc255617bfa.png",
+    "static/media/speechconnect-mockup.png": "/static/media/speechconnect-mockup.b53f0bf4b6489614929b.png",
     "static/media/meet-wire-1.png": "/static/media/meet-wire-1.e20123d111585ca83d76.png",
     "static/media/speech-ui.png": "/static/media/speech-ui.e46bc9527c561be3add5.png",
     "static/media/speech-customize-wire.png": "/static/media/speech-customize-wire.47680398a22f8041f35b.png",
@@ -39,9 +40,8 @@
     "static/media/meet-wire-2.png": "/static/media/meet-wire-2.1ec78a4c8ff36ae382a7.png",
     "static/media/meet-desk-2.png": "/static/media/meet-desk-2.4ba1ecf1cf4a4602d7d8.png",
     "static/media/when2meet-desk.png": "/static/media/when2meet-desk.afe0d80961f93fbfc7b6.png",
-    "static/media/chapter-mockup.png": "/static/media/chapter-mockup.c084646af001636bc1ff.png",
     "static/media/ice-cream.png": "/static/media/ice-cream.267f88c05ecb2103b98f.png",
-    "static/media/meetup-mockup (2).png": "/static/media/meetup-mockup (2).ac9e7595a3d5702d371b.png",
+    "static/media/meetup-mockup (2).png": "/static/media/meetup-mockup (2).327b1bc4ce065cd96824.png",
     "static/media/when2meet-mobile.png": "/static/media/when2meet-mobile.c78f2877460efe8375df.png",
     "static/media/logi-mockup.png": "/static/media/logi-mockup.0843fcde0b5b7b9f3240.png",
     "static/media/meet-desk-cards.png": "/static/media/meet-desk-cards.c497dfa781978bbe5e4d.png",
@@ -66,11 +66,11 @@
     "static/media/close.svg": "/static/media/close.362cb9d9be8638a592b8c0c488f10e76.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.6e4b8a13830a9b4834249fc89a5bbc06.svg",
     "main.bc9547b5.css.map": "/static/css/main.bc9547b5.css.map",
-    "main.4f119406.js.map": "/static/js/main.4f119406.js.map",
+    "main.cd87e6f6.js.map": "/static/js/main.cd87e6f6.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bc9547b5.css",
-    "static/js/main.4f119406.js"
+    "static/js/main.cd87e6f6.js"
   ]
 }
