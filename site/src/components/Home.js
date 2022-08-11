@@ -108,7 +108,7 @@ function Home({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="gcard-rwrap"  onClick={() => goToProject('chapter')}>
-            <img className="grid-img" src={temp} alt="temp mockup" />
+            <img className="grid-img" src={chapter} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
                 Chapter

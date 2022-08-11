@@ -4,8 +4,8 @@
 import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../assets/index.css';
-import meetup from '../assets/meetup-mockup (2).png';
-// import chapter from '../assets/chapter-mockup.png';
+// import meetup from '../assets/meetup-mockup (2).png';
+import chapter from '../assets/chapter-mockup.png';
 import meetwire1 from '../assets/meet-wire-1.png';
 import meetwire2 from '../assets/meet-wire-2.png';
 import meetproto1 from '../assets/meet-proto-1.png';
@@ -84,7 +84,7 @@ function Chapter({ currPage, setCurrPage }) {
         <div className="project-info">
           Designing a virtual book club app for readers
         </div>
-        <img className="project-img" src={meetup} alt="chapter mockup" />
+        <img className="project-img" src={chapter} alt="chapter mockup" />
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>

@@ -102,9 +102,8 @@ html {
   color: #033E57; 
   border: 1.5px;
   border-style: solid;
-  padding: .75rem .1rem .75rem .1rem;
+  padding: .75rem 1rem .75rem 1rem;
   border-radius: 100px;
-  width: 13%;
   text-decoration: none;
 }
 
@@ -1560,5 +1559,18 @@ ul {
 .analysis-img {
   width: 95%;
   margin: auto;
+}
+
+#about-flex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem 0 3rem 0;
+}
+
+#headshot {
+  width: 60%;
+  border-radius: 7px;
+  margin: auto auto 3rem auto;
 }
 }
