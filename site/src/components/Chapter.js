@@ -89,15 +89,14 @@ function Chapter({ currPage, setCurrPage }) {
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>
             <div className="project-ltext">
-              Scheduling meetings can often become a laborious process of
-              coordination between organizers sending out invites and attendees
-              providing their availability.
+              Reading communities exist on various social platforms online, but what about
+              the traditional book club experience? Coming from my own efforts to read more
+              with friends, I wondered how social interactions related to reading could be
+              transferred into a digital experience.
               <br />
               <br />
-              Inspired by past difficulties with the popular scheduling platform When2meet,
-              this project aimed to create a more efficient and usable solution for
-              people providing their availability for group meetings. The design procees began with
-              mobile first in order to focus on usability issues before expanding to desktop.
+              This project presents a mobile solution for how users might
+              track progress and engage in discussions in a virtual book club.
             </div>
           </div>
           <div className="section-rflex">
@@ -127,121 +126,144 @@ function Chapter({ currPage, setCurrPage }) {
             <div className="empty">c</div>
           </div>
           <div className="cap-card-text">
-            &ldquo;Seeing everyone&apos;s availability in one place is crucial&rdquo;
-            <span style={{ 'font-style': 'italic' }}> &mdash; Student Club Leader</span>
+            &ldquo;I definitely care more about my friends&apos; opinions, I&apos;d probably
+            blow off an online comment I disagree with&rdquo;
+            <span style={{ 'font-style': 'italic' }}> &mdash; Reader</span>
           </div>
         </div>
         <div className="subsection-header">USER INTERVIEWS</div>
         <div className="project-text">
-          I interviewed 4 people who read frequently to understand what type of platform would be
-          the most beneficial to supporting social connections between readers. The interviewees
-          ranged in age from 20 to mid 50s, and questions focused on platforms that they currently
-          use related to reading, how they find books to read, and how they interact with people
-          virtually and in-person concerning books. One interviewee was an active member of a
-          book club.
+          The primary goal of user research was to understand what type of platform would be
+          most beneficial to supporting social connections between readers (ie. social media,
+          progress tracker, etc).
+          I interviewed 4 people ranging in age from 20 to mid 50s who read frequently; questions
+          focused on platforms that they currently use related to reading, how they find books
+          to read, and how they interact with people virtually and in-person concerning books.
+          One interviewee was an active member of an in-person book club.
           <br />
           <br />
           Comments from the interviews showed that people generally do not directly engage with
-          other readers online but prefer to discuss thoughts with friends/family.
-          Synthesis of comments from the interviews was consistent with survey results with people
-          emphasizing the need to see all availability in one place and the ease of using When2meet
-          in various workflows for scheduling meetings. The interviews confirmed When2meet&apos;s
-          pain points of poor mobile usability and tedious process to input availability.
+          other readers online but prefer to discuss thoughts with friends/family. People also
+          noted that a key difference between virtual and in-person interactions is that
+          they value their friends&apos; opinions much more than comments from online
+          platforms. In the case of having a different perspective on a book from
+          a friend, interviewees said that they would be much less likely to be dismissive
+          of that perspective compared to their reaction to an online comment.
         </div>
       </div>
-      <div className="affinity">
+      <div className="affinity-col">
         <div className="categories-wrap">
-          <div className="category-flex">
-            <div className="category-name">GENERAL FEELINGS</div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Organizers value flexibility when compromises are needed
+          <div className="categories-row">
+            <div className="category-flex">
+              <div className="category-name">USE OF EXISTING PLATFORMS</div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    GoodReads: good for tracking and organizing what
+                    you read
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    TikTok: too easy to buy into hype of popular books
+                  </div>
+                </div>
+              </div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Instagram: too visually focused, &ldquo;builds
+                    an aesthetic&rdquo; of reading
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Sometimes read & leave online reviews (hard to avoid spoilers)
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  People find it difficult to schedule meetings
+            <div className="category-rflex">
+              <div className="category-name">HOW TO FIND BOOKS TO READ</div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Heavy reliance on word of mouth/recs. from family and friends
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Recommendations on social media (mostly Instagram & TikTok), often bad
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="category-flex">
-            <div className="category-name">WHEN2MEET</div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Commonly used to gather availability
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Books from same author as previous books
+                  </div>
                 </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Tedious to input availability
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Convenient, no account needed
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Bad mobile interface (everything too small, dragging doesn&apos;t work right)
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="category-flex">
-            <div className="category-name">COMMON PRACTICES</div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Share GCal with people from a team
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Preference for gathering availability vs sending out set times to choose from
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  GCal, email, & When2meet often used together
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  GCal useful when scheduling one-on-one meetings
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Will read blurbs of random books to see what is interesting
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="category-rflex">
-            <div className="category-name">IMPORTANT FACTORS</div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Organizer: seeing all availablity in one place
+          <div className="categories-row-last">
+            <div className="category-flex">
+              <div className="category-name">INTERACTIONS WITH FRIENDS</div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Better for discussing specific thoughts/obscure questions
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Enjoy more in-depth conversations to share thoughts
+                  </div>
+                </div>
+              </div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    More open to discussing different opinions
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Perspectives are usually similar on topics/books
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Invitee: prefer ability to compare with the rest of own calendar
+            <div className="category-rflex">
+              <div className="category-name">INTERACTIONS ONLINE</div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Generally no direct interaction with people
+                    online (forums/comment sections)
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Online resources good for fast answers & info
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Both sides: emphasis on fast communication
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    More readily dismissive of opinions that differ from own
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Still interesting to see range of perspectives
+                  </div>
                 </div>
               </div>
             </div>
@@ -253,30 +275,38 @@ function Chapter({ currPage, setCurrPage }) {
           KEY RESEARCH INSIGHTS
         </div>
         <div className="project-text-single">
-          Following user research, these observations framed my approach to a solution:
+          User interviews provided the following core insights that framed the final design:
         </div>
         <ul>
           <li>
-            <div className="list-text">People enjoy When2meet for its convenience since there is no need for any account sign-up/login</div>
+            <div className="list-text">Readers value their friends&apos; opinions much more highly than those of people online</div>
           </li>
           <li>
-            <div className="list-text">The ability to see availability for all people invited to a meeting is important to both the organizer & invitee sides</div>
+            <div className="list-text">
+              Online platforms are interesting since they provide
+              diverse perspectives and quick answers to minor questions
+            </div>
           </li>
           <li>
-            <div className="list-text">Usability on mobile is important for convenience and facilitates the fast communication that both sides value as well</div>
+            <div className="list-text">
+              Readers enjoy being able to track progress &
+              organize what books they have read/want to read
+            </div>
           </li>
         </ul>
         <div className="project-text-low">
-          As a result, my guiding question focused on convenience and organization of how people&s
-          availability would be presented in the design.
+          Due to emphasis on how people use interactions from friends&apos; as well as
+          online platforms to drive their reading decisions and processes, my guiding
+          question focused on balancing the different value that both types of
+          interaction bring to readers.
         </div>
         <div id="how-might-card" className="cap-card">
           <div className="cap">
             <div className="empty">c</div>
           </div>
           <div className="cap-card-text">
-            How might we create a user-friendly interface for group meeting scheduling from the
-            invitee side so that convenience & organization of information are prioritized?
+            How might we create a virtual book club experience that gives people a space to
+            both interact with friends as well as access a larger community?
           </div>
         </div>
         <div className="section-flex">

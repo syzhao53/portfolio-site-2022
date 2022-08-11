@@ -104,7 +104,7 @@ function Meetup({ currPage, setCurrPage }) {
               <br />
               Inspired by past difficulties with the popular scheduling platform When2meet,
               this project aimed to create a more efficient and usable solution for
-              people providing their availability for group meetings. The design procees began with
+              people providing their availability for group meetings. The design process began with
               mobile first in order to focus on usability issues before expanding to desktop.
             </div>
           </div>
@@ -356,8 +356,8 @@ function Meetup({ currPage, setCurrPage }) {
           </li>
         </ul>
         <div className="project-text-low">
-          As a result, my guiding question focused on convenience and organization of how people&s
-          availability would be presented in the design.
+          As a result, my guiding question focused on convenience and organization of how
+          people&apos;s availability would be presented in the design.
         </div>
         <div id="how-might-card" className="cap-card">
           <div className="cap">
