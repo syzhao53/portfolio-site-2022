@@ -6,8 +6,8 @@ import { HashLink as Link } from 'react-router-hash-link';
 import '../assets/index.css';
 // import meetup from '../assets/meetup-mockup (2).png';
 import chapter from '../assets/chapter-mockup.png';
-import meetwire1 from '../assets/meet-wire-1.png';
-import meetwire2 from '../assets/meet-wire-2.png';
+import chapterwire1 from '../assets/chapter-wire-1.png';
+import chapterwire2 from '../assets/chapter-wire-2.png';
 import meetproto1 from '../assets/meet-proto-1.png';
 import meetproto2 from '../assets/meet-proto-2.png';
 import meetproto3 from '../assets/meet-proto-3.png';
@@ -413,11 +413,14 @@ function Chapter({ currPage, setCurrPage }) {
         </div>
       </div>
       <div className="mockup">
-        <img className="mockup-img" src={meetwire1} alt="meet-wire-1" />
+        <img className="mockup-img" src={chapterwire1} alt="chapter-wire-1" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">WIREFRAMES: ITERATION 2</div>
         <div className="project-text">
+          After creating the first iteration of wireframes, I gathered feedback from people
+          previously interviewed for user research to gauge which features aligned with
+          user needs.
           EXPLAIN RATIONALE FOR CHAPTER BY CHAPTER UPDATING: SPOILERS AND GROUP OVERVIEW TIMELINE
           The second iteration of wireframes made minor adjustments to the
           way days were displayed in “My availability,” as well as the layout of buttons.
@@ -443,7 +446,7 @@ function Chapter({ currPage, setCurrPage }) {
         </div>
       </div>
       <div className="mockup">
-        <img className="mockup-img" src={meetwire2} alt="meet-wire-2" />
+        <img className="mockup-img" src={chapterwire2} alt="chapter-wire-2" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">PROTOTYPE: ITERATION 1</div>
