@@ -415,26 +415,28 @@ function Chapter({ currPage, setCurrPage }) {
         <div className="project-text">
           After creating the first iteration of wireframes, I gathered feedback from people
           previously interviewed for user research to gauge which features aligned with
-          user needs.
-          EXPLAIN RATIONALE FOR CHAPTER BY CHAPTER UPDATING: SPOILERS AND GROUP OVERVIEW TIMELINE
-          The second iteration of wireframes made minor adjustments to the
-          way days were displayed in “My availability,” as well as the layout of buttons.
+          user needs. Updates in the second iteration included:
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>&ldquo;Save changes&rdquo; button </span>
-                in &ldquo;My availability&rdquo; was changed to a back arrow in the upper-left
-                corner to better indicate to a user how to return to the main &ldquo;Group
-                availability&rdquo; view. A &ldquo;Cancel&rdquo; button and back arrow
-                were also added to the editing a day view.
+                <span style={{ 'font-weight': '600' }}>Changes to &ldquo;Quick Actions&rdquo; </span>
+                with the removal of the chat feature. Users expressed that a chat would seem
+                too similar to just texting their friends separately outside the app.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>&ldquo;Add timeslot&rdquo; button </span>
-                in the section for editing a specific day&apos;s availability was moved to be
-                grouped closer to the existing timeslots a user has. This better associates the
-                button&apos;s action with its results.
+                <span style={{ 'font-weight': '600' }}>&ldquo;Group Overview&rdquo; timeline layout </span>
+                replaced original layout too be more streamlined. Some users also commented that the
+                original view for group progress felt &ldquo;competitive&rdquo;.
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>&ldquo;Chat&rdquo; changed to private discussions </span>
+                to maintain a private discussion space while being more organized than a normal chat
+                function. Users can toggle between private and public discussion sections
+                on the group progress page.
               </div>
             </li>
           </ul>
@@ -446,21 +448,23 @@ function Chapter({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">PROTOTYPE: ITERATION 1</div>
         <div className="project-text">
-          To prepare for user testing, I created a simple prototype of the app for the user flow
-          of adding a timeslot to provide availability for a day. UI design choices involved:
+          Prior to user testing, I styled the second iteration of wireframes to create a
+          prototype for the user flows of adding to a discussion and updating personal progress.
+          Key UI design choices were:
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Green and mint color palette </span>
-                to create a calm appearance for the platform since research showed that scheduling
-                was considered difficult or stressful by most users.
+                <span style={{ 'font-weight': '600' }}>Core green color </span>
+                used to emphasize actionable buttons and used in icons for a cohesive
+                design.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Work Sans as the main font </span>
-                to maintain readability and professionalism with a sans serif font while still being
-                friendly
+                <span style={{ 'font-weight': '600' }}>Sans serif & serif font combination </span>
+                to create a sophisticated but still simple feeling interface.
+                Headers were in Lora (serif) while body text, buttons, and smaller text were in
+                Noto Sans for readability.
               </div>
             </li>
           </ul>
@@ -472,41 +476,44 @@ function Chapter({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">USER TESTING: ROUND 1</div>
         <div className="project-text">
-          Using the initial prototype, I conduced user testing with 3 students, 1 from the user
-          interviews and 2 others who had responded to the survey and were
-          familiar with the project context. Users commented on:
+          Using the initial prototype, I conducted user testing with the user research interviewees.
+          This involved the two prototyped flows and general comments on the app.
+          People mainly commented on:
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Pleasant UI design </span>
-                with a simple aesthetic and clear emphasis on actionable areas
+                <span style={{ 'font-weight': '600' }}>Clean interface </span>
+                that feels organized. Users noted that it felt much more modern
+                than the popular platform Goodreads.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Good clarity with tapping interaction </span>
-                for actually inputting availability, more mobile-friendly than dragging
+                <span style={{ 'font-weight': '600' }}>Unclear actions </span>
+                on the home page and the group progress page. People were
+                unsure whether the progress percentage indicator was clickable.
+                Some people in testing thought it would lead to the &ldquo;My Progress&rdquo;
+                area.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Lack of clarity with the home page </span>
-                in terms of not understanding whether the main view shows group or individual
-                availability
+                <span style={{ 'font-weight': '600' }}>Confused by &ldquo;Group Overview&rdquo; timeline </span>
+                due to cramped visualization. Users expressed confusion over how someone would tell
+                clearly what chapter someone was on if there were a lot of group members.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>No visualization of &ldquo;My availability&rdquo; </span>
-                since timeslots are all displayed as text instead of colored blocks like the
-                group section
+                <span style={{ 'font-weight': '600' }}>Dislike of discussion types placed side by side</span>
+                in terms of feeling like there is potential to accidentally post to the public side.
+                Users also felt that the discussions crowded the group progress page.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Too many clicks </span>
-                required to even get to the adding/editing availability functionality (3 clicks
-                before availability is even added)
+                <span style={{ 'font-weight': '600' }}>Checkbox unclear for &ldquo;Update My Progress&rdquo; </span>
+                due to small size.
               </div>
             </li>
           </ul>
@@ -515,31 +522,48 @@ function Chapter({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">PROTOTYPE: ITERATION 2</div>
         <div className="project-text">
-          Based on the comments from Round 1 of user testing, I reorganized how the &ldquo;
-          Add availability&rdquo; user flow begins:
-          streamlined
-          the “Add availability” user flow and created clear emphasis on separate
+          The main change in iteration 2 was the reorganization of how discussions
+          were presented in the app&apos;s structure. Due to comments from user testing
+          that the original discussion section created a cramped
+          interface and a potential
+          for mistakes, the two types of discussions became separate pages reachable
+          from the group progress page. Overall, changes in this iteration involved:
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Separate &ldquo;Me&rdquo; & &ldquo;Group&rdquo; </span>
-                sections to address the confusion on what information the main
-                view is initially presenting; indicated by buttons at the top to toggle the view
+                <span style={{ 'font-weight': '600' }}>Background cards </span>
+                added in light colors to help visually group elements on the home
+                and group progress pages. This was done in order to help make
+                clickable elements clearer.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Reduced number of clicks </span>
-                for adding/editing availability to streamline interaction; both functions are
-                accessed with 1 click in this iteration
+                <span style={{ 'font-weight': '600' }}>Separate pages for private & public discussions </span>
+                to prevent possible mistakes with posting to the wrong section in the
+                original side-by-side view.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Calendar layout </span>
-                to improve visualization of availability by highlighting days with provided
-                availability in bright mint and indicating the currently selected day with
-                an underline
+                <span style={{ 'font-weight': '600' }}>Updated &ldquo;Quick Actions&rdquo; </span>
+                to address the changes to the discussions structure. &ldquo;Group
+                Discusssions&rdquo; is prioritized over public discussion as a quick action
+                due to comments from research that people value their friends&apos; thoughts
+                more.
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Simplified &ldquo;Group Overview&rdquo; </span>
+                to eliminate confusion with original progress visualization and to create
+                a more scalable solution in the case of a large group.
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Replaced checkbox with toggle button </span>
+                for improved usability in the &ldquo;Update My Progress&rdquo; function.
               </div>
             </li>
           </ul>
@@ -557,28 +581,14 @@ function Chapter({ currPage, setCurrPage }) {
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>No side-by-side comparision of group & personal availability </span>
+                <span style={{ 'font-weight': '600' }}>&ldquo;Threads&rdquo; terminology </span>
                 limits the information a user has at their immediate disposal when inputting their
                 own information
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Preference for further visual representation of availability </span>
-                since calendar visualizes overall time period across days but not timeslots on
-                individual days; suggestions made for a grid view calendar
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Confusion with highlight vs. underline on date </span>
-                for which one is meant to indicate selected date or whether availability
-                was provided
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>One-click interaction </span>
+                <span style={{ 'font-weight': '600' }}>Unread comments & new updates </span>
                 for adding/editing availability improves previous flow and feels
                 less tedious
               </div>
@@ -594,7 +604,7 @@ function Chapter({ currPage, setCurrPage }) {
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Grid view calendar </span>
+                <span style={{ 'font-weight': '600' }}>&ldquo;Threads&rdquo; changed to &ldquo;Topics&rdquo; </span>
                 to supplement the original calendar view; the grid shows individual days
                 while the original layout still gives an overview of all dates that a
                 user can select from
@@ -602,41 +612,10 @@ function Chapter({ currPage, setCurrPage }) {
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Scrollable side-by-side comparison columns </span>
+                <span style={{ 'font-weight': '600' }}>Indicator for new updates </span>
                 in the grid view to solve for the issue of not having the ability to compare
                 personal and group availability in the previous prototype; a key indicates the
                 two types of availability shown by the columns
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Highlighted date indicates selected date </span>
-                instead of a date with availability; this choice matches how a highlighted circle on
-                &ldquo;AM&rdquo; or &ldquo;PM&rdquo; indicates selection, so instead, a dot under
-                a date is used to show that a user previded availability
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Meeting information section </span>
-                at the top of the screen contextualizes the meeting invite and informs
-                how users should provide their availability based on the meeting length
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Tapping in the grid to add a timeslot </span>
-                in the grid view would allow for automatic population of the new timeslot&apos;s
-                starting time, helping counteract the additional tap added with the interaction
-                of swtiching from the main calendar to the grid view
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Info on number of people available </span>
-                shown when a user taps a block of availability; this addresses the point from
-                the original user research showing that people value general information about
-                the group availability
               </div>
             </li>
           </ul>
@@ -648,19 +627,13 @@ function Chapter({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
         <div className="project-text">
-          Interact with the final prototypes at the links below:
+          View the final prototype for &ldquo;Update My Progress&rdquo; and adding
+          a discussion reply at the link below:
           <ul>
             <li>
               <div className="list-text">
-                <a className="proto-link" href="https://www.figma.com/proto/AHxq5BvD3YoUd5bdFdI9OC/Meetup-Prototype-(Mobile)?node-id=2%3A98&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A28">
-                  Mobile Solution Prototype
-                </a>
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
                 <a className="proto-link" href="https://www.figma.com/proto/C9TwlLjWPRFaHFCLNZ32v2/Meetup-Prototype-(Desktop)?node-id=3%3A394&scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A21">
-                  Desktop Solution Prototype
+                  Chapter Prototype
                 </a>
               </div>
             </li>
