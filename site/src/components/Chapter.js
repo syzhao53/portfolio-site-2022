@@ -8,14 +8,9 @@ import '../assets/index.css';
 import chapter from '../assets/chapter-mockup.png';
 import chapterwire1 from '../assets/chapter-wire-1.png';
 import chapterwire2 from '../assets/chapter-wire-2.png';
-import meetproto1 from '../assets/meet-proto-1.png';
-import meetproto2 from '../assets/meet-proto-2.png';
-import meetproto3 from '../assets/meet-proto-3.png';
-import meettest1 from '../assets/meet-test-1.png';
-import meetmobilecards from '../assets/meet-mobile-cards.png';
-import meetdeskcards from '../assets/meet-desk-cards.png';
-import meetdesk1 from '../assets/meet-desk-1.png';
-import meetdesk2 from '../assets/meet-desk-2.png';
+import chapterproto1 from '../assets/chapter-proto-1.png';
+import chapterproto2 from '../assets/chapter-proto-2.png';
+import chapterproto3 from '../assets/chapter-proto-3.png';
 // import meetdevicemobile from '../assets/meet-device-mobile.png';
 // import meetdevicedesk from '../assets/meet-device-desk.png';
 import meetdevicemock from '../assets/meet-device-mock.png';
@@ -472,7 +467,7 @@ function Chapter({ currPage, setCurrPage }) {
         </div>
       </div>
       <div className="mockup">
-        <img className="mockup-img" src={meetproto1} alt="meet-proto-1" />
+        <img className="mockup-img" src={chapterproto1} alt="chapter-proto-1" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">USER TESTING: ROUND 1</div>
@@ -517,9 +512,6 @@ function Chapter({ currPage, setCurrPage }) {
           </ul>
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={meettest1} alt="meet-test-1" />
-      </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">PROTOTYPE: ITERATION 2</div>
         <div className="project-text">
@@ -554,7 +546,7 @@ function Chapter({ currPage, setCurrPage }) {
         </div>
       </div>
       <div className="mockup">
-        <img className="mockup-img" src={meetproto2} alt="meet-proto-2" />
+        <img className="mockup-img" src={chapterproto2} alt="chapter-proto-2" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">USER TESTING: ROUND 2</div>
@@ -650,40 +642,8 @@ function Chapter({ currPage, setCurrPage }) {
           </ul>
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={meetproto3} alt="meet-proto-3" />
-        <img id="meet-mobile-cards" className="mockup-img" src={meetmobilecards} alt="meet-proto-3" />
-      </div>
-      <div className="project-wrap">
-        <div className="subsection-header-sec">DESKTOP VERSION</div>
-        <div className="project-text">
-          After finalizing the mobile prototype, I created a desktop version to see how the mobile
-          version could scale. Some minor features/interactions were incorporated in the desktop
-          interface:
-          <ul>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Timeslot preview when adding/editing availability </span>
-                shown when a user taps a block of availability; this addresses the point from
-                the original user research showing that people value general information about
-                the group availability
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Hover interactions for editing & group availability info </span>
-                shown when a user taps a block of availability; this addresses the point from
-                the original user research showing that people value general information about
-                the group availability
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div id="last-mockup">
-        <img className="mockup-img" src={meetdesk1} alt="meet-desk-1" />
-        <img id="meet-desk-2" className="mockup-img" src={meetdesk2} alt="meet-desk-2" />
-        <img id="meet-desk-cards" className="mockup-img" src={meetdeskcards} alt="meet-desk-cards" />
+      <div className="last-mockup">
+        <img className="mockup-img" src={chapterproto3} alt="chapter-proto-3" />
       </div>
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
