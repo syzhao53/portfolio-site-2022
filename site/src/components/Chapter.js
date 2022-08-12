@@ -546,7 +546,7 @@ function Chapter({ currPage, setCurrPage }) {
         </div>
       </div>
       <div className="mockup">
-        <img className="mockup-img" src={chapterproto2} alt="chapter-proto-2" />
+        <img className="mockup-img-three" src={chapterproto2} alt="chapter-proto-2" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">USER TESTING: ROUND 2</div>
@@ -643,7 +643,7 @@ function Chapter({ currPage, setCurrPage }) {
         </div>
       </div>
       <div className="last-mockup">
-        <img className="mockup-img" src={chapterproto3} alt="chapter-proto-3" />
+        <img className="mockup-img-single" src={chapterproto3} alt="chapter-proto-3" />
       </div>
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>

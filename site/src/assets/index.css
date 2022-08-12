@@ -1174,6 +1174,18 @@ ul {
   align-self: center;
 }
 
+.mockup-img-three {
+  width: 40%;
+  margin: auto;
+  align-self: center;
+}
+
+.mockup-img-single {
+  width: 12%;
+  margin: auto;
+  align-self: center;
+}
+
 #mockup-img-margin {
   margin-top: 5rem;
 }
