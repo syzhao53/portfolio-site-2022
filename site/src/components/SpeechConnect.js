@@ -152,8 +152,8 @@ function SpeechConnect({ currPage, setCurrPage }) {
           purchasing a new device.
         </div>
         {/* <img className="project-img" src={aacexample} alt="aac-example" /> */}
-        <div className="mockup">
-          <img className="mockup-img" src={aacexample} alt="speech-apps" />
+        <div className="mockup-small">
+          <img className="mockup-img-small" src={aacexample} alt="speech-apps" />
         </div>
         <div className="section-header" id="research"> Research</div>
         <div className="cap-card">
@@ -776,7 +776,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
           <ul>
             <li>
               <div className="list-text">
-                <a className="proto-link" href="https://www.figma.com/proto/zNMKIm85MZyPw7ucAzFpLH/AAC-Case-Study?node-id=138%3A21244&scaling=scale-down&page-id=138%3A21027&starting-point-node-id=138%3A21244">
+                <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/zNMKIm85MZyPw7ucAzFpLH/AAC-Case-Study?node-id=138%3A21244&scaling=scale-down&page-id=138%3A21027&starting-point-node-id=138%3A21244">
                   SpeechConnect Prototype
                 </a>
               </div>

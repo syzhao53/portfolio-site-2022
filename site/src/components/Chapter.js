@@ -13,7 +13,7 @@ import chapterproto2 from '../assets/chapter-proto-2.png';
 import chapterproto3 from '../assets/chapter-proto-3.png';
 // import meetdevicemobile from '../assets/meet-device-mobile.png';
 // import meetdevicedesk from '../assets/meet-device-desk.png';
-import meetdevicemock from '../assets/meet-device-mock.png';
+import chapterdevicemock from '../assets/chapter-device-mock.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -21,7 +21,7 @@ function Chapter({ currPage, setCurrPage }) {
   useEffect(() => {
     setCurrPage('');
     document.title = 'Chapter | Sylvia Zhao';
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -352,7 +352,7 @@ function Chapter({ currPage, setCurrPage }) {
           </div>
         </div>
       </div>
-      <div className="project-text">USER FLOW DIAGRAM SECTION??</div>
+      {/* <div className="project-text">/////////////TO DO: USER FLOW DIAGRAM SECTION??</div> */}
       <div className="project-wrap">
         <div className="subsection-header">WIREFRAMES: ITERATION 1</div>
         <div className="project-text">
@@ -403,9 +403,9 @@ function Chapter({ currPage, setCurrPage }) {
             </li>
           </ul>
         </div>
-        <div className="project-text">
-          TO DO: ADD USER FLOW DIAGRAM
-        </div>
+        {/* <div className="project-text">
+          //////////TO DO: ADD USER FLOW DIAGRAM
+        </div> */}
       </div>
       <div className="mockup">
         <img className="mockup-img" src={chapterwire1} alt="chapter-wire-1" />
@@ -462,7 +462,7 @@ function Chapter({ currPage, setCurrPage }) {
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Sans serif & serif font combination </span>
-                to create a sophisticated but still simple feeling interface.
+                to create a more sophisticated but still simple feeling interface.
                 Headers were in Lora (serif) while body text, buttons, and smaller text were in
                 Noto Sans for readability.
               </div>
@@ -575,22 +575,21 @@ function Chapter({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">USER TESTING: ROUND 2</div>
         <div className="project-text">
-          Continuing with the same users from the first round of testing, I collected feedback on
-          the second prototype. With this second round, comments mostly focused on how information
-          could be better indicated visually:
+          Again with the people from the first round of user testing, I gathered feedback on the
+          second prototype, particularly the changes to the discussion section.
+          Comments were largely centered around the private group discussions page:
           <ul>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>&ldquo;Threads&rdquo; terminology </span>
-                limits the information a user has at their immediate disposal when inputting their
-                own information
+                felt too &ldquo;formal&rdquo; to some people, felt more appropriate for the public
+                community discussions.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Unread comments & new updates </span>
-                for adding/editing availability improves previous flow and feels
-                less tedious
+                <span style={{ 'font-weight': '600' }}>Unread replies/new updates </span>
+                indicator missing from discussions page.
               </div>
             </li>
           </ul>
@@ -599,23 +598,21 @@ function Chapter({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">PROTOTYPE: ITERATION 3</div>
         <div className="project-text">
-          The final solution mainly addresses the confusions and concerns around visual
-          representation of information with the introduction of a secondary grid view calendar:
+          The final prototype includes updates addressing the comments from the second
+          round of user testing. These were the updates made to the private group discussion
+          page:
           <ul>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>&ldquo;Threads&rdquo; changed to &ldquo;Topics&rdquo; </span>
-                to supplement the original calendar view; the grid shows individual days
-                while the original layout still gives an overview of all dates that a
-                user can select from
+                to address the issue of the private group discussions feeling too much
+                like a public discussion forum.
               </div>
             </li>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Indicator for new updates </span>
-                in the grid view to solve for the issue of not having the ability to compare
-                personal and group availability in the previous prototype; a key indicates the
-                two types of availability shown by the columns
+                added to each discussion topic.
               </div>
             </li>
           </ul>
@@ -632,7 +629,7 @@ function Chapter({ currPage, setCurrPage }) {
           <ul>
             <li>
               <div className="list-text">
-                <a className="proto-link" href="https://www.figma.com/proto/C9TwlLjWPRFaHFCLNZ32v2/Meetup-Prototype-(Desktop)?node-id=3%3A394&scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A21">
+                <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/GhMUbVJmDgFJR9GvVNHzAh/Book-Club-Case-Study?node-id=118%3A806&scaling=scale-down&page-id=117%3A804&starting-point-node-id=118%3A806">
                   Chapter Prototype
                 </a>
               </div>
@@ -640,8 +637,7 @@ function Chapter({ currPage, setCurrPage }) {
           </ul>
         </div>
         <div className="proto-flex">
-          <img className="device-mock" src={meetdevicemock} alt="meet-device-mock" />
-          {/* <img className="device-mock-desk" src={meetdevicedesk} alt="meet-device-desk" /> */}
+          <img className="device-mock" src={chapterdevicemock} alt="chapter-device-mock" />
         </div>
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
