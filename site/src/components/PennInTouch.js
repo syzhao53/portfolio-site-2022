@@ -20,9 +20,9 @@ import generalexp from '../assets/general-exp.png';
 import easeinfo from '../assets/ease-info.png';
 import academicplan from '../assets/academic-plan.png';
 import mocksched from '../assets/mock-sched.png';
+import pitdevicemock from '../assets/pit-device-mock.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
-import chapterdevicemock from '../assets/chapter-device-mock.png';
 
 function PennInTouch({ currPage, setCurrPage }) {
   // const [error, setError] = useState({ message: '' });
@@ -531,20 +531,20 @@ function PennInTouch({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
         <div className="project-text">
-          View the final prototype for &ldquo;Update My Progress&rdquo; and adding
-          a discussion reply at the link below:
+          Interact with the final prototype for assigning a course to a requirement in the
+          redesigned Academic Planning Worksheet:
           <ul>
             <li>
               <div className="list-text">
-                <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/GhMUbVJmDgFJR9GvVNHzAh/Book-Club-Case-Study?node-id=118%3A806&scaling=scale-down&page-id=117%3A804&starting-point-node-id=118%3A806">
-                  Chapter Prototype
+                <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/WcVv7rpSLvxv4ymGAgkvw3/PennInTouch-Working-File?node-id=89%3A4037&scaling=scale-down&page-id=51%3A1233&starting-point-node-id=89%3A4037">
+                  PennInTouch Prototype
                 </a>
               </div>
             </li>
           </ul>
         </div>
         <div className="proto-flex">
-          <img className="device-mock" src={chapterdevicemock} alt="chapter-device-mock" />
+          <img className="device-mock" src={pitdevicemock} alt="pit-device-mock" />
         </div>
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
