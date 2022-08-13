@@ -22,6 +22,7 @@ import academicplan from '../assets/academic-plan.png';
 import mocksched from '../assets/mock-sched.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
+import chapterdevicemock from '../assets/chapter-device-mock.png';
 
 function PennInTouch({ currPage, setCurrPage }) {
   // const [error, setError] = useState({ message: '' });
@@ -530,11 +531,32 @@ function PennInTouch({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
         <div className="project-text">
-          Links + mockups
+          View the final prototype for &ldquo;Update My Progress&rdquo; and adding
+          a discussion reply at the link below:
+          <ul>
+            <li>
+              <div className="list-text">
+                <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/GhMUbVJmDgFJR9GvVNHzAh/Book-Club-Case-Study?node-id=118%3A806&scaling=scale-down&page-id=117%3A804&starting-point-node-id=118%3A806">
+                  Chapter Prototype
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div className="proto-flex">
+          <img className="device-mock" src={chapterdevicemock} alt="chapter-device-mock" />
         </div>
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
-          reflection statements
+          This project addressed the interactions in PennInTouch&apos;s Academic
+          Planning Worksheet feature. The implementation of a collapsible side menu
+          with searchable dropdown menus allows for streamlining the planning process
+          that students often find challenging. Further iterations could explore other
+          methods of interacting with the worksheet, such as editing assignments or directly
+          adding them by clicking on the requirements in the sheet.
+          <br />
+          <br />
+          Mention user testing
         </div>
       </div>
       <Footer />

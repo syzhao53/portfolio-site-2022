@@ -4,15 +4,12 @@
 import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../assets/index.css';
-// import meetup from '../assets/meetup-mockup (2).png';
 import chapter from '../assets/chapter-mockup.png';
 import chapterwire1 from '../assets/chapter-wire-1.png';
 import chapterwire2 from '../assets/chapter-wire-2.png';
 import chapterproto1 from '../assets/chapter-proto-1.png';
 import chapterproto2 from '../assets/chapter-proto-2.png';
 import chapterproto3 from '../assets/chapter-proto-3.png';
-// import meetdevicemobile from '../assets/meet-device-mobile.png';
-// import meetdevicedesk from '../assets/meet-device-desk.png';
 import chapterdevicemock from '../assets/chapter-device-mock.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
