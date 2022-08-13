@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc9547b5.css",
-    "main.js": "/static/js/main.9891a048.js",
+    "main.css": "/static/css/main.351c0977.css",
+    "main.js": "/static/js/main.7c3ed758.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/speech-apps.png": "/static/media/speech-apps.61558252f190968207fd.png",
+    "static/media/chapter-device-mock.png": "/static/media/chapter-device-mock.f6b16172c689a7472c0c.png",
+    "static/media/aac-example.png": "/static/media/aac-example.4b7e169ae029d9012440.png",
+    "static/media/chapter-proto-2.png": "/static/media/chapter-proto-2.d82808c7ee3e683d0bc0.png",
     "static/media/headshot.png": "/static/media/headshot.c552e794afefc7ebdab7.png",
-    "static/media/aac-example.png": "/static/media/aac-example.7b76d1ae83e75aa7f4d6.png",
+    "static/media/chapter-proto-1.png": "/static/media/chapter-proto-1.813ad038be306aae4f02.png",
     "static/media/speech-set-ui.png": "/static/media/speech-set-ui.c906a4b7a5b5f5dc324d.png",
+    "static/media/meet-device-mock.png": "/static/media/meet-device-mock.a80d6bf5287abedc0ef7.png",
     "static/media/pit-ui-2.png": "/static/media/pit-ui-2.821f46984e7dad6d3fd0.png",
     "static/media/pit-ui-1.png": "/static/media/pit-ui-1.88b16f612a5784133d83.png",
-    "static/media/speech-device-mock.png": "/static/media/speech-device-mock.46d7df1a5d12446dd4b1.png",
-    "static/media/chapter-mockup.png": "/static/media/chapter-mockup.5bac8985dddc9f4700bd.png",
+    "static/media/speech-device-mock.png": "/static/media/speech-device-mock.a5c9c82ba554f981b7e4.png",
     "static/media/pit-analysis.png": "/static/media/pit-analysis.cbd4a99e3e8ad427f6e3.png",
-    "static/media/meet-device-mock.png": "/static/media/meet-device-mock.682b31665f46dbfb82f4.png",
+    "static/media/chapter-mockup.png": "/static/media/chapter-mockup.a4b9e4cb15bd6583e395.png",
     "static/media/speech-set-wire-2.png": "/static/media/speech-set-wire-2.09ea2dd54da4062c3a4c.png",
     "static/media/pit-wire-1.png": "/static/media/pit-wire-1.0001eb13c37f27ed2df9.png",
     "static/media/pit-wire-2.png": "/static/media/pit-wire-2.038a773642ef43523374.png",
@@ -23,6 +26,7 @@
     "static/media/speech-grid-ui.png": "/static/media/speech-grid-ui.15cc9bed14a02fb7c52e.png",
     "static/media/comfy-farm.png": "/static/media/comfy-farm.6ebc3e408f7cc7c77858.png",
     "static/media/pit-sketches.png": "/static/media/pit-sketches.3c01f380be784f6bde81.png",
+    "static/media/chapter-wire-2.png": "/static/media/chapter-wire-2.f4acfb08603ef3f0a553.png",
     "static/media/static-site-landing.png": "/static/media/static-site-landing.0a44b7dd5e7b3a937860.png",
     "static/media/meet-test-1.png": "/static/media/meet-test-1.a74f3f020d09bede1265.png",
     "static/media/meet-proto-1.png": "/static/media/meet-proto-1.613a309399016f3ac612.png",
@@ -31,6 +35,7 @@
     "static/media/meet-proto-2.png": "/static/media/meet-proto-2.b19bcde2a4fe7892fbd2.png",
     "static/media/speech-set-wire-1.png": "/static/media/speech-set-wire-1.00323571d976fb76d303.png",
     "static/media/meet-proto-3.png": "/static/media/meet-proto-3.af0c39723ca9742bc06c.png",
+    "static/media/chapter-wire-1.png": "/static/media/chapter-wire-1.dac3d3a2e6c8d46562e9.png",
     "static/media/speech-word-wire.png": "/static/media/speech-word-wire.61d3750453c09cc7f6b0.png",
     "static/media/speechconnect-mockup.png": "/static/media/speechconnect-mockup.b53f0bf4b6489614929b.png",
     "static/media/meet-wire-1.png": "/static/media/meet-wire-1.e20123d111585ca83d76.png",
@@ -40,6 +45,7 @@
     "static/media/meet-wire-2.png": "/static/media/meet-wire-2.1ec78a4c8ff36ae382a7.png",
     "static/media/meet-desk-2.png": "/static/media/meet-desk-2.4ba1ecf1cf4a4602d7d8.png",
     "static/media/when2meet-desk.png": "/static/media/when2meet-desk.afe0d80961f93fbfc7b6.png",
+    "static/media/chapter-proto-3.png": "/static/media/chapter-proto-3.6c1ef1548077d961e808.png",
     "static/media/ice-cream.png": "/static/media/ice-cream.267f88c05ecb2103b98f.png",
     "static/media/meetup-mockup (2).png": "/static/media/meetup-mockup (2).327b1bc4ce065cd96824.png",
     "static/media/when2meet-mobile.png": "/static/media/when2meet-mobile.c78f2877460efe8375df.png",
@@ -65,12 +71,12 @@
     "static/media/arrow.svg": "/static/media/arrow.6913a95c46e20a8824d643ab4fb6ee71.svg",
     "static/media/close.svg": "/static/media/close.362cb9d9be8638a592b8c0c488f10e76.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.6e4b8a13830a9b4834249fc89a5bbc06.svg",
-    "main.bc9547b5.css.map": "/static/css/main.bc9547b5.css.map",
-    "main.9891a048.js.map": "/static/js/main.9891a048.js.map",
+    "main.351c0977.css.map": "/static/css/main.351c0977.css.map",
+    "main.7c3ed758.js.map": "/static/js/main.7c3ed758.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc9547b5.css",
-    "static/js/main.9891a048.js"
+    "static/css/main.351c0977.css",
+    "static/js/main.7c3ed758.js"
   ]
 }
