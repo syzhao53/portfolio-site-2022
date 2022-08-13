@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.351c0977.css",
-    "main.js": "/static/js/main.7c3ed758.js",
+    "main.js": "/static/js/main.61aa3c5d.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/speech-apps.png": "/static/media/speech-apps.61558252f190968207fd.png",
+    "static/media/pit-device-mock.png": "/static/media/pit-device-mock.0fed5b3999fff0f00769.png",
     "static/media/chapter-device-mock.png": "/static/media/chapter-device-mock.f6b16172c689a7472c0c.png",
     "static/media/aac-example.png": "/static/media/aac-example.4b7e169ae029d9012440.png",
     "static/media/chapter-proto-2.png": "/static/media/chapter-proto-2.d82808c7ee3e683d0bc0.png",
@@ -72,11 +73,11 @@
     "static/media/close.svg": "/static/media/close.362cb9d9be8638a592b8c0c488f10e76.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.6e4b8a13830a9b4834249fc89a5bbc06.svg",
     "main.351c0977.css.map": "/static/css/main.351c0977.css.map",
-    "main.7c3ed758.js.map": "/static/js/main.7c3ed758.js.map",
+    "main.61aa3c5d.js.map": "/static/js/main.61aa3c5d.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.351c0977.css",
-    "static/js/main.7c3ed758.js"
+    "static/js/main.61aa3c5d.js"
   ]
 }
