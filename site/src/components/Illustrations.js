@@ -9,28 +9,28 @@ import pennapps from '../assets/pennapps-mockup.png';
 import shea from '../assets/shea-butter.png';
 import reishi from '../assets/reishi-mushroom.png';
 // import burgundylady from '../assets/burgundy-lady.png';
-// import comfyfarm from '../assets/comfy-farm.png';
+import comfyfarm from '../assets/comfy-farm.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
-function Personal({ currPage, setCurrPage }) {
+function Illustrations({ currPage, setCurrPage }) {
 //   const navigate = useNavigate();
 
   useEffect(() => {
     setCurrPage('');
     window.scrollTo(0, 0);
-    document.title = 'Personal Work | Sylvia Zhao';
+    document.title = 'Illustrations | Sylvia Zhao';
   }, []);
 
   return (
-    <div className="Personal">
+    <div className="Illustrations">
       <NavBar currPage={currPage} />
       <div className="project-wrap">
         <div className="project-header">
-          Miscellaneous
+          Illustrations
         </div>
         <div className="project-info">
-          Visual design work for personal projects, clubs, & more
+          Work for personal projects, clubs, & more
         </div>
         <img className="misc-img" src={icecream} alt="ice cream illustration" />
         <div className="img-wrap">
@@ -38,9 +38,11 @@ function Personal({ currPage, setCurrPage }) {
           {/* <div className="caption">(In collaboration with Mia Kim)</div> */}
         </div>
         <img className="misc-img" src={pennapps} alt="pennapps static site small illustrations" />
-        <img className="misc-img" src={shea} alt="shea butter illustration" />
-        <img className="misc-img" src={reishi} alt="reishi mushroom illustration" />
-        {/* <img className="misc-img" src={comfyfarm} alt="comfy farm illustration" /> */}
+        <div className="misc-img-wrap">
+          <img className="misc-img-lsmall" src={shea} alt="shea butter illustration" />
+          <img className="misc-img-rsmall" src={reishi} alt="reishi mushroom illustration" />
+        </div>
+        <img className="misc-img" src={comfyfarm} alt="comfy farm illustration" />
         {/* <img className="misc-img" src={burgundylady} alt="burgundy lady illustration" /> */}
       </div>
       <Footer />
@@ -48,4 +50,4 @@ function Personal({ currPage, setCurrPage }) {
   );
 }
 
-export default Personal;
+export default Illustrations;

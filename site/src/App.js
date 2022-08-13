@@ -14,7 +14,7 @@ import Logitech from './components/Logitech';
 import Chapter from './components/Chapter';
 import Resume from './components/Resume';
 import About from './components/About';
-import Personal from './components/Personal';
+import Illustrations from './components/Illustrations';
 
 function App() {
   const [currPage, setCurrPage] = useState('home');
@@ -38,7 +38,7 @@ function App() {
           <Route exact path="/speechconnect" element={<SpeechConnect currPage={currPage} setCurrPage={setCurrPage} />} />
           <Route exact path="/logitech" element={<Logitech currPage={currPage} setCurrPage={setCurrPage} />} />
           <Route exact path="/chapter" element={<Chapter currPage={currPage} setCurrPage={setCurrPage} />} />
-          <Route exact path="/personal" element={<Personal currPage={currPage} setCurrPage={setCurrPage} />} />
+          <Route exact path="/illustrations" element={<Illustrations currPage={currPage} setCurrPage={setCurrPage} />} />
         </Routes>
       {/* </Scroll> */}
     </div>

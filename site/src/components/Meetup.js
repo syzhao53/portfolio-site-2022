@@ -92,7 +92,7 @@ function Meetup({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="project-header">Meetup</div>
         <div className="project-info">Improving group meeting scheduling on mobile & web</div>
-        <img className="project-img" src={meetup} alt="pennintouch mockup" />
+        <img className="project-img" src={meetup} alt="meetup mockup" />
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>
@@ -104,7 +104,7 @@ function Meetup({ currPage, setCurrPage }) {
               <br />
               Inspired by past difficulties with the popular scheduling platform When2meet,
               this project aimed to create a more efficient and usable solution for
-              people providing their availability for group meetings. The design procees began with
+              people providing their availability for group meetings. The design process began with
               mobile first in order to focus on usability issues before expanding to desktop.
             </div>
           </div>
@@ -356,8 +356,8 @@ function Meetup({ currPage, setCurrPage }) {
           </li>
         </ul>
         <div className="project-text-low">
-          As a result, my guiding question focused on convenience and organization of how people&s
-          availability would be presented in the design.
+          As a result, my guiding question focused on convenience and organization of how
+          people&apos;s availability would be presented in the design.
         </div>
         <div id="how-might-card" className="cap-card">
           <div className="cap">
@@ -726,14 +726,14 @@ function Meetup({ currPage, setCurrPage }) {
           <ul>
             <li>
               <div className="list-text">
-                <a className="proto-link" href="https://www.figma.com/proto/AHxq5BvD3YoUd5bdFdI9OC/Meetup-Prototype-(Mobile)?node-id=2%3A98&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A28">
+                <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/AHxq5BvD3YoUd5bdFdI9OC/Meetup-Prototype-(Mobile)?node-id=2%3A98&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A28">
                   Mobile Solution Prototype
                 </a>
               </div>
             </li>
             <li>
               <div className="list-text">
-                <a className="proto-link" href="https://www.figma.com/proto/C9TwlLjWPRFaHFCLNZ32v2/Meetup-Prototype-(Desktop)?node-id=3%3A394&scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A21">
+                <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/C9TwlLjWPRFaHFCLNZ32v2/Meetup-Prototype-(Desktop)?node-id=3%3A394&scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A21">
                   Desktop Solution Prototype
                 </a>
               </div>

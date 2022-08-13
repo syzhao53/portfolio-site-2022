@@ -11,6 +11,7 @@ import Heart from '../assets/heart.svg';
 import meetup from '../assets/meetup-mockup (2).png';
 import pennintouch from '../assets/pennintouch-mockup.png';
 import speechconnect from '../assets/speechconnect-mockup.png';
+import chapter from '../assets/chapter-mockup.png';
 import pennapps from '../assets/pennapps-mockup.png';
 import icecream from '../assets/ice-cream.png';
 import logi from '../assets/logi-mockup.png';
@@ -34,8 +35,8 @@ function Home({ currPage, setCurrPage }) {
       navigate('/logitech');
     } else if (name === 'chapter') {
       navigate('/chapter');
-    } else if (name === 'personal') {
-      navigate('/personal');
+    } else if (name === 'illustrations') {
+      navigate('/illustrations');
     }
   };
 
@@ -107,13 +108,13 @@ function Home({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="gcard-rwrap"  onClick={() => goToProject('chapter')}>
-            <img className="grid-img" src={temp} alt="temp mockup" />
+            <img className="grid-img" src={chapter} alt="temp mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
                 Chapter
               </div>
               <div className="gcard-text">
-                Placeholder text
+                Designing a virtual book club app for readers
               </div>
             </div>
           </div>
@@ -130,14 +131,14 @@ function Home({ currPage, setCurrPage }) {
               </div>
             </div>
           </div>
-          <div className="gcard-rwrap" onClick={() => goToProject('personal')}>
+          <div className="gcard-rwrap" onClick={() => goToProject('illustrations')}>
             <img className="lined-gcard-label" src={icecream} alt="pennapps mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                Miscellaneous
+                Illustrations
               </div>
               <div className="gcard-text">
-                Visual design work for personal projects, clubs, & more
+                Work for personal projects, clubs, & more
               </div>
             </div>
           </div>

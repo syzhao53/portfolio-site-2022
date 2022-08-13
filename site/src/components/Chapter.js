@@ -4,26 +4,16 @@
 import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../assets/index.css';
-import meetup from '../assets/meetup-mockup (2).png';
-import when2meetdesk from '../assets/when2meet-desk.png';
-import when2meetmobile from '../assets/when2meet-mobile.png';
-import easesched from '../assets/ease-scheduling.png';
-import schedmethod from '../assets/scheduling-method.png';
-import schedresp from '../assets/scheduling-responding.png';
-import schedorg from '../assets/scheduling-organizing.png';
-import meetwire1 from '../assets/meet-wire-1.png';
-import meetwire2 from '../assets/meet-wire-2.png';
-import meetproto1 from '../assets/meet-proto-1.png';
-import meetproto2 from '../assets/meet-proto-2.png';
-import meetproto3 from '../assets/meet-proto-3.png';
-import meettest1 from '../assets/meet-test-1.png';
-import meetmobilecards from '../assets/meet-mobile-cards.png';
-import meetdeskcards from '../assets/meet-desk-cards.png';
-import meetdesk1 from '../assets/meet-desk-1.png';
-import meetdesk2 from '../assets/meet-desk-2.png';
+// import meetup from '../assets/meetup-mockup (2).png';
+import chapter from '../assets/chapter-mockup.png';
+import chapterwire1 from '../assets/chapter-wire-1.png';
+import chapterwire2 from '../assets/chapter-wire-2.png';
+import chapterproto1 from '../assets/chapter-proto-1.png';
+import chapterproto2 from '../assets/chapter-proto-2.png';
+import chapterproto3 from '../assets/chapter-proto-3.png';
 // import meetdevicemobile from '../assets/meet-device-mobile.png';
 // import meetdevicedesk from '../assets/meet-device-desk.png';
-import meetdevicemock from '../assets/meet-device-mock.png';
+import chapterdevicemock from '../assets/chapter-device-mock.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -38,33 +28,28 @@ function Chapter({ currPage, setCurrPage }) {
     <div className="Chapter">
       <NavBar currPage={currPage} />
       <div id="container-floating">
-        <div className="table-text1 nds">
-          <Link to="/meetup#overview">
+        <div className="table-text2 nds">
+          <Link to="/chapter#overview">
             <p className="letter">OVERVIEW</p>
           </Link>
         </div>
-        <div className="table-text2 nds">
-          <Link to="/meetup#when2meet">
-            <p className="letter">WHEN2MEET</p>
-          </Link>
-        </div>
         <div className="table-text3 nds">
-          <Link to="/meetup#user-research">
+          <Link to="/chapter#user-research">
             <p className="letter">USER RESEARCH</p>
           </Link>
         </div>
         <div className="table-text4 nds">
-          <Link to="/meetup#solution">
+          <Link to="/chapter#solution">
             <p className="letter">SOLUTION</p>
           </Link>
         </div>
         <div className="table-text5 nds">
-          <Link to="/meetup#prototype">
+          <Link to="/chapter#prototype">
             <p className="letter">PROTOTYPE</p>
           </Link>
         </div>
         <div className="table-text6 nds">
-          <Link to="/meetup#reflections">
+          <Link to="/chapter#reflections">
             <p className="letter">REFLECTIONS</p>
           </Link>
         </div>
@@ -91,21 +76,22 @@ function Chapter({ currPage, setCurrPage }) {
       </div>
       <div className="project-wrap">
         <div className="project-header">Chapter</div>
-        <div className="project-info">Improving group meeting scheduling on mobile & web</div>
-        <img className="project-img" src={meetup} alt="pennintouch mockup" />
+        <div className="project-info">
+          Designing a virtual book club app for readers
+        </div>
+        <img className="project-img" src={chapter} alt="chapter mockup" />
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>
             <div className="project-ltext">
-              Scheduling meetings can often become a laborious process of
-              coordination between organizers sending out invites and attendees
-              providing their availability.
+              Reading communities exist on various social platforms online, but what about
+              the traditional book club experience? Coming from my own efforts to read more
+              with friends, I wondered how social interactions related to reading could be
+              transferred into a digital experience.
               <br />
               <br />
-              Inspired by past difficulties with the popular scheduling platform When2meet,
-              this project aimed to create a more efficient and usable solution for
-              people providing their availability for group meetings. The design procees began with
-              mobile first in order to focus on usability issues before expanding to desktop.
+              This project presents a mobile solution for how users might
+              track progress and engage in discussions in a virtual book club.
             </div>
           </div>
           <div className="section-rflex">
@@ -124,213 +110,155 @@ function Chapter({ currPage, setCurrPage }) {
                 TIMELINE
               </div>
               <div className="project-rtext">
-                1.5 months
+                1 month
               </div>
             </div>
           </div>
         </div>
-        <div className="section-header" id="when2meet">When2meet</div>
-        <div className="project-text">
-          In work settings without shared calendars, many people rely on When2meet to coordinate
-          groups meetings. Operating as a web app, When2meet has one person send out a link from
-          the platform to the rest of their team members to gather their availability during a
-          specified period of time. Although When2meet offers a convenient solution, the interface
-          suffers from poor usability, lacking a mobile responsive site.
-          <br />
-          <br />
-          Despite simply starting off as personal inspiration for this project, When2meet
-          was also then widely mentioned in user research, driving the general structure of the
-          final interface I created.
-        </div>
-        <img className="project-img" src={when2meetdesk} alt="when2meet-desk" />
-        <img id="when2meet-mobile" className="project-img" src={when2meetmobile} alt="when2meet-mobile" />
         <div className="section-header" id="user-research"> User Research</div>
         <div className="cap-card">
           <div className="cap">
             <div className="empty">c</div>
           </div>
           <div className="cap-card-text">
-            &ldquo;Seeing everyone&apos;s availability in one place is crucial&rdquo;
-            <span style={{ 'font-style': 'italic' }}> &mdash; Student Club Leader</span>
+            &ldquo;I definitely care more about my friends&apos; opinions, I&apos;d probably
+            blow off an online comment I disagree with&rdquo;
+            <span style={{ 'font-style': 'italic' }}> &mdash; Reader</span>
           </div>
         </div>
-        <div className="subsection-header">SURVEY</div>
+        <div className="subsection-header">USER INTERVIEWS</div>
         <div className="project-text">
-          Given that students consistently need to schedule group meetings for clubs and projects
-          without the use of organized systems (like Microsoft Outlook), I surveyed
-          19 university students to understand key factors and pain points in
-          diverse scheduling processes and methods. Survey questions focused on both the meeting
-          organizer and invitee sides of scheduling.
+          The primary goal of user research was to understand what type of platform would be
+          most beneficial to supporting social connections between readers (ie. social media,
+          progress tracker, etc).
+          I interviewed 4 people ranging in age from 20 to mid 50s who read frequently; questions
+          focused on platforms that they currently use related to reading, how they find books
+          to read, and how they interact with people virtually and in-person concerning books.
+          One interviewee was an active member of an in-person book club.
           <br />
           <br />
-          The survey responses showed a general trend of people finding scheduling group meetings
-          to be a difficult process. The most commonly used tool was When2meet (14 out of 19
-          respondents), matching the result that people prefer to collect availability before
-          proposing a meeting time. Responses also showed that from both the meeting organizer
-          side and the invitee side, people value fast communication and the ability to see
-          the everyone&apos;s availability in one place.
+          Comments from the interviews showed that people generally do not directly engage with
+          other readers online but prefer to discuss thoughts with friends/family. People also
+          noted that a key difference between virtual and in-person interactions is that
+          they value their friends&apos; opinions much more than comments from online
+          platforms. In the case of having a different perspective on a book from
+          a friend, interviewees said that they would be much less likely to be dismissive
+          of that perspective compared to their reaction to an online comment.
         </div>
       </div>
-      <div id="graphs-meetup" className="graphs">
-        <div className="graphgrid-row">
-          <div className="card-lgraph">
-            <div className="graphcard-label">
-              QUESTION 1
-            </div>
-            <div className="graphcard-ques">
-              When attempting to schedule a group meeting,
-              how difficult do you find it to settle on a
-              time that aligns with everyone&apos;s schedule?
-            </div>
-            <img className="graph-img" src={easesched} alt="ease-sched graph" />
-          </div>
-          <div className="card-rgraph">
-            <div className="graphcard-label">
-              QUESTION 2
-            </div>
-            <div className="graphcard-ques">
-              Select what you are more likely to do when attempting to schedule a
-              meeting with a group
-            </div>
-            <img className="graph-img" src={schedmethod} alt="scheduling-method graph" />
-          </div>
-        </div>
-        <div className="graphgrid-row">
-          <div className="card-lgraph-low">
-            <div className="graphcard-label">
-              QUESTION 3
-            </div>
-            <div className="graphcard-ques">
-              Select all factors that you consider important to the
-              process of scheduling a meeting when you are
-              <span style={{ 'font-weight': '600' }}> the organizer </span>
-              in charge of scheduling
-            </div>
-            <img className="graph-img" src={schedorg} alt="scheduling-organizing graph" />
-          </div>
-          <div className="card-rgraph-low">
-            <div className="graphcard-label">
-              QUESTION 4
-            </div>
-            <div className="graphcard-ques">
-              Select all factors that you consider important to the process of
-              scheduling a meeting when you are
-              <span style={{ 'font-weight': '600' }}> an invitee </span>
-              (responding to organizer)
-            </div>
-            <img className="graph-img" src={schedresp} alt="scheduling-responding graph" />
-          </div>
-        </div>
-      </div>
-      <div className="project-wrap">
-        <div className="subsection-header-sec">USER INTERVIEWS</div>
-        <div className="project-text">
-          For interviews, I spoke with 2 undergraduate students and 1 graduate student who had
-          previous corporate work experience as well. These students were selected for their
-          experiences managing teams and clubs. I spoke with each of them on the factors that are
-          most important to consider when sending out a meeting invite as well as thought processes
-          when providing availability.
-          <br />
-          <br />
-          Synthesis of comments from the interviews was consistent with survey results with people
-          emphasizing the need to see all availability in one place and the ease of using When2meet
-          in various workflows for scheduling meetings. The interviews confirmed When2meet&apos;s
-          pain points of poor mobile usability and tedious process to input availability.
-        </div>
-      </div>
-      <div className="affinity">
+      <div className="affinity-col">
         <div className="categories-wrap">
-          <div className="category-flex">
-            <div className="category-name">GENERAL FEELINGS</div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Organizers value flexibility when compromises are needed
+          <div className="categories-row">
+            <div className="category-flex">
+              <div className="category-name">USE OF EXISTING PLATFORMS</div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    GoodReads: good for tracking and organizing what
+                    you read
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    TikTok: too easy to buy into hype of popular books
+                  </div>
+                </div>
+              </div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Instagram: too visually focused, &ldquo;builds
+                    an aesthetic&rdquo; of reading
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Sometimes read & leave online reviews (hard to avoid spoilers)
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  People find it difficult to schedule meetings
+            <div className="category-rflex">
+              <div className="category-name">HOW TO FIND BOOKS TO READ</div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Heavy reliance on word of mouth/recs. from family and friends
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Recommendations on social media (mostly Instagram & TikTok), often bad
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="category-flex">
-            <div className="category-name">WHEN2MEET</div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Commonly used to gather availability
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Books from same author as previous books
+                  </div>
                 </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Tedious to input availability
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Convenient, no account needed
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Bad mobile interface (everything too small, dragging doesn&apos;t work right)
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="category-flex">
-            <div className="category-name">COMMON PRACTICES</div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Share GCal with people from a team
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Preference for gathering availability vs sending out set times to choose from
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  GCal, email, & When2meet often used together
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  GCal useful when scheduling one-on-one meetings
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Will read blurbs of random books to see what is interesting
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="category-rflex">
-            <div className="category-name">IMPORTANT FACTORS</div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Organizer: seeing all availablity in one place
+          <div className="categories-row-last">
+            <div className="category-flex">
+              <div className="category-name">INTERACTIONS WITH FRIENDS</div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Better for discussing specific thoughts/obscure questions
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Enjoy more in-depth conversations to share thoughts
+                  </div>
+                </div>
+              </div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    More open to discussing different opinions
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Perspectives are usually similar on topics/books
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Invitee: prefer ability to compare with the rest of own calendar
+            <div className="category-rflex">
+              <div className="category-name">INTERACTIONS ONLINE</div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Generally no direct interaction with people
+                    online (forums/comment sections)
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Online resources good for fast answers & info
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Both sides: emphasis on fast communication
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    More readily dismissive of opinions that differ from own
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Still interesting to see range of perspectives
+                  </div>
                 </div>
               </div>
             </div>
@@ -342,45 +270,56 @@ function Chapter({ currPage, setCurrPage }) {
           KEY RESEARCH INSIGHTS
         </div>
         <div className="project-text-single">
-          Following user research, these observations framed my approach to a solution:
+          User interviews provided the following core insights that framed the final design:
         </div>
         <ul>
           <li>
-            <div className="list-text">People enjoy When2meet for its convenience since there is no need for any account sign-up/login</div>
+            <div className="list-text">Readers value their friends&apos; opinions much more highly than those of people online</div>
           </li>
           <li>
-            <div className="list-text">The ability to see availability for all people invited to a meeting is important to both the organizer & invitee sides</div>
+            <div className="list-text">
+              Online platforms are interesting since they provide
+              diverse perspectives and quick answers to minor questions
+            </div>
           </li>
           <li>
-            <div className="list-text">Usability on mobile is important for convenience and facilitates the fast communication that both sides value as well</div>
+            <div className="list-text">
+              Readers enjoy being able to track progress &
+              organize what books they have read/want to read
+            </div>
           </li>
         </ul>
         <div className="project-text-low">
-          As a result, my guiding question focused on convenience and organization of how people&s
-          availability would be presented in the design.
+          Due to emphasis on how people use interactions from friends&apos; as well as
+          online platforms to drive their reading decisions and processes, my guiding
+          question focused on balancing the different value that both types of
+          interaction bring to readers.
         </div>
         <div id="how-might-card" className="cap-card">
           <div className="cap">
             <div className="empty">c</div>
           </div>
           <div className="cap-card-text">
-            How might we create a user-friendly interface for group meeting scheduling from the
-            invitee side so that convenience & organization of information are prioritized?
+            How might we create a virtual experience that gives people a space to
+            both interact with friends as well as access a larger community?
           </div>
         </div>
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="solution">Solution</div>
             <div className="project-ltext">
-              Due to pain points surrounding the process of providing availability, I chose to
-              design for the perspective of the invitee only for the scope of this project. To
-              specifically address mobile usability concerns, I designed for a mobile interface
-              before expanding to a desktop solution after finalizing a mobile solution.
+              I chose to design a mobile app for a virtual book club to help
+              readers engage with their friends on books they read. The app
+              allows users to track their reading progress, discuss books within
+              their private group, and discuss with a public community of readers.
+              I designed for mobile due to the convenience of people chatting with
+              friends on mobile devices on social apps.
               <br />
               <br />
-              Additionally, to maintain the convenience valued by users of When2meet, the interface
-              was framed as a web app without need for an account. User testing was conducted
-              after wireframing and the first iteration of a prototype with the full UI design.
+              My process involved wireframing and prototyping with user testing being conducted
+              after wireframing and the first prototype iteration. The final solution presents
+              user flows for updating reading progress in a group and posting a reply to a group
+              discussion.
             </div>
           </div>
           <div className="section-rflex">
@@ -413,216 +352,244 @@ function Chapter({ currPage, setCurrPage }) {
           </div>
         </div>
       </div>
+      {/* <div className="project-text">/////////////TO DO: USER FLOW DIAGRAM SECTION??</div> */}
       <div className="project-wrap">
         <div className="subsection-header">WIREFRAMES: ITERATION 1</div>
         <div className="project-text">
-          The first iteration of my solution focused on displaying the group&apos;s
-          availability on the main page and having the user add their availability
-          for a given day by clicking “Edit” on a card in the “My availability” section. Primary
-          considerations in this first iteration included:
+          The first iteration focused on the layout of the home and group pages
+          to explore the best way for users to navigate to important features
+          within the group book club section of the app. I also wireframed
+          the group progress page for what a group is currently reading.
+          Main sections on the pages included:
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Visual representation of availability </span>
-                through differently shaded blocks (screen 1) to provide high-level information.
-                This follows When2meet&apos;s method of displaying availability where a darker
-                block indicates that more people in the group are available at the specified time.
-                User research showed that meeting invitees are not as concerned with specific
-                people&apos;s availability, only the number of people available at a given timeslot.
+                <span style={{ 'font-weight': '600' }}>&ldquo;Currently Reading&rdquo; </span>
+                section at the top of the home page for users to quickly access the &ldquo;
+                Update My Progress&rdquo; feature and to provide summary of current reading
+                activity. Also included on the group page to access the group progress page.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Separate views for group and individual availability </span>
-                to maintain organization and a different space for the user to
-                update their own information
+                <span style={{ 'font-weight': '600' }}>&ldquo;Quick Actions&rdquo; </span>
+                on the home page for accessing the chat feature & the group progress page.
+                This aims to help the user easily access features they might engage with
+                frequently.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Reliance on tapping and typing interactions </span>
-                to give the user more control over how they interact with the interface (screen 4).
-                The choice of interaction addresses how users disliked When2meet&apos;s imprecise
-                method of dragging in a grid to indicate availability. Tapping/typing into larger
-                input boxes would aim to increase precision and decrease frustration with errors.
+                <span style={{ 'font-weight': '600' }}>&ldquo;My Progress&rdquo; </span>
+                section on the group page to give the user a summary of their activity
+                and to allow for updating their reading progress. This addresses comments
+                from user research about organizational tools.
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>&ldquo;Group Overview&rdquo; </span>
+                on the group page to show users how other people in their group are progressing
+                through their reading. The timeline format visualizes how far each group
+                member is in the book.
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>&ldquo;Discussions&rdquo; & &ldquo;Chat&rdquo; </span>
+                sections on the group progress page to allow users to engage in public community
+                discussions as well as private chatting with their group.
               </div>
             </li>
           </ul>
         </div>
+        {/* <div className="project-text">
+          //////////TO DO: ADD USER FLOW DIAGRAM
+        </div> */}
       </div>
       <div className="mockup">
-        <img className="mockup-img" src={meetwire1} alt="meet-wire-1" />
+        <img className="mockup-img" src={chapterwire1} alt="chapter-wire-1" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">WIREFRAMES: ITERATION 2</div>
         <div className="project-text">
-          The second iteration of wireframes made minor adjustments to the
-          way days were displayed in “My availability,” as well as the layout of buttons.
+          After creating the first iteration of wireframes, I gathered feedback from people
+          previously interviewed for user research to gauge which features aligned with
+          user needs. Updates in the second iteration included:
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>&ldquo;Save changes&rdquo; button </span>
-                in &ldquo;My availability&rdquo; was changed to a back arrow in the upper-left
-                corner to better indicate to a user how to return to the main &ldquo;Group
-                availability&rdquo; view. A &ldquo;Cancel&rdquo; button and back arrow
-                were also added to the editing a day view.
+                <span style={{ 'font-weight': '600' }}>Changes to &ldquo;Quick Actions&rdquo; </span>
+                with the removal of the chat feature. Users expressed that a chat would seem
+                too similar to just texting their friends separately outside the app.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>&ldquo;Add timeslot&rdquo; button </span>
-                in the section for editing a specific day&apos;s availability was moved to be
-                grouped closer to the existing timeslots a user has. This better associates the
-                button&apos;s action with its results.
+                <span style={{ 'font-weight': '600' }}>&ldquo;Group Overview&rdquo; timeline layout </span>
+                replaced original layout too be more streamlined. Some users also commented that the
+                original view for group progress felt &ldquo;competitive&rdquo;.
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>&ldquo;Chat&rdquo; changed to private discussions </span>
+                to maintain a private discussion space while being more organized than a normal chat
+                function. Users can toggle between private and public discussion sections
+                on the group progress page.
               </div>
             </li>
           </ul>
         </div>
       </div>
       <div className="mockup">
-        <img className="mockup-img" src={meetwire2} alt="meet-wire-2" />
+        <img className="mockup-img" src={chapterwire2} alt="chapter-wire-2" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">PROTOTYPE: ITERATION 1</div>
         <div className="project-text">
-          To prepare for user testing, I created a simple prototype of the app for the user flow
-          of adding a timeslot to provide availability for a day. UI design choices involved:
+          Prior to user testing, I styled the second iteration of wireframes to create a
+          prototype for the user flows of adding to a discussion and updating personal progress.
+          Key UI design choices were:
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Green and mint color palette </span>
-                to create a calm appearance for the platform since research showed that scheduling
-                was considered difficult or stressful by most users.
+                <span style={{ 'font-weight': '600' }}>Core green color </span>
+                used to emphasize actionable buttons and used in icons for a cohesive
+                design.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Work Sans as the main font </span>
-                to maintain readability and professionalism with a sans serif font while still being
-                friendly
+                <span style={{ 'font-weight': '600' }}>Sans serif & serif font combination </span>
+                to create a more sophisticated but still simple feeling interface.
+                Headers were in Lora (serif) while body text, buttons, and smaller text were in
+                Noto Sans for readability.
               </div>
             </li>
           </ul>
         </div>
       </div>
       <div className="mockup">
-        <img className="mockup-img" src={meetproto1} alt="meet-proto-1" />
+        <img className="mockup-img" src={chapterproto1} alt="chapter-proto-1" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">USER TESTING: ROUND 1</div>
         <div className="project-text">
-          Using the initial prototype, I conduced user testing with 3 students, 1 from the user
-          interviews and 2 others who had responded to the survey and were
-          familiar with the project context. Users commented on:
+          Using the initial prototype, I conducted user testing with the user research interviewees.
+          This involved the two prototyped flows and general comments on the app.
+          People mainly commented on:
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Pleasant UI design </span>
-                with a simple aesthetic and clear emphasis on actionable areas
+                <span style={{ 'font-weight': '600' }}>Clean interface </span>
+                that feels organized. Users noted that it felt much more modern
+                than the popular platform Goodreads.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Good clarity with tapping interaction </span>
-                for actually inputting availability, more mobile-friendly than dragging
+                <span style={{ 'font-weight': '600' }}>Unclear actions </span>
+                on the home page and the group progress page. People were
+                unsure whether the progress percentage indicator was clickable.
+                Some people in testing thought it would lead to the &ldquo;My Progress&rdquo;
+                area.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Lack of clarity with the home page </span>
-                in terms of not understanding whether the main view shows group or individual
-                availability
+                <span style={{ 'font-weight': '600' }}>Confused by &ldquo;Group Overview&rdquo; timeline </span>
+                due to cramped visualization. Users expressed confusion over how someone would tell
+                clearly what chapter someone was on if there were a lot of group members.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>No visualization of &ldquo;My availability&rdquo; </span>
-                since timeslots are all displayed as text instead of colored blocks like the
-                group section
+                <span style={{ 'font-weight': '600' }}>Dislike of discussion types placed side by side</span>
+                in terms of feeling like there is potential to accidentally post to the public side.
+                Users also felt that the discussions crowded the group progress page.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Too many clicks </span>
-                required to even get to the adding/editing availability functionality (3 clicks
-                before availability is even added)
+                <span style={{ 'font-weight': '600' }}>Checkbox unclear for &ldquo;Update My Progress&rdquo; </span>
+                due to small size.
               </div>
             </li>
           </ul>
         </div>
-      </div>
-      <div className="mockup">
-        <img className="mockup-img" src={meettest1} alt="meet-test-1" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">PROTOTYPE: ITERATION 2</div>
         <div className="project-text">
-          Based on the comments from Round 1 of user testing, I reorganized how the &ldquo;
-          Add availability&rdquo; user flow begins:
-          streamlined
-          the “Add availability” user flow and created clear emphasis on separate
+          The main change in iteration 2 was the reorganization of how discussions
+          were presented in the app&apos;s structure. Due to comments from user testing
+          that the original discussion section created a cramped
+          interface and a potential
+          for mistakes, the two types of discussions became separate pages reachable
+          from the group progress page. Overall, changes in this iteration involved:
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Separate &ldquo;Me&rdquo; & &ldquo;Group&rdquo; </span>
-                sections to address the confusion on what information the main
-                view is initially presenting; indicated by buttons at the top to toggle the view
+                <span style={{ 'font-weight': '600' }}>Background cards </span>
+                added in light colors to help visually group elements on the home
+                and group progress pages. This was done in order to help make
+                clickable elements clearer.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Reduced number of clicks </span>
-                for adding/editing availability to streamline interaction; both functions are
-                accessed with 1 click in this iteration
+                <span style={{ 'font-weight': '600' }}>Separate pages for private & public discussions </span>
+                to prevent possible mistakes with posting to the wrong section in the
+                original side-by-side view.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Calendar layout </span>
-                to improve visualization of availability by highlighting days with provided
-                availability in bright mint and indicating the currently selected day with
-                an underline
+                <span style={{ 'font-weight': '600' }}>Updated &ldquo;Quick Actions&rdquo; </span>
+                to address the changes to the discussions structure. &ldquo;Group
+                Discusssions&rdquo; is prioritized over public discussion as a quick action
+                due to comments from research that people value their friends&apos; thoughts
+                more.
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Simplified &ldquo;Group Overview&rdquo; </span>
+                to eliminate confusion with original progress visualization and to create
+                a more scalable solution in the case of a large group.
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Replaced checkbox with toggle button </span>
+                for improved usability in the &ldquo;Update My Progress&rdquo; function.
               </div>
             </li>
           </ul>
         </div>
       </div>
       <div className="mockup">
-        <img className="mockup-img" src={meetproto2} alt="meet-proto-2" />
+        <img className="mockup-img-three" src={chapterproto2} alt="chapter-proto-2" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">USER TESTING: ROUND 2</div>
         <div className="project-text">
-          Continuing with the same users from the first round of testing, I collected feedback on
-          the second prototype. With this second round, comments mostly focused on how information
-          could be better indicated visually:
+          Again with the people from the first round of user testing, I gathered feedback on the
+          second prototype, particularly the changes to the discussion section.
+          Comments were largely centered around the private group discussions page:
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>No side-by-side comparision of group & personal availability </span>
-                limits the information a user has at their immediate disposal when inputting their
-                own information
+                <span style={{ 'font-weight': '600' }}>&ldquo;Threads&rdquo; terminology </span>
+                felt too &ldquo;formal&rdquo; to some people, felt more appropriate for the public
+                community discussions.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Preference for further visual representation of availability </span>
-                since calendar visualizes overall time period across days but not timeslots on
-                individual days; suggestions made for a grid view calendar
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Confusion with highlight vs. underline on date </span>
-                for which one is meant to indicate selected date or whether availability
-                was provided
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>One-click interaction </span>
-                for adding/editing availability improves previous flow and feels
-                less tedious
+                <span style={{ 'font-weight': '600' }}>Unread replies/new updates </span>
+                indicator missing from discussions page.
               </div>
             </li>
           </ul>
@@ -631,118 +598,46 @@ function Chapter({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">PROTOTYPE: ITERATION 3</div>
         <div className="project-text">
-          The final solution mainly addresses the confusions and concerns around visual
-          representation of information with the introduction of a secondary grid view calendar:
+          The final prototype includes updates addressing the comments from the second
+          round of user testing. These were the updates made to the private group discussion
+          page:
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Grid view calendar </span>
-                to supplement the original calendar view; the grid shows individual days
-                while the original layout still gives an overview of all dates that a
-                user can select from
+                <span style={{ 'font-weight': '600' }}>&ldquo;Threads&rdquo; changed to &ldquo;Topics&rdquo; </span>
+                to address the issue of the private group discussions feeling too much
+                like a public discussion forum.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Scrollable side-by-side comparison columns </span>
-                in the grid view to solve for the issue of not having the ability to compare
-                personal and group availability in the previous prototype; a key indicates the
-                two types of availability shown by the columns
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Highlighted date indicates selected date </span>
-                instead of a date with availability; this choice matches how a highlighted circle on
-                &ldquo;AM&rdquo; or &ldquo;PM&rdquo; indicates selection, so instead, a dot under
-                a date is used to show that a user previded availability
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Meeting information section </span>
-                at the top of the screen contextualizes the meeting invite and informs
-                how users should provide their availability based on the meeting length
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Tapping in the grid to add a timeslot </span>
-                in the grid view would allow for automatic population of the new timeslot&apos;s
-                starting time, helping counteract the additional tap added with the interaction
-                of swtiching from the main calendar to the grid view
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Info on number of people available </span>
-                shown when a user taps a block of availability; this addresses the point from
-                the original user research showing that people value general information about
-                the group availability
+                <span style={{ 'font-weight': '600' }}>Indicator for new updates </span>
+                added to each discussion topic.
               </div>
             </li>
           </ul>
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={meetproto3} alt="meet-proto-3" />
-        <img id="meet-mobile-cards" className="mockup-img" src={meetmobilecards} alt="meet-proto-3" />
-      </div>
-      <div className="project-wrap">
-        <div className="subsection-header-sec">DESKTOP VERSION</div>
-        <div className="project-text">
-          After finalizing the mobile prototype, I created a desktop version to see how the mobile
-          version could scale. Some minor features/interactions were incorporated in the desktop
-          interface:
-          <ul>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Timeslot preview when adding/editing availability </span>
-                shown when a user taps a block of availability; this addresses the point from
-                the original user research showing that people value general information about
-                the group availability
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Hover interactions for editing & group availability info </span>
-                shown when a user taps a block of availability; this addresses the point from
-                the original user research showing that people value general information about
-                the group availability
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div id="last-mockup">
-        <img className="mockup-img" src={meetdesk1} alt="meet-desk-1" />
-        <img id="meet-desk-2" className="mockup-img" src={meetdesk2} alt="meet-desk-2" />
-        <img id="meet-desk-cards" className="mockup-img" src={meetdeskcards} alt="meet-desk-cards" />
+      <div className="last-mockup">
+        <img className="mockup-img-single" src={chapterproto3} alt="chapter-proto-3" />
       </div>
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
         <div className="project-text">
-          Interact with the final prototypes at the links below:
+          View the final prototype for &ldquo;Update My Progress&rdquo; and adding
+          a discussion reply at the link below:
           <ul>
             <li>
               <div className="list-text">
-                <a className="proto-link" href="https://www.figma.com/proto/AHxq5BvD3YoUd5bdFdI9OC/Meetup-Prototype-(Mobile)?node-id=2%3A98&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A28">
-                  Mobile Solution Prototype
-                </a>
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <a className="proto-link" href="https://www.figma.com/proto/C9TwlLjWPRFaHFCLNZ32v2/Meetup-Prototype-(Desktop)?node-id=3%3A394&scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A21">
-                  Desktop Solution Prototype
+                <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/GhMUbVJmDgFJR9GvVNHzAh/Book-Club-Case-Study?node-id=118%3A806&scaling=scale-down&page-id=117%3A804&starting-point-node-id=118%3A806">
+                  Chapter Prototype
                 </a>
               </div>
             </li>
           </ul>
         </div>
         <div className="proto-flex">
-          <img className="device-mock" src={meetdevicemock} alt="meet-device-mock" />
-          {/* <img className="device-mock-desk" src={meetdevicedesk} alt="meet-device-desk" /> */}
+          <img className="device-mock" src={chapterdevicemock} alt="chapter-device-mock" />
         </div>
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
