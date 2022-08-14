@@ -31,7 +31,7 @@ function Meetup({ currPage, setCurrPage }) {
   useEffect(() => {
     setCurrPage('');
     document.title = 'Meetup | Sylvia Zhao';
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -96,7 +96,7 @@ function Meetup({ currPage, setCurrPage }) {
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>
-            <div className="project-ltext">
+            <div className="project-ltext-zero">
               Scheduling meetings can often become a laborious process of
               coordination between organizers sending out invites and attendees
               providing their availability.
@@ -119,7 +119,7 @@ function Meetup({ currPage, setCurrPage }) {
                 </div>
               </div>
             </div>
-            <div className="descrip-rflex">
+            <div className="descrip-rflex-zero">
               <div className="subsection-rheader">
                 TIMELINE
               </div>
@@ -238,7 +238,6 @@ function Meetup({ currPage, setCurrPage }) {
           pain points of poor mobile usability and tedious process to input availability.
         </div>
       </div>
-
       <div className="affinity-col">
         <div className="categories-wrap">
           <div className="categories-row">
@@ -689,9 +688,13 @@ function Meetup({ currPage, setCurrPage }) {
           </ul>
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={meetproto3} alt="meet-proto-3" />
-        <img id="meet-mobile-cards" className="mockup-img" src={meetmobilecards} alt="meet-proto-3" />
+      <div className="mockup-col">
+        <div className="mockup-flex-fix">
+          <img className="mockup-img" src={meetproto3} alt="meet-proto-3" />
+        </div>
+        <div className="mockup-flex-fix">
+          <img id="meet-mobile-cards" className="mockup-img" src={meetmobilecards} alt="meet-proto-3" />
+        </div>
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">DESKTOP VERSION</div>
@@ -719,10 +722,16 @@ function Meetup({ currPage, setCurrPage }) {
           </ul>
         </div>
       </div>
-      <div id="last-mockup">
-        <img className="mockup-img" src={meetdesk1} alt="meet-desk-1" />
-        <img id="meet-desk-2" className="mockup-img" src={meetdesk2} alt="meet-desk-2" />
-        <img id="meet-desk-cards" className="mockup-img" src={meetdeskcards} alt="meet-desk-cards" />
+      <div id="last-mockup-col">
+        <div className="mockup-flex-fix">
+          <img className="mockup-img" src={meetdesk1} alt="meet-desk-1" />
+        </div>
+        <div className="mockup-flex-fix">
+          <img id="meet-desk-2" className="mockup-img" src={meetdesk2} alt="meet-desk-2" />
+        </div>
+        <div className="mockup-flex-fix">
+          <img id="meet-desk-cards" className="mockup-img" src={meetdeskcards} alt="meet-desk-cards" />
+        </div>
       </div>
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>

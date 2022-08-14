@@ -96,7 +96,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>
-            <div className="project-ltext">
+            <div className="project-ltext-zero">
               Language drives everyday interactions and is a tool that shapes
               how people form connections with each other. Stemming from my interests
               in psychology and linguistics, I wanted to explore how design and technology can
@@ -123,7 +123,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
                 </div>
               </div>
             </div>
-            <div className="descrip-rflex">
+            <div className="descrip-rflex-zero">
               <div className="subsection-rheader">
                 TIMELINE
               </div>
@@ -417,10 +417,14 @@ function SpeechConnect({ currPage, setCurrPage }) {
           </div>
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={speechapps} alt="speech-apps" />
-        <div className="iteration-caption">
-          Left to right, top to bottom: LAMP, TouchChat, TDSnap, Proloquo2Go
+      <div className="mockup-col">
+        <div className="mockup-flex-fix">
+          <img className="mockup-img" src={speechapps} alt="speech-apps" />
+        </div>
+        <div className="mockup-flex-fix">
+          <div className="iteration-caption">
+            Left to right, top to bottom: LAMP, TouchChat, TDSnap, Proloquo2Go
+          </div>
         </div>
       </div>
       <div className="project-wrap">
@@ -474,7 +478,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
         {/* WHERE DOES THE HOW MIGHT WE GO?? */}
         <div className="section-flex">
           <div className="section-lflex">
-            <div className="section-header" id="solution">Solution</div>
+            <div className="section-header">Solution</div>
             <div className="project-ltext">
               My solution focused on the user flows of speaking a sentence with the app (Home),
               allowing for customization (Customize),
@@ -488,7 +492,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="section-rflex">
-            <div className="descrip-lflex">
+            <div className="descrip-lflex-margin">
               <div className="stage-wrap">
                 <div className="subsection-rheader-top">
                   WIREFRAMES
@@ -565,10 +569,14 @@ function SpeechConnect({ currPage, setCurrPage }) {
           </ul>
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={speechgridwire} alt="speech-grid-wire" />
-        <div className="iteration-caption">
-          Wireframe iterations 1, 2, & 3
+      <div className="mockup-col">
+        <div className="mockup-flex-fix">
+          <img className="mockup-img" src={speechgridwire} alt="speech-grid-wire" />
+        </div>
+        <div className="mockup-flex-fix">
+          <div className="iteration-caption">
+            Wireframe iterations 1, 2, & 3
+          </div>
         </div>
       </div>
       <div className="project-wrap">
@@ -582,10 +590,14 @@ function SpeechConnect({ currPage, setCurrPage }) {
           have one consistent motor pattern for interaction.
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={speechgridui} alt="speech-grid-ui" />
-        <div className="iteration-caption">
-          Main grid view & &ldquo;Activities&rdquo; category page example
+      <div className="mockup-col">
+        <div className="mockup-flex-fix">
+          <img className="mockup-img" src={speechgridui} alt="speech-grid-ui" />
+        </div>
+        <div className="mockup-flex-fix">
+          <div className="iteration-caption">
+            Main grid view & &ldquo;Activities&rdquo; category page example
+          </div>
         </div>
       </div>
       <div className="project-wrap">
@@ -633,10 +645,14 @@ function SpeechConnect({ currPage, setCurrPage }) {
           </ul>
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={speechcustomizewire} alt="speech-customize-wire" />
-        <div className="iteration-caption">
-          Wireframe iterations 1 & 2
+      <div className="mockup-col">
+        <div className="mockup-flex-fix">
+          <img className="mockup-img" src={speechcustomizewire} alt="speech-customize-wire" />
+        </div>
+        <div className="mockup-flex-fix">
+          <div className="iteration-caption">
+            Wireframe iterations 1 & 2
+          </div>
         </div>
       </div>
       <div className="project-wrap">
@@ -645,10 +661,14 @@ function SpeechConnect({ currPage, setCurrPage }) {
           better indicate interactive components.
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={speechcustomizeui} alt="speech-customize-ui" />
-        <div className="iteration-caption">
-          UI design iterations 1 & 2 (final)
+      <div className="mockup-col">
+        <div className="mockup-flex-fix">
+          <img className="mockup-img" src={speechcustomizeui} alt="speech-customize-ui" />
+        </div>
+        <div className="mockup-flex-fix">
+          <div className="iteration-caption">
+            UI design iterations 1 & 2 (final)
+          </div>
         </div>
       </div>
       <div className="project-wrap">
@@ -669,10 +689,14 @@ function SpeechConnect({ currPage, setCurrPage }) {
           with adding to the current main grid view.
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={speechwordwire} alt="speech-word-wire" />
-        <div className="iteration-caption">
-          Wireframe iterations 1 & 2
+      <div className="mockup-col">
+        <div className="mockup-flex-fix">
+          <img className="mockup-img" src={speechwordwire} alt="speech-word-wire" />
+        </div>
+        <div className="mockup-flex-fix">
+          <div className="iteration-caption">
+            Wireframe iterations 1 & 2
+          </div>
         </div>
       </div>
       <div className="project-wrap">
@@ -681,10 +705,14 @@ function SpeechConnect({ currPage, setCurrPage }) {
           ability to upload a photo for the icon.
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={speechwordui} alt="speech-word-ui" />
-        <div className="iteration-caption">
-          Final UI design
+      <div className="mockup-col">
+        <div className="mockup-flex-fix">
+          <img className="mockup-img" src={speechwordui} alt="speech-word-ui" />
+        </div>
+        <div className="mockup-flex-fix">
+          <div className="iteration-caption">
+            Final UI design
+          </div>
         </div>
       </div>
       <div className="project-wrap">
@@ -720,11 +748,19 @@ function SpeechConnect({ currPage, setCurrPage }) {
           </ul>
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={speechsetwire1} alt="speech-set-wire-1" />
-        <div className="iteration-caption">Wireframes for iterations 1 & 2 of flow starting point</div>
-        <img id="mockup-img-margin" className="mockup-img" src={speechsetwire2} alt="speech-set-wire-2" />
-        <div className="iteration-caption">Wireframes for removing & replacing a word</div>
+      <div className="mockup-col">
+        <div className="mockup-flex-fix">
+          <img className="mockup-img" src={speechsetwire1} alt="speech-set-wire-1" />
+        </div>
+        <div className="mockup-flex-fix">
+          <div className="iteration-caption">Wireframes for iterations 1 & 2 of flow starting point</div>
+        </div>
+        <div className="mockup-flex-fix">
+          <img id="mockup-img-margin" className="mockup-img" src={speechsetwire2} alt="speech-set-wire-2" />
+        </div>
+        <div className="mockup-flex-fix">
+          <div className="iteration-caption">Wireframes for removing & replacing a word</div>
+        </div>
       </div>
       <div className="project-wrap">
         <div className="project-text">
@@ -733,9 +769,13 @@ function SpeechConnect({ currPage, setCurrPage }) {
           throughout the app to help users learn patterns in the functionality.
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={speechsetui} alt="speech-set-ui" />
-        <div className="iteration-caption">Final UI design for creating a custom vocab set</div>
+      <div className="mockup-col">
+        <div className="mockup-flex-fix">
+          <img className="mockup-img" src={speechsetui} alt="speech-set-ui" />
+        </div>
+        <div className="mockup-flex-fix">
+          <div className="iteration-caption">Final UI design for creating a custom vocab set</div>
+        </div>
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">UI DESIGN</div>

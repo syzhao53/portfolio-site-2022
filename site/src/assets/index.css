@@ -616,9 +616,15 @@ html {
 .section-rflex {
   display: flex;
   flex-direction: column;
+  /* background-color: green; */
 }
 
 .descrip-lflex {
+  display: flex;
+  flex-direction: row;
+}
+
+.descrip-lflex-margin {
   display: flex;
   flex-direction: row;
 }
@@ -637,6 +643,7 @@ html {
   text-align: left;
   margin: 0 0 1.5rem 0;
   padding-top: 7rem;
+  /* background-color: pink; */
 }
 
 .subsection-header {
@@ -684,6 +691,14 @@ html {
   margin: 0 0 3rem 0;
 }
 
+.project-text-zero {
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.55rem;
+  color: #212121;
+  margin: 0;
+}
+
 .project-text-single {
   font-size: 1rem;
   text-align: left;
@@ -706,6 +721,14 @@ html {
   line-height: 1.55rem;
   color: #212121;
   margin: 0 7rem 4rem 0;
+}
+
+.project-ltext-zero {
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.55rem;
+  color: #212121;
+  margin: 0 7rem 0 0;
 }
 
 .project-rtext {
@@ -879,7 +902,7 @@ ul {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  margin: 1rem 0 3rem 0;
+  margin: 1rem 0 0rem 0;
   flex-wrap: wrap;
 }
 
@@ -987,7 +1010,7 @@ ul {
   /* background-color: #F4FAFF; */
   display: flex;
   flex-direction: row;
-  padding: 4rem 2rem 4rem 2rem;
+  padding: 4rem 2rem 0 2rem;
   margin: 1rem 0 3rem 0;
   /* background-color: red; */
   /* flex-wrap: wrap; */
@@ -997,7 +1020,7 @@ ul {
   /* background-color: #F4FAFF; */
   display: flex;
   flex-direction: column;
-  padding: 4rem 2rem 4rem 2rem;
+  padding: 4rem 2rem 0 2rem;
   margin: 1rem 0 3rem 0;
   /* background-color: red; */
   /* flex-wrap: wrap; */
@@ -1179,7 +1202,15 @@ ul {
   /* background-color: #F4FAFF; */
   display: flex;
   flex-direction: column;
-  padding: 4rem 2rem 4rem 4rem;
+  padding: 4rem 2rem 0 4rem;
+  margin: 0 0 0 0;
+}
+
+#last-mockup-col {
+  /* background-color: #F4FAFF; */
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem 0 4rem;
   margin: 0 0 0 0;
 }
 
@@ -1192,10 +1223,25 @@ ul {
 }
 
 
-.mockup-small {
+.mockup-col {
   /* background-color: #F4FAFF; */
   display: flex;
   flex-direction: column;
+  padding: 4rem 4rem 4rem 4rem;
+  margin: auto;
+}
+
+.mockup-flex-fix {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.mockup-small {
+  /* background-color: #F4FAFF; */
+  display: flex;
+  flex-direction: row;
   padding: 4rem 4rem 0 4rem;
   margin: auto;
 }
@@ -1267,7 +1313,7 @@ ul {
   }
 
   .footer-wrap {
-    padding: 5rem 0 1rem 0;
+    padding: 5rem 0 1.25rem 0;
   }
 
   .nav-row {
@@ -1465,6 +1511,16 @@ ul {
     flex-direction: column;
     margin: 0 0 0 0;
   } */
+
+  .descrip-lflex-margin {
+    margin-bottom: 6rem;
+  }
+
+  .descrip-rflex-zero {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 3rem;
+  }
   
   .descrip-rflex {
     display: flex;
@@ -1592,11 +1648,18 @@ ul {
   
   .mockup {
     padding: 1rem;
+    flex-direction: row;
+    margin: 0 0 3rem 0;
+  }
+
+  .mockup-col {
+    padding: 1rem;
+    /* flex-direction: row; */
     margin: 0 0 3rem 0;
   }
   
   .mockup-img {
-    width: 100%;
+    width: 85%;
     margin: auto;
   }
 
@@ -1625,8 +1688,9 @@ ul {
   } */
 
   #last-mockup {
-    padding: 1rem;
-    margin: 0 0 3rem 0;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
   }
 
 .analysis {
@@ -1654,5 +1718,9 @@ ul {
   width: 60%;
   border-radius: 7px;
   margin: auto auto 3rem auto;
+}
+
+.project-ltext-zero {
+  margin: auto;
 }
 }

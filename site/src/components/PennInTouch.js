@@ -33,7 +33,7 @@ function PennInTouch({ currPage, setCurrPage }) {
     setCurrPage('');
     document.title = 'PennInTouch | Sylvia Zhao';
     // document.documentElement.style.scrollBehavior = 'auto';
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -98,7 +98,7 @@ function PennInTouch({ currPage, setCurrPage }) {
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>
-            <div className="project-ltext">
+            <div className="project-ltext-zero">
               The University of Pennsylvania uses PennInTouch as its academic
               planning and course registration site. Students have constantly
               complained about the unpleasant experience of using PennInTouch and
@@ -119,7 +119,7 @@ function PennInTouch({ currPage, setCurrPage }) {
                 UX research & design
               </div>
             </div>
-            <div className="descrip-rflex">
+            <div className="descrip-rflex-zero">
               <div className="subsection-rheader">
                 TIMELINE
               </div>

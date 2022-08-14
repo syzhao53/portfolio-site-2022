@@ -80,7 +80,7 @@ function Chapter({ currPage, setCurrPage }) {
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>
-            <div className="project-ltext">
+            <div className="project-ltext-zero">
               Reading communities exist on various social platforms online, but what about
               the traditional book club experience? Coming from my own efforts to read more
               with friends, I wondered how social interactions related to reading could be
@@ -102,7 +102,7 @@ function Chapter({ currPage, setCurrPage }) {
                 </div>
               </div>
             </div>
-            <div className="descrip-rflex">
+            <div className="descrip-rflex-zero">
               <div className="subsection-rheader">
                 TIMELINE
               </div>
@@ -502,7 +502,7 @@ function Chapter({ currPage, setCurrPage }) {
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Dislike of discussion types placed side by side</span>
+                <span style={{ 'font-weight': '600' }}>Dislike of discussion types placed side by side </span>
                 in terms of feeling like there is potential to accidentally post to the public side.
                 Users also felt that the discussions crowded the group progress page.
               </div>
