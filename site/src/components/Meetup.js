@@ -31,7 +31,7 @@ function Meetup({ currPage, setCurrPage }) {
   useEffect(() => {
     setCurrPage('');
     document.title = 'Meetup | Sylvia Zhao';
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -238,99 +238,104 @@ function Meetup({ currPage, setCurrPage }) {
           pain points of poor mobile usability and tedious process to input availability.
         </div>
       </div>
-      <div className="affinity">
+
+      <div className="affinity-col">
         <div className="categories-wrap">
-          <div className="category-flex">
-            <div className="category-name">GENERAL FEELINGS</div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Organizers value flexibility when compromises are needed
+          <div className="categories-row">
+            <div className="category-flex">
+              <div className="category-name">WHEN2MEET</div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Commonly used to gather availability
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Tedious to input availability
+                  </div>
+                </div>
+              </div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Convenient, no account needed
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Bad mobile interface (everything too small, dragging doesn&apos;t work right)
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  People find it difficult to schedule meetings
+            <div className="category-rflex">
+              <div className="category-name">COMMON PRACTICES</div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Share GCal with people from a team
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Preference for gathering availability vs sending out set times to choose from
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="category-flex">
-            <div className="category-name">WHEN2MEET</div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Commonly used to gather availability
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    GCal, email, & When2meet often used together
+                  </div>
                 </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Tedious to input availability
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Convenient, no account needed
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Bad mobile interface (everything too small, dragging doesn&apos;t work right)
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="category-flex">
-            <div className="category-name">COMMON PRACTICES</div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Share GCal with people from a team
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Preference for gathering availability vs sending out set times to choose from
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  GCal, email, & When2meet often used together
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  GCal useful when scheduling one-on-one meetings
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    GCal useful when scheduling one-on-one meetings
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="category-rflex">
-            <div className="category-name">IMPORTANT FACTORS</div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Organizer: seeing all availablity in one place
+          <div className="categories-row-last">
+            <div className="category-lflex-col">
+              <div className="category-name">IMPORTANT FACTORS</div>
+              <div className="post-it-row">
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Organizer: seeing all availablity in one place
+                  </div>
+                </div>
+              </div>
+              <div className="post-it-row">
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Invitee: prefer ability to compare with the rest of own calendar
+                  </div>
+                </div>
+              </div>
+              <div className="post-it-row">
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Both sides: emphasis on fast communication
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Invitee: prefer ability to compare with the rest of own calendar
+            <div className="category-rflex-col">
+              <div className="category-name">GENERAL FEELINGS</div>
+              <div className="post-it-row">
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Organizers value flexibility when compromises are needed
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Both sides: emphasis on fast communication
+              <div className="post-it-row">
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    People find it difficult to schedule meetings
+                  </div>
                 </div>
               </div>
             </div>

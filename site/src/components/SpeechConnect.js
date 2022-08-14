@@ -784,7 +784,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
           </ul>
         </div>
         <div className="proto-flex">
-          <img className="device-mock" src={speechdevicemock} alt="speech-device-mock" />
+          <img className="device-mock-small" src={speechdevicemock} alt="speech-device-mock" />
         </div>
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
