@@ -132,7 +132,7 @@ function Meetup({ currPage, setCurrPage }) {
         <div className="section-header" id="when2meet">When2meet</div>
         <div className="project-text">
           In work settings without shared calendars, many people rely on When2meet to coordinate
-          groups meetings. Operating as a web app, When2meet has one person send out a link from
+          group meetings. Operating as a web app, When2meet has one person send out a link from
           the platform to the rest of their team members to gather their availability during a
           specified period of time. Although When2meet offers a convenient solution, the interface
           suffers from poor usability, lacking a mobile responsive site.
@@ -168,7 +168,7 @@ function Meetup({ currPage, setCurrPage }) {
           respondents), matching the result that people prefer to collect availability before
           proposing a meeting time. Responses also showed that from both the meeting organizer
           side and the invitee side, people value fast communication and the ability to see
-          the everyone&apos;s availability in one place.
+          everyone&apos;s availability in one place.
         </div>
       </div>
       <div id="graphs-meetup" className="graphs">
@@ -190,7 +190,7 @@ function Meetup({ currPage, setCurrPage }) {
             </div>
             <div className="graphcard-ques">
               Select what you are more likely to do when attempting to schedule a
-              meeting with a group
+              meeting with a group.
             </div>
             <img className="graph-img" src={schedmethod} alt="scheduling-method graph" />
           </div>
@@ -203,8 +203,8 @@ function Meetup({ currPage, setCurrPage }) {
             <div className="graphcard-ques">
               Select all factors that you consider important to the
               process of scheduling a meeting when you are
-              <span style={{ 'font-weight': '600' }}> the organizer </span>
-              in charge of scheduling
+              <span style={{ 'font-weight': '500' }}> the organizer </span>
+              in charge of scheduling.
             </div>
             <img className="graph-img" src={schedorg} alt="scheduling-organizing graph" />
           </div>
@@ -215,8 +215,8 @@ function Meetup({ currPage, setCurrPage }) {
             <div className="graphcard-ques">
               Select all factors that you consider important to the process of
               scheduling a meeting when you are
-              <span style={{ 'font-weight': '600' }}> an invitee </span>
-              (responding to organizer)
+              <span style={{ 'font-weight': '500' }}> an invitee </span>
+              (responding to organizer).
             </div>
             <img className="graph-img" src={schedresp} alt="scheduling-responding graph" />
           </div>
@@ -496,7 +496,7 @@ function Meetup({ currPage, setCurrPage }) {
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Green and mint color palette </span>
                 to create a calm appearance for the platform since research showed that scheduling
-                was considered difficult or stressful by most users.
+                was considered difficult or stressful by most users
               </div>
             </li>
             <li>
@@ -515,7 +515,7 @@ function Meetup({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">USER TESTING: ROUND 1</div>
         <div className="project-text">
-          Using the initial prototype, I conduced user testing with 3 students, 1 from the user
+          Using the initial prototype, I conducted user testing with 3 students, 1 from the user
           interviews and 2 others who had responded to the survey and were
           familiar with the project context. Users commented on:
           <ul>
@@ -561,8 +561,8 @@ function Meetup({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">PROTOTYPE: ITERATION 2</div>
         <div className="project-text">
-          Based on the comments from Round 1 of user testing, I reorganized how the &ldquo;
-          Add availability&rdquo; user flow begins:
+          Based on the comments from Round 1 of user testing, I reorganized how the &ldquo;Add
+          availability&rdquo; user flow begins:
           streamlined
           the “Add availability” user flow and created clear emphasis on separate
           <ul>
@@ -603,7 +603,7 @@ function Meetup({ currPage, setCurrPage }) {
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>No side-by-side comparision of group & personal availability </span>
+                <span style={{ 'font-weight': '600' }}>No side-by-side comparison of group & personal availability </span>
                 limits the information a user has at their immediate disposal when inputting their
                 own information
               </div>
@@ -659,7 +659,7 @@ function Meetup({ currPage, setCurrPage }) {
                 <span style={{ 'font-weight': '600' }}>Highlighted date indicates selected date </span>
                 instead of a date with availability; this choice matches how a highlighted circle on
                 &ldquo;AM&rdquo; or &ldquo;PM&rdquo; indicates selection, so instead, a dot under
-                a date is used to show that a user previded availability
+                a date is used to show that a user provided availability
               </div>
             </li>
             <li>
@@ -674,7 +674,7 @@ function Meetup({ currPage, setCurrPage }) {
                 <span style={{ 'font-weight': '600' }}>Tapping in the grid to add a timeslot </span>
                 in the grid view would allow for automatic population of the new timeslot&apos;s
                 starting time, helping counteract the additional tap added with the interaction
-                of swtiching from the main calendar to the grid view
+                of switching from the main calendar to the grid view
               </div>
             </li>
             <li>
@@ -708,7 +708,7 @@ function Meetup({ currPage, setCurrPage }) {
                 <span style={{ 'font-weight': '600' }}>Timeslot preview when adding/editing availability </span>
                 shown when a user taps a block of availability; this addresses the point from
                 the original user research showing that people value general information about
-                the group availability
+                the group availability.
               </div>
             </li>
             <li>
@@ -716,7 +716,7 @@ function Meetup({ currPage, setCurrPage }) {
                 <span style={{ 'font-weight': '600' }}>Hover interactions for editing & group availability info </span>
                 shown when a user taps a block of availability; this addresses the point from
                 the original user research showing that people value general information about
-                the group availability
+                the group availability.
               </div>
             </li>
           </ul>

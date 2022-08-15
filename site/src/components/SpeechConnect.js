@@ -443,7 +443,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
           </li>
           <li>
             <div className="list-text">
-              Icons/pictures are important to guiding user&apos;s in AAC; icons
+              Icons/pictures are important to guiding users in AAC; icons
               systems are often not cohesive and may appear childish to adults
             </div>
           </li>
@@ -556,7 +556,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Navigation to customization page </span>
                 included in bottom navigation bar to emphasize the app&apos;s ability to create a
-                custom experience.
+                custom experience
               </div>
             </li>
             <li>
@@ -625,14 +625,14 @@ function SpeechConnect({ currPage, setCurrPage }) {
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Changing the vocab set for the grid </span>
                 in order to allow for users to control how they progress from basic to more advanced
-                set-ups. This also includes custom sets and sets that text-only (for users who
+                set-ups. This also includes custom sets and sets that are text-only (for users who
                 don&apos;t want or need visual aids).
               </div>
             </li>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Changing the theme for icons </span>
-                to accomodate for different visual needs or preferences
+                to accommodate for different visual needs or preferences
               </div>
             </li>
             <li>
@@ -701,7 +701,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
       </div>
       <div className="project-wrap">
         <div className="project-text">
-          The final design demonstrates a flow for creating new word in the app with the
+          The final design demonstrates a flow for creating new words in the app with the
           ability to upload a photo for the icon.
         </div>
       </div>

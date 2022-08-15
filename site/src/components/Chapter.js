@@ -313,10 +313,9 @@ function Chapter({ currPage, setCurrPage }) {
               friends on mobile devices on social apps.
               <br />
               <br />
-              My process involved wireframing and prototyping with user testing being conducted
-              after wireframing and the first prototype iteration. The final solution presents
-              user flows for updating reading progress in a group and posting a reply to a group
-              discussion.
+              User testing occurred after wireframing and the first prototype iteration.
+              The final solution presents user flows for updating reading progress in a
+              group and posting a reply to a group discussion.
             </div>
           </div>
           <div className="section-rflex">
@@ -362,8 +361,8 @@ function Chapter({ currPage, setCurrPage }) {
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>&ldquo;Currently Reading&rdquo; </span>
-                section at the top of the home page for users to quickly access the &ldquo;
-                Update My Progress&rdquo; feature and to provide summary of current reading
+                section at the top of the home page for users to quickly access the
+                &ldquo;Update My Progress&rdquo; feature and to provide a summary of current reading
                 activity. Also included on the group page to access the group progress page.
               </div>
             </li>
@@ -395,7 +394,7 @@ function Chapter({ currPage, setCurrPage }) {
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>&ldquo;Discussions&rdquo; & &ldquo;Chat&rdquo; </span>
                 sections on the group progress page to allow users to engage in public community
-                discussions as well as private chatting with their group.
+                discussions as well as private chatting with their group
               </div>
             </li>
           </ul>
@@ -424,7 +423,7 @@ function Chapter({ currPage, setCurrPage }) {
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>&ldquo;Group Overview&rdquo; timeline layout </span>
-                replaced original layout too be more streamlined. Some users also commented that the
+                replaced original layout to be more streamlined. Some users also commented that the
                 original view for group progress felt &ldquo;competitive&rdquo;.
               </div>
             </li>
@@ -453,7 +452,7 @@ function Chapter({ currPage, setCurrPage }) {
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Core green color </span>
                 used to emphasize actionable buttons and used in icons for a cohesive
-                design.
+                design
               </div>
             </li>
             <li>
@@ -510,7 +509,7 @@ function Chapter({ currPage, setCurrPage }) {
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Checkbox unclear for &ldquo;Update My Progress&rdquo; </span>
-                due to small size.
+                due to small size
               </div>
             </li>
           </ul>
@@ -538,14 +537,14 @@ function Chapter({ currPage, setCurrPage }) {
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Separate pages for private & public discussions </span>
                 to prevent possible mistakes with posting to the wrong section in the
-                original side-by-side view.
+                original side-by-side view
               </div>
             </li>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Updated &ldquo;Quick Actions&rdquo; </span>
                 to address the changes to the discussions structure. &ldquo;Group
-                Discusssions&rdquo; is prioritized over public discussion as a quick action
+                Discussions&rdquo; is prioritized over public discussion as a quick action
                 due to comments from research that people value their friends&apos; thoughts
                 more.
               </div>
@@ -554,13 +553,13 @@ function Chapter({ currPage, setCurrPage }) {
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Simplified &ldquo;Group Overview&rdquo; </span>
                 to eliminate confusion with original progress visualization and to create
-                a more scalable solution in the case of a large group.
+                a more scalable solution in the case of a large group
               </div>
             </li>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Replaced checkbox with toggle button </span>
-                for improved usability in the &ldquo;Update My Progress&rdquo; function.
+                for improved usability in the &ldquo;Update My Progress&rdquo; function
               </div>
             </li>
           </ul>
@@ -580,13 +579,13 @@ function Chapter({ currPage, setCurrPage }) {
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>&ldquo;Threads&rdquo; terminology </span>
                 felt too &ldquo;formal&rdquo; to some people, felt more appropriate for the public
-                community discussions.
+                community discussions
               </div>
             </li>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Unread replies/new updates </span>
-                indicator missing from discussions page.
+                indicator missing from discussions page
               </div>
             </li>
           </ul>
@@ -603,13 +602,13 @@ function Chapter({ currPage, setCurrPage }) {
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>&ldquo;Threads&rdquo; changed to &ldquo;Topics&rdquo; </span>
                 to address the issue of the private group discussions feeling too much
-                like a public discussion forum.
+                like a public discussion forum
               </div>
             </li>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Indicator for new updates </span>
-                added to each discussion topic.
+                added to each discussion topic
               </div>
             </li>
           </ul>
@@ -638,20 +637,17 @@ function Chapter({ currPage, setCurrPage }) {
         </div>
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
-          As a student who has thought a lot about the pain points with group meeting scheduling,
-          this project provided an opportunity to understand how people think about
-          the digital tools and the factors that go into their processes. By conducting
-          user research and testing, I learned to translate those key factors into
-          visual representations of information that would be the most convenient to users.
+          Conducting user research throughout this project helped me to understand
+          the ways in which people value private and public space in digital experiences.
+          Given more opportunities for larger scale user research, it would be interesting
+          to expand this project&apos;s solution into recommendations and individual
+          reading progress features.
           <br />
           <br />
-          While the final solution addresses the main pain point of mobile usability,
-          further exploration could be done on how the platform
-          would appear from the organizer side. Since
-          this project only focused on the invitee side, research on the
-          other perspective could be an interesting way to complete an understanding
-          of the problem. This current solution still explores a side of the problem
-          that is impactful to understanding how people work to collaborate efficiently.
+          This final design presents a possible solution to how the in-person
+          experience of a book club can be transferred to an organized digital
+          space. As the prevalence of virtual connections continues to grow, I enjoyed
+          exploring the unique ways in which people value digital interactions.
         </div>
       </div>
       <Footer />

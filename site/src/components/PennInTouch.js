@@ -151,7 +151,7 @@ function PennInTouch({ currPage, setCurrPage }) {
         <div className="subsection-header">SURVEY</div>
         <div className="project-text">
           I surveyed 16 Penn undergraduate students through Google Forms to collect data on
-          users&apos; attitudes toward PennInTouch. The responses showed a generally negative
+          users&apos; attitudes toward PennInTouch. The responses showed generally negative
           feelings towards the platform, specifically the Academic Planning Worksheet. The
           survey also confirmed the pain point of the site being difficult to navigate.
         </div>
@@ -202,7 +202,7 @@ function PennInTouch({ currPage, setCurrPage }) {
         <div className="subsection-header-sec">USER INTERVIEWS</div>
         <div className="project-text">
           I also conducted user interviews with 3 Penn undergraduate students.
-          The students all cames from different programs across the university and relied on
+          The students all came from different programs across the university and relied on
           PennInTouch&apos;s planning features in various degrees. From the 12 questions I asked,
           the general takeaway was that PennInTouch only sufficiently accomplishes its goals
           and could be improved in various areas.
@@ -414,7 +414,7 @@ function PennInTouch({ currPage, setCurrPage }) {
         <img id="project-sketches" src={pitsketches} alt="pit-sketches" />
         <div className="subsection-header">WIREFRAMES: ITERATION 1</div>
         <div className="project-text">
-          My solution focused on creating more intuitive way to assign courses
+          My solution focused on creating a more intuitive way to assign courses
           to requirements as well as a layout that would visually emphasize the different
           categories of requirements. The following features were incorporated into the redesign:
           <ul>
@@ -464,7 +464,7 @@ function PennInTouch({ currPage, setCurrPage }) {
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Added searching to dropdown menus </span>
                 in the side panel for users to easily find the requirement or course
-                they want to select.
+                they want to select
               </div>
             </li>
             <li>
@@ -472,21 +472,21 @@ function PennInTouch({ currPage, setCurrPage }) {
                 <span style={{ 'font-weight': '600' }}>Changed to radio buttons </span>
                 for the Course Category selection. Original structure of multiple
                 dropdowns created confusion and was not clear that only one category
-                can be selected.
+                could be selected.
               </div>
             </li>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Removed certification cards </span>
-                from main view due to redundancy and for space efficency. Added check mark
-                icons to completed requirement categories in final UI.
+                from main view due to redundancy and for space efficiency. Added check mark
+                icons to completed requirement categories in the final UI.
               </div>
             </li>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Made cards collapsible </span>
                 for all requirement categories to give user control over interface
-                display and for space efficency
+                display and for space efficiency
               </div>
             </li>
           </ul>
@@ -531,7 +531,7 @@ function PennInTouch({ currPage, setCurrPage }) {
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Changed to sans-serif font </span>
                 for all text for better readability and cohesion with the
-                modernized design.
+                modernized design
               </div>
             </li>
             <li>
@@ -543,7 +543,7 @@ function PennInTouch({ currPage, setCurrPage }) {
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Lightened & decreased bubble size </span>
-                next to course names in order to not distract from other elements.
+                next to course names in order to not distract from other elements
               </div>
             </li>
           </ul>
