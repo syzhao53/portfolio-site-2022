@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4fc1ed55.css",
-    "main.js": "/static/js/main.200a5fdc.js",
+    "main.js": "/static/js/main.16e8c850.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/speech-apps.png": "/static/media/speech-apps.61558252f190968207fd.png",
     "static/media/pit-device-mock.png": "/static/media/pit-device-mock.0fed5b3999fff0f00769.png",
@@ -49,7 +49,7 @@
     "static/media/ice-cream.png": "/static/media/ice-cream.267f88c05ecb2103b98f.png",
     "static/media/meetup-mockup (2).png": "/static/media/meetup-mockup (2).327b1bc4ce065cd96824.png",
     "static/media/when2meet-mobile.png": "/static/media/when2meet-mobile.c78f2877460efe8375df.png",
-    "static/media/logi-mockup.png": "/static/media/logi-mockup.0843fcde0b5b7b9f3240.png",
+    "static/media/logi-mockup.png": "/static/media/logi-mockup.6c9abefc9f911a15ab4d.png",
     "static/media/meet-desk-cards.png": "/static/media/meet-desk-cards.c497dfa781978bbe5e4d.png",
     "static/media/scheduling-organizing.png": "/static/media/scheduling-organizing.d2f0d92c83e8531643cc.png",
     "static/media/scheduling-responding.png": "/static/media/scheduling-responding.3f37af28472f94470cf2.png",
@@ -57,6 +57,7 @@
     "static/media/landing-illustration.png": "/static/media/landing-illustration.1b25f7bcd4ef25ed78aa.png",
     "static/media/reishi-mushroom.png": "/static/media/reishi-mushroom.a683ae83fecae5270fa9.png",
     "static/media/meet-mobile-cards.png": "/static/media/meet-mobile-cards.ad5c8f4f0b82b3cee3ed.png",
+    "static/media/logi-mockup-narrow.png": "/static/media/logi-mockup-narrow.7a1a29241460a1945575.png",
     "static/media/academic-plan.png": "/static/media/academic-plan.e8c81313de318bf48ad3.png",
     "static/media/general-exp.png": "/static/media/general-exp.c5a5eac671f6ddf35ae6.png",
     "static/media/ease-scheduling.png": "/static/media/ease-scheduling.36f7c8657824f3e1b9c6.png",
@@ -72,11 +73,11 @@
     "static/media/close.svg": "/static/media/close.362cb9d9be8638a592b8c0c488f10e76.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.6e4b8a13830a9b4834249fc89a5bbc06.svg",
     "main.4fc1ed55.css.map": "/static/css/main.4fc1ed55.css.map",
-    "main.200a5fdc.js.map": "/static/js/main.200a5fdc.js.map",
+    "main.16e8c850.js.map": "/static/js/main.16e8c850.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4fc1ed55.css",
-    "static/js/main.200a5fdc.js"
+    "static/js/main.16e8c850.js"
   ]
 }
