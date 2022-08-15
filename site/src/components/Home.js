@@ -121,7 +121,7 @@ function Home({ currPage, setCurrPage }) {
         </div>
         <div className="grid-row">
           <div className="gcard-lwrap" onClick={() => goToProject('logitech')}>
-            <img className="lined-gcard-label" src={logi} alt="logi mockup" />
+            <img className="grid-img" src={logi} alt="logi mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
                 Logitech Design Ops
@@ -132,7 +132,7 @@ function Home({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="gcard-rwrap" onClick={() => goToProject('illustrations')}>
-            <img className="lined-gcard-label" src={icecream} alt="pennapps mockup" />
+            <img className="grid-img" src={icecream} alt="pennapps mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
                 Illustrations

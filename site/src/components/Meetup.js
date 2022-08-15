@@ -19,8 +19,9 @@ import meetproto3 from '../assets/meet-proto-3.png';
 import meettest1 from '../assets/meet-test-1.png';
 import meetmobilecards from '../assets/meet-mobile-cards.png';
 import meetdeskcards from '../assets/meet-desk-cards.png';
-import meetdesk1 from '../assets/meet-desk-1.png';
-import meetdesk2 from '../assets/meet-desk-2.png';
+import meetdesk from '../assets/meet-desk.png';
+// import meetdesk1 from '../assets/meet-desk-1.png';
+// import meetdesk2 from '../assets/meet-desk-2.png';
 // import meetdevicemobile from '../assets/meet-device-mobile.png';
 // import meetdevicedesk from '../assets/meet-device-desk.png';
 import meetdevicemock from '../assets/meet-device-mock.png';
@@ -70,13 +71,13 @@ function Meetup({ currPage, setCurrPage }) {
         </div>
         <div id="floating-button">
           <svg className="table-icon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle id="icon-border" cx="28" cy="28" r="27" stroke="#bdbdbd" strokeWidth="2" />
-            <rect x="19" y="18.5" width="23" height="2" rx="1" fill="#bdbdbd" />
-            <rect x="19" y="27.5" width="23" height="2" rx="1" fill="#bdbdbd" />
-            <rect x="19" y="36.5" width="23" height="2" rx="1" fill="#bdbdbd" />
-            <circle className="dot" cx="14.5" cy="19.5" r="1.5" fill="#bdbdbd" />
-            <circle className="dot" cx="14.5" cy="28.5" r="1.5" fill="#bdbdbd" />
-            <circle className="dot" cx="14.5" cy="37.5" r="1.5" fill="#bdbdbd" />
+            <circle id="icon-border" cx="28" cy="28" r="27" stroke="#bbbbbb" strokeWidth="2" />
+            <rect x="19" y="18.5" width="23" height="2" rx="1" fill="#bbbbbb" />
+            <rect x="19" y="27.5" width="23" height="2" rx="1" fill="#bbbbbb" />
+            <rect x="19" y="36.5" width="23" height="2" rx="1" fill="#bbbbbb" />
+            <circle className="dot" cx="14.5" cy="19.5" r="1.5" fill="#bbbbbb" />
+            <circle className="dot" cx="14.5" cy="28.5" r="1.5" fill="#bbbbbb" />
+            <circle className="dot" cx="14.5" cy="37.5" r="1.5" fill="#bbbbbb" />
           </svg>
           <svg className="table-icon-dark" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle id="icon-border" cx="28" cy="28" r="27" stroke="#033E57" strokeWidth="2" />
@@ -103,7 +104,7 @@ function Meetup({ currPage, setCurrPage }) {
               <br />
               <br />
               Inspired by past difficulties with the popular scheduling platform When2meet,
-              this project aimed to create a more efficient and usable solution for
+              this case study aimed to create a more efficient and usable solution for
               people providing their availability for group meetings. The design process began with
               mobile first in order to focus on usability issues before expanding to desktop.
             </div>
@@ -724,10 +725,7 @@ function Meetup({ currPage, setCurrPage }) {
       </div>
       <div id="last-mockup-col">
         <div className="mockup-flex-fix">
-          <img className="mockup-img" src={meetdesk1} alt="meet-desk-1" />
-        </div>
-        <div className="mockup-flex-fix">
-          <img id="meet-desk-2" className="mockup-img" src={meetdesk2} alt="meet-desk-2" />
+          <img className="mockup-img" src={meetdesk} alt="meet-desk" />
         </div>
         <div className="mockup-flex-fix">
           <img id="meet-desk-cards" className="mockup-img" src={meetdeskcards} alt="meet-desk-cards" />

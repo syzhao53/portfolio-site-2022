@@ -72,13 +72,13 @@ function PennInTouch({ currPage, setCurrPage }) {
         </div>
         <div id="floating-button">
           <svg className="table-icon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle id="icon-border" cx="28" cy="28" r="27" stroke="#bdbdbd" strokeWidth="2" />
-            <rect x="19" y="18.5" width="23" height="2" rx="1" fill="#bdbdbd" />
-            <rect x="19" y="27.5" width="23" height="2" rx="1" fill="#bdbdbd" />
-            <rect x="19" y="36.5" width="23" height="2" rx="1" fill="#bdbdbd" />
-            <circle className="dot" cx="14.5" cy="19.5" r="1.5" fill="#bdbdbd" />
-            <circle className="dot" cx="14.5" cy="28.5" r="1.5" fill="#bdbdbd" />
-            <circle className="dot" cx="14.5" cy="37.5" r="1.5" fill="#bdbdbd" />
+            <circle id="icon-border" cx="28" cy="28" r="27" stroke="#bbbbbb" strokeWidth="2" />
+            <rect x="19" y="18.5" width="23" height="2" rx="1" fill="#bbbbbb" />
+            <rect x="19" y="27.5" width="23" height="2" rx="1" fill="#bbbbbb" />
+            <rect x="19" y="36.5" width="23" height="2" rx="1" fill="#bbbbbb" />
+            <circle className="dot" cx="14.5" cy="19.5" r="1.5" fill="#bbbbbb" />
+            <circle className="dot" cx="14.5" cy="28.5" r="1.5" fill="#bbbbbb" />
+            <circle className="dot" cx="14.5" cy="37.5" r="1.5" fill="#bbbbbb" />
           </svg>
           <svg className="table-icon-dark" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle id="icon-border" cx="28" cy="28" r="27" stroke="#033E57" strokeWidth="2" />
@@ -105,7 +105,7 @@ function PennInTouch({ currPage, setCurrPage }) {
               how it interferes with their planning processes.
               <br />
               <br />
-              The purpose of this project was to identify and redesign a key feature
+              The purpose of this case study was to identify and redesign a key feature
               PennInTouch. My research process led to a redesign of the Academic
               Planning Worksheet feature that helps students plan for graduation requirements.
             </div>
