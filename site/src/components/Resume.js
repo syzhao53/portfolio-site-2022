@@ -26,7 +26,7 @@ function Resume({ currPage, setCurrPage }) {
           Resume
         </div>
         <div id="download-flex">
-          <a id="download" href="sylviazhao-resume2022.pdf" download="sylviazhao-resume2022">DOWNLOAD</a>
+          <a id="download" href="sylviazhao-resume.pdf" download="sylviazhao-resume">DOWNLOAD</a>
         </div>
         <img className="project-img" src={resume} alt="resume" />
         <Footer />

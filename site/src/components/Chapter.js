@@ -87,7 +87,7 @@ function Chapter({ currPage, setCurrPage }) {
               transferred into a digital experience.
               <br />
               <br />
-              This project presents a mobile solution for how users might
+              This case study presents a mobile solution for how users might
               track progress and engage in discussions in a virtual book club.
             </div>
           </div>
