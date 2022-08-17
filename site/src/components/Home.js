@@ -72,31 +72,7 @@ function Home({ currPage, setCurrPage }) {
       <div id="work">Work</div>
       <div className="grid">
         <div className="grid-row">
-          <div className="gcard-lwrap" onClick={() => goToProject('meetup')}>
-            <img className="grid-img" src={meetup} alt="meetup mockup" />
-            <div className="gcard-label">
-              <div className="gcard-heading">
-                Meetup
-              </div>
-              <div className="gcard-text">
-                Improving group meeting scheduling on mobile & web
-              </div>
-            </div>
-          </div>
-          <div className="gcard-rwrap" onClick={() => goToProject('pennintouch')}>
-            <img className="grid-img" src={pennintouch} alt="pennintouch mockup" />
-            <div className="gcard-label">
-              <div className="gcard-heading">
-                PennInTouch
-              </div>
-              <div className="gcard-text">
-                Redesigning UPenn&apos;s academic planning & registration site
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="grid-row">
-          <div className="gcard-lwrap"  onClick={() => goToProject('speechconnect')}>
+          <div className="gcard-lwrap" onClick={() => goToProject('speechconnect')}>
             <img className="grid-img" src={speechconnect} alt="speechconnect mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
@@ -107,14 +83,38 @@ function Home({ currPage, setCurrPage }) {
               </div>
             </div>
           </div>
-          <div className="gcard-rwrap"  onClick={() => goToProject('chapter')}>
-            <img className="grid-img" src={chapter} alt="temp mockup" />
+          <div className="gcard-rwrap" onClick={() => goToProject('meetup')}>
+            <img className="grid-img" src={meetup} alt="meetup mockup" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                Meetup
+              </div>
+              <div className="gcard-text">
+                Improving group meeting scheduling on mobile & web
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="grid-row">
+          <div className="gcard-lwrap"  onClick={() => goToProject('chapter')}>
+            <img className="grid-img" src={chapter} alt="chapter mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
                 Chapter
               </div>
               <div className="gcard-text">
                 Designing a virtual book club app for readers
+              </div>
+            </div>
+          </div>
+          <div className="gcard-rwrap"  onClick={() => goToProject('pennintouch')}>
+            <img className="grid-img" src={pennintouch} alt="pennintouch mockup" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                PennInTouch
+              </div>
+              <div className="gcard-text">
+                Redesigning UPenn&apos;s academic planning & registration site
               </div>
             </div>
           </div>
