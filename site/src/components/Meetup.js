@@ -448,8 +448,7 @@ function Meetup({ currPage, setCurrPage }) {
                 <span style={{ 'font-weight': '600' }}>Reliance on tapping and typing interactions </span>
                 to give the user more control over how they interact with the interface (screen 4).
                 The choice of interaction addresses how users disliked When2meet&apos;s imprecise
-                method of dragging in a grid to indicate availability. Tapping/typing into larger
-                input boxes would aim to increase precision and decrease frustration with errors.
+                method of dragging in a grid to indicate availability.
               </div>
             </li>
           </ul>
@@ -469,16 +468,15 @@ function Meetup({ currPage, setCurrPage }) {
                 <span style={{ 'font-weight': '600' }}>&ldquo;Save changes&rdquo; button </span>
                 in &ldquo;My availability&rdquo; was changed to a back arrow in the upper-left
                 corner to better indicate to a user how to return to the main &ldquo;Group
-                availability&rdquo; view. A &ldquo;Cancel&rdquo; button and back arrow
-                were also added to the editing a day view.
+                availability&rdquo; view.
               </div>
             </li>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>&ldquo;Add timeslot&rdquo; button </span>
                 in the section for editing a specific day&apos;s availability was moved to be
-                grouped closer to the existing timeslots a user has. This better associates the
-                button&apos;s action with its results.
+                grouped closer to the existing timeslots a user has, better associating the
+                button&apos;s action with its results
               </div>
             </li>
           </ul>
@@ -520,12 +518,12 @@ function Meetup({ currPage, setCurrPage }) {
           interviews and 2 others who had responded to the survey and were
           familiar with the project context. Users commented on:
           <ul>
-            <li>
+            {/* <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Pleasant UI design </span>
                 with a simple aesthetic and clear emphasis on actionable areas
               </div>
-            </li>
+            </li> */}
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Good clarity with tapping interaction </span>
@@ -571,22 +569,19 @@ function Meetup({ currPage, setCurrPage }) {
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Separate &ldquo;Me&rdquo; & &ldquo;Group&rdquo; </span>
                 sections to address the confusion on what information the main
-                view is initially presenting; indicated by buttons at the top to toggle the view
+                view is initially presenting
               </div>
             </li>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Reduced number of clicks </span>
-                for adding/editing availability to streamline interaction; both functions are
-                accessed with 1 click in this iteration
+                for adding/editing availability to streamline interaction
               </div>
             </li>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Calendar layout </span>
-                to improve visualization of availability by highlighting days with provided
-                availability in bright mint and indicating the currently selected day with
-                an underline
+                to improve visualization of availability
               </div>
             </li>
           </ul>
@@ -616,13 +611,14 @@ function Meetup({ currPage, setCurrPage }) {
                 individual days; suggestions made for a grid view calendar
               </div>
             </li>
-            <li>
+            {/* <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Confusion with highlight vs. underline on date </span>
+                <span style={{ 'font-weight': '600' }}>Confusion with highlight vs.
+                underline on date </span>
                 for which one is meant to indicate selected date or whether availability
                 was provided
               </div>
-            </li>
+            </li> */}
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>One-click interaction </span>
@@ -642,42 +638,38 @@ function Meetup({ currPage, setCurrPage }) {
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Grid view calendar </span>
-                to supplement the original calendar view; the grid shows individual days
-                while the original layout still gives an overview of all dates that a
-                user can select from
+                to supplement the original calendar view
               </div>
             </li>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Scrollable side-by-side comparison columns </span>
                 in the grid view to solve for the issue of not having the ability to compare
-                personal and group availability in the previous prototype; a key indicates the
-                two types of availability shown by the columns
+                personal and group availability in the previous prototype
               </div>
             </li>
-            <li>
+            {/* <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Highlighted date indicates selected date </span>
+                <span style={{ 'font-weight': '600' }}>Highlighted date indicates selected
+                date </span>
                 instead of a date with availability; this choice matches how a highlighted circle on
-                &ldquo;AM&rdquo; or &ldquo;PM&rdquo; indicates selection, so instead, a dot under
-                a date is used to show that a user provided availability
+                &ldquo;AM&rdquo; or &ldquo;PM&rdquo; indicates selection
               </div>
-            </li>
+            </li> */}
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Meeting information section </span>
-                at the top of the screen contextualizes the meeting invite and informs
-                how users should provide their availability based on the meeting length
+                at the top of the screen to contextualize the meeting invite
               </div>
             </li>
-            <li>
+            {/* <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Tapping in the grid to add a timeslot </span>
                 in the grid view would allow for automatic population of the new timeslot&apos;s
                 starting time, helping counteract the additional tap added with the interaction
                 of switching from the main calendar to the grid view
               </div>
-            </li>
+            </li> */}
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Info on number of people available </span>
@@ -707,17 +699,13 @@ function Meetup({ currPage, setCurrPage }) {
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Timeslot preview when adding/editing availability </span>
-                shown when a user taps a block of availability; this addresses the point from
-                the original user research showing that people value general information about
-                the group availability.
+                shown when a user taps a block of availability
               </div>
             </li>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Hover interactions for editing & group availability info </span>
-                shown when a user taps a block of availability; this addresses the point from
-                the original user research showing that people value general information about
-                the group availability.
+                shown when a user taps a block of availability
               </div>
             </li>
           </ul>

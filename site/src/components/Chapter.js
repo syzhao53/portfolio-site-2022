@@ -506,12 +506,13 @@ function Chapter({ currPage, setCurrPage }) {
                 Users also felt that the discussions crowded the group progress page.
               </div>
             </li>
-            <li>
+            {/* <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Checkbox unclear for &ldquo;Update My Progress&rdquo; </span>
+                <span style={{ 'font-weight': '600' }}>Checkbox unclear
+                for &ldquo;Update My Progress&rdquo; </span>
                 due to small size
               </div>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
@@ -556,12 +557,12 @@ function Chapter({ currPage, setCurrPage }) {
                 a more scalable solution in the case of a large group
               </div>
             </li>
-            <li>
+            {/* <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Replaced checkbox with toggle button </span>
                 for improved usability in the &ldquo;Update My Progress&rdquo; function
               </div>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

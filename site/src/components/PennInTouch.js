@@ -534,12 +534,12 @@ function PennInTouch({ currPage, setCurrPage }) {
                 modernized design
               </div>
             </li>
-            <li>
+            {/* <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Color added to left sidebar </span>
                 to match the rest of the design
               </div>
-            </li>
+            </li> */}
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Lightened & decreased bubble size </span>
