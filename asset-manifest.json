@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ab946dd4.css",
-    "main.js": "/static/js/main.3f7fb588.js",
+    "main.js": "/static/js/main.8ac29d04.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/speech-apps.png": "/static/media/speech-apps.61558252f190968207fd.png",
     "static/media/pit-device-mock.png": "/static/media/pit-device-mock.0fed5b3999fff0f00769.png",
@@ -48,6 +48,7 @@
     "static/media/chapter-proto-3.png": "/static/media/chapter-proto-3.6c1ef1548077d961e808.png",
     "static/media/ice-cream.png": "/static/media/ice-cream.267f88c05ecb2103b98f.png",
     "static/media/meetup-mockup (2).png": "/static/media/meetup-mockup (2).327b1bc4ce065cd96824.png",
+    "static/media/florist.png": "/static/media/florist.2147bc129628f4f26e5a.png",
     "static/media/when2meet-mobile.png": "/static/media/when2meet-mobile.c78f2877460efe8375df.png",
     "static/media/logi-mockup.png": "/static/media/logi-mockup.6c9abefc9f911a15ab4d.png",
     "static/media/meet-desk-cards.png": "/static/media/meet-desk-cards.c497dfa781978bbe5e4d.png",
@@ -73,11 +74,11 @@
     "static/media/close.svg": "/static/media/close.362cb9d9be8638a592b8c0c488f10e76.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.6e4b8a13830a9b4834249fc89a5bbc06.svg",
     "main.ab946dd4.css.map": "/static/css/main.ab946dd4.css.map",
-    "main.3f7fb588.js.map": "/static/js/main.3f7fb588.js.map",
+    "main.8ac29d04.js.map": "/static/js/main.8ac29d04.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ab946dd4.css",
-    "static/js/main.3f7fb588.js"
+    "static/js/main.8ac29d04.js"
   ]
 }
