@@ -478,7 +478,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
         {/* WHERE DOES THE HOW MIGHT WE GO?? */}
         <div className="section-flex">
           <div className="section-lflex">
-            <div className="section-header">Solution</div>
+            <div className="section-header" id="solution">Solution</div>
             <div className="project-ltext">
               My solution focused on the user flows of speaking a sentence with the app (Home),
               allowing for customization (Customize),
