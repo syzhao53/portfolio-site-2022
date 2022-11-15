@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ab946dd4.css",
-    "main.js": "/static/js/main.f7a46803.js",
+    "main.js": "/static/js/main.5a4ac0aa.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/speech-apps.png": "/static/media/speech-apps.61558252f190968207fd.png",
     "static/media/pit-device-mock.png": "/static/media/pit-device-mock.0fed5b3999fff0f00769.png",
@@ -23,7 +23,7 @@
     "static/media/speech-word-ui.png": "/static/media/speech-word-ui.b0f264eb8b06b60a9243.png",
     "static/media/speech-grid-wire.png": "/static/media/speech-grid-wire.c5df262a8f6981330ef8.png",
     "static/media/pit-home.png": "/static/media/pit-home.7c8b94ff7b2e4302de30.png",
-    "static/media/resume.png": "/static/media/resume.28b89bb6bd081acf81b1.png",
+    "static/media/resume1.png": "/static/media/resume1.407e826481ccc85e3a10.png",
     "static/media/speech-grid-ui.png": "/static/media/speech-grid-ui.15cc9bed14a02fb7c52e.png",
     "static/media/comfy-farm.png": "/static/media/comfy-farm.6ebc3e408f7cc7c77858.png",
     "static/media/pit-sketches.png": "/static/media/pit-sketches.3c01f380be784f6bde81.png",
@@ -74,11 +74,11 @@
     "static/media/close.svg": "/static/media/close.362cb9d9be8638a592b8c0c488f10e76.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.6e4b8a13830a9b4834249fc89a5bbc06.svg",
     "main.ab946dd4.css.map": "/static/css/main.ab946dd4.css.map",
-    "main.f7a46803.js.map": "/static/js/main.f7a46803.js.map",
+    "main.5a4ac0aa.js.map": "/static/js/main.5a4ac0aa.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ab946dd4.css",
-    "static/js/main.f7a46803.js"
+    "static/js/main.5a4ac0aa.js"
   ]
 }
