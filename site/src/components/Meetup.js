@@ -726,7 +726,7 @@ function Meetup({ currPage, setCurrPage }) {
           <ul>
             <li>
               <div className="list-text">
-                <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/AHxq5BvD3YoUd5bdFdI9OC/Meetup-Prototype-(Mobile)?node-id=2%3A98&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A28">
+                <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/AHxq5BvD3YoUd5bdFdI9OC/Meetup-Prototype-(Mobile)?node-id=2%3A28&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A28">
                   Mobile Solution Prototype
                 </a>
               </div>
