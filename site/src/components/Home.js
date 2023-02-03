@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
-import illustration from '../assets/landing-illustration.png';
+import illustration from '../assets/landing-illustration.svg';
 import Arrow from '../assets/arrow.svg';
 import Heart from '../assets/heart.svg';
 import meetup from '../assets/meetup-mockup (2).png';
@@ -40,6 +40,17 @@ function Home({ currPage, setCurrPage }) {
     }
   };
 
+  const toggle = () => {
+    const home = document.getElementById("home");
+    home.classList.toggle("test-toggle");
+
+    const landing = document.getElementById("landing");
+    landing.classList.toggle("test-toggle");
+
+    const bigHeader = document.getElementById("big-header");
+    bigHeader.classList.toggle("big-header-alt");
+  };
+
   const footerMessage = 'Made by Sylvia';
 
   useEffect(() => {
@@ -49,10 +60,10 @@ function Home({ currPage, setCurrPage }) {
   }, []);
 
   return (
-    <div className="Home">
+    <div className="Home" id="home">
       <NavBar currPage={currPage} />
-      <div className="landing">
-        <div className="big-header">
+      <div className="landing" id="landing">
+        <div className="big-header" id="big-header" onClick={() => toggle()}>
           HI, I&apos;M SYLVIA ZHAO
         </div>
         <div className="paragraph">
