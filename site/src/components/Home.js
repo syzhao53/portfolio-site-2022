@@ -17,6 +17,7 @@ import icecream from '../assets/ice-cream.png';
 import logi from '../assets/logi-mockup.png';
 import temp from '../assets/temp-mockup.png';
 import NavBar from './NavBar';
+import LandingLight from './LandingLight';
 import Footer from './Footer';
 
 function Home({ currPage, setCurrPage }) {
@@ -71,7 +72,8 @@ function Home({ currPage, setCurrPage }) {
           <br />
           PennApps Co-Head of Creative &middot; Recent Design Ops Intern at Logitech
         </div>
-        <img id="home-illus" src={illustration} alt="landing illustration" />
+        {/* <img id="home-illus" src={illustration} alt="landing illustration" /> */}
+        <LandingLight />
         <Link to="/#work">
           <img id="arrow" src={Arrow} alt="arrow svg" />
         </Link>
