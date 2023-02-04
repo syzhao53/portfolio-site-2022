@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
-import illustration from '../assets/landing-illustration.svg';
+import illustration from '../assets/landing-illustration-dark.svg';
 import Arrow from '../assets/arrow.svg';
 import Heart from '../assets/heart.svg';
 import meetup from '../assets/meetup-mockup (2).png';
@@ -20,7 +20,7 @@ import NavBar from './NavBar';
 import LandingLight from './LandingLight';
 import Footer from './Footer';
 
-function Home({ currPage, setCurrPage }) {
+function Home({ currPage, setCurrPage, theme, setTheme }) {
   // const [error, setError] = useState({ message: '' });
   // const [lockoutUser, setLockoutUser] = useState('');
   const navigate = useNavigate();
@@ -41,30 +41,24 @@ function Home({ currPage, setCurrPage }) {
     }
   };
 
-  const toggle = () => {
-    const home = document.getElementById("home");
-    home.classList.toggle("test-toggle");
-
-    const landing = document.getElementById("landing");
-    landing.classList.toggle("test-toggle");
-
-    const bigHeader = document.getElementById("big-header");
-    bigHeader.classList.toggle("big-header-alt");
-  };
-
   const footerMessage = 'Made by Sylvia';
 
   useEffect(() => {
     setCurrPage('work');
     window.scrollTo(0, 0);
     document.title = 'Sylvia Zhao';
+    console.log(theme);
+    if (theme == 'dark') {
+      document.body.style.color = "white";
+      document.body.style.backgroundColor = "red";
+    }
   }, []);
 
   return (
     <div className="Home" id="home">
       <NavBar currPage={currPage} />
       <div className="landing" id="landing">
-        <div className="big-header" id="big-header" onClick={() => toggle()}>
+        <div className="big-header">
           HI, I&apos;M SYLVIA ZHAO
         </div>
         <div className="paragraph">
@@ -73,7 +67,8 @@ function Home({ currPage, setCurrPage }) {
           PennApps Co-Head of Creative &middot; Recent Design Ops Intern at Logitech
         </div>
         {/* <img id="home-illus" src={illustration} alt="landing illustration" /> */}
-        <LandingLight />
+        <LandingLight theme={theme} setTheme={setTheme}/>
+        <img id="home-illus-dark" className="home-illus-dark-show" src={illustration} alt="landing illustration" />
         <Link to="/#work">
           <img id="arrow" src={Arrow} alt="arrow svg" />
         </Link>

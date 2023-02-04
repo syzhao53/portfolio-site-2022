@@ -10,12 +10,38 @@ body {
   /* line-height: 35px; */
 }
 
-.test-toggle {
-  background-color: #002A3C;
-  color: #FCFCFF;
+#light-cloud:hover {
+  cursor: pointer;
 }
 
+/* .test-toggle {
+  background-color: #002A3C;
+  color: #FCFCFF;
+} */
+
 .LandingLight {
+  width: 82%;
+  align-self: center;
+  margin: 2rem 0 3rem 0;
+}
+
+.LandingLight-dark {
+  display: none;
+}
+
+.LandingDark-light {
+  display: none;
+}
+
+.LandingDark {
+  display: block;
+  width: 82%;
+  align-self: center;
+  margin: 2rem 0 3rem 0;
+}
+
+#home-illus-dark {
+  display: none;
   width: 82%;
   align-self: center;
   margin: 2rem 0 3rem 0;
@@ -94,7 +120,7 @@ html {
   text-align: left;
   line-height: 1.75rem;
   margin-left: 4.8rem;
-  color: black;
+  /* color: black; */
   /* margin: 0 0 1rem 0; */
   /* color: #787878; */
   /* background-color: blue; */
