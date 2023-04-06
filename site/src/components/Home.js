@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
-import illustration from '../assets/landing-illustration-dark.svg';
+import illustration from '../assets/landing-illustration.png';
 import Arrow from '../assets/arrow.svg';
 import Heart from '../assets/heart.svg';
 import meetup from '../assets/meetup-mockup (2).png';
@@ -66,8 +66,8 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
           <br />
           PennApps Co-Head of Creative &middot; Recent Design Ops Intern at Logitech
         </div>
-        {/* <img id="home-illus" src={illustration} alt="landing illustration" /> */}
-        <LandingLight theme={theme} setTheme={setTheme}/>
+        <img id="home-illus" src={illustration} alt="landing illustration" />
+        {/* <LandingLight theme={theme} setTheme={setTheme}/> */}
         <img id="home-illus-dark" className="home-illus-dark-show" src={illustration} alt="landing illustration" />
         <Link to="/#work">
           <img id="arrow" src={Arrow} alt="arrow svg" />
