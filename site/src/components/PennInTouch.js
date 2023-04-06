@@ -20,6 +20,7 @@ import generalexp from '../assets/general-exp.png';
 import easeinfo from '../assets/ease-info.png';
 import academicplan from '../assets/academic-plan.png';
 import mocksched from '../assets/mock-sched.png';
+import pitdevicemock from '../assets/pit-device-mock.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -71,13 +72,13 @@ function PennInTouch({ currPage, setCurrPage }) {
         </div>
         <div id="floating-button">
           <svg className="table-icon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle id="icon-border" cx="28" cy="28" r="27" stroke="#bdbdbd" strokeWidth="2" />
-            <rect x="19" y="18.5" width="23" height="2" rx="1" fill="#bdbdbd" />
-            <rect x="19" y="27.5" width="23" height="2" rx="1" fill="#bdbdbd" />
-            <rect x="19" y="36.5" width="23" height="2" rx="1" fill="#bdbdbd" />
-            <circle className="dot" cx="14.5" cy="19.5" r="1.5" fill="#bdbdbd" />
-            <circle className="dot" cx="14.5" cy="28.5" r="1.5" fill="#bdbdbd" />
-            <circle className="dot" cx="14.5" cy="37.5" r="1.5" fill="#bdbdbd" />
+            <circle id="icon-border" cx="28" cy="28" r="27" stroke="#bbbbbb" strokeWidth="2" />
+            <rect x="19" y="18.5" width="23" height="2" rx="1" fill="#bbbbbb" />
+            <rect x="19" y="27.5" width="23" height="2" rx="1" fill="#bbbbbb" />
+            <rect x="19" y="36.5" width="23" height="2" rx="1" fill="#bbbbbb" />
+            <circle className="dot" cx="14.5" cy="19.5" r="1.5" fill="#bbbbbb" />
+            <circle className="dot" cx="14.5" cy="28.5" r="1.5" fill="#bbbbbb" />
+            <circle className="dot" cx="14.5" cy="37.5" r="1.5" fill="#bbbbbb" />
           </svg>
           <svg className="table-icon-dark" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle id="icon-border" cx="28" cy="28" r="27" stroke="#033E57" strokeWidth="2" />
@@ -97,14 +98,14 @@ function PennInTouch({ currPage, setCurrPage }) {
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>
-            <div className="project-ltext">
+            <div className="project-ltext-zero">
               The University of Pennsylvania uses PennInTouch as its academic
               planning and course registration site. Students have constantly
               complained about the unpleasant experience of using PennInTouch and
               how it interferes with their planning processes.
               <br />
               <br />
-              The purpose of this project was to identify and redesign a key feature
+              The purpose of this case study was to identify and redesign a key feature
               PennInTouch. My research process led to a redesign of the Academic
               Planning Worksheet feature that helps students plan for graduation requirements.
             </div>
@@ -118,7 +119,7 @@ function PennInTouch({ currPage, setCurrPage }) {
                 UX research & design
               </div>
             </div>
-            <div className="descrip-rflex">
+            <div className="descrip-rflex-zero">
               <div className="subsection-rheader">
                 TIMELINE
               </div>
@@ -150,7 +151,7 @@ function PennInTouch({ currPage, setCurrPage }) {
         <div className="subsection-header">SURVEY</div>
         <div className="project-text">
           I surveyed 16 Penn undergraduate students through Google Forms to collect data on
-          users&apos; attitudes toward PennInTouch. The responses showed a generally negative
+          users&apos; attitudes toward PennInTouch. The responses showed generally negative
           feelings towards the platform, specifically the Academic Planning Worksheet. The
           survey also confirmed the pain point of the site being difficult to navigate.
         </div>
@@ -201,7 +202,7 @@ function PennInTouch({ currPage, setCurrPage }) {
         <div className="subsection-header-sec">USER INTERVIEWS</div>
         <div className="project-text">
           I also conducted user interviews with 3 Penn undergraduate students.
-          The students all cames from different programs across the university and relied on
+          The students all came from different programs across the university and relied on
           PennInTouch&apos;s planning features in various degrees. From the 12 questions I asked,
           the general takeaway was that PennInTouch only sufficiently accomplishes its goals
           and could be improved in various areas.
@@ -214,118 +215,122 @@ function PennInTouch({ currPage, setCurrPage }) {
           use of a crowded sidebar for navigation.
         </div>
       </div>
-      <div className="affinity">
+      <div className="affinity-col">
         <div className="categories-wrap">
-          <div className="category-flex">
-            <div className="category-name">EMOTIONS</div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text-short">
-                  Terrible experience
+          <div className="categories-row">
+            <div className="category-flex">
+              <div className="category-name">EMOTIONS</div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text-short">
+                    Terrible experience
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text-short">
+                    Feels awful
+                  </div>
                 </div>
               </div>
-              <div className="rpost-it">
-                <div className="post-it-text-short">
-                  Feels awful
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Sufficient, just could be better
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Lack of trust in product, feels unreliable
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Sufficient, just could be better
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Became embittered with experience overtime
+                  </div>
                 </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Lack of trust in product, feels unreliable
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Became embittered with experience overtime
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  &ldquo;Words cannot describe how terrible [it] is&rdquo;
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="category-flex">
-            <div className="category-name">NAVIGATION</div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Lots of misclicking in sidebar
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  First time user would have a hard time
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    &ldquo;Words cannot describe how terrible [it] is&rdquo;
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Difficult with everything collapsed in sidebar dropdowns
+            <div className="category-rflex">
+              <div className="category-name">NAVIGATION</div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Lots of misclicking in sidebar
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    First time user would have a hard time
+                  </div>
                 </div>
               </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Lots of trial and error navigating with sidebar
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Difficult with everything collapsed in sidebar dropdowns
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="category-lflex">
-            <div className="category-name">PLANNING</div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Does not use site for 4-year planning
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Big learning curve using Academic Planning Worksheet
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Use Academic Planning Worksheet to check requirements
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Lots of trial and error navigating with sidebar
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="category-rflex">
-            <div className="category-name">UI DESIGN</div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Everything in sidebar is too small (web and mobile)
+          <div className="categories-row-last">
+            <div className="category-lflex-col">
+              <div className="category-name">PLANNING</div>
+              <div className="post-it-row">
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Does not use site for 4-year planning
+                  </div>
+                </div>
+              </div>
+              <div className="post-it-row">
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Big learning curve using Academic Planning Worksheet
+                  </div>
+                </div>
+              </div>
+              <div className="post-it-row">
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Use Academic Planning Worksheet to check requirements
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Text is too small overall
+            <div className="category-rflex-col">
+              <div className="category-name">UI DESIGN</div>
+              <div className="post-it-row">
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Everything in sidebar is too small (web and mobile)
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Strange unused space on right side of page
+              <div className="post-it-row">
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Text is too small overall
+                  </div>
+                </div>
+              </div>
+              <div className="post-it-row">
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Strange unused space on right side of page
+                  </div>
                 </div>
               </div>
             </div>
@@ -409,7 +414,7 @@ function PennInTouch({ currPage, setCurrPage }) {
         <img id="project-sketches" src={pitsketches} alt="pit-sketches" />
         <div className="subsection-header">WIREFRAMES: ITERATION 1</div>
         <div className="project-text">
-          My solution focused on creating more intuitive way to assign courses
+          My solution focused on creating a more intuitive way to assign courses
           to requirements as well as a layout that would visually emphasize the different
           categories of requirements. The following features were incorporated into the redesign:
           <ul>
@@ -456,23 +461,33 @@ function PennInTouch({ currPage, setCurrPage }) {
           to the structure of the collapsible side panel and several minor features:
           <ul>
             <li>
-              <div className="list-text">Made side panel dropdown menus searchable</div>
-            </li>
-            <li>
               <div className="list-text">
-                Changed selection of Course Category (Completed Courses, Currently Enrolled,
-                External Credit) from multiple dropdowns to single set of radio buttons in
-                side panel
+                <span style={{ 'font-weight': '600' }}>Added searching to dropdown menus </span>
+                in the side panel for users to easily find the requirement or course
+                they want to select
               </div>
             </li>
             <li>
-              <div className="list-text">Second displayed dropdown in side panel now depends on the selected radio button</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Changed to radio buttons </span>
+                for the Course Category selection. Original structure of multiple
+                dropdowns created confusion and was not clear that only one category
+                could be selected.
+              </div>
             </li>
             <li>
-              <div className="list-text">Removed certification cards (check mark icon added to cards in final UI to indicate certifications)</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Removed certification cards </span>
+                from main view due to redundancy and for space efficiency. Added check mark
+                icons to completed requirement categories in the final UI.
+              </div>
             </li>
             <li>
-              <div className="list-text">Made all cards for requirenent categories collapsible</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Made cards collapsible </span>
+                for all requirement categories to give user control over interface
+                display and for space efficiency
+              </div>
             </li>
           </ul>
         </div>
@@ -488,15 +503,17 @@ function PennInTouch({ currPage, setCurrPage }) {
           focused on the the following key style choices:
           <ul>
             <li>
-              <div className="list-text">Lighter color palette overall for clean, modern feel</div>
-            </li>
-            <li>
               <div className="list-text">
-                Fonts from Penn&apos;s core branding (EB Garamond and Roboto)
+                <span style={{ 'font-weight': '600' }}>Lighter color palette </span>
+                overall for a simplified, modern redesign
               </div>
             </li>
             <li>
-              <div className="list-text">Selective use of main dark blue color from original interface to emphasize features</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Fonts from Penn&apos;s core branding </span>
+                to maintain some of the original interface&apos;s brand, along with the
+                use of the original dark blue to emphasize small features
+              </div>
             </li>
           </ul>
         </div>
@@ -511,15 +528,23 @@ function PennInTouch({ currPage, setCurrPage }) {
           of the design:
           <ul>
             <li>
-              <div className="list-text">Changed all type to sans-serif font (Proxima Nova)</div>
-            </li>
-            <li>
               <div className="list-text">
-                Subtle color added to left sidebar to match rest of design
+                <span style={{ 'font-weight': '600' }}>Changed to sans-serif font </span>
+                for all text for better readability and cohesion with the
+                modernized design
               </div>
             </li>
+            {/* <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Color added to left sidebar </span>
+                to match the rest of the design
+              </div>
+            </li> */}
             <li>
-              <div className="list-text">Lightened and decreased size of bubbles next to course names</div>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Lightened & decreased bubble size </span>
+                next to course names in order to not distract from other elements
+              </div>
             </li>
           </ul>
         </div>
@@ -530,11 +555,37 @@ function PennInTouch({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
         <div className="project-text">
-          Links + mockups
+          Interact with the final prototype for assigning a course to a requirement in the
+          redesigned Academic Planning Worksheet:
+          <ul>
+            <li>
+              <div className="list-text">
+                <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/WcVv7rpSLvxv4ymGAgkvw3/PennInTouch-Working-File?node-id=89%3A4037&scaling=scale-down&page-id=51%3A1233&starting-point-node-id=89%3A4037">
+                  PennInTouch Prototype
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div className="proto-flex">
+          <img className="device-mock" src={pitdevicemock} alt="pit-device-mock" />
         </div>
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
-          reflection statements
+          This project addressed the interactions in PennInTouch&apos;s Academic
+          Planning Worksheet feature. The implementation of a collapsible side menu
+          with searchable dropdown menus allows for streamlining the planning process
+          that students often find challenging. Further iterations could explore other
+          methods of interacting with the worksheet, such as editing assignments or directly
+          adding them by clicking on the requirements in the sheet.
+          <br />
+          <br />
+          Given more time/resources, user testing would have been extremely helpful
+          in understanding how students from different academic backgrounds would
+          need the interface tailored to their needs. The solution presented
+          here provides a general overhaul of the official PennInTouch site and
+          attempts to address the key complaints surrounding difficult interactions
+          and outdated design.
         </div>
       </div>
       <Footer />

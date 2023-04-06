@@ -19,8 +19,9 @@ import meetproto3 from '../assets/meet-proto-3.png';
 import meettest1 from '../assets/meet-test-1.png';
 import meetmobilecards from '../assets/meet-mobile-cards.png';
 import meetdeskcards from '../assets/meet-desk-cards.png';
-import meetdesk1 from '../assets/meet-desk-1.png';
-import meetdesk2 from '../assets/meet-desk-2.png';
+import meetdesk from '../assets/meet-desk.png';
+// import meetdesk1 from '../assets/meet-desk-1.png';
+// import meetdesk2 from '../assets/meet-desk-2.png';
 // import meetdevicemobile from '../assets/meet-device-mobile.png';
 // import meetdevicedesk from '../assets/meet-device-desk.png';
 import meetdevicemock from '../assets/meet-device-mock.png';
@@ -70,13 +71,13 @@ function Meetup({ currPage, setCurrPage }) {
         </div>
         <div id="floating-button">
           <svg className="table-icon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle id="icon-border" cx="28" cy="28" r="27" stroke="#bdbdbd" strokeWidth="2" />
-            <rect x="19" y="18.5" width="23" height="2" rx="1" fill="#bdbdbd" />
-            <rect x="19" y="27.5" width="23" height="2" rx="1" fill="#bdbdbd" />
-            <rect x="19" y="36.5" width="23" height="2" rx="1" fill="#bdbdbd" />
-            <circle className="dot" cx="14.5" cy="19.5" r="1.5" fill="#bdbdbd" />
-            <circle className="dot" cx="14.5" cy="28.5" r="1.5" fill="#bdbdbd" />
-            <circle className="dot" cx="14.5" cy="37.5" r="1.5" fill="#bdbdbd" />
+            <circle id="icon-border" cx="28" cy="28" r="27" stroke="#bbbbbb" strokeWidth="2" />
+            <rect x="19" y="18.5" width="23" height="2" rx="1" fill="#bbbbbb" />
+            <rect x="19" y="27.5" width="23" height="2" rx="1" fill="#bbbbbb" />
+            <rect x="19" y="36.5" width="23" height="2" rx="1" fill="#bbbbbb" />
+            <circle className="dot" cx="14.5" cy="19.5" r="1.5" fill="#bbbbbb" />
+            <circle className="dot" cx="14.5" cy="28.5" r="1.5" fill="#bbbbbb" />
+            <circle className="dot" cx="14.5" cy="37.5" r="1.5" fill="#bbbbbb" />
           </svg>
           <svg className="table-icon-dark" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle id="icon-border" cx="28" cy="28" r="27" stroke="#033E57" strokeWidth="2" />
@@ -96,14 +97,14 @@ function Meetup({ currPage, setCurrPage }) {
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>
-            <div className="project-ltext">
+            <div className="project-ltext-zero">
               Scheduling meetings can often become a laborious process of
               coordination between organizers sending out invites and attendees
               providing their availability.
               <br />
               <br />
               Inspired by past difficulties with the popular scheduling platform When2meet,
-              this project aimed to create a more efficient and usable solution for
+              this case study aimed to create a more efficient and usable solution for
               people providing their availability for group meetings. The design process began with
               mobile first in order to focus on usability issues before expanding to desktop.
             </div>
@@ -119,7 +120,7 @@ function Meetup({ currPage, setCurrPage }) {
                 </div>
               </div>
             </div>
-            <div className="descrip-rflex">
+            <div className="descrip-rflex-zero">
               <div className="subsection-rheader">
                 TIMELINE
               </div>
@@ -132,7 +133,7 @@ function Meetup({ currPage, setCurrPage }) {
         <div className="section-header" id="when2meet">When2meet</div>
         <div className="project-text">
           In work settings without shared calendars, many people rely on When2meet to coordinate
-          groups meetings. Operating as a web app, When2meet has one person send out a link from
+          group meetings. Operating as a web app, When2meet has one person send out a link from
           the platform to the rest of their team members to gather their availability during a
           specified period of time. Although When2meet offers a convenient solution, the interface
           suffers from poor usability, lacking a mobile responsive site.
@@ -168,7 +169,7 @@ function Meetup({ currPage, setCurrPage }) {
           respondents), matching the result that people prefer to collect availability before
           proposing a meeting time. Responses also showed that from both the meeting organizer
           side and the invitee side, people value fast communication and the ability to see
-          the everyone&apos;s availability in one place.
+          everyone&apos;s availability in one place.
         </div>
       </div>
       <div id="graphs-meetup" className="graphs">
@@ -190,7 +191,7 @@ function Meetup({ currPage, setCurrPage }) {
             </div>
             <div className="graphcard-ques">
               Select what you are more likely to do when attempting to schedule a
-              meeting with a group
+              meeting with a group.
             </div>
             <img className="graph-img" src={schedmethod} alt="scheduling-method graph" />
           </div>
@@ -203,8 +204,8 @@ function Meetup({ currPage, setCurrPage }) {
             <div className="graphcard-ques">
               Select all factors that you consider important to the
               process of scheduling a meeting when you are
-              <span style={{ 'font-weight': '600' }}> the organizer </span>
-              in charge of scheduling
+              <span style={{ 'font-weight': '500' }}> the organizer </span>
+              in charge of scheduling.
             </div>
             <img className="graph-img" src={schedorg} alt="scheduling-organizing graph" />
           </div>
@@ -215,8 +216,8 @@ function Meetup({ currPage, setCurrPage }) {
             <div className="graphcard-ques">
               Select all factors that you consider important to the process of
               scheduling a meeting when you are
-              <span style={{ 'font-weight': '600' }}> an invitee </span>
-              (responding to organizer)
+              <span style={{ 'font-weight': '500' }}> an invitee </span>
+              (responding to organizer).
             </div>
             <img className="graph-img" src={schedresp} alt="scheduling-responding graph" />
           </div>
@@ -238,99 +239,103 @@ function Meetup({ currPage, setCurrPage }) {
           pain points of poor mobile usability and tedious process to input availability.
         </div>
       </div>
-      <div className="affinity">
+      <div className="affinity-col">
         <div className="categories-wrap">
-          <div className="category-flex">
-            <div className="category-name">GENERAL FEELINGS</div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Organizers value flexibility when compromises are needed
+          <div className="categories-row">
+            <div className="category-flex">
+              <div className="category-name">WHEN2MEET</div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Commonly used to gather availability
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Tedious to input availability
+                  </div>
+                </div>
+              </div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Convenient, no account needed
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Bad mobile interface (everything too small, dragging doesn&apos;t work right)
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  People find it difficult to schedule meetings
+            <div className="category-rflex">
+              <div className="category-name">COMMON PRACTICES</div>
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    Share GCal with people from a team
+                  </div>
+                </div>
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Preference for gathering availability vs sending out set times to choose from
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="category-flex">
-            <div className="category-name">WHEN2MEET</div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Commonly used to gather availability
+              <div className="post-it-row">
+                <div className="lpost-it">
+                  <div className="post-it-text">
+                    GCal, email, & When2meet often used together
+                  </div>
                 </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Tedious to input availability
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Convenient, no account needed
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Bad mobile interface (everything too small, dragging doesn&apos;t work right)
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="category-flex">
-            <div className="category-name">COMMON PRACTICES</div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  Share GCal with people from a team
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Preference for gathering availability vs sending out set times to choose from
-                </div>
-              </div>
-            </div>
-            <div className="post-it-row">
-              <div className="lpost-it">
-                <div className="post-it-text">
-                  GCal, email, & When2meet often used together
-                </div>
-              </div>
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  GCal useful when scheduling one-on-one meetings
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    GCal useful when scheduling one-on-one meetings
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="category-rflex">
-            <div className="category-name">IMPORTANT FACTORS</div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Organizer: seeing all availablity in one place
+          <div className="categories-row-last">
+            <div className="category-lflex-col">
+              <div className="category-name">IMPORTANT FACTORS</div>
+              <div className="post-it-row">
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Organizer: seeing all availablity in one place
+                  </div>
+                </div>
+              </div>
+              <div className="post-it-row">
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Invitee: prefer ability to compare with the rest of own calendar
+                  </div>
+                </div>
+              </div>
+              <div className="post-it-row">
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Both sides: emphasis on fast communication
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Invitee: prefer ability to compare with the rest of own calendar
+            <div className="category-rflex-col">
+              <div className="category-name">GENERAL FEELINGS</div>
+              <div className="post-it-row">
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    Organizers value flexibility when compromises are needed
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="post-it-row">
-              <div className="rpost-it">
-                <div className="post-it-text">
-                  Both sides: emphasis on fast communication
+              <div className="post-it-row">
+                <div className="rpost-it">
+                  <div className="post-it-text">
+                    People find it difficult to schedule meetings
+                  </div>
                 </div>
               </div>
             </div>
@@ -443,8 +448,7 @@ function Meetup({ currPage, setCurrPage }) {
                 <span style={{ 'font-weight': '600' }}>Reliance on tapping and typing interactions </span>
                 to give the user more control over how they interact with the interface (screen 4).
                 The choice of interaction addresses how users disliked When2meet&apos;s imprecise
-                method of dragging in a grid to indicate availability. Tapping/typing into larger
-                input boxes would aim to increase precision and decrease frustration with errors.
+                method of dragging in a grid to indicate availability.
               </div>
             </li>
           </ul>
@@ -464,16 +468,15 @@ function Meetup({ currPage, setCurrPage }) {
                 <span style={{ 'font-weight': '600' }}>&ldquo;Save changes&rdquo; button </span>
                 in &ldquo;My availability&rdquo; was changed to a back arrow in the upper-left
                 corner to better indicate to a user how to return to the main &ldquo;Group
-                availability&rdquo; view. A &ldquo;Cancel&rdquo; button and back arrow
-                were also added to the editing a day view.
+                availability&rdquo; view.
               </div>
             </li>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>&ldquo;Add timeslot&rdquo; button </span>
                 in the section for editing a specific day&apos;s availability was moved to be
-                grouped closer to the existing timeslots a user has. This better associates the
-                button&apos;s action with its results.
+                grouped closer to the existing timeslots a user has, better associating the
+                button&apos;s action with its results
               </div>
             </li>
           </ul>
@@ -492,7 +495,7 @@ function Meetup({ currPage, setCurrPage }) {
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Green and mint color palette </span>
                 to create a calm appearance for the platform since research showed that scheduling
-                was considered difficult or stressful by most users.
+                was considered difficult or stressful by most users
               </div>
             </li>
             <li>
@@ -511,16 +514,16 @@ function Meetup({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">USER TESTING: ROUND 1</div>
         <div className="project-text">
-          Using the initial prototype, I conduced user testing with 3 students, 1 from the user
+          Using the initial prototype, I conducted user testing with 3 students, 1 from the user
           interviews and 2 others who had responded to the survey and were
           familiar with the project context. Users commented on:
           <ul>
-            <li>
+            {/* <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Pleasant UI design </span>
                 with a simple aesthetic and clear emphasis on actionable areas
               </div>
-            </li>
+            </li> */}
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Good clarity with tapping interaction </span>
@@ -557,8 +560,8 @@ function Meetup({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">PROTOTYPE: ITERATION 2</div>
         <div className="project-text">
-          Based on the comments from Round 1 of user testing, I reorganized how the &ldquo;
-          Add availability&rdquo; user flow begins:
+          Based on the comments from Round 1 of user testing, I reorganized how the &ldquo;Add
+          availability&rdquo; user flow begins:
           streamlined
           the “Add availability” user flow and created clear emphasis on separate
           <ul>
@@ -566,22 +569,19 @@ function Meetup({ currPage, setCurrPage }) {
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Separate &ldquo;Me&rdquo; & &ldquo;Group&rdquo; </span>
                 sections to address the confusion on what information the main
-                view is initially presenting; indicated by buttons at the top to toggle the view
+                view is initially presenting
               </div>
             </li>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Reduced number of clicks </span>
-                for adding/editing availability to streamline interaction; both functions are
-                accessed with 1 click in this iteration
+                for adding/editing availability to streamline interaction
               </div>
             </li>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Calendar layout </span>
-                to improve visualization of availability by highlighting days with provided
-                availability in bright mint and indicating the currently selected day with
-                an underline
+                to improve visualization of availability
               </div>
             </li>
           </ul>
@@ -599,7 +599,7 @@ function Meetup({ currPage, setCurrPage }) {
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>No side-by-side comparision of group & personal availability </span>
+                <span style={{ 'font-weight': '600' }}>No side-by-side comparison of group & personal availability </span>
                 limits the information a user has at their immediate disposal when inputting their
                 own information
               </div>
@@ -611,13 +611,14 @@ function Meetup({ currPage, setCurrPage }) {
                 individual days; suggestions made for a grid view calendar
               </div>
             </li>
-            <li>
+            {/* <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Confusion with highlight vs. underline on date </span>
+                <span style={{ 'font-weight': '600' }}>Confusion with highlight vs.
+                underline on date </span>
                 for which one is meant to indicate selected date or whether availability
                 was provided
               </div>
-            </li>
+            </li> */}
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>One-click interaction </span>
@@ -637,42 +638,38 @@ function Meetup({ currPage, setCurrPage }) {
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Grid view calendar </span>
-                to supplement the original calendar view; the grid shows individual days
-                while the original layout still gives an overview of all dates that a
-                user can select from
+                to supplement the original calendar view
               </div>
             </li>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Scrollable side-by-side comparison columns </span>
                 in the grid view to solve for the issue of not having the ability to compare
-                personal and group availability in the previous prototype; a key indicates the
-                two types of availability shown by the columns
+                personal and group availability in the previous prototype
               </div>
             </li>
-            <li>
+            {/* <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Highlighted date indicates selected date </span>
+                <span style={{ 'font-weight': '600' }}>Highlighted date indicates selected
+                date </span>
                 instead of a date with availability; this choice matches how a highlighted circle on
-                &ldquo;AM&rdquo; or &ldquo;PM&rdquo; indicates selection, so instead, a dot under
-                a date is used to show that a user previded availability
+                &ldquo;AM&rdquo; or &ldquo;PM&rdquo; indicates selection
               </div>
-            </li>
+            </li> */}
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Meeting information section </span>
-                at the top of the screen contextualizes the meeting invite and informs
-                how users should provide their availability based on the meeting length
+                at the top of the screen to contextualize the meeting invite
               </div>
             </li>
-            <li>
+            {/* <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Tapping in the grid to add a timeslot </span>
                 in the grid view would allow for automatic population of the new timeslot&apos;s
                 starting time, helping counteract the additional tap added with the interaction
-                of swtiching from the main calendar to the grid view
+                of switching from the main calendar to the grid view
               </div>
-            </li>
+            </li> */}
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Info on number of people available </span>
@@ -684,9 +681,13 @@ function Meetup({ currPage, setCurrPage }) {
           </ul>
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={meetproto3} alt="meet-proto-3" />
-        <img id="meet-mobile-cards" className="mockup-img" src={meetmobilecards} alt="meet-proto-3" />
+      <div className="mockup-col">
+        <div className="mockup-flex-fix">
+          <img className="mockup-img" src={meetproto3} alt="meet-proto-3" />
+        </div>
+        <div className="mockup-flex-fix">
+          <img id="meet-mobile-cards" className="mockup-img" src={meetmobilecards} alt="meet-proto-3" />
+        </div>
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">DESKTOP VERSION</div>
@@ -698,26 +699,25 @@ function Meetup({ currPage, setCurrPage }) {
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Timeslot preview when adding/editing availability </span>
-                shown when a user taps a block of availability; this addresses the point from
-                the original user research showing that people value general information about
-                the group availability
+                shown when a user taps a block of availability
               </div>
             </li>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Hover interactions for editing & group availability info </span>
-                shown when a user taps a block of availability; this addresses the point from
-                the original user research showing that people value general information about
-                the group availability
+                shown when a user taps a block of availability
               </div>
             </li>
           </ul>
         </div>
       </div>
-      <div id="last-mockup">
-        <img className="mockup-img" src={meetdesk1} alt="meet-desk-1" />
-        <img id="meet-desk-2" className="mockup-img" src={meetdesk2} alt="meet-desk-2" />
-        <img id="meet-desk-cards" className="mockup-img" src={meetdeskcards} alt="meet-desk-cards" />
+      <div id="last-mockup-col">
+        <div className="mockup-flex-fix">
+          <img className="mockup-img" src={meetdesk} alt="meet-desk" />
+        </div>
+        <div className="mockup-flex-fix">
+          <img id="meet-desk-cards" className="mockup-img" src={meetdeskcards} alt="meet-desk-cards" />
+        </div>
       </div>
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
@@ -726,7 +726,7 @@ function Meetup({ currPage, setCurrPage }) {
           <ul>
             <li>
               <div className="list-text">
-                <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/AHxq5BvD3YoUd5bdFdI9OC/Meetup-Prototype-(Mobile)?node-id=2%3A98&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A28">
+                <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/AHxq5BvD3YoUd5bdFdI9OC/Meetup-Prototype-(Mobile)?node-id=2%3A28&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A28">
                   Mobile Solution Prototype
                 </a>
               </div>

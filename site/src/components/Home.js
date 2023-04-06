@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
-import illustration from '../assets/landing-illustration.png';
+import illustration from '../assets/landing-illustration-dark.svg';
 import Arrow from '../assets/arrow.svg';
 import Heart from '../assets/heart.svg';
 import meetup from '../assets/meetup-mockup (2).png';
@@ -17,9 +17,10 @@ import icecream from '../assets/ice-cream.png';
 import logi from '../assets/logi-mockup.png';
 import temp from '../assets/temp-mockup.png';
 import NavBar from './NavBar';
+import LandingLight from './LandingLight';
 import Footer from './Footer';
 
-function Home({ currPage, setCurrPage }) {
+function Home({ currPage, setCurrPage, theme, setTheme }) {
   // const [error, setError] = useState({ message: '' });
   // const [lockoutUser, setLockoutUser] = useState('');
   const navigate = useNavigate();
@@ -46,12 +47,17 @@ function Home({ currPage, setCurrPage }) {
     setCurrPage('work');
     window.scrollTo(0, 0);
     document.title = 'Sylvia Zhao';
+    console.log(theme);
+    if (theme == 'dark') {
+      document.body.style.color = "white";
+      document.body.style.backgroundColor = "red";
+    }
   }, []);
 
   return (
-    <div className="Home">
+    <div className="Home" id="home">
       <NavBar currPage={currPage} />
-      <div className="landing">
+      <div className="landing" id="landing">
         <div className="big-header">
           HI, I&apos;M SYLVIA ZHAO
         </div>
@@ -60,7 +66,9 @@ function Home({ currPage, setCurrPage }) {
           <br />
           PennApps Co-Head of Creative &middot; Recent Design Ops Intern at Logitech
         </div>
-        <img id="home-illus" src={illustration} alt="landing illustration" />
+        {/* <img id="home-illus" src={illustration} alt="landing illustration" /> */}
+        <LandingLight theme={theme} setTheme={setTheme}/>
+        <img id="home-illus-dark" className="home-illus-dark-show" src={illustration} alt="landing illustration" />
         <Link to="/#work">
           <img id="arrow" src={Arrow} alt="arrow svg" />
         </Link>
@@ -72,7 +80,18 @@ function Home({ currPage, setCurrPage }) {
       <div id="work">Work</div>
       <div className="grid">
         <div className="grid-row">
-          <div className="gcard-lwrap" onClick={() => goToProject('meetup')}>
+          <div className="gcard-lwrap" onClick={() => goToProject('speechconnect')}>
+            <img className="grid-img" src={speechconnect} alt="speechconnect mockup" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                SpeechConnect
+              </div>
+              <div className="gcard-text">
+                Creating a tablet experience for alternative communication tech
+              </div>
+            </div>
+          </div>
+          <div className="gcard-rwrap" onClick={() => goToProject('meetup')}>
             <img className="grid-img" src={meetup} alt="meetup mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
@@ -83,7 +102,20 @@ function Home({ currPage, setCurrPage }) {
               </div>
             </div>
           </div>
-          <div className="gcard-rwrap" onClick={() => goToProject('pennintouch')}>
+        </div>
+        <div className="grid-row">
+          <div className="gcard-lwrap"  onClick={() => goToProject('chapter')}>
+            <img className="grid-img" src={chapter} alt="chapter mockup" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                Chapter
+              </div>
+              <div className="gcard-text">
+                Designing a virtual book club app for readers
+              </div>
+            </div>
+          </div>
+          <div className="gcard-rwrap"  onClick={() => goToProject('pennintouch')}>
             <img className="grid-img" src={pennintouch} alt="pennintouch mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
@@ -96,32 +128,8 @@ function Home({ currPage, setCurrPage }) {
           </div>
         </div>
         <div className="grid-row">
-          <div className="gcard-lwrap"  onClick={() => goToProject('speechconnect')}>
-            <img className="grid-img" src={speechconnect} alt="speechconnect mockup" />
-            <div className="gcard-label">
-              <div className="gcard-heading">
-                SpeechConnect
-              </div>
-              <div className="gcard-text">
-                Creating a tablet experience for alternative communication tech
-              </div>
-            </div>
-          </div>
-          <div className="gcard-rwrap"  onClick={() => goToProject('chapter')}>
-            <img className="grid-img" src={chapter} alt="temp mockup" />
-            <div className="gcard-label">
-              <div className="gcard-heading">
-                Chapter
-              </div>
-              <div className="gcard-text">
-                Designing a virtual book club app for readers
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="grid-row">
           <div className="gcard-lwrap" onClick={() => goToProject('logitech')}>
-            <img className="lined-gcard-label" src={logi} alt="logi mockup" />
+            <img className="grid-img" src={logi} alt="logi mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
                 Logitech Design Ops
@@ -132,7 +140,7 @@ function Home({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="gcard-rwrap" onClick={() => goToProject('illustrations')}>
-            <img className="lined-gcard-label" src={icecream} alt="pennapps mockup" />
+            <img className="grid-img" src={icecream} alt="pennapps mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
                 Illustrations

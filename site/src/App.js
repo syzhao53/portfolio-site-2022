@@ -16,8 +16,11 @@ import Resume from './components/Resume';
 import About from './components/About';
 import Illustrations from './components/Illustrations';
 
+
 function App() {
   const [currPage, setCurrPage] = useState('home');
+  const [theme, setTheme] = useState('light');
+
 
   // const [title, setTitle] = useState("Sylvia Zhao");
   
@@ -30,7 +33,7 @@ function App() {
     <div className="App">
       {/* <Scroll> */}
         <Routes>
-          <Route exact path="/" element={<Home currPage={currPage} setCurrPage={setCurrPage} />} />
+          <Route exact path="/" element={<Home currPage={currPage} setCurrPage={setCurrPage} theme={theme} setTheme={setTheme}/>} />
           <Route exact path="/resume" element={<Resume currPage={currPage} setCurrPage={setCurrPage} />} />
           <Route exact path="/about" element={<About currPage={currPage} setCurrPage={setCurrPage} />} />
           <Route exact path="/meetup" element={<Meetup currPage={currPage} setCurrPage={setCurrPage} />} />

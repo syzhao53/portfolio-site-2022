@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 // import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
 import icecream from '../assets/ice-cream.png';
+import florist from '../assets/florist.png';
 import staticlanding from '../assets/static-site-landing.png';
 import pennapps from '../assets/pennapps-mockup.png';
 import shea from '../assets/shea-butter.png';
@@ -33,6 +34,7 @@ function Illustrations({ currPage, setCurrPage }) {
           Work for personal projects, clubs, & more
         </div>
         <img className="misc-img" src={icecream} alt="ice cream illustration" />
+        <img className="misc-img" src={florist} alt="florist illustration" />
         <div className="img-wrap">
           <img className="misc-img" src={staticlanding} alt="pennapps static site landing illustration" />
           {/* <div className="caption">(In collaboration with Mia Kim)</div> */}

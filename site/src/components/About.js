@@ -31,9 +31,7 @@ function About({ currPage, setCurrPage }) {
           <div className="project-text">
             Hi! I&apos;m a UX and visual designer currently based in Philadelphia. I&apos;m
             a senior at the University of Pennsylvania double majoring in
-            Cognitive Science
-            <br />
-            and Computer Science with minors in Design and Linguistics.
+            Cognitive Science and Computer Science with minors in Design and Linguistics.
             <br />
             <br />
             As a designer, I&apos;m interested in how people connect with technology
