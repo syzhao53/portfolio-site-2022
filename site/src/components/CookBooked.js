@@ -40,32 +40,42 @@ function CookBooked({ currPage, setCurrPage }) {
       <NavBar currPage={currPage} />
       <div id="container-floating">
         <div className="table-text1 nds">
-          <Link to="/meetup#overview">
+          <Link to="/cookbooked#overview">
             <p className="letter">OVERVIEW</p>
           </Link>
         </div>
         <div className="table-text2 nds">
-          <Link to="/meetup#when2meet">
+          <Link to="/cookbooked#when2meet">
             <p className="letter">EXISTING SITES</p>
           </Link>
         </div>
         <div className="table-text3 nds">
-          <Link to="/meetup#user-research">
+          <Link to="/cookbooked#user-research">
             <p className="letter">USER RESEARCH</p>
           </Link>
         </div>
         <div className="table-text4 nds">
-          <Link to="/meetup#solution">
-            <p className="letter">SOLUTION</p>
+          <Link to="/cookbooked#solution">
+            <p className="letter">LO-FI PROTOTYPING</p>
           </Link>
         </div>
         <div className="table-text5 nds">
-          <Link to="/meetup#prototype">
-            <p className="letter">PROTOTYPE</p>
+          <Link to="/cookbooked#prototype">
+            <p className="letter">HI-FI PROTOTYPING</p>
           </Link>
         </div>
         <div className="table-text6 nds">
-          <Link to="/meetup#reflections">
+          <Link to="/cookbooked#reflections">
+            <p className="letter">EVALUATIONS</p>
+          </Link>
+        </div>
+        <div className="table-text6 nds">
+          <Link to="/cookbooked#reflections">
+            <p className="letter">IMPLEMENTATION</p>
+          </Link>
+        </div>
+        <div className="table-text6 nds">
+          <Link to="/cookbooked#reflections">
             <p className="letter">REFLECTIONS</p>
           </Link>
         </div>
@@ -92,25 +102,24 @@ function CookBooked({ currPage, setCurrPage }) {
       </div>
       <div className="project-wrap">
         <div className="project-header">CookBooked</div>
-        <div className="project-info">Creating an efficient recipe experience for homecooks</div>
+        <div className="project-info">Innovating on digital recipe interactions</div>
         <img className="project-img" src={meetup} alt="meetup mockup" />
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>
             <div className="project-ltext-zero">
-              Scheduling meetings can often become a laborious process of
-              coordination between organizers sending out invites and attendees
-              providing their availability.
+              Existing online recipes are often cluttered with
+              long passages and distracting ads, creating a disruptive user experience
+              for cooks. Although digital, these recipes do not take
+              advantage of the web medium.
               <br />
               <br />
-              This project was created for a human computer interaction course at the University of
-              Pennsylvania. As an end-to-end project, each member of the team was involved in the
+              CookBooked is an interactive web application designed to help cooks follow
+              and organize recipes. This project was created for a human computer interaction
+              course at the University of
+              Pennsylvania. Each member of the team was involved in the
               research, design, and programming of the web app.
               The final app was implemented with React and Tailwind CSS.
-              Inspired by past difficulties with the popular scheduling platform When2meet,
-              this case study aimed to create a more efficient and usable solution for
-              people providing their availability for group meetings. The design process began with
-              mobile first in order to focus on usability issues before expanding to desktop.
             </div>
           </div>
           <div className="section-rflex">

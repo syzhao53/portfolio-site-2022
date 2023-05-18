@@ -12,6 +12,7 @@ import meetup from '../assets/meetup-mockup (2).png';
 import pennintouch from '../assets/pennintouch-mockup.png';
 import speechconnect from '../assets/speechconnect-mockup.png';
 import chapter from '../assets/chapter-mockup.png';
+import cookbooked from '../assets/chapter-mockup.png';
 import pennapps from '../assets/pennapps-mockup.png';
 import icecream from '../assets/ice-cream.png';
 import logi from '../assets/logi-mockup.png';
@@ -36,6 +37,8 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
       navigate('/logitech');
     } else if (name === 'chapter') {
       navigate('/chapter');
+    } else if (name === 'cookbooked') {
+      navigate('/cookbooked');
     } else if (name === 'illustrations') {
       navigate('/illustrations');
     }
@@ -104,14 +107,14 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
           </div>
         </div>
         <div className="grid-row">
-          <div className="gcard-lwrap"  onClick={() => goToProject('chapter')}>
-            <img className="grid-img" src={chapter} alt="chapter mockup" />
+          <div className="gcard-lwrap"  onClick={() => goToProject('cookbooked')}>
+            <img className="grid-img" src={cookbooked} alt="cookbooked mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                Chapter
+                CookBooked
               </div>
               <div className="gcard-text">
-                Designing a virtual book club app for readers
+                Innovating on digital recipe interactions
               </div>
             </div>
           </div>
