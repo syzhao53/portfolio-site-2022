@@ -65,9 +65,9 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
           HI, I&apos;M SYLVIA ZHAO
         </div>
         <div className="paragraph">
-          UX & Visual Designer &middot; Senior in Cognitive & Computer Science at UPenn
+          UX & Visual Designer &middot; UX Design Analyst @ JPMorgan Chase
           <br />
-          PennApps Co-Head of Creative &middot; Recent Design Ops Intern at Logitech
+          Based in DFW area &middot; UPenn '23 B.A. in Cognitive & Computer Science
         </div>
         <img id="home-illus" src={illustration} alt="landing illustration" />
         {/* <LandingLight theme={theme} setTheme={setTheme}/> */}
