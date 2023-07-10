@@ -29,9 +29,10 @@ function About({ currPage, setCurrPage }) {
         <div id="about-flex">
           <img id="headshot" src={headshot} alt="headshot" />
           <div className="project-text">
-            Hi! I&apos;m a UX and visual designer currently based in Philadelphia. I&apos;m
-            a senior at the University of Pennsylvania double majoring in
-            Cognitive Science and Computer Science with minors in Design and Linguistics.
+            Hi! I&apos;m a UX and visual designer currently based in the Dallas-Fort Worth area.
+            I&apos;m currently a UX Design Analyst at JPMorgan Chase as part of the Design
+            Development Program. Previously, I have worked on web experiences for Design Operations
+            at Logitech and have also created app and marketing assets for startups.
             <br />
             <br />
             As a designer, I&apos;m interested in how people connect with technology
@@ -39,6 +40,7 @@ function About({ currPage, setCurrPage }) {
             interactions.
           </div>
         </div>
+        {/* <div className="subsection-header" id="solution">EXPERIENCE</div> */}
       </div>
       <Footer />
     </div>

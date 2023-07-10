@@ -159,6 +159,7 @@ html {
   flex-direction: row;
   width: 100%;
   margin: 1rem 0 8rem 0;
+  align-items: flex-start;
 }
 
 #headshot {
