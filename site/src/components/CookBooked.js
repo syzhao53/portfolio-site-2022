@@ -129,7 +129,7 @@ function CookBooked({ currPage, setCurrPage }) {
                   ROLE
                 </div>
                 <div className="project-rtext">
-                  UX research, UX design, &amp; frontend development
+                  UX research & design, frontend development
                 </div>
               </div>
             </div>
@@ -167,7 +167,7 @@ function CookBooked({ currPage, setCurrPage }) {
         <img className="project-img" src={when2meetdesk} alt="when2meet-desk" />
         <img id="when2meet-mobile" className="project-img" src={when2meetmobile} alt="when2meet-mobile" />
         <div className="section-header" id="user-research"> User Research</div>
-        <div className="cap-card">
+        {/* <div className="cap-card">
           <div className="cap">
             <div className="empty">c</div>
           </div>
@@ -175,7 +175,7 @@ function CookBooked({ currPage, setCurrPage }) {
             &ldquo;Seeing everyone&apos;s availability in one place is crucial&rdquo;
             <span style={{ 'font-style': 'italic' }}> &mdash; Student Club Leader</span>
           </div>
-        </div>
+        </div> */}
         <div className="subsection-header">SURVEY</div>
         <div className="project-text">
           Given that students consistently need to schedule group meetings for clubs and projects
@@ -245,19 +245,21 @@ function CookBooked({ currPage, setCurrPage }) {
         </div>
       </div>
       <div className="project-wrap">
-        <div className="subsection-header-sec">USER INTERVIEWS</div>
+        <div className="subsection-header-sec">INTERVIEWS</div>
         <div className="project-text">
-          For interviews, I spoke with 2 undergraduate students and 1 graduate student who had
-          previous corporate work experience as well. These students were selected for their
-          experiences managing teams and clubs. I spoke with each of them on the factors that are
-          most important to consider when sending out a meeting invite as well as thought processes
-          when providing availability.
+          While the team had decided on a general target audience of home cooks, we
+          interviewed potential users to better understand pain points and potential solutions.
+          The initial idea centered around a recipe annotation app to modify existing online
+          recipes.
           <br />
           <br />
-          Synthesis of comments from the interviews was consistent with survey results with people
-          emphasizing the need to see all availability in one place and the ease of using When2meet
-          in various workflows for scheduling meetings. The interviews confirmed When2meet&apos;s
-          pain points of poor mobile usability and tedious process to input availability.
+          A total of 4 preliminary interviews revealed that for the subgroup of cooks who
+          preferred to create or edit their own recipes, no specialized tool existed for such
+          purposes. Most of these people used text-editors or project management
+          tools like Notion, Google Sheets, and Obsidian. However, such text editors require time
+          and effort to set up, and lacked some features specific to cooking like integrated timers
+          or changing serving size. These applications also do not consider optimized formatting for
+          recipes.
         </div>
       </div>
       <div className="affinity-col">
@@ -398,15 +400,16 @@ function CookBooked({ currPage, setCurrPage }) {
           <div className="section-lflex">
             <div className="section-header" id="solution">Solution</div>
             <div className="project-ltext">
-              Due to pain points surrounding the process of providing availability, I chose to
-              design for the perspective of the invitee only for the scope of this project. To
-              specifically address mobile usability concerns, I designed for a mobile interface
-              before expanding to a desktop solution after finalizing a mobile solution.
+              The project focused on the population of cooks who edit and create their own
+              recipes. With a target audience established, the team went through several iterations
+              of sketches, low-fidelity paper and digital prototypes, and high-fidelity digital
+              prototypes. Some prototypes were implemented in React for user testing in later stages
+              as the app was built iteratively.
               <br />
               <br />
-              Additionally, to maintain the convenience valued by users of When2meet, the interface
-              was framed as a web app without need for an account. User testing was conducted
-              after wireframing and the first iteration of a prototype with the full UI design.
+              User testing involved qualitative user feedback as well as statistical analysis of
+              variants for certain features. The team collected feedback for usability as well as
+              visual design throughout evaluations.
             </div>
           </div>
           <div className="section-rflex">
