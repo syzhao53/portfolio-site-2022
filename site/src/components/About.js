@@ -29,7 +29,7 @@ function About({ currPage, setCurrPage }) {
         <div id="about-flex">
           <img id="headshot" src={headshot} alt="headshot" />
           <div className="project-text">
-            Hi! I&apos;m a UX and visual designer currently based in the Dallas-Fort Worth area.
+            Hi! I&apos;m a UX and visual designer based in the Dallas-Fort Worth area.
             I&apos;m currently a UX Design Analyst at JPMorgan Chase as part of the Design
             Development Program. Previously, I have worked on web experiences for Design Operations
             at Logitech and have also created app and marketing assets for startups.

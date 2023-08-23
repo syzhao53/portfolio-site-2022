@@ -65,9 +65,9 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
           HI, I&apos;M SYLVIA ZHAO
         </div>
         <div className="paragraph">
-          UX & Visual Designer &middot; UX Design Analyst (DDP) @ JPMorgan Chase
+          UX & Visual Designer &middot; UX Design Analyst (DDP) @ JPMorgan Chase & Co.
           <br />
-          UPenn B.A. in Cognitive Science & Computer Science
+          UPenn Cognitive Science & Computer Science graduate
         </div>
         <img id="home-illus" src={illustration} alt="landing illustration" />
         {/* <LandingLight theme={theme} setTheme={setTheme}/> */}
@@ -107,14 +107,15 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
           </div>
         </div>
         <div className="grid-row">
-          <div className="gcard-lwrap"  onClick={() => goToProject('cookbooked')}>
-            <img className="grid-img" src={cookbooked} alt="cookbooked mockup" />
+          <div className="gcard-lwrap"  onClick={() => goToProject('chapter')}>
+            <img className="grid-img" src={chapter} alt="chapter mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                CookBooked
+                Chapter
               </div>
               <div className="gcard-text">
-                Innovating on digital recipe interactions
+                {/* Innovating on digital recipe interactions */}
+                Designing a virtual book club experience
               </div>
             </div>
           </div>
