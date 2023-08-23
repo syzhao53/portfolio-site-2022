@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab946dd4.css",
-    "main.js": "/static/js/main.89357b65.js",
+    "main.css": "/static/css/main.2228c57b.css",
+    "main.js": "/static/js/main.eb5defa0.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/speech-apps.png": "/static/media/speech-apps.61558252f190968207fd.png",
     "static/media/pit-device-mock.png": "/static/media/pit-device-mock.0fed5b3999fff0f00769.png",
@@ -73,12 +73,12 @@
     "static/media/arrow.svg": "/static/media/arrow.6913a95c46e20a8824d643ab4fb6ee71.svg",
     "static/media/close.svg": "/static/media/close.362cb9d9be8638a592b8c0c488f10e76.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.6e4b8a13830a9b4834249fc89a5bbc06.svg",
-    "main.ab946dd4.css.map": "/static/css/main.ab946dd4.css.map",
-    "main.89357b65.js.map": "/static/js/main.89357b65.js.map",
+    "main.2228c57b.css.map": "/static/css/main.2228c57b.css.map",
+    "main.eb5defa0.js.map": "/static/js/main.eb5defa0.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab946dd4.css",
-    "static/js/main.89357b65.js"
+    "static/css/main.2228c57b.css",
+    "static/js/main.eb5defa0.js"
   ]
 }
