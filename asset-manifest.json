@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2228c57b.css",
-    "main.js": "/static/js/main.eb5defa0.js",
+    "main.js": "/static/js/main.9502c00e.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/speech-apps.png": "/static/media/speech-apps.61558252f190968207fd.png",
     "static/media/pit-device-mock.png": "/static/media/pit-device-mock.0fed5b3999fff0f00769.png",
@@ -25,7 +25,6 @@
     "static/media/pit-home.png": "/static/media/pit-home.7c8b94ff7b2e4302de30.png",
     "static/media/resume1.png": "/static/media/resume1.407e826481ccc85e3a10.png",
     "static/media/speech-grid-ui.png": "/static/media/speech-grid-ui.15cc9bed14a02fb7c52e.png",
-    "static/media/comfy-farm.png": "/static/media/comfy-farm.6ebc3e408f7cc7c77858.png",
     "static/media/pit-sketches.png": "/static/media/pit-sketches.3c01f380be784f6bde81.png",
     "static/media/chapter-wire-2.png": "/static/media/chapter-wire-2.f4acfb08603ef3f0a553.png",
     "static/media/static-site-landing.png": "/static/media/static-site-landing.0a44b7dd5e7b3a937860.png",
@@ -44,8 +43,10 @@
     "static/media/speech-ui.png": "/static/media/speech-ui.e46bc9527c561be3add5.png",
     "static/media/speech-customize-wire.png": "/static/media/speech-customize-wire.47680398a22f8041f35b.png",
     "static/media/meet-wire-2.png": "/static/media/meet-wire-2.1ec78a4c8ff36ae382a7.png",
+    "static/media/sushi.png": "/static/media/sushi.0cc0844adf1eea27f443.png",
     "static/media/when2meet-desk.png": "/static/media/when2meet-desk.afe0d80961f93fbfc7b6.png",
     "static/media/chapter-proto-3.png": "/static/media/chapter-proto-3.6c1ef1548077d961e808.png",
+    "static/media/marcy.png": "/static/media/marcy.3e5e8e51f24c51ca6c3a.png",
     "static/media/ice-cream.png": "/static/media/ice-cream.267f88c05ecb2103b98f.png",
     "static/media/meetup-mockup (2).png": "/static/media/meetup-mockup (2).327b1bc4ce065cd96824.png",
     "static/media/florist.png": "/static/media/florist.2147bc129628f4f26e5a.png",
@@ -74,11 +75,11 @@
     "static/media/close.svg": "/static/media/close.362cb9d9be8638a592b8c0c488f10e76.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.6e4b8a13830a9b4834249fc89a5bbc06.svg",
     "main.2228c57b.css.map": "/static/css/main.2228c57b.css.map",
-    "main.eb5defa0.js.map": "/static/js/main.eb5defa0.js.map",
+    "main.9502c00e.js.map": "/static/js/main.9502c00e.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2228c57b.css",
-    "static/js/main.eb5defa0.js"
+    "static/js/main.9502c00e.js"
   ]
 }
