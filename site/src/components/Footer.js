@@ -13,7 +13,7 @@ function Footer() {
           {/* <div className="footer-text">syzhao@sas.upenn.edu</div> */}
         </div>
         <div id="made-with-love" className="footer-row">
-          <div className="footer-text">Made by Sylvia &middot; 2022</div>
+          <div className="footer-text">Made by Sylvia &middot; 2023</div>
           {/* <img id="heart" src={Heart} alt="heart svg" /> */}
           {/* <div className="footer-text">by Sylvia</div> */}
         </div>

@@ -527,12 +527,25 @@ html {
   width: 60%;
   margin: auto;
   flex-wrap: wrap;
+  /* background-color: lightblue; */
 }
 
 .grid-row {
   display: flex;
   flex-direction: row;
-  margin: 0 0 3rem 0;
+  margin: 0 0 6% 0;
+  /* background-color: pink; */
+  width: 100%;
+  align-items: stretch;
+}
+
+.grid-row-sm {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  /* background-color: pink; */
+  width: 100%;
+  align-items: stretch;
 }
 
 .grid-img {
@@ -561,7 +574,7 @@ html {
   border-style: solid;
   background-color: #ffffff;
   border-radius: 7px;
-  margin: 0 3rem 0 0;
+  margin: 0 6% 0 0;
 }
 
 .gcard-lwrap:hover {
@@ -586,8 +599,53 @@ html {
   cursor: pointer;
 }
 
+.gcard-lwrap-sm {
+  display: flex;
+  flex-direction: row;
+  border-color: #eaeaea;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #ffffff;
+  border-radius: 7px;
+  margin: 0 6% 0 0;
+  width: 48%;
+}
+
+.gcard-lwrap-sm:hover {
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.042);
+  cursor: pointer;
+}
+
+.gcard-rwrap-sm {
+  display: flex;
+  flex-direction: row;
+  border-color: #eaeaea;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #ffffff;
+  border-radius: 7px;
+  width: 48%;
+}
+
+.gcard-rwrap-sm:hover {
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.042);
+  cursor: pointer;
+}
+
+.grid-logo {
+  padding: 0 0 0 1.5rem;
+  width: 11%;
+}
+
 .gcard-label {
   padding: 2rem 2rem 2rem 2rem;
+  text-align: left;
+}
+
+.gcard-label-sm {
+  padding: 1.5rem;
   text-align: left;
 }
 

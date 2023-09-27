@@ -31,8 +31,8 @@ function Chase({ currPage, setCurrPage }) {
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>
             <div className="project-ltext-zero">
-              Working in the Chase Home Lending team to design experiences
-              to support mortgage loan officers in the home loan process.
+              Designing experiences in the Chase Home Lending team
+              to support mortgage loan officers throughout the home loan process.
               Includes web, mobile, and customer communications designs.
             </div>
           </div>
@@ -43,7 +43,7 @@ function Chase({ currPage, setCurrPage }) {
                   ROLE
                 </div>
                 <div className="project-rtext">
-                  UX Designer, Analyst
+                  UX Designer (Analyst)
                 </div>
               </div>
             </div>

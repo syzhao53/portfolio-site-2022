@@ -4,7 +4,7 @@
 import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../assets/index.css';
-import meetup from '../assets/meetup-mockup (2).png';
+import meetup from '../assets/meetup-mockup-dev.png';
 import when2meetdesk from '../assets/when2meet-desk.png';
 import when2meetmobile from '../assets/when2meet-mobile.png';
 import easesched from '../assets/ease-scheduling.png';

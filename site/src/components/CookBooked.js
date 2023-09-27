@@ -4,7 +4,7 @@
 import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../assets/index.css';
-import meetup from '../assets/meetup-mockup (2).png';
+import cookbooked from '../assets/cookbooked-mockup.png';
 import when2meetdesk from '../assets/when2meet-desk.png';
 import when2meetmobile from '../assets/when2meet-mobile.png';
 import easesched from '../assets/ease-scheduling.png';
@@ -103,7 +103,7 @@ function CookBooked({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="project-header">CookBooked</div>
         <div className="project-info">Innovating on digital recipe interactions</div>
-        <img className="project-img" src={meetup} alt="meetup mockup" />
+        <img className="project-img" src={cookbooked} alt="cookbooked mockup" />
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>

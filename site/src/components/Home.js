@@ -8,15 +8,18 @@ import '../assets/index.css';
 import illustration from '../assets/landing-illustration.png';
 import Arrow from '../assets/arrow.svg';
 import Heart from '../assets/heart.svg';
-import meetup from '../assets/meetup-mockup (2).png';
+import meetup from '../assets/meetup-mockup-dev.png';
 import pennintouch from '../assets/pennintouch-mockup.png';
 import speechconnect from '../assets/speechconnect-mockup.png';
 import chapter from '../assets/chapter-mockup.png';
-import cookbooked from '../assets/chapter-mockup.png';
-import chase from '../assets/chase-mockup.png';
+import cookbooked from '../assets/cookbooked-mockup.png';
+// import chase from '../assets/chase-mockup.png';
+import chase from '../assets/chase-logo.svg';
 import pennapps from '../assets/pennapps-mockup.png';
 import icecream from '../assets/ice-cream.png';
-import logi from '../assets/logi-mockup.png';
+import sushi from '../assets/sushi-grid.png';
+// import logi from '../assets/logi-mockup.png';
+import logi from '../assets/logi-logo.svg';
 import temp from '../assets/temp-mockup.png';
 import NavBar from './NavBar';
 import LandingLight from './LandingLight';
@@ -83,10 +86,38 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
         <img id="arrow" src={Arrow} alt="landing illustration" />
       </a> */}
       {/* <img id="arrow" src={Arrow} alt="arrow svg" /> */}
-      <div id="work">Work</div>
+      <div id="work">Work Experience</div>
+      <div className="grid">
+        <div className="grid-row-sm">
+          <div className="gcard-lwrap-sm" onClick={() => goToProject('chase')}>
+            <img className="grid-logo" src={chase} alt="chase logo" />
+            <div className="gcard-label-sm">
+              <div className="gcard-heading">
+                JPMorgan Chase & Co.
+              </div>
+              <div className="gcard-text">
+                {/* Design Development Program | */}
+                Chase Home Lending
+              </div>
+            </div>
+          </div>
+          <div className="gcard-rwrap-sm" onClick={() => goToProject('chase')}>
+          <img className="grid-logo" src={logi} alt="logi logo" />
+            <div className="gcard-label-sm">
+              <div className="gcard-heading">
+                Logitech
+              </div>
+              <div className="gcard-text">
+                Design operations internship
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="work">Projects</div>
       <div className="grid">
       <div className="grid-row">
-          <div className="gcard-lwrap" onClick={() => goToProject('chase')}>
+          {/* <div className="gcard-lwrap" onClick={() => goToProject('chase')}>
             <img className="grid-img" src={chase} alt="chase logo mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
@@ -96,21 +127,19 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
                 Chase Home Lending
               </div>
             </div>
-          </div>
-          <div className="gcard-rwrap" onClick={() => goToProject('meetup')}>
-            <img className="grid-img" src={meetup} alt="meetup mockup" />
+          </div> */}
+          <div className="gcard-lwrap" onClick={() => goToProject('cookbooked')}>
+            <img className="grid-img" src={cookbooked} alt="cookbooked mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
-                Cookbooked
+                CookBooked
               </div>
               <div className="gcard-text">
                 Innovating on digital recipe interactions
               </div>
             </div>
           </div>
-        </div>
-        <div className="grid-row">
-          <div className="gcard-lwrap" onClick={() => goToProject('speechconnect')}>
+          <div className="gcard-rwrap" onClick={() => goToProject('speechconnect')}>
             <img className="grid-img" src={speechconnect} alt="speechconnect mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
@@ -121,7 +150,20 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
               </div>
             </div>
           </div>
-          <div className="gcard-rwrap" onClick={() => goToProject('meetup')}>
+        </div>
+        <div className="grid-row">
+          {/* <div className="gcard-lwrap" onClick={() => goToProject('speechconnect')}>
+            <img className="grid-img" src={speechconnect} alt="speechconnect mockup" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                SpeechConnect
+              </div>
+              <div className="gcard-text">
+                Creating a tablet experience for alternative communication tech
+              </div>
+            </div>
+          </div> */}
+          <div className="gcard-lwrap" onClick={() => goToProject('meetup')}>
             <img className="grid-img" src={meetup} alt="meetup mockup" />
             <div className="gcard-label">
               <div className="gcard-heading">
@@ -129,6 +171,17 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
               </div>
               <div className="gcard-text">
                 Improving group meeting scheduling on mobile & web
+              </div>
+            </div>
+          </div>
+          <div className="gcard-rwrap" onClick={() => goToProject('illustrations')}>
+            <img className="grid-img" src={sushi} alt="sushi illustration" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                Illustrations
+              </div>
+              <div className="gcard-text">
+                Work for personal projects, clubs, & more
               </div>
             </div>
           </div>
@@ -157,7 +210,7 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
             </div>
           </div>
         </div> */}
-        <div className="grid-row">
+        {/* <div className="grid-row">
           <div className="gcard-lwrap" onClick={() => goToProject('logitech')}>
             <img className="grid-img" src={logi} alt="logi mockup" />
             <div className="gcard-label">
@@ -170,7 +223,7 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
             </div>
           </div>
           <div className="gcard-rwrap" onClick={() => goToProject('illustrations')}>
-            <img className="grid-img" src={icecream} alt="pennapps mockup" />
+            <img className="grid-img" src={sushi} alt="sushi illustration" />
             <div className="gcard-label">
               <div className="gcard-heading">
                 Illustrations
@@ -180,7 +233,7 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </div>
