@@ -43,13 +43,13 @@ function Chase({ currPage, setCurrPage }) {
                   ROLE
                 </div>
                 <div className="project-rtext">
-                  UX Designer (Analyst)
+                  UX Designer (Analyst in Design Development Program)
                 </div>
               </div>
             </div>
             <div className="descrip-rflex-zero">
               <div className="subsection-rheader">
-                TIMELINE
+                DATES
               </div>
               <div className="project-rtext">
                 July 2023 - Present

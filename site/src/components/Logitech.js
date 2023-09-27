@@ -59,7 +59,7 @@ function Logitech({ currPage, setCurrPage }) {
             </div>
             <div className="descrip-rflex-zero">
               <div className="subsection-rheader">
-                TIMELINE
+                DATES
               </div>
               <div className="project-rtext">
                 12 weeks

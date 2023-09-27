@@ -37,7 +37,7 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
       navigate('/pennintouch');
     } else if (name === 'speechconnect') {
       navigate('/speechconnect');
-    } else if (name === 'logitech') {
+    } else if (name === 'logi') {
       navigate('/logitech');
     } else if (name === 'chapter') {
       navigate('/chapter');
@@ -101,7 +101,7 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
               </div>
             </div>
           </div>
-          <div className="gcard-rwrap-sm" onClick={() => goToProject('chase')}>
+          <div className="gcard-rwrap-sm" onClick={() => goToProject('logi')}>
           <img className="grid-logo" src={logi} alt="logi logo" />
             <div className="gcard-label-sm">
               <div className="gcard-heading">
