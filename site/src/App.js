@@ -12,6 +12,7 @@ import CookBooked from './components/CookBooked';
 import PennInTouch from './components/PennInTouch';
 import SpeechConnect from './components/SpeechConnect';
 import Logitech from './components/Logitech';
+import Chase from './components/Chase';
 import Chapter from './components/Chapter';
 import Resume from './components/Resume';
 import About from './components/About';
@@ -35,14 +36,15 @@ function App() {
       {/* <Scroll> */}
         <Routes>
           <Route exact path="/" element={<Home currPage={currPage} setCurrPage={setCurrPage} theme={theme} setTheme={setTheme}/>} />
-          <Route exact path="/resume" element={<Resume currPage={currPage} setCurrPage={setCurrPage} />} />
+          {/* <Route exact path="/resume" element={<Resume currPage={currPage} setCurrPage={setCurrPage} />} /> */}
           <Route exact path="/about" element={<About currPage={currPage} setCurrPage={setCurrPage} />} />
           <Route exact path="/meetup" element={<Meetup currPage={currPage} setCurrPage={setCurrPage} />} />
           <Route exact path="/cookbooked" element={<CookBooked currPage={currPage} setCurrPage={setCurrPage} />} />
-          <Route exact path="/pennintouch" element={<PennInTouch currPage={currPage} setCurrPage={setCurrPage} />} />
+          {/* <Route exact path="/pennintouch" element={<PennInTouch currPage={currPage} setCurrPage={setCurrPage} />} /> */}
           <Route exact path="/speechconnect" element={<SpeechConnect currPage={currPage} setCurrPage={setCurrPage} />} />
           <Route exact path="/logitech" element={<Logitech currPage={currPage} setCurrPage={setCurrPage} />} />
-          <Route exact path="/chapter" element={<Chapter currPage={currPage} setCurrPage={setCurrPage} />} />
+          <Route exact path="/chase" element={<Chase currPage={currPage} setCurrPage={setCurrPage} />} />
+          {/* <Route exact path="/chapter" element={<Chapter currPage={currPage} setCurrPage={setCurrPage} />} /> */}
           <Route exact path="/illustrations" element={<Illustrations currPage={currPage} setCurrPage={setCurrPage} />} />
         </Routes>
       {/* </Scroll> */}

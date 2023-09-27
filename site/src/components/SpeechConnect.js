@@ -97,15 +97,15 @@ function SpeechConnect({ currPage, setCurrPage }) {
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>
             <div className="project-ltext-zero">
-              Language drives everyday interactions and is a tool that shapes
-              how people form connections with each other. Stemming from my interests
-              in psychology and linguistics, I wanted to explore how design and technology can
-              support different communication methods with accessibility in mind.
+              SpeechConnect is a customizable experience in augmentative and
+              alternative communication for users who need technology to assist their
+              daily interactions with others due to speech difficulties. Stemming from my interests
+              in psychology and linguistics, it explores how
+              design can support different communication methods with accessibility
+              in mind.
               <br />
               <br />
-              This project focused on creating a customizable experience in augmentative and
-              alternative communication to serve users who need technology to assist their
-              daily interactions with others due to speech difficulties. While specialized
+              While specialized
               hardware does exist, I framed this case study as a software solution
               for standard tablets.
             </div>
@@ -141,15 +141,10 @@ function SpeechConnect({ currPage, setCurrPage }) {
           grid layout that users interact with either through touch, scanning, or eye gazing.
           While many groups benefit from AAC devices, core users include any individuals
           who have difficulty producing speech due to neurological or physical conditions.
-          This includes individuals with aphasia, autism, apraxia, and traumatic brain injury.
           <br />
           <br />
           Made to help users increase their everyday independence and connections with others, AAC
           devices serve a crucial need but can cost thousands of dollars for high-tech models.
-          This barrier to access led me to consider how digital applications
-          can attempt to fill the same role; for example, in the case where a
-          user already possesses a standard tablet, they could rely on an app instead of
-          purchasing a new device.
         </div>
         {/* <img className="project-img" src={aacexample} alt="aac-example" /> */}
         <div className="mockup-small">
@@ -170,13 +165,12 @@ function SpeechConnect({ currPage, setCurrPage }) {
         <div className="project-text">
           To better understand the user groups and use cases for AAC devices, I surveyed 4
           professional speech-language pathologists (SLPs) who have experience working with AAC
-          devices. Due to logistical constraints, information was collected via Google Forms
-          in long-form answers.
-          <br />
+          devices.
+          {/* <br />
           <br />
           In addition to defining the user groups, I wanted to explore how traditional
           AAC devices differ from apps, compile a list of professionally recommended apps,
-          and understand the challenges that people face with AAC devices.
+          and understand the challenges that people face with AAC devices. */}
         </div>
       </div>
       <div className="affinity-col">
@@ -302,7 +296,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">MARKET RESEARCH</div>
         <div className="project-text">
-          Based on the survey responses, I looked into 4 of the most popular AAC apps for tablets
+          Based on the SLP responses, I looked into 4 of the most popular AAC apps for tablets
           that currently exist: LAMP Words For Life, TouchChatHD with WordPower, TD Snap, and
           Proloquo2Go. For each app, I was mainly interested in the layout of the central grid view,
           customization capabilities, and UI design.
@@ -311,9 +305,10 @@ function SpeechConnect({ currPage, setCurrPage }) {
           Overall, AAC apps are structured through vocabulary sets for how the grid view
           is organized. Sets vary in sophistication depending on what a
           user would need to communicate and what they are capable of communicating with
-          a device based on their level of experience. For example, apps will usually
+          a device based on their level of experience.
+          {/* For example, apps will usually
           offer a basic/beginner set of vocabulary for users new to AAC, and then users
-          can adjust their set as they learn.
+          can adjust their set as they learn. */}
         </div>
       </div>
       <div id="graphs-meetup" className="graphs">
@@ -432,11 +427,11 @@ function SpeechConnect({ currPage, setCurrPage }) {
           KEY RESEARCH INSIGHTS
         </div>
         <div className="project-text-single">
-          I came away from my survey and interviews with these main insights:
+          I came away from my research with these main insights:
         </div>
         <ul>
           <li>
-            <div className="list-text">There is an extremely broad range of users with different needs who use AAC devices</div>
+            <div className="list-text">Success should be defined by the ease of use and the ability to customize the experience</div>
           </li>
           <li>
             <div className="list-text">Customizability of vocab sets is often limited by user&apos;s needing to pay for more advanced sets</div>
@@ -449,7 +444,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
           </li>
         </ul>
         <div className="project-text-low">
-          After understanding the research results, I created two guiding questions for the design
+          This formed two guiding questions for the design
           process, one for UX design and one for visual design.
         </div>
         <div id="how-might-card-double" className="cap-card">
@@ -527,8 +522,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
         {/* <img id="project-sketches" src={pitsketches} alt="pit-sketches" /> */}
         <div className="subsection-header">HOME (GRID VIEW)</div>
         <div className="project-text">
-          My solution started with the main grid view that acts as the homepage of the app.
-          In this part of the app, I focused on the user flow of how someone would speak a
+          For the homepage/main grid, I focused on the user flow of how someone would speak a
           sentence, paying attention to how words and categories are organized in the grid.
           Across 3 iterations, the homepage ultimately featured:
           <ul>
@@ -537,9 +531,9 @@ function SpeechConnect({ currPage, setCurrPage }) {
                 <span style={{ 'font-weight': '600' }}>Word & category buttons </span>
                 in the grid, organized based on how sentences would be commonly structured
                 (pronouns and nouns on far left of grid).
-                Category buttons were ultimately moved to the bottom right since SLPs noted that
+                {/* Category buttons were ultimately moved to the bottom right since SLPs noted that
                 users would benefit from commonly used words being in the first row instead,
-                especially if interacting through scanning or eye gazing.
+                especially if interacting through scanning or eye gazing. */}
               </div>
             </li>
             <li>
@@ -547,9 +541,10 @@ function SpeechConnect({ currPage, setCurrPage }) {
                 <span style={{ 'font-weight': '600' }}>Keyboard & Search buttons </span>
                 included in the grid as additional buttons. SLPs recommend a keyboard feature to
                 allow flexibility in communication style if a user would prefer to type. The search
-                function would help users locate a word in the grid. Keyboard and Search were
+                function would help users locate a word in the grid.
+                {/* Keyboard and Search were
                 moved from the navigation bar to the grid since they would be features contained in
-                the grid view, not separate pages in the app.
+                the grid view, not separate pages in the app. */}
               </div>
             </li>
             <li>
@@ -563,7 +558,8 @@ function SpeechConnect({ currPage, setCurrPage }) {
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Top bar to display words </span>
                 that a user spoke, meant to promote literacy and to help user track what
-                they are communicating. This includes the option to clear a word from the bar.
+                they are communicating.
+                {/* This includes the option to clear a word from the bar. */}
               </div>
             </li>
           </ul>
@@ -584,10 +580,11 @@ function SpeechConnect({ currPage, setCurrPage }) {
           The final design demonstrates an example of how a user&apos;s grid could
           be set up with the general button layout outlined in the wireframes. Features
           use the main orange color while word buttons are assigned a color based on the
-          part of speech. In the example of a category page, the Keyboard and Search
+          part of speech.
+          {/* In the example of a category page, the Keyboard and Search
           buttons remain in their original
           position to enforce the idea from user research that buttons should generally
-          have one consistent motor pattern for interaction.
+          have one consistent motor pattern for interaction. */}
         </div>
       </div>
       <div className="mockup-col">
@@ -684,9 +681,10 @@ function SpeechConnect({ currPage, setCurrPage }) {
           specify the word and optional category before adding a picture. This decision
           reflected feedback about how the first iteration made it confusing on whether
           a picture was required for a word to be added (since some users may not want
-          to add a picture). The final design also uses the updated title &ldquo;Add Word To
+          to add a picture).
+          {/* The final design also uses the updated title &ldquo;Add Word To
           Database&rdquo; since SLPs commented that &ldquo;Add Word&rdquo; could be confused
-          with adding to the current main grid view.
+          with adding to the current main grid view. */}
         </div>
       </div>
       <div className="mockup-col">

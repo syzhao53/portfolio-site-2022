@@ -13,6 +13,7 @@ import pennintouch from '../assets/pennintouch-mockup.png';
 import speechconnect from '../assets/speechconnect-mockup.png';
 import chapter from '../assets/chapter-mockup.png';
 import cookbooked from '../assets/chapter-mockup.png';
+import chase from '../assets/chase-mockup.png';
 import pennapps from '../assets/pennapps-mockup.png';
 import icecream from '../assets/ice-cream.png';
 import logi from '../assets/logi-mockup.png';
@@ -41,6 +42,8 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
       navigate('/cookbooked');
     } else if (name === 'illustrations') {
       navigate('/illustrations');
+    } else if (name === 'chase') {
+      navigate('/chase');
     }
   };
 
@@ -65,7 +68,7 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
           HI, I&apos;M SYLVIA ZHAO
         </div>
         <div className="paragraph">
-          UX & Visual Designer &middot; UX Design Analyst (DDP) @ JPMorgan Chase & Co.
+          UX & Visual Designer &middot; UX Design Analyst @ JPMorgan Chase & Co.
           <br />
           UPenn Cognitive Science & Computer Science graduate
         </div>
@@ -82,6 +85,30 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
       {/* <img id="arrow" src={Arrow} alt="arrow svg" /> */}
       <div id="work">Work</div>
       <div className="grid">
+      <div className="grid-row">
+          <div className="gcard-lwrap" onClick={() => goToProject('chase')}>
+            <img className="grid-img" src={chase} alt="chase logo mockup" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                JPMorgan Chase & Co.
+              </div>
+              <div className="gcard-text">
+                Chase Home Lending
+              </div>
+            </div>
+          </div>
+          <div className="gcard-rwrap" onClick={() => goToProject('meetup')}>
+            <img className="grid-img" src={meetup} alt="meetup mockup" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                Cookbooked
+              </div>
+              <div className="gcard-text">
+                Innovating on digital recipe interactions
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="grid-row">
           <div className="gcard-lwrap" onClick={() => goToProject('speechconnect')}>
             <img className="grid-img" src={speechconnect} alt="speechconnect mockup" />
@@ -106,7 +133,7 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
             </div>
           </div>
         </div>
-        <div className="grid-row">
+        {/* <div className="grid-row">
           <div className="gcard-lwrap"  onClick={() => goToProject('chapter')}>
             <img className="grid-img" src={chapter} alt="chapter mockup" />
             <div className="gcard-label">
@@ -114,7 +141,6 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
                 Chapter
               </div>
               <div className="gcard-text">
-                {/* Innovating on digital recipe interactions */}
                 Designing a virtual book club experience
               </div>
             </div>
@@ -130,7 +156,7 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="grid-row">
           <div className="gcard-lwrap" onClick={() => goToProject('logitech')}>
             <img className="grid-img" src={logi} alt="logi mockup" />

@@ -154,12 +154,49 @@ html {
   cursor: pointer;
 }
 
+.about-icon {
+  width: 9%;
+  margin: 0 .5rem 0 0;
+}
+
+.about-icon-small {
+  width: 8%;
+  margin: 0 .5rem 0 0;
+}
+
+#about-link {
+  display: flex;
+  flex-direction: row;
+  color: #033E57; 
+  text-decoration: none;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+#about-link:hover {
+  color: #033E57; 
+  text-decoration: underline;
+}
+
 #about-flex {
   display: flex;
   flex-direction: row;
   width: 100%;
   margin: 1rem 0 8rem 0;
   align-items: flex-start;
+}
+
+#contact-card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  /* border-color: #eaeaea;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #ffffff;
+  border-radius: 7px;
+  padding: 2rem 3rem 2rem 3rem; */
 }
 
 #headshot {

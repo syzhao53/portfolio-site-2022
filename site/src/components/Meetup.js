@@ -98,11 +98,11 @@ function Meetup({ currPage, setCurrPage }) {
           <div className="section-lflex">
             <div className="section-header" id="overview">Overview</div>
             <div className="project-ltext-zero">
-              Scheduling meetings can often become a laborious process of
+              {/* Scheduling meetings can often become a laborious process of
               coordination between organizers sending out invites and attendees
               providing their availability.
               <br />
-              <br />
+              <br /> */}
               Inspired by past difficulties with the popular scheduling platform When2meet,
               this case study aimed to create a more efficient and usable solution for
               people providing their availability for group meetings. The design process began with
@@ -132,8 +132,9 @@ function Meetup({ currPage, setCurrPage }) {
         </div>
         <div className="section-header" id="when2meet">When2meet</div>
         <div className="project-text">
-          In work settings without shared calendars, many people rely on When2meet to coordinate
-          group meetings. Operating as a web app, When2meet has one person send out a link from
+          {/* In work settings without shared calendars, many people rely on When2meet to coordinate
+          group meetings. */}
+          Operating as a web app, When2meet has one person send out a link from
           the platform to the rest of their team members to gather their availability during a
           specified period of time. Although When2meet offers a convenient solution, the interface
           suffers from poor usability, lacking a mobile responsive site.
@@ -228,9 +229,10 @@ function Meetup({ currPage, setCurrPage }) {
         <div className="project-text">
           For interviews, I spoke with 2 undergraduate students and 1 graduate student who had
           previous corporate work experience as well. These students were selected for their
-          experiences managing teams and clubs. I spoke with each of them on the factors that are
+          experiences managing teams and clubs.
+          {/* I spoke with each of them on the factors that are
           most important to consider when sending out a meeting invite as well as thought processes
-          when providing availability.
+          when providing availability. */}
           <br />
           <br />
           Synthesis of comments from the interviews was consistent with survey results with people
@@ -383,8 +385,10 @@ function Meetup({ currPage, setCurrPage }) {
               before expanding to a desktop solution after finalizing a mobile solution.
               <br />
               <br />
-              Additionally, to maintain the convenience valued by users of When2meet, the interface
-              was framed as a web app without need for an account. User testing was conducted
+              {/* Additionally, to maintain the convenience valued by users of When2meet,
+              the interface
+              was framed as a web app without need for an account. */}
+              User testing was conducted
               after wireframing and the first iteration of a prototype with the full UI design.
             </div>
           </div>
@@ -430,10 +434,11 @@ function Meetup({ currPage, setCurrPage }) {
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Visual representation of availability </span>
                 through differently shaded blocks (screen 1) to provide high-level information.
-                This follows When2meet&apos;s method of displaying availability where a darker
-                block indicates that more people in the group are available at the specified time.
-                User research showed that meeting invitees are not as concerned with specific
+                This mirrors When2meet where a darker
+                block a higher number of available people.
+                {/* User research showed that meeting invitees are not as concerned with specific
                 people&apos;s availability, only the number of people available at a given timeslot.
+                */}
               </div>
             </li>
             <li>
@@ -446,9 +451,8 @@ function Meetup({ currPage, setCurrPage }) {
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Reliance on tapping and typing interactions </span>
-                to give the user more control over how they interact with the interface (screen 4).
-                The choice of interaction addresses how users disliked When2meet&apos;s imprecise
-                method of dragging in a grid to indicate availability.
+                to give the user more control (screen 4), addressing how users disliked
+                When2meet&apos;s imprecise method of dragging in a grid.
               </div>
             </li>
           </ul>
@@ -593,9 +597,11 @@ function Meetup({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">USER TESTING: ROUND 2</div>
         <div className="project-text">
-          Continuing with the same users from the first round of testing, I collected feedback on
-          the second prototype. With this second round, comments mostly focused on how information
-          could be better indicated visually:
+          {/* Continuing with the same users from the first round of testing,
+          I collected feedback on
+          the second prototype. */}
+          With this round of feedback on the second prototype, comments mostly focused on
+          how information could be better indicated visually:
           <ul>
             <li>
               <div className="list-text">
