@@ -575,18 +575,18 @@ function SpeechConnect({ currPage, setCurrPage }) {
           </div>
         </div>
       </div>
-      <div className="project-wrap">
+      {/* <div className="project-wrap">
         <div className="project-text">
           The final design demonstrates an example of how a user&apos;s grid could
           be set up with the general button layout outlined in the wireframes. Features
           use the main orange color while word buttons are assigned a color based on the
           part of speech.
-          {/* In the example of a category page, the Keyboard and Search
+          In the example of a category page, the Keyboard and Search
           buttons remain in their original
           position to enforce the idea from user research that buttons should generally
-          have one consistent motor pattern for interaction. */}
+          have one consistent motor pattern for interaction.
         </div>
-      </div>
+      </div> */}
       <div className="mockup-col">
         <div className="mockup-flex-fix">
           <img className="mockup-img" src={speechgridui} alt="speech-grid-ui" />

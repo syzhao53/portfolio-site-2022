@@ -31,7 +31,7 @@ function About({ currPage, setCurrPage }) {
         {/* <img className="project-img" src={headshot} alt="headshot" /> */}
         <div id="about-flex">
           <img id="headshot" src={headshot} alt="headshot" />
-          <div className="section-rflex">
+          <div className="about-rflex">
             <div className="project-text">
               Hi! I&apos;m a UX and visual designer based in the Dallas-Fort Worth area.
               I&apos;m currently a UX Design Analyst at JPMorgan Chase as part of the Design

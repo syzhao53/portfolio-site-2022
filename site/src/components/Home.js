@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
 import illustration from '../assets/landing-illustration.png';
 import Arrow from '../assets/arrow.svg';
+import cardArrow from '../assets/card-arrow.svg';
 import Heart from '../assets/heart.svg';
 import meetup from '../assets/meetup-mockup-dev.png';
 import pennintouch from '../assets/pennintouch-mockup.png';
@@ -90,27 +91,33 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
       <div className="grid">
         <div className="grid-row-sm">
           <div className="gcard-lwrap-sm" onClick={() => goToProject('chase')}>
-            <img className="grid-logo" src={chase} alt="chase logo" />
-            <div className="gcard-label-sm">
-              <div className="gcard-heading">
-                JPMorgan Chase & Co.
-              </div>
-              <div className="gcard-text">
-                {/* Design Development Program | */}
-                Chase Home Lending
+            <div className="gcard-sm-inner">
+              <img className="grid-logo" src={chase} alt="chase logo" />
+              <div className="gcard-label-sm">
+                <div className="gcard-heading">
+                  JPMorgan Chase & Co.
+                </div>
+                <div className="gcard-text">
+                  {/* Design Development Program | */}
+                  Chase Home Lending
+                </div>
               </div>
             </div>
+            {/* <img className="card-arrow" src={cardArrow} alt="arrow icon" /> */}
           </div>
           <div className="gcard-rwrap-sm" onClick={() => goToProject('logi')}>
-          <img className="grid-logo" src={logi} alt="logi logo" />
-            <div className="gcard-label-sm">
-              <div className="gcard-heading">
-                Logitech
-              </div>
-              <div className="gcard-text">
-                Design operations internship
+            <div className="gcard-sm-inner">
+              <img className="grid-logo" src={logi} alt="logi logo" />
+              <div className="gcard-label-sm">
+                <div className="gcard-heading">
+                  Logitech
+                </div>
+                <div className="gcard-text">
+                  Design operations internship
+                </div>
               </div>
             </div>
+            {/* <img className="card-arrow" src={cardArrow} alt="arrow icon" /> */}
           </div>
         </div>
       </div>
