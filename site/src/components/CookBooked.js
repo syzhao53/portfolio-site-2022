@@ -9,22 +9,27 @@ import existingRecipes from '../assets/existing-recipes.png';
 import notionRecipes from '../assets/notion-recipes.png';
 // import meetupGif from '../assets/meetup-mobile.gif';
 // import sketch from '../assets/cookbooked-sketch.png';
+import features from '../assets/cookbooked-features.png';
 import paper1 from '../assets/cookbooked-paper-1.png';
 import paper2 from '../assets/cookbooked-paper-2.png';
 import moodboard from '../assets/cookbooked-moodboard.png';
+import hifi1 from '../assets/cookbooked-hifi-1.png';
+import hifi2 from '../assets/cookbooked-hifi-2.png';
+import library1 from '../assets/cookbooked-library-1.png';
+import revis1 from '../assets/cookbooked-hifi-revis-1.png';
+import revis2 from '../assets/cookbooked-hifi-revis-2.png';
+import revis3 from '../assets/cookbooked-hifi-revis-3.png';
+import revis4 from '../assets/cookbooked-hifi-revis-4.png';
+import revisSummary from '../assets/cookbooked-revis-summary.png';
+// import revisAll from '../assets/cookbooked-all-revis.png';
+import variant1 from '../assets/cookbooked-variant-1.png';
+import variant2 from '../assets/cookbooked-variant-2.png';
+import final1 from '../assets/cookbooked-final-1.png';
+import final2 from '../assets/cookbooked-final-2.png';
+import final3 from '../assets/cookbooked-final-3.png';
 import styleGuide from '../assets/cookbooked-style-guide.png';
-import meetproto1 from '../assets/meet-proto-1.png';
-import meetproto2 from '../assets/meet-proto-2.png';
-import meetproto3 from '../assets/meet-proto-3.png';
-import meettest1 from '../assets/meet-test-1.png';
-import meetmobilecards from '../assets/meet-mobile-cards.png';
-import meetdeskcards from '../assets/meet-desk-cards.png';
-import meetdesk from '../assets/meet-desk.png';
-// import meetdesk1 from '../assets/meet-desk-1.png';
-// import meetdesk2 from '../assets/meet-desk-2.png';
-// import meetdevicemobile from '../assets/meet-device-mobile.png';
-// import meetdevicedesk from '../assets/meet-device-desk.png';
-import meetdevicemock from '../assets/meet-device-mock.png';
+import kitchenMock from '../assets/cookbooked-kitchen-mock.png';
+
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -60,8 +65,8 @@ function CookBooked({ currPage, setCurrPage }) {
           </Link>
         </div>
         <div className="table-text5 nds">
-          <Link to="/cookbooked#prototype">
-            <p className="letter">RESULTS</p>
+          <Link to="/cookbooked#outcome">
+            <p className="letter">OUTCOME</p>
           </Link>
         </div>
         <div className="table-text6 nds">
@@ -107,7 +112,7 @@ function CookBooked({ currPage, setCurrPage }) {
               course at the University of
               Pennsylvania. Each member of the team was involved in the
               research, design, and programming of the web app.
-              The final app was implemented with React and Tailwind CSS.
+              The final app was implemented with React along with the Tailwind CSS library.
               <br />
               <br />
               <ul>
@@ -282,13 +287,14 @@ function CookBooked({ currPage, setCurrPage }) {
           </div>
           <div className="cap-card-text">
             How might we design a digital recipe software that leverages interactive features to
-            organize recipe creation and execution?
+            for home cooks to organize and follow recipes?
           </div>
         </div>
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="solution">Solution</div>
             <div className="project-ltext">
+              The final design focused on how users can execute a recipe when cooking.
               With a target audience established, the team went through several iterations
               of sketches, low-fidelity paper and digital prototypes, and high-fidelity digital
               prototypes. Some prototypes were then implemented in React for user testing in
@@ -298,7 +304,6 @@ function CookBooked({ currPage, setCurrPage }) {
               User testing involved qualitative user feedback as well as statistical analysis of
               variants for certain features. The team collected feedback for usability as well as
               visual design throughout evaluations.
-              [ADD SUMMARY MOCKUP OF FEATURES]
             </div>
           </div>
           <div className="section-rflex">
@@ -330,13 +335,14 @@ function CookBooked({ currPage, setCurrPage }) {
             </div>
           </div>
         </div>
+        <img className="features-img" src={features} alt="cookbooked features summary" />
       </div>
       <div className="project-wrap">
         <div className="subsection-header">LOW-FIDELITY IDEATION</div>
         <div className="project-text-low">
           We developed two low-fidelity prototypes using paper to experiment with
           modular elements of a recipe interface. The first prototype uses a standard one page
-          layout, while the second prototype splits a recipe into sections for a more modular
+          layout, while the second prototype splits a recipe into subsections for a more modular
           approach. Across both prototypes, we included
           the following features:
           <ul>
@@ -348,8 +354,8 @@ function CookBooked({ currPage, setCurrPage }) {
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Ingredient quantities displayed above steps </span>
-                when hovering over the ingredient mentioned in a step.
+                <span style={{ 'font-weight': '600' }}>Inline ingredient quantities </span>
+                displayed when hovering over the ingredient mentioned in a step.
               </div>
             </li>
             <li>
@@ -377,7 +383,7 @@ function CookBooked({ currPage, setCurrPage }) {
           <div className="iteration-caption">
             Paper prototype 1 (standard layout)
             & paper prototype 2
-            (modular sections layout)
+            (modular subsections layout)
           </div>
         </div>
       </div>
@@ -413,9 +419,10 @@ function CookBooked({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">HIGH-FIDELITY PROTOTYPE</div>
         <div className="project-text">
-          To prepare for user testing, I created a simple prototype of the app for the user flow
-          of adding a timeslot to provide availability for a day. UI design choices involved:
-          <ul>
+          In order to conduct usability testing, we prototyped the interactions
+          for checkboxes, the sidebar, timers, and inline ingredient quantity display.
+          A library page contextualizes the recipe experience
+          {/* <ul>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Green and mint color palette </span>
@@ -430,92 +437,139 @@ function CookBooked({ currPage, setCurrPage }) {
                 friendly
               </div>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={meetproto1} alt="meet-proto-1" />
+      <div className="mockup-col-sm">
+        <div className="mockup-flex-fix-first">
+          <img className="mockup-img-lined" src={library1} alt="library view" />
+        </div>
+        <div className="mockup-flex-fix-first">
+          <img className="mockup-img-lined" src={hifi1} alt="intro view" />
+        </div>
+        <div className="mockup-flex-fix">
+          <img className="mockup-img-lined" src={hifi2} alt="main recipe section view" />
+        </div>
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">USABILITY TESTING</div>
         <div className="project-text">
-          Using the initial prototype, I conducted user testing with 3 students, 1 from the user
-          interviews and 2 others who had responded to the survey and were
-          familiar with the project context. Users commented on:
+          Using the hi-fi prototype, we collected feedback from 7 users and revised our
+          intial screens.
+          Revisions centered around:
           <ul>
-            {/* <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Pleasant UI design </span>
-                with a simple aesthetic and clear emphasis on actionable areas
-              </div>
-            </li> */}
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Good clarity with tapping interaction </span>
-                for actually inputting availability, more mobile-friendly than dragging
+                <span style={{ 'font-weight': '600' }}>Emphasized current recipe subsection </span>
+                with a stronger highlighted treatment in the sidebar
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Lack of clarity with the home page </span>
-                in terms of not understanding whether the main view shows group or individual
-                availability
+                <span style={{ 'font-weight': '600' }}>Functionality in library </span>
+                added for searching, filtering, and creating recipes
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>No visualization of &ldquo;My availability&rdquo; </span>
-                since timeslots are all displayed as text instead of colored blocks like the
-                group section
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Too many clicks </span>
-                required to even get to the adding/editing availability functionality (3 clicks
-                before availability is even added)
+                <span style={{ 'font-weight': '600' }}>Timer cancellation </span>
+                added to improve error prevention
               </div>
             </li>
           </ul>
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={meettest1} alt="meet-test-1" />
+      {/* <div className="mockup-col-sm">
+        <div className="mockup-flex-fix-first">
+          <img className="mockup-img-lined" src={revisAll} alt="library view" />
+        </div>
+      </div> */}
+      <div className="mockup-col-sm">
+        <div className="mockup-flex-fix-first">
+          <img className="mockup-img" src={revisSummary} alt="summary of revisions" />
+        </div>
+        <div className="mockup-row-first">
+          <img className="mockup-limg-row" src={revis1} alt="revision of library view" />
+          <img className="mockup-rimg-row" src={revis2} alt="revision of intro page" />
+        </div>
+        <div className="mockup-row-first">
+          <img className="mockup-limg-row" src={revis3} alt="revision of main recipe section view" />
+          <img className="mockup-rimg-row" src={revis4} alt="revision of main recipe section view with timers running" />
+        </div>
+        <div className="mockup-flex-fix">
+          <div className="iteration-caption">
+            Main changes and notes
+          </div>
+        </div>
+        {/* <div className="mockup-flex-fix-first">
+          <img className="mockup-img-lined" src={library1} alt="library view revision" />
+        </div>
+        <div className="mockup-flex-fix-first">
+          <img className="mockup-img-lined" src={library1} alt="library view revision" />
+        </div>
+        <div className="mockup-flex-fix-first">
+          <img className="mockup-img-lined" src={library1} alt="library view revision" />
+        </div> */}
       </div>
       <div className="project-wrap">
-        <div className="subsection-header-sec">PROTOTYPE: ITERATION 2</div>
+        <div className="project-text">
+          Since we received mixed feedback on the inline ingredient hovering,
+          we conducted an A/B test on the following variants for ingredient display:
+          <ul>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Variant 1: Separate ingredients list & keeping inline hovering </span>
+                to address concerns about the hovering&apos;s convenience while still having
+                the hover as an option
+              </div>
+            </li>
+            <li>
+              <div className="list-text">
+                <span style={{ 'font-weight': '600' }}>Variant 2: Ingredients under steps & removing inline hovering </span>
+                for a more direct approach
+              </div>
+            </li>
+          </ul>
+          <div className="project-text-low">
+            By timing how long it took users to find a specified ingredient quantity for a step,
+            we used a t-test to determine that users struggled less with variant 2.
+            A Likert scale survey on perceived task difficulty also demonstrated that
+            <span style={{ 'font-weight': '600' }}> variant 2 was a more convenient, intuitive experience.</span>
+          </div>
+        </div>
+      </div>
+      <div className="mockup-col-sm">
+        <div className="mockup-row">
+          <img className="mockup-limg-row" src={variant1} alt="variant 1 with separate list & hovering" />
+          <img className="mockup-rimg-row" src={variant2} alt="variant 2 with ingredients under steps" />
+        </div>
+        <div className="mockup-flex-fix">
+          <div className="iteration-caption">
+            Variants 1 & 2 for A/B testing
+          </div>
+        </div>
+      </div>
+      <div className="project-wrap">
+        <div className="subsection-header-sec">FINAL DESIGN</div>
         <div className="project-text">
           Based on the comments from Round 1 of user testing, I reorganized how the &ldquo;Add
           availability&rdquo; user flow begins:
           streamlined
           the “Add availability” user flow and created clear emphasis on separate
-          <ul>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Separate &ldquo;Me&rdquo; & &ldquo;Group&rdquo; </span>
-                sections to address the confusion on what information the main
-                view is initially presenting
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Reduced number of clicks </span>
-                for adding/editing availability to streamline interaction
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Calendar layout </span>
-                to improve visualization of availability
-              </div>
-            </li>
-          </ul>
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={meetproto2} alt="meet-proto-2" />
+      <div className="mockup-col-sm-last">
+        <div className="mockup-flex-fix-first">
+          <img className="mockup-img-lined" src={final1} alt="library view final" />
+        </div>
+        <div className="mockup-flex-fix-first">
+          <img className="mockup-img-lined" src={final2} alt="intro view final" />
+        </div>
+        <div className="mockup-flex-fix">
+          <img className="mockup-img-lined" src={final3} alt="main recipe section view final" />
+        </div>
       </div>
-      <div className="project-wrap">
+      {/* <div className="project-wrap">
         <div className="subsection-header-sec">USER TESTING: ROUND 2</div>
         <div className="project-text">
           Continuing with the same users from the first round of testing, I collected feedback on
@@ -524,26 +578,20 @@ function CookBooked({ currPage, setCurrPage }) {
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>No side-by-side comparison of group & personal availability </span>
+                <span style={{ 'font-weight': '600' }}>
+                No side-by-side comparison of group & personal availability </span>
                 limits the information a user has at their immediate disposal when inputting their
                 own information
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Preference for further visual representation of availability </span>
+                <span style={{ 'font-weight': '600' }}>
+                Preference for further visual representation of availability </span>
                 since calendar visualizes overall time period across days but not timeslots on
                 individual days; suggestions made for a grid view calendar
               </div>
             </li>
-            {/* <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Confusion with highlight vs.
-                underline on date </span>
-                for which one is meant to indicate selected date or whether availability
-                was provided
-              </div>
-            </li> */}
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>One-click interaction </span>
@@ -553,8 +601,8 @@ function CookBooked({ currPage, setCurrPage }) {
             </li>
           </ul>
         </div>
-      </div>
-      <div className="project-wrap">
+      </div> */}
+      {/* <div className="project-wrap">
         <div className="subsection-header-sec">PROTOTYPE: ITERATION 3</div>
         <div className="project-text">
           The final solution mainly addresses the confusions and concerns around visual
@@ -568,33 +616,18 @@ function CookBooked({ currPage, setCurrPage }) {
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Scrollable side-by-side comparison columns </span>
+                <span style={{ 'font-weight': '600' }}>
+                Scrollable side-by-side comparison columns </span>
                 in the grid view to solve for the issue of not having the ability to compare
                 personal and group availability in the previous prototype
               </div>
             </li>
-            {/* <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Highlighted date indicates selected
-                date </span>
-                instead of a date with availability; this choice matches how a highlighted circle on
-                &ldquo;AM&rdquo; or &ldquo;PM&rdquo; indicates selection
-              </div>
-            </li> */}
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Meeting information section </span>
                 at the top of the screen to contextualize the meeting invite
               </div>
             </li>
-            {/* <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Tapping in the grid to add a timeslot </span>
-                in the grid view would allow for automatic population of the new timeslot&apos;s
-                starting time, helping counteract the additional tap added with the interaction
-                of switching from the main calendar to the grid view
-              </div>
-            </li> */}
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Info on number of people available </span>
@@ -605,16 +638,17 @@ function CookBooked({ currPage, setCurrPage }) {
             </li>
           </ul>
         </div>
-      </div>
-      <div className="mockup-col">
+      </div> */}
+      {/* <div className="mockup-col">
         <div className="mockup-flex-fix">
           <img className="mockup-img" src={meetproto3} alt="meet-proto-3" />
         </div>
         <div className="mockup-flex-fix">
-          <img id="meet-mobile-cards" className="mockup-img" src={meetmobilecards} alt="meet-proto-3" />
+          <img id="meet-mobile-cards" className="mockup-img"
+          src={meetmobilecards} alt="meet-proto-3" />
         </div>
-      </div>
-      <div className="project-wrap">
+      </div> */}
+      {/* <div className="project-wrap">
         <div className="subsection-header-sec">DESKTOP VERSION</div>
         <div className="project-text">
           After finalizing the mobile prototype, I created a desktop version to see how the mobile
@@ -623,68 +657,85 @@ function CookBooked({ currPage, setCurrPage }) {
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Timeslot preview when adding/editing availability </span>
+                <span style={{ 'font-weight': '600' }}>
+                Timeslot preview when adding/editing availability </span>
                 shown when a user taps a block of availability
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Hover interactions for editing & group availability info </span>
+                <span style={{ 'font-weight': '600' }}>
+                Hover interactions for editing & group availability info </span>
                 shown when a user taps a block of availability
               </div>
             </li>
           </ul>
         </div>
-      </div>
-      <div id="last-mockup-col">
+      </div> */}
+      {/* <div id="last-mockup-col">
         <div className="mockup-flex-fix">
           <img className="mockup-img" src={meetdesk} alt="meet-desk" />
         </div>
         <div className="mockup-flex-fix">
-          <img id="meet-desk-cards" className="mockup-img" src={meetdeskcards} alt="meet-desk-cards" />
+          <img id="meet-desk-cards" className="mockup-img" src={meetdeskcards}
+          alt="meet-desk-cards" />
         </div>
-      </div>
+      </div> */}
       <div className="project-wrap">
-        <div className="section-header" id="prototype">Features</div>
+        <div className="section-header" id="outcome">Outcome</div>
+        <div className="cap-card">
+          <div className="cap">
+            <div className="empty">c</div>
+          </div>
+          <div className="cap-card-text">
+            &ldquo;I really love the timer!
+            I usually have one timer on the microwave, one on the oven,
+            and one on my phone. I love that I can have multiple timers in the app.&rdquo;
+            <span style={{ 'font-style': 'italic' }}> &mdash; Tester</span>
+          </div>
+        </div>
         <div className="project-text">
-          Interact with the final prototypes at the links below:
+          For final feedback on CookBooked, users were very positive about the
+          app&apos;s visual aesthetic and usability. Users appreciated the flexibility of the
+          design and the thought given to a streamlined layout for following recipes.
+          <br />
+          <br />
+          Check out our deployed site and our code below:
           <ul>
             <li>
               <div className="list-text">
-                <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/AHxq5BvD3YoUd5bdFdI9OC/Meetup-Prototype-(Mobile)?node-id=2%3A28&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A28">
-                  Mobile Solution Prototype
+                <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://cookbooked-mocha.vercel.app/recipe/apple_pie">
+                  Deployed web app
                 </a>
               </div>
             </li>
             <li>
               <div className="list-text">
-                <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/C9TwlLjWPRFaHFCLNZ32v2/Meetup-Prototype-(Desktop)?node-id=3%3A394&scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A21">
-                  Desktop Solution Prototype
+                <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://github.com/jasminecao/cookbooked">
+                  GitHub repository
                 </a>
               </div>
             </li>
           </ul>
         </div>
         <div className="proto-flex">
-          <img className="device-mock" src={meetdevicemock} alt="meet-device-mock" />
+          <img className="device-mock" src={kitchenMock} alt="meet-device-mock" />
           {/* <img className="device-mock-desk" src={meetdevicedesk} alt="meet-device-desk" /> */}
         </div>
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
-          As a student who has thought a lot about the pain points with group meeting scheduling,
-          this project provided an opportunity to understand how people think about
-          the digital tools and the factors that go into their processes. By conducting
-          user research and testing, I learned to translate those key factors into
-          visual representations of information that would be the most convenient to users.
+          Throughout the process of creating CookBooked, we
+          learned about the best ways to balance creative features
+          with simplicity and clarity for cooks. We hope that our
+          design effectively reimagines the digital recipe experience and
+          moves beyond the capabilities of existing text editors for recipe creation.
           <br />
           <br />
-          While the final solution addresses the main pain point of mobile usability,
-          further exploration could be done on how the platform
-          would appear from the organizer side. Since
-          this project only focused on the invitee side, research on the
-          other perspective could be an interesting way to complete an understanding
-          of the problem. This current solution still explores a side of the problem
-          that is impactful to understanding how people work to collaborate efficiently.
+          Although we explored many methods for recipe organization,
+          further user research would allow us to understand how cooks in
+          different situations may need additional tools. Additional user
+          research could expand the app towards voice control interactions
+          as well as the editing functionalities the current design implicitly assumes.
         </div>
       </div>
       <Footer />
