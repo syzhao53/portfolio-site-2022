@@ -35,9 +35,10 @@ function About({ currPage, setCurrPage }) {
             <div className="project-text">
               Hi! I&apos;m a UX and visual designer based in the Dallas-Fort Worth area.
               I&apos;m currently a UX Design Analyst at JPMorgan Chase as part of the Design
-              Development Program. Previously, I have worked on web experiences for Design
-              Operations
-              at Logitech and have also created app and marketing assets for startups.
+              Development Program. I graduated from the University of Pennsylvania with a
+              degree in Cognitive Science and Computer Science.
+              Previously, I have worked on web experiences for Design
+              Operations at Logitech and have also created app and marketing assets for startups.
               <br />
               <br />
               As a designer, I&apos;m interested in how people connect with technology
