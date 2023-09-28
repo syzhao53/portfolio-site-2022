@@ -126,6 +126,10 @@ html {
   /* background-color: blue; */
 }
 
+.gif {
+  width: 50%;
+}
+
 #download-flex {
   display: flex;
   flex-direction: row;
@@ -1378,21 +1382,41 @@ ul {
 .mockup-row {
   display: flex;
   flex-direction: row;
-  padding: 4rem 4rem 4rem 4rem;
+  /* padding: 4rem 4rem 4rem 4rem; */
   margin: auto;
   width: 65%;
 }
 
-.mockup-img-row {
-  width: 100%;
+.mockup-limg-row {
+  width: 49%;
+  margin: 0 2% 0 0;
+  border-radius: 5px;
+  border-color: #e3e3e3;
+  border-style: solid;
+  border-width: 1px;
 }
 
+.mockup-rimg-row {
+  width: 49%;
+  border-radius: 5px;
+  border-color: #e3e3e3;
+  border-style: solid;
+  border-width: 1px;
+}
 
 .mockup-col {
-  /* background-color: #F4FAFF; */
+  /* background-color:pink; */
   display: flex;
   flex-direction: column;
   padding: 4rem 4rem 4rem 4rem;
+  margin: auto;
+}
+
+.mockup-col-sm {
+  /* background-color:pink; */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 4rem 4rem 4rem;
   margin: auto;
 }
 
@@ -1400,6 +1424,13 @@ ul {
   display: flex;
   flex-direction: row;
   margin: 0;
+  padding: 0;
+}
+
+.mockup-flex-fix-first {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 2rem 0;
   padding: 0;
 }
 

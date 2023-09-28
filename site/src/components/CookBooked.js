@@ -7,10 +7,12 @@ import '../assets/index.css';
 import cookbooked from '../assets/cookbooked-mockup.png';
 import existingRecipes from '../assets/existing-recipes.png';
 import notionRecipes from '../assets/notion-recipes.png';
+// import meetupGif from '../assets/meetup-mobile.gif';
 // import sketch from '../assets/cookbooked-sketch.png';
 import paper1 from '../assets/cookbooked-paper-1.png';
 import paper2 from '../assets/cookbooked-paper-2.png';
-import meetwire2 from '../assets/meet-wire-2.png';
+import moodboard from '../assets/cookbooked-moodboard.png';
+import styleGuide from '../assets/cookbooked-style-guide.png';
 import meetproto1 from '../assets/meet-proto-1.png';
 import meetproto2 from '../assets/meet-proto-2.png';
 import meetproto3 from '../assets/meet-proto-3.png';
@@ -94,6 +96,7 @@ function CookBooked({ currPage, setCurrPage }) {
         <img className="project-img" src={cookbooked} alt="cookbooked mockup" />
         <div className="section-flex">
           <div className="section-lflex">
+            {/* <img className="gif" src={meetupGif} alt="all recipes screenshot" /> */}
             <div className="section-header" id="overview">Overview</div>
             <div className="project-ltext-zero">
               CookBooked is an interactive web application designed to help cooks follow
@@ -330,41 +333,55 @@ function CookBooked({ currPage, setCurrPage }) {
       </div>
       <div className="project-wrap">
         <div className="subsection-header">LOW-FIDELITY IDEATION</div>
-        <div className="project-text">
-          The first iteration of my solution focused on displaying the group&apos;s
-          availability on the main page and having the user add their availability
-          for a given day by clicking “Edit” on a card in the “My availability” section. Primary
-          considerations in this first iteration included:
+        <div className="project-text-low">
+          We developed two low-fidelity prototypes using paper to experiment with
+          modular elements of a recipe interface. The first prototype uses a standard one page
+          layout, while the second prototype splits a recipe into sections for a more modular
+          approach. Across both prototypes, we included
+          the following features:
           <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Visual representation of availability </span>
-                through differently shaded blocks (screen 1) to provide high-level information.
-                This follows When2meet&apos;s method of displaying availability where a darker
-                block indicates that more people in the group are available at the specified time.
-                User research showed that meeting invitees are not as concerned with specific
-                people&apos;s availability, only the number of people available at a given timeslot.
+                <span style={{ 'font-weight': '600' }}>Embedded timers </span>
+                in recipe steps to prevent juggling multiple applications while cooking.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Separate views for group and individual availability </span>
-                to maintain organization and a different space for the user to
-                update their own information
+                <span style={{ 'font-weight': '600' }}>Ingredient quantities displayed above steps </span>
+                when hovering over the ingredient mentioned in a step.
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Reliance on tapping and typing interactions </span>
-                to give the user more control over how they interact with the interface (screen 4).
-                The choice of interaction addresses how users disliked When2meet&apos;s imprecise
-                method of dragging in a grid to indicate availability.
+                <span style={{ 'font-weight': '600' }}>Checkboxes </span>
+                for users to track their progress of completed steps and
+                ingredients used.
               </div>
             </li>
           </ul>
         </div>
+        <div className="project-text-low">
+          Evaluations found that
+          <span style={{ 'font-weight': '600' }}> users preferred the second paper prototype </span>
+          due to it&apos;s
+          flexibility and readability.
+        </div>
       </div>
-      <div className="mockup-col">
+      <div className="mockup-col-sm">
+        <div className="mockup-row">
+          <img className="mockup-limg-row" src={paper1} alt="paper prototype 1 of CookBooked ideation" />
+          <img className="mockup-rimg-row" src={paper2} alt="paper prototype 1 of CookBooked ideation" />
+        </div>
+        <div className="mockup-flex-fix">
+          <div className="iteration-caption">
+            Paper prototype 1 (standard layout)
+            & paper prototype 2
+            (modular sections layout)
+          </div>
+        </div>
+      </div>
+      {/* <div className="mockup-col">
         <div className="mockup-flex-fix">
           <img className="mockup-img" src={paper1} alt="paper prototype 1 of CookBooked ideation" />
         </div>
@@ -376,44 +393,22 @@ function CookBooked({ currPage, setCurrPage }) {
             Left to right, top to bottom: LAMP, TouchChat, TDSnap, Proloquo2Go
           </div>
         </div>
-        {/* <div className="mockup-row">
-          <div className="mockup-flex-fix">
-            <img className="mockup-img-row" src={paper1}
-            alt="paper prototype 1 of CookBooked ideation" />
-          </div>
-          <div className="mockup-flex-fix">
-            <img className="mockup-img-row" src={paper2}
-            alt="paper prototype 1 of CookBooked ideation" />
-          </div>
-        </div> */}
-      </div>
+      </div> */}
       <div className="project-wrap">
-        <div className="subsection-header-sec">FEEDBACK: LOW-FIDELITY PROTOYPE</div>
+        <div className="subsection-header-sec">VISUAL DESIGN</div>
         <div className="project-text">
-          The second iteration of wireframes made minor adjustments to the
-          way days were displayed in “My availability,” as well as the layout of buttons.
-          <ul>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>&ldquo;Save changes&rdquo; button </span>
-                in &ldquo;My availability&rdquo; was changed to a back arrow in the upper-left
-                corner to better indicate to a user how to return to the main &ldquo;Group
-                availability&rdquo; view.
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>&ldquo;Add timeslot&rdquo; button </span>
-                in the section for editing a specific day&apos;s availability was moved to be
-                grouped closer to the existing timeslots a user has, better associating the
-                button&apos;s action with its results
-              </div>
-            </li>
-          </ul>
+          Working from a mood board we created, the team gravitated
+          towards a minimalist aesthetic with touches of color to match
+          a sense of efficiency and organization.
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={meetwire2} alt="meet-wire-2" />
+      <div className="mockup-col-sm">
+        <div className="mockup-flex-fix-first">
+          <img className="mockup-img-lined" src={moodboard} alt="meet-wire-2" />
+        </div>
+        <div className="mockup-flex-fix">
+          <img className="mockup-img-lined" src={styleGuide} alt="meet-wire-2" />
+        </div>
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">HIGH-FIDELITY PROTOTYPE</div>
