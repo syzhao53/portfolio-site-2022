@@ -37,7 +37,7 @@ function CookBooked({ currPage, setCurrPage }) {
   useEffect(() => {
     setCurrPage('');
     document.title = 'CookBooked | Sylvia Zhao';
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -286,7 +286,7 @@ function CookBooked({ currPage, setCurrPage }) {
             <div className="empty">c</div>
           </div>
           <div className="cap-card-text">
-            How might we design a digital recipe software that leverages interactive features to
+            How might we design a digital recipe software that leverages interactive features
             for home cooks to organize and follow recipes?
           </div>
         </div>
@@ -552,10 +552,8 @@ function CookBooked({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">FINAL DESIGN</div>
         <div className="project-text">
-          Based on the comments from Round 1 of user testing, I reorganized how the &ldquo;Add
-          availability&rdquo; user flow begins:
-          streamlined
-          the “Add availability” user flow and created clear emphasis on separate
+          The final design incorporates feedback across several iterations, delivering
+          a recipe layout using subsections, embedded timers, and progress tracking.
         </div>
       </div>
       <div className="mockup-col-sm-last">
@@ -700,7 +698,7 @@ function CookBooked({ currPage, setCurrPage }) {
           design and the thought given to a streamlined layout for following recipes.
           <br />
           <br />
-          Check out our deployed site and our code below:
+          Check out our deployed site and our code at the links below:
           <ul>
             <li>
               <div className="list-text">

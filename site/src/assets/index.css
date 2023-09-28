@@ -1904,8 +1904,33 @@ ul {
     /* flex-direction: row; */
     margin: 0 0 3rem 0;
   }
+
+  .mockup-col-sm {
+    padding: 1rem;
+    /* flex-direction: row; */
+    margin: 0 0 3rem 0;
+  }
+
+  .mockup-col-sm-last {
+    padding: 1rem;
+    /* flex-direction: row; */
+    margin: 0 0 3rem 0;
+  }
+
+  .mockup-row {
+    width: 100%;
+  }
+  
+  .mockup-row-first {
+    width: 100%;
+  }
   
   .mockup-img {
+    width: 85%;
+    margin: auto;
+  }
+
+  .mockup-img-lined {
     width: 85%;
     margin: auto;
   }

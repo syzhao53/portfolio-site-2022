@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 import '../assets/index.css';
 import headshot from '../assets/headshot.png';
 import linkedin from '../assets/linkedin-icon.svg';
-import download from '../assets/download-icon.svg';
+// import download from '../assets/download-icon.svg';
 import email from '../assets/email-icon.svg';
 import NavBar from './NavBar';
 import Footer from './Footer';
@@ -52,10 +52,10 @@ function About({ currPage, setCurrPage }) {
                     <img className="about-icon-small" src={email} alt="email icon" />
                     syzhaosyz@gmail.com
                   </a>
-                  <a id="about-link" href="sylviazhaoresume.pdf" download="SylviaZhao-Resume">
+                  {/* <a id="about-link" href="sylviazhaoresume.pdf" download="SylviaZhao-Resume">
                     <img className="about-icon-small" src={download} alt="download icon" />
                     Resume
-                  </a>
+                  </a> */}
                   <a id="about-link" href="https://www.linkedin.com/in/sylvia-zhao/">
                     <img className="about-icon" src={linkedin} alt="linkedin icon" />
                     LinkedIn
