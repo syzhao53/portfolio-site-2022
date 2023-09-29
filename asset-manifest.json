@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.1ebb2bc6.css",
-    "main.js": "/static/js/main.1a381190.js",
+    "main.css": "/static/css/main.42e8e1ab.css",
+    "main.js": "/static/js/main.012785d7.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/cookbooked-kitchen-mock.png": "/static/media/cookbooked-kitchen-mock.5939127a856bae9fd3f2.png",
     "static/media/cookbooked-moodboard.png": "/static/media/cookbooked-moodboard.6e7efbbe363c3ab5324b.png",
     "static/media/speech-apps.png": "/static/media/speech-apps.61558252f190968207fd.png",
-    "static/media/cookbooked-features.png": "/static/media/cookbooked-features.ea21aaf313bdb9662d6a.png",
+    "static/media/cookbooked-features.png": "/static/media/cookbooked-features.a64ece8735f7df311114.png",
     "static/media/cookbooked-final-3.png": "/static/media/cookbooked-final-3.67feaf3a6948b9e6aa26.png",
     "static/media/cookbooked-variant-2.png": "/static/media/cookbooked-variant-2.1a437ffb2f2fc23823e4.png",
     "static/media/cookbooked-variant-1.png": "/static/media/cookbooked-variant-1.1c476d578c59a23efdbd.png",
@@ -19,10 +19,12 @@
     "static/media/cookbooked-paper-1.png": "/static/media/cookbooked-paper-1.e85df1af9acbcee8014d.png",
     "static/media/cookbooked-hifi-revis-1.png": "/static/media/cookbooked-hifi-revis-1.3795cbf12d7e6931f136.png",
     "static/media/aac-example.png": "/static/media/aac-example.4b7e169ae029d9012440.png",
+    "static/media/speechconnect-features.png": "/static/media/speechconnect-features.0b44f53d71f3042e34f8.png",
     "static/media/chapter-proto-2.png": "/static/media/chapter-proto-2.d82808c7ee3e683d0bc0.png",
     "static/media/headshot.png": "/static/media/headshot.c552e794afefc7ebdab7.png",
     "static/media/chapter-proto-1.png": "/static/media/chapter-proto-1.813ad038be306aae4f02.png",
     "static/media/speech-device-mock.png": "/static/media/speech-device-mock.f939c38bac4cea75c830.png",
+    "static/media/meetup-features.png": "/static/media/meetup-features.385955d307b7b237bbc6.png",
     "static/media/cookbooked-hifi-revis-2.png": "/static/media/cookbooked-hifi-revis-2.bc76cba4b3ebc7111c63.png",
     "static/media/cookbooked-hifi-1.png": "/static/media/cookbooked-hifi-1.1abc8e6c3f3d78241b1a.png",
     "static/media/cookbooked-hifi-revis-3.png": "/static/media/cookbooked-hifi-revis-3.0cf3494269ad3df724c2.png",
@@ -102,12 +104,12 @@
     "static/media/close.svg": "/static/media/close.362cb9d9be8638a592b8c0c488f10e76.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.6e4b8a13830a9b4834249fc89a5bbc06.svg",
     "static/media/card-arrow.svg": "/static/media/card-arrow.023a3174ea95e16d7675d4a16100c177.svg",
-    "main.1ebb2bc6.css.map": "/static/css/main.1ebb2bc6.css.map",
-    "main.1a381190.js.map": "/static/js/main.1a381190.js.map",
+    "main.42e8e1ab.css.map": "/static/css/main.42e8e1ab.css.map",
+    "main.012785d7.js.map": "/static/js/main.012785d7.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ebb2bc6.css",
-    "static/js/main.1a381190.js"
+    "static/css/main.42e8e1ab.css",
+    "static/js/main.012785d7.js"
   ]
 }
