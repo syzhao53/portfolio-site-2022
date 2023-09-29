@@ -33,7 +33,7 @@ function Illustrations({ currPage, setCurrPage }) {
           Illustrations
         </div>
         <div className="project-info">
-          Work for personal projects, clubs, & more
+          Work for web designs, personal projects, & more
         </div>
         <img className="misc-img" src={icecream} alt="ice cream illustration" />
         <div className="misc-img-wrap">

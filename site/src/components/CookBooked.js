@@ -50,7 +50,7 @@ function CookBooked({ currPage, setCurrPage }) {
           </Link>
         </div>
         <div className="table-text2 nds">
-          <Link to="/cookbooked#when2meet">
+          <Link to="/cookbooked#existing">
             <p className="letter">EXISTING SITES</p>
           </Link>
         </div>
@@ -108,9 +108,7 @@ function CookBooked({ currPage, setCurrPage }) {
               and organize recipes.
               <br />
               <br />
-              This project was created for a human computer interaction
-              course at the University of
-              Pennsylvania. Each member of the team was involved in the
+              Each member of the team was involved in the
               research, design, and programming of the web app.
               The final app was implemented with React along with the Tailwind CSS library.
               <br />
@@ -119,14 +117,14 @@ function CookBooked({ currPage, setCurrPage }) {
                 <li>
                   <div className="list-text">
                     <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://cookbooked-mocha.vercel.app/recipe/apple_pie">
-                      Deployed web app
+                      Deployed Web App (Desktop Only)
                     </a>
                   </div>
                 </li>
                 <li>
                   <div className="list-text">
                     <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://github.com/jasminecao/cookbooked">
-                      GitHub repository
+                      GitHub Repository
                     </a>
                   </div>
                 </li>
@@ -162,7 +160,8 @@ function CookBooked({ currPage, setCurrPage }) {
             </div>
           </div>
         </div>
-        <div className="section-header" id="when2meet">Existing Sites</div>
+        <img className="project-img" src={features} alt="cookbooked features summary" />
+        <div className="section-header" id="existing">Existing Sites</div>
         <div className="project-text">
           Existing online recipes are often cluttered with
           long passages and distracting ads, creating a disruptive user experience
@@ -335,7 +334,7 @@ function CookBooked({ currPage, setCurrPage }) {
             </div>
           </div>
         </div>
-        <img className="features-img" src={features} alt="cookbooked features summary" />
+        {/* <img className="features-img" src={features} alt="cookbooked features summary" /> */}
       </div>
       <div className="project-wrap">
         <div className="subsection-header">LOW-FIDELITY IDEATION</div>
@@ -703,14 +702,14 @@ function CookBooked({ currPage, setCurrPage }) {
             <li>
               <div className="list-text">
                 <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://cookbooked-mocha.vercel.app/recipe/apple_pie">
-                  Deployed web app
+                  Deployed Web App (Desktop Only)
                 </a>
               </div>
             </li>
             <li>
               <div className="list-text">
                 <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://github.com/jasminecao/cookbooked">
-                  GitHub repository
+                  GitHub Repository
                 </a>
               </div>
             </li>

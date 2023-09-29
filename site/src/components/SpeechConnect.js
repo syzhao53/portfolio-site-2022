@@ -5,6 +5,7 @@ import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../assets/index.css';
 import speechconnect from '../assets/speechconnect-mockup.png';
+import features from '../assets/speechconnect-features.png';
 import speechapps from '../assets/speech-apps.png';
 import aacexample from '../assets/aac-example.png';
 // import speechicons from '../assets/speech-icons.png';
@@ -133,6 +134,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
             </div>
           </div>
         </div>
+        <img className="project-img-top" src={features} alt="speechconnect features summary" />
         <div className="section-header" id="aac-devices">AAC Devices</div>
         <div className="project-text">
           Digital augmentative and alternative communication (AAC) devices are speech generating

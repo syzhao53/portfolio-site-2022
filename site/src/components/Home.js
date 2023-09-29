@@ -72,7 +72,7 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
           HI, I&apos;M SYLVIA ZHAO
         </div>
         <div className="paragraph">
-          UX & Visual Designer &middot; UX Design Analyst @ JPMorgan Chase & Co.
+          UX & Visual Designer &middot; UX Designer @ JPMorgan Chase & Co.
           <br />
           UPenn Cognitive Science & Computer Science graduate
         </div>
@@ -188,7 +188,7 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
                 Illustrations
               </div>
               <div className="gcard-text">
-                Work for personal projects, clubs, & more
+                Work for web designs, personal projects, & more
               </div>
             </div>
           </div>

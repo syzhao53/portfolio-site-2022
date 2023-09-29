@@ -5,6 +5,7 @@ import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../assets/index.css';
 import meetup from '../assets/meetup-mockup-dev.png';
+import features from '../assets/meetup-features.png';
 import when2meetdesk from '../assets/when2meet-desk.png';
 import when2meetmobile from '../assets/when2meet-mobile.png';
 import easesched from '../assets/ease-scheduling.png';
@@ -130,14 +131,16 @@ function Meetup({ currPage, setCurrPage }) {
             </div>
           </div>
         </div>
+        <img className="project-img-top" src={features} alt="meetup features summary" />
         <div className="section-header" id="when2meet">When2meet</div>
         <div className="project-text">
           {/* In work settings without shared calendars, many people rely on When2meet to coordinate
           group meetings. */}
+          Although When2meet offers a convenient and popular solution for meeting scheduling, it
+          suffers from poor usability, lacking a mobile responsive site.
           Operating as a web app, When2meet has one person send out a link from
           the platform to the rest of their team members to gather their availability during a
-          specified period of time. Although When2meet offers a convenient solution, the interface
-          suffers from poor usability, lacking a mobile responsive site.
+          specified period of time.
           <br />
           <br />
           Despite simply starting off as personal inspiration for this project, When2meet
