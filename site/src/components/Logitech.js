@@ -13,7 +13,7 @@ function Logitech({ currPage, setCurrPage }) {
 //   const navigate = useNavigate();
 
   useEffect(() => {
-    setCurrPage('about');
+    setCurrPage('');
     window.scrollTo(0, 0);
     document.title = 'Logitech | Sylvia Zhao';
   }, []);
