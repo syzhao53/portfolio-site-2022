@@ -1737,6 +1737,7 @@ ul {
   
   .section-rflex {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .subsection-rheader-top {
@@ -1761,7 +1762,11 @@ ul {
   .descrip-rflex-zero {
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 3rem;
+    margin: 0 0 0 0;
+  }
+
+  .stage-wrap {
+    margin-right: 3rem;
   }
   
   .descrip-rflex {

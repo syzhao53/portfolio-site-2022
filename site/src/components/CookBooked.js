@@ -160,7 +160,7 @@ function CookBooked({ currPage, setCurrPage }) {
             </div>
           </div>
         </div>
-        <img className="project-img" src={features} alt="cookbooked features summary" />
+        <img className="project-img-top" src={features} alt="cookbooked features summary" />
         <div className="section-header" id="existing">Existing Sites</div>
         <div className="project-text">
           Existing online recipes are often cluttered with
