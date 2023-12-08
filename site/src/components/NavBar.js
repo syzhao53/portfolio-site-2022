@@ -32,7 +32,7 @@ function NavBar({ currPage }) {
       >
         WORK
       </button>
-      {/* <button
+      <button
           type="button"
           className={currPage === 'resume' ? 'sidebar-button-bold' : 'sidebar-button'}
           onClick={async () => {
@@ -40,7 +40,7 @@ function NavBar({ currPage }) {
           }}
         >
           RESUME
-        </button> */}
+        </button>
         <button
           type="button"
           className={currPage === 'about' ? 'sidebar-button-bold' : 'sidebar-button'}
@@ -78,7 +78,7 @@ function NavBar({ currPage }) {
         >
           ABOUT
         </button>
-        {/* <button
+        <button
           type="button"
           className={currPage === 'resume' ? 'nav-button-bold' : 'nav-button'}
           onClick={async () => {
@@ -86,7 +86,7 @@ function NavBar({ currPage }) {
           }}
         >
           RESUME
-        </button> */}
+        </button>
         <button
           type="button"
           className={currPage === 'work' ? 'nav-button-bold' : 'nav-button'}
