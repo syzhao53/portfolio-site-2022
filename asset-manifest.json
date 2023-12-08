@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6eab48c3.css",
-    "main.js": "/static/js/main.fe92e202.js",
+    "main.js": "/static/js/main.f50889ac.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/cookbooked-kitchen-mock.png": "/static/media/cookbooked-kitchen-mock.5939127a856bae9fd3f2.png",
     "static/media/cookbooked-moodboard.png": "/static/media/cookbooked-moodboard.6e7efbbe363c3ab5324b.png",
@@ -46,7 +46,7 @@
     "static/media/cookbooked-hifi-2.png": "/static/media/cookbooked-hifi-2.b06e08a5424804d06b47.png",
     "static/media/speech-grid-wire.png": "/static/media/speech-grid-wire.c5df262a8f6981330ef8.png",
     "static/media/pit-home.png": "/static/media/pit-home.7c8b94ff7b2e4302de30.png",
-    "static/media/resume1.png": "/static/media/resume1.407e826481ccc85e3a10.png",
+    "static/media/sylviazhao-resume2023.png": "/static/media/sylviazhao-resume2023.3d5bf4ae211dc5b2d2f1.png",
     "static/media/speech-grid-ui.png": "/static/media/speech-grid-ui.15cc9bed14a02fb7c52e.png",
     "static/media/pit-sketches.png": "/static/media/pit-sketches.3c01f380be784f6bde81.png",
     "static/media/cookbooked-revis-summary.png": "/static/media/cookbooked-revis-summary.d70d207bdf3d59bca1ab.png",
@@ -105,11 +105,11 @@
     "static/media/hamburger.svg": "/static/media/hamburger.6e4b8a13830a9b4834249fc89a5bbc06.svg",
     "static/media/card-arrow.svg": "/static/media/card-arrow.023a3174ea95e16d7675d4a16100c177.svg",
     "main.6eab48c3.css.map": "/static/css/main.6eab48c3.css.map",
-    "main.fe92e202.js.map": "/static/js/main.fe92e202.js.map",
+    "main.f50889ac.js.map": "/static/js/main.f50889ac.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6eab48c3.css",
-    "static/js/main.fe92e202.js"
+    "static/js/main.f50889ac.js"
   ]
 }
