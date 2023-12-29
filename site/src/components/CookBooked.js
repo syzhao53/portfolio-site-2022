@@ -37,7 +37,7 @@ function CookBooked({ currPage, setCurrPage }) {
   useEffect(() => {
     setCurrPage('');
     document.title = 'CookBooked | Sylvia Zhao';
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -99,19 +99,26 @@ function CookBooked({ currPage, setCurrPage }) {
         <div className="project-header">CookBooked</div>
         <div className="project-info">Innovating on digital recipe interactions</div>
         <img className="project-img" src={cookbooked} alt="cookbooked mockup" />
+        <div className="section-header" id="overview">Overview</div>
+
         <div className="section-flex">
           <div className="section-lflex">
             {/* <img className="gif" src={meetupGif} alt="all recipes screenshot" /> */}
-            <div className="section-header" id="overview">Overview</div>
+            <div className="project-ltext-large">
+              An interactive web application designed to help cooks follow
+              and organize recipes
+            </div>
             <div className="project-ltext-zero">
-              CookBooked is an interactive web application designed to help cooks follow
+              {/* CookBooked is an interactive web application designed to help cooks follow
               and organize recipes.
+              <br />
+              <br /> */}
               <br />
               <br />
               Each member of the team was involved in the
               research, design, and programming of the web app.
               The final app was implemented with React along with the Tailwind CSS library.
-              <br />
+              {/* <br />
               <br />
               <ul>
                 <li>
@@ -128,10 +135,14 @@ function CookBooked({ currPage, setCurrPage }) {
                     </a>
                   </div>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
-          <div className="section-rflex">
+          <div className="section-rflex-buttons">
+            <a className="overview-buttons" href="sylviazhao-resume2023.pdf" download="SylviaZhao-Resume">GitHub</a>
+            <a className="overview-buttons" href="sylviazhao-resume2023.pdf" download="SylviaZhao-Resume">Final app</a>
+          </div>
+          {/* <div className="section-rflex">
             <div className="descrip-lflex">
               <div className="stage-wrap">
                 <div className="subsection-rheader-top">
@@ -158,7 +169,7 @@ function CookBooked({ currPage, setCurrPage }) {
                 3 months
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <img className="project-img-top" src={features} alt="cookbooked features summary" />
         <div className="section-header" id="existing">Existing Sites</div>
