@@ -774,6 +774,19 @@ html {
   /* background-color: pink; */
 }
 
+.section-lflex-half {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 4rem 0 0;
+}
+
+.section-rflex-half {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
 .section-rflex {
   display: flex;
   flex-direction: column;
@@ -796,6 +809,22 @@ html {
   font-size: .85rem;
   font-weight: 550;
   letter-spacing: .5px;;
+  background-color: #033E57;
+  color: #FCFCFF; 
+  /* background-color: #FCFCFF;
+  color: #033E57;  */
+  border: 1.5px;
+  border-style: solid;
+  padding: .75rem 1rem .75rem 1rem;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.overview-buttons:hover {
+  margin: 0 1rem 0 0;
+  font-size: .85rem;
+  font-weight: 550;
+  letter-spacing: .5px;;
   /* background-color: #033E57;
   color: #FCFCFF;  */
   background-color: #FCFCFF;
@@ -805,6 +834,28 @@ html {
   padding: .75rem 1rem .75rem 1rem;
   border-radius: 100px;
   text-decoration: none;
+}
+
+.descrip-flex {
+  display: flex;
+  flex-direction: row;
+  margin: 5rem 0 0 0;
+  width: 100%;
+  /* background-color: lightblue; */
+}
+
+.descrip-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 4rem 0 0;
+    width: 30%;
+    /* background-color: pink; */
+}
+
+.descrip-section-last {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }
 
 .descrip-lflex {
@@ -927,7 +978,7 @@ html {
   text-align: left;
   line-height: 2.35rem;
   color: #212121;
-  margin: 0 5rem 0 0;
+  margin: 0 5rem 1rem 0;
 }
 
 .project-rtext {
@@ -1015,6 +1066,20 @@ ul {
   /* box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.03); */
 }
 
+.img-full-wrap {
+margin-top: 2rem;
+ width: 100%;
+ padding: 4rem 0 4rem 0;
+}
+
+.img-full {
+  width: 60%;
+}
+
+.cookbooked-bkgrd {
+  background-color: #F1F5FF;
+}
+
 .project-img {
   width: 100%;
   border-radius: 7px;
@@ -1076,13 +1141,14 @@ ul {
   background-color: #033E57;
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
-  max-width: .75%;
+  max-width: 8%;
 }
 
 .cap-card-text {
-  font-size: 1rem;
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
   text-align: left;
-  line-height: 1.55rem;
+  line-height: 2.5rem;
   color: #212121;
   padding: 1.75rem 1.5rem 1.75rem 3rem;
   /* font-style: italic; */

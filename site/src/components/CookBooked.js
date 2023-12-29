@@ -100,7 +100,6 @@ function CookBooked({ currPage, setCurrPage }) {
         <div className="project-info">Innovating on digital recipe interactions</div>
         <img className="project-img" src={cookbooked} alt="cookbooked mockup" />
         <div className="section-header" id="overview">Overview</div>
-
         <div className="section-flex">
           <div className="section-lflex">
             {/* <img className="gif" src={meetupGif} alt="all recipes screenshot" /> */}
@@ -109,74 +108,57 @@ function CookBooked({ currPage, setCurrPage }) {
               and organize recipes
             </div>
             <div className="project-ltext-zero">
-              {/* CookBooked is an interactive web application designed to help cooks follow
-              and organize recipes.
-              <br />
-              <br /> */}
-              <br />
-              <br />
               Each member of the team was involved in the
               research, design, and programming of the web app.
               The final app was implemented with React along with the Tailwind CSS library.
-              {/* <br />
-              <br />
-              <ul>
-                <li>
-                  <div className="list-text">
-                    <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://cookbooked-mocha.vercel.app/recipe/apple_pie">
-                      Deployed Web App (Desktop Only)
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div className="list-text">
-                    <a className="proto-link" target="_blank" rel="noopener noreferrer" href="https://github.com/jasminecao/cookbooked">
-                      GitHub Repository
-                    </a>
-                  </div>
-                </li>
-              </ul> */}
             </div>
           </div>
           <div className="section-rflex-buttons">
-            <a className="overview-buttons" href="sylviazhao-resume2023.pdf" download="SylviaZhao-Resume">GitHub</a>
-            <a className="overview-buttons" href="sylviazhao-resume2023.pdf" download="SylviaZhao-Resume">Final app</a>
+            <a className="overview-buttons" href="https://github.com/jasminecao/cookbooked">GitHub</a>
+            <a className="overview-buttons" href="https://cookbooked-mocha.vercel.app/recipe/apple_pie">Final app</a>
           </div>
-          {/* <div className="section-rflex">
-            <div className="descrip-lflex">
-              <div className="stage-wrap">
-                <div className="subsection-rheader-top">
-                  ROLE
-                </div>
-                <div className="project-rtext">
-                  UX research & design, frontend development
-                </div>
-              </div>
-            </div>
-            <div className="descrip-rflex-zero">
-              <div className="subsection-rheader">
-                TEAM
-              </div>
-              <div className="project-rtext">
-                Jasmine Cao & Leah Levin (research, design, & development)
-              </div>
-            </div>
-            <div className="descrip-rflex-zero">
-              <div className="subsection-rheader">
-                TIMELINE
-              </div>
-              <div className="project-rtext">
-                3 months
-              </div>
-            </div>
-          </div> */}
         </div>
-        <img className="project-img-top" src={features} alt="cookbooked features summary" />
+        <div className="descrip-flex">
+          <div className="descrip-section">
+            <div className="subsection-header">
+              ROLE
+            </div>
+            <div className="project-text-zero">
+              UX research & design
+              <br />
+              Frontend development
+            </div>
+          </div>
+          <div className="descrip-section">
+            <div className="subsection-header">
+              TEAM
+            </div>
+            <div className="project-text">
+              Jasmine Cao & Leah Levin (research, design, & dev)
+            </div>
+          </div>
+          <div className="descrip-section-last">
+            <div className="subsection-header">
+              TIMELINE
+            </div>
+            <div className="project-text">
+              3 months
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="img-full-wrap cookbooked-bkgrd">
+        <img className="img-full" src={features} alt="cookbooked features summary" />
+      </div>
+      <div className="project-wrap">
+        {/* <img className="project-img-top" src={features} alt="cookbooked features summary" /> */}
         <div className="section-header" id="existing">Existing Sites</div>
+        <div className="project-ltext-large">
+          Cluttered, disruptive user experiences
+        </div>
         <div className="project-text">
-          Existing online recipes are often cluttered with
-          long passages and distracting ads, creating a disruptive user experience
-          for cooks. Although they are digital, these recipes often do not take advantage of
+          Existing online recipes are full of long passages and distracting ads.
+          Although they are digital, these recipes often do not take advantage of
           web interactivity.
         </div>
         <img className="project-img" src={existingRecipes} alt="all recipes screenshot" />
@@ -262,23 +244,37 @@ function CookBooked({ currPage, setCurrPage }) {
           </div>
         </div>
       </div>
-      {/* <div className="project-wrap">
-        <img className="project-img" src={notionRecipes} alt="recipes in notion screenshot" />
-        <div className="iteration-caption">
-          Example of a recipe kept in Notion
-        </div>
-      </div> */}
       <div className="project-wrap">
         <div className="subsection-header-sec">
           KEY RESEARCH INSIGHTS
         </div>
-        <div className="project-text-single">
+        {/* <div className="project-text-single">
           The 4 user interviews showed that the subgroup of cooks who enjoy organized, recipe-guided
           cooking lack a specialized tool for creating or editing personal recipes.
+        </div> */}
+        <div className="section-flex">
+          <div className="section-lflex-half">
+            <div className="project-ltext-large">
+              Co-opting other tools
+            </div>
+            <div className="project-text">
+              Cooks turn to text editors & project management tools to store recipes because
+              of easy organization
+            </div>
+          </div>
+          <div className="section-rflex-half">
+            <div className="project-ltext-large">
+              No specialized features
+            </div>
+            <div className="project-text">
+              Non-cooking tools lack features specific for optimizing the cooking experience
+            </div>
+          </div>
         </div>
-        <ul>
+        {/* <ul>
           <li>
-            <div className="list-text">Most people turn to text editors or project management tools to store recipes since they provide easy organization.</div>
+            <div className="list-text">Most people turn to text editors
+            or project management tools to store recipes since they provide easy organization.</div>
           </li>
           <li>
             <div className="list-text">
@@ -286,7 +282,7 @@ function CookBooked({ currPage, setCurrPage }) {
               (timers, serving size calculation, etc.)
             </div>
           </li>
-        </ul>
+        </ul> */}
         <div className="project-text-low">
           We decided to focus on this population of cooks who collect and organize their recipes,
           keeping our research in mind with the following guiding question:
@@ -303,17 +299,20 @@ function CookBooked({ currPage, setCurrPage }) {
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="solution">Solution</div>
+            <div className="project-ltext-large">
+              Modular recipe sections with interactive organizational features
+            </div>
             <div className="project-ltext">
               The final design focused on how users can execute a recipe when cooking.
-              With a target audience established, the team went through several iterations
-              of sketches, low-fidelity paper and digital prototypes, and high-fidelity digital
-              prototypes. Some prototypes were then implemented in React for user testing in
+              The team iterated through low-fidelity paper and digital prototypes as
+              well as high-fidelity digital prototypes. Some prototypes were then implemented
+              in React for user testing in
               later stages as the app was built iteratively.
-              <br />
+              {/* <br />
               <br />
               User testing involved qualitative user feedback as well as statistical analysis of
               variants for certain features. The team collected feedback for usability as well as
-              visual design throughout evaluations.
+              visual design throughout evaluations. */}
             </div>
           </div>
           <div className="section-rflex">
