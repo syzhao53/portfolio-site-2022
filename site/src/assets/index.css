@@ -104,7 +104,7 @@ html {
   letter-spacing: .3px;
   font-weight: 600;
   color: #033E57;
-  /* font-family: 'Merriweather', serif; */
+  font-family: 'Merriweather', serif;
 }
 
 .big-header-alt {
@@ -528,6 +528,7 @@ html {
   padding: 6.25rem 0 0 0;
   margin-bottom: 2rem;
   font-weight: 500;
+  /* font-family: 'Merriweather', serif; */
   
   /* text-align: left;
   margin: 0 0 2rem 12rem; */
@@ -984,6 +985,15 @@ html {
   margin: 0 5rem 1rem 0;
 }
 
+.project-text-large {
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 2.35rem;
+  color: #212121;
+  margin: 0 0 1rem 0;
+}
+
 .project-rtext {
   font-size: 1rem;
   text-align: left;
@@ -1070,13 +1080,30 @@ ul {
 }
 
 .img-full-wrap {
-margin-top: 2rem;
+ margin-top: 2rem;
  width: 100%;
  padding: 4rem 0 4rem 0;
 }
 
+.img-full-wrap-marg {
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+  width: 100%;
+  padding: 4rem 0 4rem 0;
+}
+
 .img-full {
   width: 60%;
+}
+
+.img-full-stretch {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.img-full-top {
+  width: 60%;
+  margin-bottom: 1rem;
 }
 
 .img-full-lhalf {
@@ -1159,7 +1186,7 @@ margin-top: 2rem;
 
 .cap-card-text {
   font-family: 'Merriweather', serif;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   text-align: left;
   line-height: 2rem;
   color: #212121;

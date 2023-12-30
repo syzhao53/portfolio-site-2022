@@ -6,7 +6,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import '../assets/index.css';
 import cookbooked from '../assets/cookbooked-mockup.png';
 import existingRecipes from '../assets/existing-recipes.png';
-import notionRecipes from '../assets/notion-recipes.png';
+// import notionRecipes from '../assets/notion-recipes.png';
 // import meetupGif from '../assets/meetup-mobile.gif';
 // import sketch from '../assets/cookbooked-sketch.png';
 import features from '../assets/cookbooked-features.png';
@@ -24,7 +24,7 @@ import revisSummary from '../assets/cookbooked-revis-summary.png';
 // import revisAll from '../assets/cookbooked-all-revis.png';
 import variant1 from '../assets/cookbooked-variant-1.png';
 import variant2 from '../assets/cookbooked-variant-2.png';
-import final1 from '../assets/cookbooked-final-1.png';
+// import final1 from '../assets/cookbooked-final-1.png';
 import final2 from '../assets/cookbooked-final-2.png';
 import final3 from '../assets/cookbooked-final-3.png';
 // import styleGuide from '../assets/cookbooked-style-guide.png';
@@ -153,7 +153,7 @@ function CookBooked({ currPage, setCurrPage }) {
       <div className="project-wrap">
         {/* <img className="project-img-top" src={features} alt="cookbooked features summary" /> */}
         <div className="section-header" id="existing">Existing Sites</div>
-        <div className="project-ltext-large">
+        <div className="project-text-large">
           Cluttered, disruptive user experiences
         </div>
         <div className="project-text">
@@ -234,16 +234,17 @@ function CookBooked({ currPage, setCurrPage }) {
           </div>
         </div>
       </div>
-      <div className="mockup-col">
+      {/* <div className="mockup-col">
         <div className="mockup-flex-fix">
-          <img className="mockup-img-lined" src={notionRecipes} alt="recipes in notion screenshots" />
+          <img className="mockup-img-lined" src={notionRecipes}
+          alt="recipes in notion screenshots" />
         </div>
         <div className="mockup-flex-fix">
           <div className="iteration-caption">
             Example of a recipe database kept in Notion
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="project-wrap">
         <div className="subsection-header-sec">
           KEY RESEARCH INSIGHTS
@@ -254,7 +255,7 @@ function CookBooked({ currPage, setCurrPage }) {
         </div> */}
         <div className="section-flex">
           <div className="section-lflex-half">
-            <div className="project-ltext-large">
+            <div className="project-text-large">
               Co-opting other tools
             </div>
             <div className="project-text">
@@ -263,7 +264,7 @@ function CookBooked({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="section-rflex-half">
-            <div className="project-ltext-large">
+            <div className="project-text-large">
               No specialized features
             </div>
             <div className="project-text">
@@ -348,7 +349,7 @@ function CookBooked({ currPage, setCurrPage }) {
       </div>
       <div className="project-wrap">
         <div className="subsection-header">LOW-FIDELITY IDEATION</div>
-        <div className="project-ltext-large">
+        <div className="project-text-large">
           Standard one-page layout versus modular sections
         </div>
         <div className="project-text-low">
@@ -431,7 +432,7 @@ function CookBooked({ currPage, setCurrPage }) {
       </div> */}
       <div className="project-wrap">
         <div className="subsection-header-sec">HIGH-FIDELITY PROTOTYPE</div>
-        <div className="project-ltext-large">
+        <div className="project-text-large">
           Prototyping the modular approach with the sidebar, timers, & inline ingredient quantities
         </div>
         <div className="project-text">
@@ -440,7 +441,7 @@ function CookBooked({ currPage, setCurrPage }) {
           {/* A library page contextualizes the recipe experience */}
         </div>
       </div>
-      <div className="img-full-wrap cookbooked-bkgrd">
+      <div className="img-full-wrap-marg cookbooked-bkgrd">
         <img className="img-full-lhalf" src={hifi1} alt="intro view" />
         <img className="img-full-half" src={hifi2} alt="main recipe section view" />
       </div>
@@ -456,42 +457,18 @@ function CookBooked({ currPage, setCurrPage }) {
         </div>
       </div> */}
       <div className="project-wrap">
-        <div className="subsection-header-sec">USABILITY TESTING</div>
+        <div className="subsection-header">USABILITY TESTING</div>
+        <div className="project-text-large">
+          7 user interviews for usability & visual design
+        </div>
         <div className="project-text">
           Using the hi-fi prototype, we collected feedback from 7 users and revised our
           intial screens.
-          Revisions centered around:
-          <ul>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Emphasized current recipe subsection </span>
-                with a stronger highlighted treatment in the sidebar
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Functionality in library </span>
-                added for searching, filtering, and creating recipes
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Timer cancellation </span>
-                added to improve error prevention
-              </div>
-            </li>
-          </ul>
+          Revisions centered around the sidebar styling, library view functionality, and timer UI.
         </div>
       </div>
-      {/* <div className="mockup-col-sm">
-        <div className="mockup-flex-fix-first">
-          <img className="mockup-img-lined" src={revisAll} alt="library view" />
-        </div>
-      </div> */}
-      <div className="mockup-col-sm">
-        <div className="mockup-flex-fix-first">
-          <img className="mockup-img" src={revisSummary} alt="summary of revisions" />
-        </div>
+      <div className="img-full-wrap-marg cookbooked-bkgrd">
+        <img className="img-full-top" src={revisSummary} alt="intro view" />
         <div className="mockup-row-first">
           <img className="mockup-limg-row" src={revis1} alt="revision of library view" />
           <img className="mockup-rimg-row" src={revis2} alt="revision of intro page" />
@@ -500,47 +477,83 @@ function CookBooked({ currPage, setCurrPage }) {
           <img className="mockup-limg-row" src={revis3} alt="revision of main recipe section view" />
           <img className="mockup-rimg-row" src={revis4} alt="revision of main recipe section view with timers running" />
         </div>
+      </div>
+      {/* <div className="mockup-col-sm">
+        <div className="mockup-flex-fix-first">
+          <img className="mockup-img-lined" src={revisAll} alt="library view" />
+        </div>
+      </div> */}
+      {/* <div className="mockup-col-sm">
+        <div className="mockup-flex-fix-first">
+          <img className="mockup-img" src={revisSummary} alt="summary of revisions" />
+        </div>
+        <div className="mockup-row-first">
+          <img className="mockup-limg-row" src={revis1} alt="revision of library view" />
+          <img className="mockup-rimg-row" src={revis2} alt="revision of intro page" />
+        </div>
+        <div className="mockup-row-first">
+          <img className="mockup-limg-row" src={revis3}
+          alt="revision of main recipe section view" />
+          <img className="mockup-rimg-row" src={revis4}
+          alt="revision of main recipe section view with timers running" />
+        </div>
         <div className="mockup-flex-fix">
           <div className="iteration-caption">
             Main changes and notes
           </div>
         </div>
-        {/* <div className="mockup-flex-fix-first">
-          <img className="mockup-img-lined" src={library1} alt="library view revision" />
-        </div>
-        <div className="mockup-flex-fix-first">
-          <img className="mockup-img-lined" src={library1} alt="library view revision" />
-        </div>
-        <div className="mockup-flex-fix-first">
-          <img className="mockup-img-lined" src={library1} alt="library view revision" />
-        </div> */}
-      </div>
+      </div> */}
       <div className="project-wrap">
         <div className="project-text">
           Since we received mixed feedback on the inline ingredient hovering,
-          we conducted an A/B test on the following variants for ingredient display:
-          <ul>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Variant 1: Separate ingredients list & keeping inline hovering </span>
-                to address concerns about the hovering&apos;s convenience while still having
-                the hover as an option
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Variant 2: Ingredients under steps & removing inline hovering </span>
-                for a more direct approach
-              </div>
-            </li>
-          </ul>
-          <div className="project-text-low">
-            By timing how long it took users to find a specified ingredient quantity for a step,
-            we used a t-test to determine that users struggled less with variant 2.
-            A Likert scale survey on perceived task difficulty also demonstrated that
-            <span style={{ 'font-weight': '600' }}> variant 2 was a more convenient, intuitive experience.</span>
+          we conducted an A/B test on the following variants for ingredient display.
+          By timing how long it took users to find a specified ingredient quantity for a step,
+          we used a t-test to determine that users struggled less with variant 2.
+          A Likert scale survey on perceived task difficulty also demonstrated that
+          <span style={{ 'font-weight': '600' }}> variant 2 was a more convenient, intuitive experience.</span>
+        </div>
+        <div className="section-flex">
+          <div className="section-lflex-half">
+            <div className="project-text-large">
+              Variant 1: Keeping inline hovering
+            </div>
+            <div className="project-text">
+              Maintains inline hovering & adds separate ingredients list for convenience
+            </div>
+          </div>
+          <div className="section-rflex-half">
+            <div className="project-text-large">
+              Variant 2: Ingredients listed under steps
+            </div>
+            <div className="project-text">
+              Removes inline hovering & opts for a more direct approach
+            </div>
           </div>
         </div>
+        {/* <ul>
+          <li>
+            <div className="list-text">
+              <span style={{ 'font-weight': '600' }}>Variant 1:
+              Separate ingredients list & keeping inline hovering </span>
+              to address concerns about the hovering&apos;s convenience while still having
+              the hover as an option
+            </div>
+          </li>
+          <li>
+            <div className="list-text">
+              <span style={{ 'font-weight': '600' }}>Variant 2:
+              Ingredients under steps & removing inline hovering </span>
+              for a more direct approach
+            </div>
+          </li>
+        </ul> */}
+        {/* <div className="project-text-low">
+          By timing how long it took users to find a specified ingredient quantity for a step,
+          we used a t-test to determine that users struggled less with variant 2.
+          A Likert scale survey on perceived task difficulty also demonstrated that
+          <span style={{ 'font-weight': '600' }}> variant 2 was a more convenient,
+          intuitive experience.</span>
+        </div> */}
       </div>
       <div className="mockup-col-sm">
         <div className="mockup-row">
@@ -555,12 +568,15 @@ function CookBooked({ currPage, setCurrPage }) {
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">FINAL DESIGN</div>
-        <div className="project-text">
-          The final design incorporates feedback across several iterations, delivering
-          a recipe layout using subsections, embedded timers, and progress tracking.
+        <div className="project-text-large">
+          An interactive recipe layout with sections, embedded timers, & progress tracking
         </div>
       </div>
-      <div className="mockup-col-sm-last">
+      <div className="img-full-wrap-marg cookbooked-bkgrd">
+        <img className="img-full-lhalf" src={final2} alt="intro view" />
+        <img className="img-full-half" src={final3} alt="intro view" />
+      </div>
+      {/* <div className="mockup-col-sm-last">
         <div className="mockup-flex-fix-first">
           <img className="mockup-img-lined" src={final1} alt="library view final" />
         </div>
@@ -569,118 +585,6 @@ function CookBooked({ currPage, setCurrPage }) {
         </div>
         <div className="mockup-flex-fix">
           <img className="mockup-img-lined" src={final3} alt="main recipe section view final" />
-        </div>
-      </div>
-      {/* <div className="project-wrap">
-        <div className="subsection-header-sec">USER TESTING: ROUND 2</div>
-        <div className="project-text">
-          Continuing with the same users from the first round of testing, I collected feedback on
-          the second prototype. With this second round, comments mostly focused on how information
-          could be better indicated visually:
-          <ul>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>
-                No side-by-side comparison of group & personal availability </span>
-                limits the information a user has at their immediate disposal when inputting their
-                own information
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>
-                Preference for further visual representation of availability </span>
-                since calendar visualizes overall time period across days but not timeslots on
-                individual days; suggestions made for a grid view calendar
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>One-click interaction </span>
-                for adding/editing availability improves previous flow and feels
-                less tedious
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div> */}
-      {/* <div className="project-wrap">
-        <div className="subsection-header-sec">PROTOTYPE: ITERATION 3</div>
-        <div className="project-text">
-          The final solution mainly addresses the confusions and concerns around visual
-          representation of information with the introduction of a secondary grid view calendar:
-          <ul>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Grid view calendar </span>
-                to supplement the original calendar view
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>
-                Scrollable side-by-side comparison columns </span>
-                in the grid view to solve for the issue of not having the ability to compare
-                personal and group availability in the previous prototype
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Meeting information section </span>
-                at the top of the screen to contextualize the meeting invite
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Info on number of people available </span>
-                shown when a user taps a block of availability; this addresses the point from
-                the original user research showing that people value general information about
-                the group availability
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div> */}
-      {/* <div className="mockup-col">
-        <div className="mockup-flex-fix">
-          <img className="mockup-img" src={meetproto3} alt="meet-proto-3" />
-        </div>
-        <div className="mockup-flex-fix">
-          <img id="meet-mobile-cards" className="mockup-img"
-          src={meetmobilecards} alt="meet-proto-3" />
-        </div>
-      </div> */}
-      {/* <div className="project-wrap">
-        <div className="subsection-header-sec">DESKTOP VERSION</div>
-        <div className="project-text">
-          After finalizing the mobile prototype, I created a desktop version to see how the mobile
-          version could scale. Some minor features/interactions were incorporated in the desktop
-          interface:
-          <ul>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>
-                Timeslot preview when adding/editing availability </span>
-                shown when a user taps a block of availability
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>
-                Hover interactions for editing & group availability info </span>
-                shown when a user taps a block of availability
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div> */}
-      {/* <div id="last-mockup-col">
-        <div className="mockup-flex-fix">
-          <img className="mockup-img" src={meetdesk} alt="meet-desk" />
-        </div>
-        <div className="mockup-flex-fix">
-          <img id="meet-desk-cards" className="mockup-img" src={meetdeskcards}
-          alt="meet-desk-cards" />
         </div>
       </div> */}
       <div className="project-wrap">
@@ -696,7 +600,20 @@ function CookBooked({ currPage, setCurrPage }) {
             <span style={{ 'font-style': 'italic' }}> &mdash; Tester</span>
           </div>
         </div>
-        <div className="project-text">
+        <div className="section-flex">
+          <div className="section-lflex">
+            <div className="project-ltext-zero">
+              For final feedback on CookBooked, users were very positive about the
+              app&apos;s visual aesthetic and usability. Users appreciated the flexibility of the
+              design and the thought given to a streamlined layout for following recipes.
+            </div>
+          </div>
+          <div className="section-rflex-buttons">
+            <a className="overview-buttons" href="https://github.com/jasminecao/cookbooked">GitHub</a>
+            <a className="overview-buttons" href="https://cookbooked-mocha.vercel.app/recipe/apple_pie">Final app</a>
+          </div>
+        </div>
+        {/* <div className="project-text">
           For final feedback on CookBooked, users were very positive about the
           app&apos;s visual aesthetic and usability. Users appreciated the flexibility of the
           design and the thought given to a streamlined layout for following recipes.
@@ -719,11 +636,13 @@ function CookBooked({ currPage, setCurrPage }) {
               </div>
             </li>
           </ul>
-        </div>
-        <div className="proto-flex">
+        </div> */}
+      </div>
+      <img className="img-full-stretch" src={kitchenMock} alt="cookbooked features summary" />
+      <div className="project-wrap">
+        {/* <div className="proto-flex">
           <img className="device-mock" src={kitchenMock} alt="meet-device-mock" />
-          {/* <img className="device-mock-desk" src={meetdevicedesk} alt="meet-device-desk" /> */}
-        </div>
+        </div> */}
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
           Throughout the process of creating CookBooked, we
