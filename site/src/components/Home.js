@@ -69,7 +69,7 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
       <NavBar currPage={currPage} />
       <div className="landing" id="landing">
         <div className="big-header">
-          HI, I&apos;M SYLVIA ZHAO
+          Hi, I&apos;m Sylvia Zhao
         </div>
         <div className="paragraph">
           UX & Visual Designer &middot; UX Designer @ JPMorgan Chase & Co.

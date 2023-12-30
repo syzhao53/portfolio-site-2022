@@ -12,10 +12,10 @@ import notionRecipes from '../assets/notion-recipes.png';
 import features from '../assets/cookbooked-features.png';
 import paper1 from '../assets/cookbooked-paper-1.png';
 import paper2 from '../assets/cookbooked-paper-2.png';
-import moodboard from '../assets/cookbooked-moodboard.png';
+// import moodboard from '../assets/cookbooked-moodboard.png';
 import hifi1 from '../assets/cookbooked-hifi-1.png';
 import hifi2 from '../assets/cookbooked-hifi-2.png';
-import library1 from '../assets/cookbooked-library-1.png';
+// import library1 from '../assets/cookbooked-library-1.png';
 import revis1 from '../assets/cookbooked-hifi-revis-1.png';
 import revis2 from '../assets/cookbooked-hifi-revis-2.png';
 import revis3 from '../assets/cookbooked-hifi-revis-3.png';
@@ -27,7 +27,7 @@ import variant2 from '../assets/cookbooked-variant-2.png';
 import final1 from '../assets/cookbooked-final-1.png';
 import final2 from '../assets/cookbooked-final-2.png';
 import final3 from '../assets/cookbooked-final-3.png';
-import styleGuide from '../assets/cookbooked-style-guide.png';
+// import styleGuide from '../assets/cookbooked-style-guide.png';
 import kitchenMock from '../assets/cookbooked-kitchen-mock.png';
 
 import NavBar from './NavBar';
@@ -348,11 +348,15 @@ function CookBooked({ currPage, setCurrPage }) {
       </div>
       <div className="project-wrap">
         <div className="subsection-header">LOW-FIDELITY IDEATION</div>
+        <div className="project-ltext-large">
+          Standard one-page layout versus modular sections
+        </div>
         <div className="project-text-low">
           We developed two low-fidelity prototypes using paper to experiment with
           modular elements of a recipe interface. The first prototype uses a standard one page
           layout, while the second prototype splits a recipe into subsections for a more modular
-          approach. Across both prototypes, we included
+          approach.
+          {/* Across both prototypes, we included
           the following features:
           <ul>
             <li>
@@ -374,7 +378,7 @@ function CookBooked({ currPage, setCurrPage }) {
                 ingredients used.
               </div>
             </li>
-          </ul>
+          </ul> */}
         </div>
         <div className="project-text-low">
           Evaluations found that
@@ -409,7 +413,7 @@ function CookBooked({ currPage, setCurrPage }) {
           </div>
         </div>
       </div> */}
-      <div className="project-wrap">
+      {/* <div className="project-wrap">
         <div className="subsection-header-sec">VISUAL DESIGN</div>
         <div className="project-text">
           Working from a mood board we created, the team gravitated
@@ -424,32 +428,23 @@ function CookBooked({ currPage, setCurrPage }) {
         <div className="mockup-flex-fix">
           <img className="mockup-img-lined" src={styleGuide} alt="meet-wire-2" />
         </div>
-      </div>
+      </div> */}
       <div className="project-wrap">
         <div className="subsection-header-sec">HIGH-FIDELITY PROTOTYPE</div>
+        <div className="project-ltext-large">
+          Prototyping the modular approach with the sidebar, timers, & inline ingredient quantities
+        </div>
         <div className="project-text">
           In order to conduct usability testing, we prototyped the interactions
           for checkboxes, the sidebar, timers, and inline ingredient quantity display.
-          A library page contextualizes the recipe experience
-          {/* <ul>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Green and mint color palette </span>
-                to create a calm appearance for the platform since research showed that scheduling
-                was considered difficult or stressful by most users
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Work Sans as the main font </span>
-                to maintain readability and professionalism with a sans serif font while still being
-                friendly
-              </div>
-            </li>
-          </ul> */}
+          {/* A library page contextualizes the recipe experience */}
         </div>
       </div>
-      <div className="mockup-col-sm">
+      <div className="img-full-wrap cookbooked-bkgrd">
+        <img className="img-full-lhalf" src={hifi1} alt="intro view" />
+        <img className="img-full-half" src={hifi2} alt="main recipe section view" />
+      </div>
+      {/* <div className="mockup-col-sm">
         <div className="mockup-flex-fix-first">
           <img className="mockup-img-lined" src={library1} alt="library view" />
         </div>
@@ -459,7 +454,7 @@ function CookBooked({ currPage, setCurrPage }) {
         <div className="mockup-flex-fix">
           <img className="mockup-img-lined" src={hifi2} alt="main recipe section view" />
         </div>
-      </div>
+      </div> */}
       <div className="project-wrap">
         <div className="subsection-header-sec">USABILITY TESTING</div>
         <div className="project-text">
