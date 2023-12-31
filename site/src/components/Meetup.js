@@ -128,7 +128,7 @@ function Meetup({ currPage, setCurrPage }) {
               TIMELINE
             </div>
             <div className="project-text">
-              3 months
+              1.5 months
             </div>
           </div>
         </div>
@@ -632,7 +632,7 @@ function Meetup({ currPage, setCurrPage }) {
               Precise interactions, but too many clicks
             </div>
             <div className="project-text">
-              Users appreciated easy interaction but took too many clicks to get to adding/edintg
+              Users appreciated easy interaction but took too many clicks to get to adding/editing
             </div>
           </div>
         </div>
@@ -651,15 +651,18 @@ function Meetup({ currPage, setCurrPage }) {
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">PROTOTYPE: ITERATION 2</div>
+        <div className="project-text-large">
+          Reduced clicks & introduced calendar view for better visualization
+        </div>
         <div className="project-text">
-          Based on the comments from Round 1 of user testing, I reorganized how the &ldquo;Add
-          availability&rdquo; user flow begins:
-          streamlined
-          the “Add availability” user flow and created clear emphasis on separate
-          <ul>
+          Based on the comments from Round 1 of user testing, I reorganized the &ldquo;Add
+          availability&rdquo; user flow to begin with the user adding availability from
+          a calendar view.
+          {/* <ul>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Separate &ldquo;Me&rdquo; & &ldquo;Group&rdquo; </span>
+                <span style={{ 'font-weight': '600' }}>Separate &ldquo;Me&rdquo;
+                & &ldquo;Group&rdquo; </span>
                 sections to address the confusion on what information the main
                 view is initially presenting
               </div>
@@ -676,7 +679,7 @@ function Meetup({ currPage, setCurrPage }) {
                 to improve visualization of availability
               </div>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
       <div className="mockup">
@@ -684,51 +687,40 @@ function Meetup({ currPage, setCurrPage }) {
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">USER TESTING: ROUND 2</div>
+        <div className="section-flex">
+          <div className="section-lflex-half">
+            <div className="project-text-large">
+              Preference for side-by-side comparison
+            </div>
+            <div className="project-text">
+              Users expressed a need for visual comparison between individual & group availability
+            </div>
+          </div>
+          <div className="section-rflex-half">
+            <div className="project-text-large">
+              Refining the calendar visualization
+            </div>
+            <div className="project-text">
+              The calendar lacked visualization of timeslots on individual days
+            </div>
+          </div>
+        </div>
         <div className="project-text">
-          {/* Continuing with the same users from the first round of testing,
-          I collected feedback on
-          the second prototype. */}
           With this round of feedback on the second prototype, comments mostly focused on
-          how information could be better indicated visually:
-          <ul>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>No side-by-side comparison of group & personal availability </span>
-                limits the information a user has at their immediate disposal when inputting their
-                own information
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Preference for further visual representation of availability </span>
-                since calendar visualizes overall time period across days but not timeslots on
-                individual days; suggestions made for a grid view calendar
-              </div>
-            </li>
-            {/* <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Confusion with highlight vs.
-                underline on date </span>
-                for which one is meant to indicate selected date or whether availability
-                was provided
-              </div>
-            </li> */}
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>One-click interaction </span>
-                for adding/editing availability improves previous flow and feels
-                less tedious
-              </div>
-            </li>
-          </ul>
+          how information could be better indicated visually in a grid-calendar view with
+          side-by-side comparison.
         </div>
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">PROTOTYPE: ITERATION 3</div>
+        <div className="project-text-large">
+          An updated calendar with side-by-side columns for comparison
+        </div>
         <div className="project-text">
           The final solution mainly addresses the confusions and concerns around visual
-          representation of information with the introduction of a secondary grid view calendar:
-          <ul>
+          representation of information with the introduction of a secondary grid view calendar.
+          Supplemental meeting info was added for when a user taps a block of availability.
+          {/* <ul>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Grid view calendar </span>
@@ -737,33 +729,18 @@ function Meetup({ currPage, setCurrPage }) {
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Scrollable side-by-side comparison columns </span>
+                <span style={{ 'font-weight': '600' }}>Scrollable
+                side-by-side comparison columns </span>
                 in the grid view to solve for the issue of not having the ability to compare
                 personal and group availability in the previous prototype
               </div>
             </li>
-            {/* <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Highlighted date indicates selected
-                date </span>
-                instead of a date with availability; this choice matches how a highlighted circle on
-                &ldquo;AM&rdquo; or &ldquo;PM&rdquo; indicates selection
-              </div>
-            </li> */}
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Meeting information section </span>
                 at the top of the screen to contextualize the meeting invite
               </div>
             </li>
-            {/* <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Tapping in the grid to add a timeslot </span>
-                in the grid view would allow for automatic population of the new timeslot&apos;s
-                starting time, helping counteract the additional tap added with the interaction
-                of switching from the main calendar to the grid view
-              </div>
-            </li> */}
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Info on number of people available </span>
@@ -772,15 +749,17 @@ function Meetup({ currPage, setCurrPage }) {
                 the group availability
               </div>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
-      <div className="mockup-col">
-        <div className="mockup-flex-fix">
-          <img className="mockup-img" src={meetproto3} alt="meet-proto-3" />
-        </div>
-        <div className="mockup-flex-fix">
-          <img id="meet-mobile-cards" className="mockup-img" src={meetmobilecards} alt="meet-proto-3" />
+      <div className="img-full-wrap meetup-bkgrd">
+        <div className="mockup-col">
+          <div className="mockup-flex-fix">
+            <img className="mockup-img" src={meetproto3} alt="meet-proto-3" />
+          </div>
+          <div className="mockup-flex-fix">
+            <img id="meet-mobile-cards" className="mockup-img" src={meetmobilecards} alt="meet-proto-3" />
+          </div>
         </div>
       </div>
       <div className="project-wrap">
@@ -815,7 +794,21 @@ function Meetup({ currPage, setCurrPage }) {
       </div>
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
-        <div className="project-text">
+        <div className="section-flex">
+          <div className="section-lflex">
+            <div className="project-ltext-large">
+              Mobile & desktop solutions for efficient group meetings
+            </div>
+            <div className="project-ltext-zero">
+              Interact with the final prototypes for both mobile and desktop
+            </div>
+          </div>
+          <div className="section-rflex-buttons-col">
+            <a className="overview-buttons-stacked" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/AHxq5BvD3YoUd5bdFdI9OC/Meetup-Prototype-(Mobile)?node-id=2%3A28&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A28">Mobile prototype</a>
+            <a className="overview-buttons-stacked" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/C9TwlLjWPRFaHFCLNZ32v2/Meetup-Prototype-(Desktop)?node-id=3%3A394&scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A21">Desktop prototype</a>
+          </div>
+        </div>
+        {/* <div className="project-text">
           Interact with the final prototypes at the links below:
           <ul>
             <li>
@@ -833,11 +826,12 @@ function Meetup({ currPage, setCurrPage }) {
               </div>
             </li>
           </ul>
-        </div>
-        <div className="proto-flex">
-          <img className="device-mock" src={meetdevicemock} alt="meet-device-mock" />
-          {/* <img className="device-mock-desk" src={meetdevicedesk} alt="meet-device-desk" /> */}
-        </div>
+        </div> */}
+      </div>
+      <div className="img-full-wrap meetup-bkgrd">
+        <img className="img-full" src={meetdevicemock} alt="meet-device-mock" />
+      </div>
+      <div className="project-wrap">
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
           As a student who has thought a lot about the pain points with group meeting scheduling,

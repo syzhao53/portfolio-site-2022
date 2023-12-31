@@ -27,7 +27,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
   useEffect(() => {
     setCurrPage('');
     document.title = 'SpeechConnect | Sylvia Zhao';
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -94,48 +94,57 @@ function SpeechConnect({ currPage, setCurrPage }) {
         <div className="project-header">SpeechConnect</div>
         <div className="project-info">Creating a tablet experience for alternative communication tech</div>
         <img className="project-img" src={speechconnect} alt="speechconnect mockup" />
+        <div className="section-header" id="overview">Overview</div>
         <div className="section-flex">
           <div className="section-lflex">
-            <div className="section-header" id="overview">Overview</div>
+            <div className="project-ltext-large">
+              A customizable tablet app for users with speech difficulties
+            </div>
             <div className="project-ltext-zero">
-              SpeechConnect is a customizable experience in augmentative and
+              SpeechConnect explores augmentative and
               alternative communication for users who need technology to assist their
-              daily interactions with others due to speech difficulties. Stemming from my interests
-              in psychology and linguistics, it explores how
+              daily verbal communication.
+              Stemming from my interests
+              in psychology and linguistics, this project studies how
               design can support different communication methods with accessibility
               in mind.
-              <br />
-              <br />
-              While specialized
-              hardware does exist, I framed this case study as a software solution
-              for standard tablets.
             </div>
           </div>
-          <div className="section-rflex">
-            <div className="descrip-lflex">
-              <div className="stage-wrap">
-                <div className="subsection-rheader-top">
-                  ROLE
-                </div>
-                <div className="project-rtext">
-                  UX research & design
-                  <br />
-                  Visual design
-                </div>
-              </div>
+          <div className="section-rflex-buttons-col">
+            <a className="overview-buttons-stacked" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/zNMKIm85MZyPw7ucAzFpLH/AAC-Case-Study?node-id=138%3A21244&scaling=scale-down&page-id=138%3A21027&starting-point-node-id=138%3A21244">Final prototype</a>
+            <a className="overview-buttons-stacked" target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Augmentative_and_alternative_communication">AAC Wikipedia</a>
+          </div>
+        </div>
+        <div className="descrip-flex">
+          <div className="descrip-section">
+            <div className="subsection-header">
+              ROLE
             </div>
-            <div className="descrip-rflex-zero">
-              <div className="subsection-rheader">
-                TIMELINE
-              </div>
-              <div className="project-rtext">
-                1 month
-              </div>
+            <div className="project-text-zero">
+              UX research & design
+              <br />
+              Visual design
+            </div>
+          </div>
+          <div className="descrip-section-last">
+            <div className="subsection-header">
+              TIMELINE
+            </div>
+            <div className="project-text">
+              1 month
             </div>
           </div>
         </div>
-        <img className="project-img-top" src={features} alt="speechconnect features summary" />
+      </div>
+      <div className="img-full-wrap speechconnect-bkgrd">
+        <img className="img-full" src={features} alt="speechconnect features summary" />
+      </div>
+      <div className="project-wrap">
         <div className="section-header" id="aac-devices">AAC Devices</div>
+        <div className="project-text-large">
+          Users tap word buttons to speak - Alternative communication devices serve crucial
+          needs but can cost thousands
+        </div>
         <div className="project-text">
           Digital augmentative and alternative communication (AAC) devices are speech generating
           devices that allow a user to communicate through a combination of words, images, and
@@ -143,10 +152,6 @@ function SpeechConnect({ currPage, setCurrPage }) {
           grid layout that users interact with either through touch, scanning, or eye gazing.
           While many groups benefit from AAC devices, core users include any individuals
           who have difficulty producing speech due to neurological or physical conditions.
-          <br />
-          <br />
-          Made to help users increase their everyday independence and connections with others, AAC
-          devices serve a crucial need but can cost thousands of dollars for high-tech models.
         </div>
         {/* <img className="project-img" src={aacexample} alt="aac-example" /> */}
         <div className="mockup-small">
@@ -164,8 +169,11 @@ function SpeechConnect({ currPage, setCurrPage }) {
           </div>
         </div>
         <div className="subsection-header">EXPERT KNOWLEDGE</div>
+        <div className="project-text-large">
+          4 speech-language pathologists
+        </div>
         <div className="project-text">
-          To better understand the user groups and use cases for AAC devices, I surveyed 4
+          To better understand the user groups and use cases for AAC devices, I surveyed
           professional speech-language pathologists (SLPs) who have experience working with AAC
           devices.
           {/* <br />
@@ -297,6 +305,9 @@ function SpeechConnect({ currPage, setCurrPage }) {
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">MARKET RESEARCH</div>
+        <div className="project-text-large">
+          AAC apps organize words in grids through vocab sets of varying sophistication
+        </div>
         <div className="project-text">
           Based on the SLP responses, I looked into 4 of the most popular AAC apps for tablets
           that currently exist: LAMP Words For Life, TouchChatHD with WordPower, TD Snap, and
@@ -304,8 +315,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
           customization capabilities, and UI design.
           <br />
           <br />
-          Overall, AAC apps are structured through vocabulary sets for how the grid view
-          is organized. Sets vary in sophistication depending on what a
+          Vocabulary sets in AAC apps vary in sophistication depending on what a
           user would need to communicate and what they are capable of communicating with
           a device based on their level of experience.
           {/* For example, apps will usually
@@ -313,114 +323,116 @@ function SpeechConnect({ currPage, setCurrPage }) {
           can adjust their set as they learn. */}
         </div>
       </div>
-      <div id="graphs-meetup" className="graphs">
-        <div className="graphgrid-row">
-          <div className="card-lgraph">
-            <div className="graphcard-label">
-              LAMP WORDS FOR LIFE
+      <div className="img-full-wrap speechconnect-bkgrd">
+        <div id="graphs-meetup" className="graphs">
+          <div className="graphgrid-row">
+            <div className="card-lgraph">
+              <div className="graphcard-label">
+                LAMP WORDS FOR LIFE
+              </div>
+              <div className="graphcard-ques">
+                <ul>
+                  <li>
+                    <div className="list-text">
+                      3 vocab levels starting with basic set of 82 words
+                      that each only need 1 touch to speak
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list-text">
+                      Customizable vocab sets that maintain target words in same positions in grid
+                      to help users form motor patterns
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list-text">Icon system paired with words in grid to promote literacy</div>
+                  </li>
+                </ul>
+              </div>
+              {/* <img className="graph-img" src={generalexp} alt="general-exp graph" /> */}
             </div>
-            <div className="graphcard-ques">
-              <ul>
-                <li>
-                  <div className="list-text">
-                    3 vocab levels starting with basic set of 82 words
-                    that each only need 1 touch to speak
-                  </div>
-                </li>
-                <li>
-                  <div className="list-text">
-                    Customizable vocab sets that maintain target words in same positions in grid
-                    to help users form motor patterns
-                  </div>
-                </li>
-                <li>
-                  <div className="list-text">Icon system paired with words in grid to promote literacy</div>
-                </li>
-              </ul>
+            <div className="card-rgraph">
+              <div className="graphcard-label">
+                TOUCHCHAT HD WITH WORDPOWER
+              </div>
+              <div className="graphcard-ques">
+                <ul>
+                  <li>
+                    <div className="list-text">
+                      Multiple preset vocab levels starting with the most basic 4 words per page
+                      set-up for users that need minimal targets
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list-text">
+                      Ability to customize words
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list-text">Very picture/icon-based for users with aphasia who have difficulty with written language</div>
+                  </li>
+                </ul>
+              </div>
+              {/* <img className="graph-img" src={easeinfo} alt="ease-info graph" /> */}
             </div>
-            {/* <img className="graph-img" src={generalexp} alt="general-exp graph" /> */}
           </div>
-          <div className="card-rgraph">
-            <div className="graphcard-label">
-              TOUCHCHAT HD WITH WORDPOWER
+          <div className="graphgrid-row">
+            <div className="card-lgraph-low">
+              <div className="graphcard-label">
+                TD SNAP
+              </div>
+              <div className="graphcard-ques">
+                <ul>
+                  <li>
+                    <div className="list-text">
+                      Multiple preset vocab levels starting with core 63 word grid; additional sets
+                      available for purchase
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list-text">
+                      Ability to customize words
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list-text">Ability to edit icons on word buttons to adjust for skin color, hair color, and other personalized traits</div>
+                  </li>
+                </ul>
+              </div>
+              {/* <img className="graph-img" src={academicplan} alt="academic-plan graph" /> */}
             </div>
-            <div className="graphcard-ques">
-              <ul>
-                <li>
-                  <div className="list-text">
-                    Multiple preset vocab levels starting with the most basic 4 words per page
-                    set-up for users that need minimal targets
-                  </div>
-                </li>
-                <li>
-                  <div className="list-text">
-                    Ability to customize words
-                  </div>
-                </li>
-                <li>
-                  <div className="list-text">Very picture/icon-based for users with aphasia who have difficulty with written language</div>
-                </li>
-              </ul>
+            <div className="card-rgraph-low">
+              <div className="graphcard-label">
+                PROLOQUO2GO
+              </div>
+              <div className="graphcard-ques">
+                <ul>
+                  <li>
+                    <div className="list-text">
+                      Recommended 7 x 11 starting grid size to limit need for page navigation
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list-text">
+                      Ability to customize words and sets
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list-text">Similar icon system/style as other apps</div>
+                  </li>
+                </ul>
+              </div>
             </div>
-            {/* <img className="graph-img" src={easeinfo} alt="ease-info graph" /> */}
           </div>
         </div>
-        <div className="graphgrid-row">
-          <div className="card-lgraph-low">
-            <div className="graphcard-label">
-              TD SNAP
-            </div>
-            <div className="graphcard-ques">
-              <ul>
-                <li>
-                  <div className="list-text">
-                    Multiple preset vocab levels starting with core 63 word grid; additional sets
-                    available for purchase
-                  </div>
-                </li>
-                <li>
-                  <div className="list-text">
-                    Ability to customize words
-                  </div>
-                </li>
-                <li>
-                  <div className="list-text">Ability to edit icons on word buttons to adjust for skin color, hair color, and other personalized traits</div>
-                </li>
-              </ul>
-            </div>
-            {/* <img className="graph-img" src={academicplan} alt="academic-plan graph" /> */}
+        <div className="mockup-col">
+          <div className="mockup-flex-fix">
+            <img className="mockup-img" src={speechapps} alt="speech-apps" />
           </div>
-          <div className="card-rgraph-low">
-            <div className="graphcard-label">
-              PROLOQUO2GO
+          <div className="mockup-flex-fix">
+            <div className="iteration-caption">
+              Left to right, top to bottom: LAMP, TouchChat, TDSnap, Proloquo2Go
             </div>
-            <div className="graphcard-ques">
-              <ul>
-                <li>
-                  <div className="list-text">
-                    Recommended 7 x 11 starting grid size to limit need for page navigation
-                  </div>
-                </li>
-                <li>
-                  <div className="list-text">
-                    Ability to customize words and sets
-                  </div>
-                </li>
-                <li>
-                  <div className="list-text">Similar icon system/style as other apps</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="mockup-col">
-        <div className="mockup-flex-fix">
-          <img className="mockup-img" src={speechapps} alt="speech-apps" />
-        </div>
-        <div className="mockup-flex-fix">
-          <div className="iteration-caption">
-            Left to right, top to bottom: LAMP, TouchChat, TDSnap, Proloquo2Go
           </div>
         </div>
       </div>
@@ -428,15 +440,34 @@ function SpeechConnect({ currPage, setCurrPage }) {
         <div className="subsection-header-sec">
           KEY RESEARCH INSIGHTS
         </div>
-        <div className="project-text-single">
-          I came away from my research with these main insights:
+        <div className="section-flex">
+          <div className="section-lflex-half">
+            <div className="project-text-large">
+              Usability & customization
+            </div>
+            <div className="project-text">
+              Success should be defined by the ease of use and the ability to customize
+              the experience
+            </div>
+          </div>
+          <div className="section-rflex-half">
+            <div className="project-text-large">
+              Need for guiding icons
+            </div>
+            <div className="project-text">
+              Icons/pictures are important to guiding users in AAC; icons
+              systems are often not cohesive and may appear childish to adults
+            </div>
+          </div>
         </div>
-        <ul>
+        {/* <ul>
           <li>
-            <div className="list-text">Success should be defined by the ease of use and the ability to customize the experience</div>
+            <div className="list-text">Success should be defined by
+            the ease of use and the ability to customize the experience</div>
           </li>
           <li>
-            <div className="list-text">Customizability of vocab sets is often limited by user&apos;s needing to pay for more advanced sets</div>
+            <div className="list-text">Customizability of vocab
+            sets is often limited by user&apos;s needing to pay for more advanced sets</div>
           </li>
           <li>
             <div className="list-text">
@@ -444,9 +475,9 @@ function SpeechConnect({ currPage, setCurrPage }) {
               systems are often not cohesive and may appear childish to adults
             </div>
           </li>
-        </ul>
+        </ul> */}
         <div className="project-text-low">
-          This formed two guiding questions for the design
+          This research formed two guiding questions for the design
           process, one for UX design and one for visual design.
         </div>
         <div id="how-might-card-double" className="cap-card">
@@ -476,6 +507,9 @@ function SpeechConnect({ currPage, setCurrPage }) {
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="solution">Solution</div>
+            <div className="project-ltext-large">
+              4 main features & flows
+            </div>
             <div className="project-ltext">
               My solution focused on the user flows of speaking a sentence with the app (Home),
               allowing for customization (Customize),
@@ -523,19 +557,35 @@ function SpeechConnect({ currPage, setCurrPage }) {
       <div className="project-wrap">
         {/* <img id="project-sketches" src={pitsketches} alt="pit-sketches" /> */}
         <div className="subsection-header">HOME (GRID VIEW)</div>
+        <div className="section-flex">
+          <div className="section-lflex-half">
+            <div className="project-text-large">
+              Word & category buttons
+            </div>
+            <div className="project-text">
+              Buttons for speech production laid out based on common sentence structures
+            </div>
+          </div>
+          <div className="section-rflex-half">
+            <div className="project-text-large">
+              Top-level display bar
+            </div>
+            <div className="project-text">
+              Bar to display words being spoken to help user track their communication
+            </div>
+          </div>
+        </div>
         <div className="project-text">
           For the homepage/main grid, I focused on the user flow of how someone would speak a
           sentence, paying attention to how words and categories are organized in the grid.
-          Across 3 iterations, the homepage ultimately featured:
-          <ul>
+          Across 3 iterations, the homepage ultimately featured the main buttons for speech,
+          keyboard and search buttons, navigation to customization, and a top display bar.
+          {/* <ul>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Word & category buttons </span>
                 in the grid, organized based on how sentences would be commonly structured
                 (pronouns and nouns on far left of grid).
-                {/* Category buttons were ultimately moved to the bottom right since SLPs noted that
-                users would benefit from commonly used words being in the first row instead,
-                especially if interacting through scanning or eye gazing. */}
               </div>
             </li>
             <li>
@@ -544,9 +594,6 @@ function SpeechConnect({ currPage, setCurrPage }) {
                 included in the grid as additional buttons. SLPs recommend a keyboard feature to
                 allow flexibility in communication style if a user would prefer to type. The search
                 function would help users locate a word in the grid.
-                {/* Keyboard and Search were
-                moved from the navigation bar to the grid since they would be features contained in
-                the grid view, not separate pages in the app. */}
               </div>
             </li>
             <li>
@@ -561,53 +608,61 @@ function SpeechConnect({ currPage, setCurrPage }) {
                 <span style={{ 'font-weight': '600' }}>Top bar to display words </span>
                 that a user spoke, meant to promote literacy and to help user track what
                 they are communicating.
-                {/* This includes the option to clear a word from the bar. */}
               </div>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
-      <div className="mockup-col">
-        <div className="mockup-flex-fix">
-          <img className="mockup-img" src={speechgridwire} alt="speech-grid-wire" />
-        </div>
-        <div className="mockup-flex-fix">
-          <div className="iteration-caption">
-            Wireframe iterations 1, 2, & 3
+      <div className="img-full-wrap-marg speechconnect-bkgrd">
+        <div className="mockup-col">
+          <div className="mockup-flex-fix">
+            <img className="mockup-img" src={speechgridwire} alt="speech-grid-wire" />
+          </div>
+          <div className="mockup-flex-fix">
+            <div className="iteration-caption">
+              Wireframe iterations 1, 2, & 3
+            </div>
           </div>
         </div>
-      </div>
-      {/* <div className="project-wrap">
-        <div className="project-text">
-          The final design demonstrates an example of how a user&apos;s grid could
-          be set up with the general button layout outlined in the wireframes. Features
-          use the main orange color while word buttons are assigned a color based on the
-          part of speech.
-          In the example of a category page, the Keyboard and Search
-          buttons remain in their original
-          position to enforce the idea from user research that buttons should generally
-          have one consistent motor pattern for interaction.
-        </div>
-      </div> */}
-      <div className="mockup-col">
-        <div className="mockup-flex-fix">
-          <img className="mockup-img" src={speechgridui} alt="speech-grid-ui" />
-        </div>
-        <div className="mockup-flex-fix">
-          <div className="iteration-caption">
-            Main grid view & &ldquo;Activities&rdquo; category page example
+        <div className="mockup-col">
+          <div className="mockup-flex-fix">
+            <img className="mockup-img" src={speechgridui} alt="speech-grid-ui" />
+          </div>
+          <div className="mockup-flex-fix">
+            <div className="iteration-caption">
+              Main grid view & &ldquo;Activities&rdquo; category page example
+            </div>
           </div>
         </div>
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">CUSTOMIZE</div>
+        <div className="section-flex">
+          <div className="section-lflex-half">
+            <div className="project-text-large">
+              Customize the main grid
+            </div>
+            <div className="project-text">
+              Gives the user control over the use of custom sets and allows
+              for progression from basic to advanced sets
+            </div>
+          </div>
+          <div className="section-rflex-half">
+            <div className="project-text-large">
+              Adding new words & vocab sets
+            </div>
+            <div className="project-text">
+              Allows for a personalized vocabulary in the app
+            </div>
+          </div>
+        </div>
         <div className="project-text">
           In the Customize page, the user sees options for customizing their experience with
           the home grid view. Originally named the Edit page, I chose to rename the page for clarity
           and to emphasize the idea of a custom experience. Additionally, icons were added
           to the cards in the second iteration to account for users who can&apos;t rely on
-          text for navigation. Features include:
-          <ul>
+          text for navigation.
+          {/* <ul>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Adding a word to the database </span>
@@ -641,37 +696,36 @@ function SpeechConnect({ currPage, setCurrPage }) {
                 voice that speaks the words a user selects (Change Voice)
               </div>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
-      <div className="mockup-col">
-        <div className="mockup-flex-fix">
-          <img className="mockup-img" src={speechcustomizewire} alt="speech-customize-wire" />
-        </div>
-        <div className="mockup-flex-fix">
-          <div className="iteration-caption">
-            Wireframe iterations 1 & 2
+      <div className="img-full-wrap-marg speechconnect-bkgrd">
+        <div className="mockup-col">
+          <div className="mockup-flex-fix">
+            <img className="mockup-img" src={speechcustomizewire} alt="speech-customize-wire" />
+          </div>
+          <div className="mockup-flex-fix">
+            <div className="iteration-caption">
+              Wireframe iterations 1 & 2
+            </div>
           </div>
         </div>
-      </div>
-      <div className="project-wrap">
-        <div className="project-text">
-          For the UI design, changes between iterations mainly involved filling cards and icons to
-          better indicate interactive components.
-        </div>
-      </div>
-      <div className="mockup-col">
-        <div className="mockup-flex-fix">
-          <img className="mockup-img" src={speechcustomizeui} alt="speech-customize-ui" />
-        </div>
-        <div className="mockup-flex-fix">
-          <div className="iteration-caption">
-            UI design iterations 1 & 2 (final)
+        <div className="mockup-col">
+          <div className="mockup-flex-fix">
+            <img className="mockup-img" src={speechcustomizeui} alt="speech-customize-ui" />
+          </div>
+          <div className="mockup-flex-fix">
+            <div className="iteration-caption">
+              UI design iterations 1 & 2 (final)
+            </div>
           </div>
         </div>
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">ADD WORD</div>
+        <div className="project-text-large">
+          add
+        </div>
         <div className="project-text">
           To add to the app&apos;s database of words that can be used in vocab sets,
           I wanted to address the pain point mentioned by SLPs that apps often lack
