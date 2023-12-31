@@ -118,7 +118,7 @@ function CookBooked({ currPage, setCurrPage }) {
           </div>
           <div className="section-rflex-buttons">
             <a className="overview-buttons" target="_blank" rel="noopener noreferrer" href="https://github.com/jasminecao/cookbooked">GitHub</a>
-            <a className="overview-buttons" target="_blank" rel="noopener noreferrer" href="https://cookbooked-mocha.vercel.app/recipe/apple_pie">Final app</a>
+            <a className="overview-buttons-last" target="_blank" rel="noopener noreferrer" href="https://cookbooked-mocha.vercel.app/recipe/apple_pie">Final app</a>
           </div>
         </div>
         <div className="descrip-flex">

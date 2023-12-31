@@ -116,7 +116,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
           </div>
         </div>
         <div className="descrip-flex">
-          <div className="descrip-section">
+          <div className="descrip-section-half">
             <div className="subsection-header">
               ROLE
             </div>

@@ -36,7 +36,7 @@ function App() {
       {/* <Scroll> */}
         <Routes>
           <Route exact path="/" element={<Home currPage={currPage} setCurrPage={setCurrPage} theme={theme} setTheme={setTheme}/>} />
-          {/* <Route exact path="/resume" element={<Resume currPage={currPage} setCurrPage={setCurrPage} />} /> */}
+          <Route exact path="/resume" element={<Resume currPage={currPage} setCurrPage={setCurrPage} />} />
           <Route exact path="/about" element={<About currPage={currPage} setCurrPage={setCurrPage} />} />
           <Route exact path="/meetup" element={<Meetup currPage={currPage} setCurrPage={setCurrPage} />} />
           <Route exact path="/cookbooked" element={<CookBooked currPage={currPage} setCurrPage={setCurrPage} />} />
