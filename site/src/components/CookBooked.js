@@ -106,7 +106,6 @@ function CookBooked({ currPage, setCurrPage }) {
         <div className="section-header" id="overview">Overview</div>
         <div className="section-flex">
           <div className="section-lflex">
-            {/* <img className="gif" src={meetupGif} alt="all recipes screenshot" /> */}
             <div className="project-ltext-large">
               An interactive web application designed to help cooks follow
               and organize recipes
@@ -118,8 +117,8 @@ function CookBooked({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="section-rflex-buttons">
-            <a className="overview-buttons" href="https://github.com/jasminecao/cookbooked">GitHub</a>
-            <a className="overview-buttons" href="https://cookbooked-mocha.vercel.app/recipe/apple_pie">Final app</a>
+            <a className="overview-buttons" target="_blank" rel="noopener noreferrer" href="https://github.com/jasminecao/cookbooked">GitHub</a>
+            <a className="overview-buttons" target="_blank" rel="noopener noreferrer" href="https://cookbooked-mocha.vercel.app/recipe/apple_pie">Final app</a>
           </div>
         </div>
         <div className="descrip-flex">
@@ -656,8 +655,8 @@ function CookBooked({ currPage, setCurrPage }) {
             </div>
           </div>
           <div className="section-rflex-buttons">
-            <a className="overview-buttons" href="https://github.com/jasminecao/cookbooked">GitHub</a>
-            <a className="overview-buttons" href="https://cookbooked-mocha.vercel.app/recipe/apple_pie">Final app</a>
+            <a className="overview-buttons" target="_blank" rel="noopener noreferrer" href="https://github.com/jasminecao/cookbooked">GitHub</a>
+            <a className="overview-buttons" target="_blank" rel="noopener noreferrer" href="https://cookbooked-mocha.vercel.app/recipe/apple_pie">Final app</a>
           </div>
         </div>
         {/* <div className="project-text">

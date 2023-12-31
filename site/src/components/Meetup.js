@@ -33,7 +33,7 @@ function Meetup({ currPage, setCurrPage }) {
   useEffect(() => {
     setCurrPage('');
     document.title = 'Meetup | Sylvia Zhao';
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -95,44 +95,52 @@ function Meetup({ currPage, setCurrPage }) {
         <div className="project-header">Meetup</div>
         <div className="project-info">Improving group meeting scheduling on mobile & web</div>
         <img className="project-img" src={meetup} alt="meetup mockup" />
+        <div className="section-header" id="overview">Overview</div>
         <div className="section-flex">
           <div className="section-lflex">
-            <div className="section-header" id="overview">Overview</div>
+            <div className="project-ltext-large">
+              A mobile-oriented solution for group meeting scheduling
+            </div>
             <div className="project-ltext-zero">
-              {/* Scheduling meetings can often become a laborious process of
-              coordination between organizers sending out invites and attendees
-              providing their availability.
-              <br />
-              <br /> */}
-              Inspired by past difficulties with the popular scheduling platform When2meet,
-              this case study aimed to create a more efficient and usable solution for
+              Inspired by past difficulties with the popular scheduling platform&nbsp;
+              <a href="https://www.when2meet.com/?About">When2meet</a>
+              , this case study aimed to create a more efficient and usable solution for
               people providing their availability for group meetings. The design process began with
               mobile first in order to focus on usability issues before expanding to desktop.
             </div>
           </div>
-          <div className="section-rflex">
-            <div className="descrip-lflex">
-              <div className="stage-wrap">
-                <div className="subsection-rheader-top">
-                  ROLE
-                </div>
-                <div className="project-rtext">
-                  UX research & design
-                </div>
-              </div>
+          <div className="section-rflex-buttons-col">
+            <a className="overview-buttons-stacked" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/AHxq5BvD3YoUd5bdFdI9OC/Meetup-Prototype-(Mobile)?node-id=2%3A28&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A28">Mobile prototype</a>
+            <a className="overview-buttons-stacked" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/C9TwlLjWPRFaHFCLNZ32v2/Meetup-Prototype-(Desktop)?node-id=3%3A394&scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A21">Desktop prototype</a>
+          </div>
+        </div>
+        <div className="descrip-flex">
+          <div className="descrip-section">
+            <div className="subsection-header">
+              ROLE
             </div>
-            <div className="descrip-rflex-zero">
-              <div className="subsection-rheader">
-                TIMELINE
-              </div>
-              <div className="project-rtext">
-                1.5 months
-              </div>
+            <div className="project-text-zero">
+              UX research & design
+            </div>
+          </div>
+          <div className="descrip-section-last">
+            <div className="subsection-header">
+              TIMELINE
+            </div>
+            <div className="project-text">
+              3 months
             </div>
           </div>
         </div>
-        <img className="project-img-top" src={features} alt="meetup features summary" />
+      </div>
+      <div className="img-full-wrap meetup-bkgrd">
+        <img className="img-full" src={features} alt="meetup features summary" />
+      </div>
+      <div className="project-wrap">
         <div className="section-header" id="when2meet">When2meet</div>
+        <div className="project-text-large">
+          An existing popular tool with usability issues
+        </div>
         <div className="project-text">
           {/* In work settings without shared calendars, many people rely on When2meet to coordinate
           group meetings. */}
@@ -160,23 +168,81 @@ function Meetup({ currPage, setCurrPage }) {
           </div>
         </div>
         <div className="subsection-header">SURVEY</div>
+        <div className="project-text-large">
+          19 survey responses - meeting organizers face difficulty collecting info on
+          group availability
+        </div>
         <div className="project-text">
           Given that students consistently need to schedule group meetings for clubs and projects
           without the use of organized systems (like Microsoft Outlook), I surveyed
           19 university students to understand key factors and pain points in
-          diverse scheduling processes and methods. Survey questions focused on both the meeting
-          organizer and invitee sides of scheduling.
+          diverse scheduling processes and methods.
+          {/* Survey questions focused on both the meeting
+          organizer and invitee sides of scheduling. */}
           <br />
           <br />
           The survey responses showed a general trend of people finding scheduling group meetings
           to be a difficult process. The most commonly used tool was When2meet (14 out of 19
           respondents), matching the result that people prefer to collect availability before
-          proposing a meeting time. Responses also showed that from both the meeting organizer
-          side and the invitee side, people value fast communication and the ability to see
+          proposing a meeting time. Responses showed that people value fast communication
+          and the ability to see
           everyone&apos;s availability in one place.
         </div>
       </div>
-      <div id="graphs-meetup" className="graphs">
+      <div className="img-full-wrap meetup-bkgrd">
+        <div id="graphs-meetup" className="graphs">
+          <div className="graphgrid-row">
+            <div className="card-lgraph">
+              <div className="graphcard-label">
+                QUESTION 1
+              </div>
+              <div className="graphcard-ques">
+                When attempting to schedule a group meeting,
+                how difficult do you find it to settle on a
+                time that aligns with everyone&apos;s schedule?
+              </div>
+              <img className="graph-img" src={easesched} alt="ease-sched graph" />
+            </div>
+            <div className="card-rgraph">
+              <div className="graphcard-label">
+                QUESTION 2
+              </div>
+              <div className="graphcard-ques">
+                Select what you are more likely to do when attempting to schedule a
+                meeting with a group.
+              </div>
+              <img className="graph-img" src={schedmethod} alt="scheduling-method graph" />
+            </div>
+          </div>
+          <div className="graphgrid-row">
+            <div className="card-lgraph-low">
+              <div className="graphcard-label">
+                QUESTION 3
+              </div>
+              <div className="graphcard-ques">
+                Select all factors that you consider important to the
+                process of scheduling a meeting when you are
+                <span style={{ 'font-weight': '500' }}> the organizer </span>
+                in charge of scheduling.
+              </div>
+              <img className="graph-img" src={schedorg} alt="scheduling-organizing graph" />
+            </div>
+            <div className="card-rgraph-low">
+              <div className="graphcard-label">
+                QUESTION 4
+              </div>
+              <div className="graphcard-ques">
+                Select all factors that you consider important to the process of
+                scheduling a meeting when you are
+                <span style={{ 'font-weight': '500' }}> an invitee </span>
+                (responding to organizer).
+              </div>
+              <img className="graph-img" src={schedresp} alt="scheduling-responding graph" />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <div id="graphs-meetup" className="graphs">
         <div className="graphgrid-row">
           <div className="card-lgraph">
             <div className="graphcard-label">
@@ -226,9 +292,12 @@ function Meetup({ currPage, setCurrPage }) {
             <img className="graph-img" src={schedresp} alt="scheduling-responding graph" />
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="project-wrap">
         <div className="subsection-header-sec">USER INTERVIEWS</div>
+        <div className="project-text-large">
+          Mobile usability paint points reiterated in 3 interviews
+        </div>
         <div className="project-text">
           For interviews, I spoke with 2 undergraduate students and 1 graduate student who had
           previous corporate work experience as well. These students were selected for their
@@ -351,20 +420,46 @@ function Meetup({ currPage, setCurrPage }) {
         <div className="subsection-header-sec">
           KEY RESEARCH INSIGHTS
         </div>
-        <div className="project-text-single">
+        <div className="section-flex">
+          <div className="section-lflex-half">
+            <div className="project-text-large">
+              Visualizing group availability
+            </div>
+            <div className="project-text">
+              The ability to see availability
+              for all people is important to both the
+              organizer & invitee sides
+            </div>
+          </div>
+          <div className="section-rflex-half">
+            <div className="project-text-large">
+              Issues with mobile usability
+            </div>
+            <div className="project-text">
+              Usability on mobile is important
+              for convenience and facilitates fast communication
+            </div>
+          </div>
+        </div>
+        {/* <div className="project-text-single">
           Following user research, these observations framed my approach to a solution:
         </div>
         <ul>
           <li>
-            <div className="list-text">People enjoy When2meet for its convenience since there is no need for any account sign-up/login</div>
+            <div className="list-text">People enjoy When2meet
+            for its convenience since there is no need for any account sign-up/login</div>
           </li>
           <li>
-            <div className="list-text">The ability to see availability for all people invited to a meeting is important to both the organizer & invitee sides</div>
+            <div className="list-text">The ability to see availability
+            for all people invited to a meeting is important to both the
+            organizer & invitee sides</div>
           </li>
           <li>
-            <div className="list-text">Usability on mobile is important for convenience and facilitates the fast communication that both sides value as well</div>
+            <div className="list-text">Usability on mobile is important
+            for convenience and facilitates the fast communication that
+            both sides value as well</div>
           </li>
-        </ul>
+        </ul> */}
         <div className="project-text-low">
           As a result, my guiding question focused on convenience and organization of how
           people&apos;s availability would be presented in the design.
@@ -381,11 +476,13 @@ function Meetup({ currPage, setCurrPage }) {
         <div className="section-flex">
           <div className="section-lflex">
             <div className="section-header" id="solution">Solution</div>
+            <div className="project-ltext-large">
+              A mobile-first approach for the meeting invitee side
+            </div>
             <div className="project-ltext">
               Due to pain points surrounding the process of providing availability, I chose to
-              design for the perspective of the invitee only for the scope of this project. To
-              specifically address mobile usability concerns, I designed for a mobile interface
-              before expanding to a desktop solution after finalizing a mobile solution.
+              design for the perspective of the invitee only for the scope of this project. The
+              initial interface took a mobile approach before expansion to a desktop solution.
               <br />
               <br />
               {/* Additionally, to maintain the convenience valued by users of When2meet,
@@ -426,71 +523,72 @@ function Meetup({ currPage, setCurrPage }) {
         </div>
       </div>
       <div className="project-wrap">
-        <div className="subsection-header">WIREFRAMES: ITERATION 1</div>
+        <div className="subsection-header">WIREFRAMES</div>
+        <div className="section-flex">
+          <div className="section-lflex-half">
+            <div className="project-text-large">
+              Visualized group availability
+            </div>
+            <div className="project-text">
+              Shaded blocks where a darker
+              block represents a higher number of available people
+            </div>
+          </div>
+          <div className="section-rflex-half">
+            <div className="project-text-large">
+              Precise tapping interactions for inputting info
+            </div>
+            <div className="project-text">
+              Converting When2meet&apos;s dragging interactions into tapping
+              & typing for better user control
+            </div>
+          </div>
+        </div>
         <div className="project-text">
           The first iteration of my solution focused on displaying the group&apos;s
           availability on the main page and having the user add their availability
-          for a given day by clicking “Edit” on a card in the “My availability” section. Primary
-          considerations in this first iteration included:
-          <ul>
+          for a given day by clicking “Edit” on a card in the “My availability” section.
+          {/* <ul>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Visual representation of availability </span>
                 through differently shaded blocks (screen 1) to provide high-level information.
                 This mirrors When2meet where a darker
                 block a higher number of available people.
-                {/* User research showed that meeting invitees are not as concerned with specific
-                people&apos;s availability, only the number of people available at a given timeslot.
-                */}
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Separate views for group and individual availability </span>
+                <span style={{ 'font-weight': '600' }}>Separate views
+                for group and individual availability </span>
                 to maintain organization and a different space for the user to
                 update their own information
               </div>
             </li>
             <li>
               <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Reliance on tapping and typing interactions </span>
+                <span style={{ 'font-weight': '600' }}>Reliance on
+                tapping and typing interactions </span>
                 to give the user more control (screen 4), addressing how users disliked
                 When2meet&apos;s imprecise method of dragging in a grid.
               </div>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
-      <div className="mockup">
-        <img className="mockup-img" src={meetwire1} alt="meet-wire-1" />
-      </div>
-      <div className="project-wrap">
-        <div className="subsection-header-sec">WIREFRAMES: ITERATION 2</div>
-        <div className="project-text">
-          The second iteration of wireframes made minor adjustments to the
-          way days were displayed in “My availability,” as well as the layout of buttons.
-          <ul>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>&ldquo;Save changes&rdquo; button </span>
-                in &ldquo;My availability&rdquo; was changed to a back arrow in the upper-left
-                corner to better indicate to a user how to return to the main &ldquo;Group
-                availability&rdquo; view.
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>&ldquo;Add timeslot&rdquo; button </span>
-                in the section for editing a specific day&apos;s availability was moved to be
-                grouped closer to the existing timeslots a user has, better associating the
-                button&apos;s action with its results
-              </div>
-            </li>
-          </ul>
+      <div className="img-full-wrap meetup-bkgrd">
+        <div className="mockup">
+          <img className="mockup-img" src={meetwire1} alt="meet-wire-1" />
+          <div className="iteration-caption">
+            Iteration 1
+          </div>
         </div>
-      </div>
-      <div className="mockup">
-        <img className="mockup-img" src={meetwire2} alt="meet-wire-2" />
+        <div className="mockup">
+          <img className="mockup-img" src={meetwire2} alt="meet-wire-2" />
+          <div className="iteration-caption">
+            Revisions to iteration 1
+          </div>
+        </div>
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">PROTOTYPE: ITERATION 1</div>
@@ -520,49 +618,36 @@ function Meetup({ currPage, setCurrPage }) {
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">USER TESTING: ROUND 1</div>
+        <div className="section-flex">
+          <div className="section-lflex-half">
+            <div className="project-text-large">
+              Missing visualization for individual availability
+            </div>
+            <div className="project-text">
+              Info for individual availability was too text-based
+            </div>
+          </div>
+          <div className="section-rflex-half">
+            <div className="project-text-large">
+              Precise interactions, but too many clicks
+            </div>
+            <div className="project-text">
+              Users appreciated easy interaction but took too many clicks to get to adding/edintg
+            </div>
+          </div>
+        </div>
         <div className="project-text">
           Using the initial prototype, I conducted user testing with 3 students, 1 from the user
           interviews and 2 others who had responded to the survey and were
-          familiar with the project context. Users commented on:
-          <ul>
-            {/* <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Pleasant UI design </span>
-                with a simple aesthetic and clear emphasis on actionable areas
-              </div>
-            </li> */}
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Good clarity with tapping interaction </span>
-                for actually inputting availability, more mobile-friendly than dragging
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Lack of clarity with the home page </span>
-                in terms of not understanding whether the main view shows group or individual
-                availability
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>No visualization of &ldquo;My availability&rdquo; </span>
-                since timeslots are all displayed as text instead of colored blocks like the
-                group section
-              </div>
-            </li>
-            <li>
-              <div className="list-text">
-                <span style={{ 'font-weight': '600' }}>Too many clicks </span>
-                required to even get to the adding/editing availability functionality (3 clicks
-                before availability is even added)
-              </div>
-            </li>
-          </ul>
+          familiar with the project context. Users commented on the need for further visualization
+          and a reduction in steps to get to adding/editing.
         </div>
       </div>
       <div className="mockup">
         <img className="mockup-img" src={meettest1} alt="meet-test-1" />
+        <div className="iteration-caption">
+          Clicks needed to get to adding/editing in prototype 1
+        </div>
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">PROTOTYPE: ITERATION 2</div>
