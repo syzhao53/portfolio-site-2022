@@ -102,9 +102,9 @@ html {
   text-align: left;
   margin: 10rem 0 0.75rem 4.8rem;
   letter-spacing: .3px;
-  font-weight: 600;
+  font-weight: 500;
   color: #033E57;
-  font-family: 'Merriweather', serif;
+  /* font-family: 'Merriweather', serif; */
 }
 
 .big-header-alt {
@@ -771,6 +771,12 @@ html {
   flex-direction: row;
 }
 
+.section-flex-marg {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 6rem;
+}
+
 .section-lflex {
   display: flex;
   flex-direction: column;
@@ -994,6 +1000,10 @@ html {
   margin: 0 0 1rem 0;
 }
 
+.highlight {
+  background-color: lightgreen;
+}
+
 .project-rtext {
   font-size: 1rem;
   text-align: left;
@@ -1115,6 +1125,21 @@ ul {
   width: 40%;
 }
 
+.img-right {
+  width: 70%;
+  border-color: #e3e3e3;
+  border-style: solid;
+  border-width: 1px;
+  margin-left: 4rem;
+}
+
+.img-right-large {
+  width: 100%;
+  border-color: #e3e3e3;
+  border-style: solid;
+  border-width: 1px;
+  margin-left: 4rem;
+}
 
 .cookbooked-bkgrd {
   background-color: #F1F5FF;

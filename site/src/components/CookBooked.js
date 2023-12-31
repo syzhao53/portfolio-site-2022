@@ -15,6 +15,10 @@ import paper2 from '../assets/cookbooked-paper-2.png';
 // import moodboard from '../assets/cookbooked-moodboard.png';
 import hifi1 from '../assets/cookbooked-hifi-1.png';
 import hifi2 from '../assets/cookbooked-hifi-2.png';
+import sidebar from '../assets/cookbooked-sidebar.png';
+import timers from '../assets/cookbooked-timers.png';
+import hovering from '../assets/cookbooked-hovering.png';
+
 // import library1 from '../assets/cookbooked-library-1.png';
 import revis1 from '../assets/cookbooked-hifi-revis-1.png';
 import revis2 from '../assets/cookbooked-hifi-revis-2.png';
@@ -305,8 +309,8 @@ function CookBooked({ currPage, setCurrPage }) {
             </div>
             <div className="project-ltext">
               The final design focused on how users can execute a recipe when cooking.
-              The team iterated through low-fidelity paper and digital prototypes as
-              well as high-fidelity digital prototypes. Some prototypes were then implemented
+              The team iterated through paper and digital prototypes.
+              Some prototypes were then implemented
               in React for user testing in
               later stages as the app was built iteratively.
               {/* <br />
@@ -350,7 +354,7 @@ function CookBooked({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header">LOW-FIDELITY IDEATION</div>
         <div className="project-text-large">
-          Standard one-page layout versus modular sections
+          Users preferred a modular layout with sections
         </div>
         <div className="project-text-low">
           We developed two low-fidelity prototypes using paper to experiment with
@@ -457,6 +461,47 @@ function CookBooked({ currPage, setCurrPage }) {
         </div>
       </div> */}
       <div className="project-wrap">
+        <div className="section-flex-marg">
+          <div className="section-lflex-half">
+            <div className="project-text-large">
+              1. Sidebar with recipe sections
+            </div>
+            <div className="project-text">
+              Allows users to split their recipes into sections for easy navigation and separation
+              of tasks
+            </div>
+          </div>
+          <div className="section-rflex-half">
+            <img className="img-right" src={sidebar} alt="sidebar" />
+          </div>
+        </div>
+        <div className="section-flex-marg">
+          <div className="section-lflex-half">
+            <div className="project-text-large">
+              2. Embedded timers in steps
+            </div>
+            <div className="project-text">
+              Easy access to timers embedded in steps without leaving the recipe
+            </div>
+          </div>
+          <div className="section-rflex-half">
+            <img className="img-right-large" src={timers} alt="timers" />
+          </div>
+        </div>
+        <div className="section-flex-marg">
+          <div className="section-lflex-half">
+            <div className="project-text-large">
+              3. Inline hover for quantities
+            </div>
+            <div className="project-text">
+              Convenient inline display of quantities when hovering over
+              an ingredient in a step
+            </div>
+          </div>
+          <div className="section-rflex-half">
+            <img className="img-right-large" src={hovering} alt="inline hovering" />
+          </div>
+        </div>
         <div className="subsection-header">USABILITY TESTING</div>
         <div className="project-text-large">
           7 user interviews for usability & visual design
@@ -504,9 +549,12 @@ function CookBooked({ currPage, setCurrPage }) {
         </div>
       </div> */}
       <div className="project-wrap">
+        <div className="project-text-large">
+          A/B testing for ingredient display
+        </div>
         <div className="project-text">
-          Since we received mixed feedback on the inline ingredient hovering,
-          we conducted an A/B test on the following variants for ingredient display.
+          We received mixed feedback usability of the inline ingredient hovering,
+          so we conducted A/B testing.
           By timing how long it took users to find a specified ingredient quantity for a step,
           we used a t-test to determine that users struggled less with variant 2.
           A Likert scale survey on perceived task difficulty also demonstrated that
@@ -569,7 +617,7 @@ function CookBooked({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">FINAL DESIGN</div>
         <div className="project-text-large">
-          An interactive recipe layout with sections, embedded timers, & progress tracking
+          A reimagined recipe layout with sections & embedded timers
         </div>
       </div>
       <div className="img-full-wrap-marg cookbooked-bkgrd">
@@ -594,8 +642,7 @@ function CookBooked({ currPage, setCurrPage }) {
             <div className="empty">c</div>
           </div>
           <div className="cap-card-text">
-            &ldquo;I really love the timer!
-            I usually have one timer on the microwave, one on the oven,
+            &ldquo;I usually have one timer on the microwave, one on the oven,
             and one on my phone. I love that I can have multiple timers in the app.&rdquo;
             <span style={{ 'font-style': 'italic' }}> &mdash; Tester</span>
           </div>
