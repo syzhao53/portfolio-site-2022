@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.21f5ed6d.css",
-    "main.js": "/static/js/main.9434819b.js",
+    "main.css": "/static/css/main.9675624b.css",
+    "main.js": "/static/js/main.ff9ae37a.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/cookbooked-kitchen-mock.png": "/static/media/cookbooked-kitchen-mock.5939127a856bae9fd3f2.png",
     "static/media/speech-apps.png": "/static/media/speech-apps.61558252f190968207fd.png",
@@ -102,12 +102,12 @@
     "static/media/close.svg": "/static/media/close.362cb9d9be8638a592b8c0c488f10e76.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.6e4b8a13830a9b4834249fc89a5bbc06.svg",
     "static/media/card-arrow.svg": "/static/media/card-arrow.023a3174ea95e16d7675d4a16100c177.svg",
-    "main.21f5ed6d.css.map": "/static/css/main.21f5ed6d.css.map",
-    "main.9434819b.js.map": "/static/js/main.9434819b.js.map",
+    "main.9675624b.css.map": "/static/css/main.9675624b.css.map",
+    "main.ff9ae37a.js.map": "/static/js/main.ff9ae37a.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21f5ed6d.css",
-    "static/js/main.9434819b.js"
+    "static/css/main.9675624b.css",
+    "static/js/main.ff9ae37a.js"
   ]
 }
