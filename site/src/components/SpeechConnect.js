@@ -27,7 +27,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
   useEffect(() => {
     setCurrPage('');
     document.title = 'SpeechConnect | Sylvia Zhao';
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -98,7 +98,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
         <div className="section-flex">
           <div className="section-lflex">
             <div className="project-ltext-large">
-              A customizable tablet app for users with speech difficulties
+              An accessibililty-minded speech app on tablet
             </div>
             <div className="project-ltext-zero">
               SpeechConnect explores augmentative and
@@ -568,10 +568,10 @@ function SpeechConnect({ currPage, setCurrPage }) {
           </div>
           <div className="section-rflex-half">
             <div className="project-text-large">
-              Top-level display bar
+              Top-level text display bar
             </div>
             <div className="project-text">
-              Bar to display words being spoken to help user track their communication
+              Bar to display words being spoken or for text-to-voice
             </div>
           </div>
         </div>
@@ -579,7 +579,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
           For the homepage/main grid, I focused on the user flow of how someone would speak a
           sentence, paying attention to how words and categories are organized in the grid.
           Across 3 iterations, the homepage ultimately featured the main buttons for speech,
-          keyboard and search buttons, navigation to customization, and a top display bar.
+          keyboard and search buttons, navigation to customization, and a text display bar.
           {/* <ul>
             <li>
               <div className="list-text">
@@ -724,60 +724,72 @@ function SpeechConnect({ currPage, setCurrPage }) {
       <div className="project-wrap">
         <div className="subsection-header-sec">ADD WORD</div>
         <div className="project-text-large">
-          add
+          Adding new words with custom pictures for a tailored experience
         </div>
         <div className="project-text">
           To add to the app&apos;s database of words that can be used in vocab sets,
           I wanted to address the pain point mentioned by SLPs that apps often lack
-          enough advanced vocabulary for adults. By allowing users to add their own
-          words with custom pictures, the app creates a more tailored experience.
-          <br />
-          <br />
+          enough advanced vocabulary for adults.
           The final design has the user
-          specify the word and optional category before adding a picture. This decision
+          specify the word and optional category before adding a picture.
+          {/* This decision
           reflected feedback about how the first iteration made it confusing on whether
           a picture was required for a word to be added (since some users may not want
-          to add a picture).
+          to add a picture). */}
           {/* The final design also uses the updated title &ldquo;Add Word To
           Database&rdquo; since SLPs commented that &ldquo;Add Word&rdquo; could be confused
           with adding to the current main grid view. */}
         </div>
       </div>
-      <div className="mockup-col">
-        <div className="mockup-flex-fix">
-          <img className="mockup-img" src={speechwordwire} alt="speech-word-wire" />
-        </div>
-        <div className="mockup-flex-fix">
-          <div className="iteration-caption">
-            Wireframe iterations 1 & 2
+      <div className="img-full-wrap-marg speechconnect-bkgrd">
+        <div className="mockup-col">
+          <div className="mockup-flex-fix">
+            <img className="mockup-img" src={speechwordwire} alt="speech-word-wire" />
+          </div>
+          <div className="mockup-flex-fix">
+            <div className="iteration-caption">
+              Wireframe iterations 1 & 2
+            </div>
           </div>
         </div>
-      </div>
-      <div className="project-wrap">
-        <div className="project-text">
-          The final design demonstrates a flow for creating new words in the app with the
-          ability to upload a photo for the icon.
-        </div>
-      </div>
-      <div className="mockup-col">
-        <div className="mockup-flex-fix">
-          <img className="mockup-img" src={speechwordui} alt="speech-word-ui" />
-        </div>
-        <div className="mockup-flex-fix">
-          <div className="iteration-caption">
-            Final UI design
+        <div className="mockup-col">
+          <div className="mockup-flex-fix">
+            <img className="mockup-img" src={speechwordui} alt="speech-word-ui" />
+          </div>
+          <div className="mockup-flex-fix">
+            <div className="iteration-caption">
+              Final UI design
+            </div>
           </div>
         </div>
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">ADD VOCAB SET</div>
+        <div className="section-flex">
+          <div className="section-lflex-half">
+            <div className="project-text-large">
+              Use an existing set as a base
+            </div>
+            <div className="project-text">
+              Work off of another set to save time on customization
+            </div>
+          </div>
+          <div className="section-rflex-half">
+            <div className="project-text-large">
+              Remove & replace words
+            </div>
+            <div className="project-text">
+              Draw on existing words in the app to build a new set
+            </div>
+          </div>
+        </div>
         <div className="project-text">
-          For the feature of adding a custom vocab set to configure the main grid view,
+          For the feature of adding a custom vocab set,
           I wanted to address the pain point in existing apps concerning the flexibility
           of standard sets. By allowing a user to create new vocab sets for their unique
           communication needs, this feature gives users more control over how they progress
-          through different vocab sets as they learn. Key points include:
-          <ul>
+          through different vocab sets as they learn.
+          {/* <ul>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Optional selection of a base set </span>
@@ -799,44 +811,50 @@ function SpeechConnect({ currPage, setCurrPage }) {
                 word database.
               </div>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
-      <div className="mockup-col">
-        <div className="mockup-flex-fix">
-          <img className="mockup-img" src={speechsetwire1} alt="speech-set-wire-1" />
+      <div className="img-full-wrap-marg speechconnect-bkgrd">
+        <div className="mockup-col">
+          <div className="mockup-flex-fix">
+            <img className="mockup-img" src={speechsetwire1} alt="speech-set-wire-1" />
+          </div>
+          <div className="mockup-flex-fix">
+            <div className="iteration-caption">Wireframes for iterations 1 & 2 of flow starting point</div>
+          </div>
+          <div className="mockup-flex-fix">
+            <img id="mockup-img-margin" className="mockup-img" src={speechsetwire2} alt="speech-set-wire-2" />
+          </div>
+          <div className="mockup-flex-fix">
+            <div className="iteration-caption">Wireframes for removing & replacing a word</div>
+          </div>
         </div>
-        <div className="mockup-flex-fix">
-          <div className="iteration-caption">Wireframes for iterations 1 & 2 of flow starting point</div>
-        </div>
-        <div className="mockup-flex-fix">
-          <img id="mockup-img-margin" className="mockup-img" src={speechsetwire2} alt="speech-set-wire-2" />
-        </div>
-        <div className="mockup-flex-fix">
-          <div className="iteration-caption">Wireframes for removing & replacing a word</div>
-        </div>
-      </div>
-      <div className="project-wrap">
-        <div className="project-text">
-          The final UI design based on wireframe iteration 2 follows the same
-          format as the &ldquo;Add Word&rdquo; feature in order to maintain consistency
-          throughout the app to help users learn patterns in the functionality.
-        </div>
-      </div>
-      <div className="mockup-col">
-        <div className="mockup-flex-fix">
-          <img className="mockup-img" src={speechsetui} alt="speech-set-ui" />
-        </div>
-        <div className="mockup-flex-fix">
-          <div className="iteration-caption">Final UI design for creating a custom vocab set</div>
+        {/* <div className="project-wrap">
+          <div className="project-text">
+            The final UI design based on wireframe iteration 2 follows the same
+            format as the &ldquo;Add Word&rdquo; feature in order to maintain consistency
+            throughout the app to help users learn patterns in the functionality.
+          </div>
+        </div> */}
+        <div className="mockup-col">
+          <div className="mockup-flex-fix">
+            <img className="mockup-img" src={speechsetui} alt="speech-set-ui" />
+          </div>
+          <div className="mockup-flex-fix">
+            <div className="iteration-caption">Final UI design for creating a custom vocab set</div>
+          </div>
         </div>
       </div>
       <div className="project-wrap">
         <div className="subsection-header-sec">UI DESIGN</div>
+        <div className="project-text-large">
+          Icons to guide navigation for users with limited literacy
+        </div>
         <div className="project-text">
           The overall UI design of the project focused on the use of icons to aid the user&apos;s
-          navigation of the app. The following choices guided the use and creation of icons:
-          <ul>
+          navigation of the app. A limited, cohesive color palette for the grid view icons
+          ensures that icons do not compete for the user&apos;s attention.
+          {/* <ul>
             <li>
               <div className="list-text">
                 <span style={{ 'font-weight': '600' }}>Icons for each major feature/action </span>
@@ -857,7 +875,7 @@ function SpeechConnect({ currPage, setCurrPage }) {
                 for grid view icons to maintain clarity at small sizes
               </div>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
       <div id="last-mockup">
@@ -865,7 +883,21 @@ function SpeechConnect({ currPage, setCurrPage }) {
       </div>
       <div className="project-wrap">
         <div className="section-header" id="prototype">Final Protoype</div>
-        <div className="project-text">
+        <div className="section-flex">
+          <div className="section-lflex">
+            <div className="project-ltext-large">
+              A tablet experience with customizable vocabulary
+            </div>
+            <div className="project-ltext-zero">
+              Interact with the final prototype and learn more about AAC devices.
+            </div>
+          </div>
+          <div className="section-rflex-buttons-col">
+            <a className="overview-buttons-stacked" target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/zNMKIm85MZyPw7ucAzFpLH/AAC-Case-Study?node-id=138%3A21244&scaling=scale-down&page-id=138%3A21027&starting-point-node-id=138%3A21244">Final prototype</a>
+            <a className="overview-buttons-stacked" target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Augmentative_and_alternative_communication">AAC Wikipedia</a>
+          </div>
+        </div>
+        {/* <div className="project-text">
           Interact with the final prototype at the link below:
           <ul>
             <li>
@@ -876,10 +908,15 @@ function SpeechConnect({ currPage, setCurrPage }) {
               </div>
             </li>
           </ul>
-        </div>
-        <div className="proto-flex">
+        </div> */}
+      </div>
+      <div className="img-full-wrap speechconnect-bkgrd">
+        <img className="img-full" src={speechdevicemock} alt="speechconnect-device-mock" />
+      </div>
+      <div className="project-wrap">
+        {/* <div className="proto-flex">
           <img className="device-mock" src={speechdevicemock} alt="speech-device-mock" />
-        </div>
+        </div> */}
         <div className="section-header" id="reflections">Reflections</div>
         <div className="project-text">
           Coming from a background in psychology and linguistics, this project was an interesting

@@ -41,7 +41,7 @@ function CookBooked({ currPage, setCurrPage }) {
   useEffect(() => {
     setCurrPage('');
     document.title = 'CookBooked | Sylvia Zhao';
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   return (
