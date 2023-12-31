@@ -29,7 +29,7 @@ function Logitech({ currPage, setCurrPage }) {
         <img className="project-img" src={logi} alt="logi mockup" />
         <div className="section-flex">
           <div className="section-lflex">
-            <div className="section-header" id="overview">Overview</div>
+            <div className="section-header-less" id="overview">Overview</div>
             <div className="project-ltext-zero">
               I interned with Logitech&apos;s Design Operations team throughout
               summer 2022 to support the processes of the company&apos;s design
@@ -49,7 +49,7 @@ function Logitech({ currPage, setCurrPage }) {
           <div className="section-rflex">
             <div className="descrip-lflex">
               <div className="stage-wrap">
-                <div className="subsection-rheader-top">
+                <div className="subsection-rheader-small">
                   ROLE
                 </div>
                 <div className="project-rtext">
@@ -69,7 +69,7 @@ function Logitech({ currPage, setCurrPage }) {
             </div>
           </div>
         </div>
-        <div className="section-header">
+        <div className="section-header-less">
           Reflections
         </div>
         <div className="project-text">

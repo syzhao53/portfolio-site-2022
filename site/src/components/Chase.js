@@ -29,7 +29,7 @@ function Chase({ currPage, setCurrPage }) {
         <img className="project-img" src={chase} alt="chase mockup" />
         <div className="section-flex">
           <div className="section-lflex">
-            <div className="section-header" id="overview">Overview</div>
+            <div className="section-header-less" id="overview">Overview</div>
             <div className="project-ltext-zero">
               Designing experiences in the Chase Home Lending team
               to support mortgage loan officers throughout the home loan process.
@@ -39,7 +39,7 @@ function Chase({ currPage, setCurrPage }) {
           <div className="section-rflex">
             <div className="descrip-lflex">
               <div className="stage-wrap">
-                <div className="subsection-rheader-top">
+                <div className="subsection-rheader-small">
                   ROLE
                 </div>
                 <div className="project-rtext">

@@ -132,7 +132,7 @@ function CookBooked({ currPage, setCurrPage }) {
               Frontend development
             </div>
           </div>
-          <div className="descrip-section">
+          <div className="descrip-section sec-2">
             <div className="subsection-header">
               TEAM
             </div>
