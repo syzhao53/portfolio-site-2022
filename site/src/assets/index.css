@@ -102,11 +102,11 @@ html {
 }
 
 .big-header {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   text-align: left;
   margin: 10rem 0 0.75rem 4.8rem;
   letter-spacing: .3px;
-  font-weight: 500;
+  font-weight: 600;
   color: #033E57;
   /* font-family: 'Merriweather', serif; */
 }
