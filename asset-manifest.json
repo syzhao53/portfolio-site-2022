@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9675624b.css",
-    "main.js": "/static/js/main.ff9ae37a.js",
+    "main.css": "/static/css/main.ff2b7437.css",
+    "main.js": "/static/js/main.cc46ed95.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/cookbooked-kitchen-mock.png": "/static/media/cookbooked-kitchen-mock.5939127a856bae9fd3f2.png",
     "static/media/speech-apps.png": "/static/media/speech-apps.61558252f190968207fd.png",
@@ -86,11 +86,11 @@
     "static/media/mock-sched.png": "/static/media/mock-sched.0316db92ab28a832b301.png",
     "static/media/cookbooked-timers.png": "/static/media/cookbooked-timers.e6feacad5d55a82ba14c.png",
     "static/media/shea-butter.png": "/static/media/shea-butter.3907bca9e70697742542.png",
-    "static/media/logi-mockup-narrow.png": "/static/media/logi-mockup-narrow.5ec9a58594a015542a90.png",
-    "static/media/chase-mockup-narrow.png": "/static/media/chase-mockup-narrow.4dcc2b4f5aa1f3f86756.png",
+    "static/media/logi-mockup-narrow.png": "/static/media/logi-mockup-narrow.63e8fdf6c399d437b0ff.png",
     "static/media/cookbooked-hovering.png": "/static/media/cookbooked-hovering.6d7d95b249498ca768dd.png",
     "static/media/cookbooked-sidebar.png": "/static/media/cookbooked-sidebar.3bfd75a5fedfac39b0fe.png",
     "static/media/temp-mockup.png": "/static/media/temp-mockup.4b47a99c2d533d8730b7.png",
+    "static/media/chase-mockup-narrow.png": "/static/media/chase-mockup-narrow.1ea467bd44fc564cf364.png",
     "static/media/logi-logo.svg": "/static/media/logi-logo.451d11cb6cf011646096a17c8b8efef9.svg",
     "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.46e4a41eba194a27b5fc16d4827621de.svg",
     "index.html": "/index.html",
@@ -102,12 +102,12 @@
     "static/media/close.svg": "/static/media/close.362cb9d9be8638a592b8c0c488f10e76.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.6e4b8a13830a9b4834249fc89a5bbc06.svg",
     "static/media/card-arrow.svg": "/static/media/card-arrow.023a3174ea95e16d7675d4a16100c177.svg",
-    "main.9675624b.css.map": "/static/css/main.9675624b.css.map",
-    "main.ff9ae37a.js.map": "/static/js/main.ff9ae37a.js.map",
+    "main.ff2b7437.css.map": "/static/css/main.ff2b7437.css.map",
+    "main.cc46ed95.js.map": "/static/js/main.cc46ed95.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9675624b.css",
-    "static/js/main.ff9ae37a.js"
+    "static/css/main.ff2b7437.css",
+    "static/js/main.cc46ed95.js"
   ]
 }
