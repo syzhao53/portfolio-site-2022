@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable */
 
 import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
+import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
 import meetup from '../assets/meetup-mockup-dev.png';
 import features from '../assets/meetup-features.png';
@@ -26,6 +28,10 @@ import meetdesk from '../assets/meet-desk.png';
 // import meetdevicemobile from '../assets/meet-device-mobile.png';
 // import meetdevicedesk from '../assets/meet-device-desk.png';
 import meetdevicemock from '../assets/meet-device-mock.png';
+
+import cookbooked from '../assets/cookbooked-mockup.png';
+import sushi from '../assets/sushi-grid.png';
+
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -35,6 +41,20 @@ function Meetup({ currPage, setCurrPage }) {
     document.title = 'Meetup | Sylvia Zhao';
     window.scrollTo(0, 0);
   }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+  const navigate = useNavigate();
+
+  const goToProject = (name) => {
+    if (name === 'cookbooked') {
+      navigate('/cookbooked');
+    } else if (name === 'illustrations') {
+      navigate('/illustrations');
+    }
+  };
 
   return (
     <div className="Meetup">
@@ -72,13 +92,13 @@ function Meetup({ currPage, setCurrPage }) {
         </div>
         <div id="floating-button">
           <svg className="table-icon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle id="icon-border" cx="28" cy="28" r="27" stroke="#bbbbbb" strokeWidth="2" />
-            <rect x="19" y="18.5" width="23" height="2" rx="1" fill="#bbbbbb" />
-            <rect x="19" y="27.5" width="23" height="2" rx="1" fill="#bbbbbb" />
-            <rect x="19" y="36.5" width="23" height="2" rx="1" fill="#bbbbbb" />
-            <circle className="dot" cx="14.5" cy="19.5" r="1.5" fill="#bbbbbb" />
-            <circle className="dot" cx="14.5" cy="28.5" r="1.5" fill="#bbbbbb" />
-            <circle className="dot" cx="14.5" cy="37.5" r="1.5" fill="#bbbbbb" />
+            <circle id="icon-border" cx="28" cy="28" r="27" stroke="#aaaaaa" strokeWidth="2" />
+            <rect x="19" y="18.5" width="23" height="2" rx="1" fill="#aaaaaa" />
+            <rect x="19" y="27.5" width="23" height="2" rx="1" fill="#aaaaaa" />
+            <rect x="19" y="36.5" width="23" height="2" rx="1" fill="#aaaaaa" />
+            <circle className="dot" cx="14.5" cy="19.5" r="1.5" fill="#aaaaaa" />
+            <circle className="dot" cx="14.5" cy="28.5" r="1.5" fill="#aaaaaa" />
+            <circle className="dot" cx="14.5" cy="37.5" r="1.5" fill="#aaaaaa" />
           </svg>
           <svg className="table-icon-dark" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle id="icon-border" cx="28" cy="28" r="27" stroke="#033E57" strokeWidth="2" />
@@ -848,6 +868,36 @@ function Meetup({ currPage, setCurrPage }) {
           other perspective could be an interesting way to complete an understanding
           of the problem. This current solution still explores a side of the problem
           that is impactful to understanding how people work to collaborate efficiently.
+        </div>
+        <button type="button" className="secondary-button" onClick={() => scrollToTop()}>
+          Scroll to top
+        </button>
+        <div className="subsection-header-bot">
+          OTHER PROJECTS
+        </div>
+        <div className="grid-row">
+          <div className="gcard-lwrap" onClick={() => goToProject('cookbooked')}>
+            <img className="grid-img" src={cookbooked} alt="cookbooked mockup" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                CookBooked
+              </div>
+              <div className="gcard-text">
+                Innovating on digital recipe interactions
+              </div>
+            </div>
+          </div>
+          <div className="gcard-rwrap" onClick={() => goToProject('illustrations')}>
+            <img className="grid-img" src={sushi} alt="sushi illustration" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                Illustrations
+              </div>
+              <div className="gcard-text">
+                Work for web designs, personal projects, & more
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />

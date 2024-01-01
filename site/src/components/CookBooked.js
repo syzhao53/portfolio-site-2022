@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable */
 
 import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
+import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
 import cookbooked from '../assets/cookbooked-mockup.png';
 import existingRecipes from '../assets/existing-recipes.png';
@@ -34,6 +36,9 @@ import final3 from '../assets/cookbooked-final-3.png';
 // import styleGuide from '../assets/cookbooked-style-guide.png';
 import kitchenMock from '../assets/cookbooked-kitchen-mock.png';
 
+import meetup from '../assets/meetup-mockup-dev.png';
+import speechconnect from '../assets/speechconnect-mockup.png';
+
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -43,6 +48,20 @@ function CookBooked({ currPage, setCurrPage }) {
     document.title = 'CookBooked | Sylvia Zhao';
     window.scrollTo(0, 0);
   }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+  const navigate = useNavigate();
+
+  const goToProject = (name) => {
+    if (name === 'meetup') {
+      navigate('/meetup');
+    } else if (name === 'speechconnect') {
+      navigate('/speechconnect');
+    }
+  };
 
   return (
     <div className="Meetup">
@@ -80,13 +99,13 @@ function CookBooked({ currPage, setCurrPage }) {
         </div>
         <div id="floating-button">
           <svg className="table-icon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle id="icon-border" cx="28" cy="28" r="27" stroke="#bbbbbb" strokeWidth="2" />
-            <rect x="19" y="18.5" width="23" height="2" rx="1" fill="#bbbbbb" />
-            <rect x="19" y="27.5" width="23" height="2" rx="1" fill="#bbbbbb" />
-            <rect x="19" y="36.5" width="23" height="2" rx="1" fill="#bbbbbb" />
-            <circle className="dot" cx="14.5" cy="19.5" r="1.5" fill="#bbbbbb" />
-            <circle className="dot" cx="14.5" cy="28.5" r="1.5" fill="#bbbbbb" />
-            <circle className="dot" cx="14.5" cy="37.5" r="1.5" fill="#bbbbbb" />
+            <circle id="icon-border" cx="28" cy="28" r="27" stroke="#aaaaaa" strokeWidth="2" />
+            <rect x="19" y="18.5" width="23" height="2" rx="1" fill="#aaaaaa" />
+            <rect x="19" y="27.5" width="23" height="2" rx="1" fill="#aaaaaa" />
+            <rect x="19" y="36.5" width="23" height="2" rx="1" fill="#aaaaaa" />
+            <circle className="dot" cx="14.5" cy="19.5" r="1.5" fill="#aaaaaa" />
+            <circle className="dot" cx="14.5" cy="28.5" r="1.5" fill="#aaaaaa" />
+            <circle className="dot" cx="14.5" cy="37.5" r="1.5" fill="#aaaaaa" />
           </svg>
           <svg className="table-icon-dark" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle id="icon-border" cx="28" cy="28" r="27" stroke="#033E57" strokeWidth="2" />
@@ -703,6 +722,36 @@ function CookBooked({ currPage, setCurrPage }) {
           different situations may need additional tools. Additional user
           research could expand the app towards voice control interactions
           as well as the editing functionalities the current design implicitly assumes.
+        </div>
+        <button type="button" className="secondary-button" onClick={() => scrollToTop()}>
+          Scroll to top
+        </button>
+        <div className="subsection-header-bot">
+          OTHER PROJECTS
+        </div>
+        <div className="grid-row">
+          <div className="gcard-lwrap" onClick={() => goToProject('speechconnect')}>
+            <img className="grid-img" src={speechconnect} alt="speechconnect mockup" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                SpeechConnect
+              </div>
+              <div className="gcard-text">
+                Creating a tablet experience for alternative communication tech
+              </div>
+            </div>
+          </div>
+          <div className="gcard-rwrap" onClick={() => goToProject('meetup')}>
+            <img className="grid-img" src={meetup} alt="meetup mockup" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                Meetup
+              </div>
+              <div className="gcard-text">
+                Improving group meeting scheduling on mobile & web
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />

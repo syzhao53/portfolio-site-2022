@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable */
 
 import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
+import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
 import speechconnect from '../assets/speechconnect-mockup.png';
 import features from '../assets/speechconnect-features.png';
@@ -20,6 +22,10 @@ import speechsetwire2 from '../assets/speech-set-wire-2.png';
 import speechsetui from '../assets/speech-set-ui.png';
 import speechui from '../assets/speech-ui.png';
 import speechdevicemock from '../assets/speech-device-mock.png';
+
+import cookbooked from '../assets/cookbooked-mockup.png';
+import meetup from '../assets/meetup-mockup-dev.png';
+
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -29,6 +35,20 @@ function SpeechConnect({ currPage, setCurrPage }) {
     document.title = 'SpeechConnect | Sylvia Zhao';
     window.scrollTo(0, 0);
   }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+  const navigate = useNavigate();
+
+  const goToProject = (name) => {
+    if (name === 'meetup') {
+      navigate('/meetup');
+    } else if (name === 'cookbooked') {
+      navigate('/cookbooked');
+    }
+  };
 
   return (
     <div className="SpeechConnect">
@@ -71,13 +91,13 @@ function SpeechConnect({ currPage, setCurrPage }) {
         </div>
         <div id="floating-button">
           <svg className="table-icon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle id="icon-border" cx="28" cy="28" r="27" stroke="#bbbbbb" strokeWidth="2" />
-            <rect x="19" y="18.5" width="23" height="2" rx="1" fill="#bbbbbb" />
-            <rect x="19" y="27.5" width="23" height="2" rx="1" fill="#bbbbbb" />
-            <rect x="19" y="36.5" width="23" height="2" rx="1" fill="#bbbbbb" />
-            <circle className="dot" cx="14.5" cy="19.5" r="1.5" fill="#bbbbbb" />
-            <circle className="dot" cx="14.5" cy="28.5" r="1.5" fill="#bbbbbb" />
-            <circle className="dot" cx="14.5" cy="37.5" r="1.5" fill="#bbbbbb" />
+            <circle id="icon-border" cx="28" cy="28" r="27" stroke="#aaaaaa" strokeWidth="2" />
+            <rect x="19" y="18.5" width="23" height="2" rx="1" fill="#aaaaaa" />
+            <rect x="19" y="27.5" width="23" height="2" rx="1" fill="#aaaaaa" />
+            <rect x="19" y="36.5" width="23" height="2" rx="1" fill="#aaaaaa" />
+            <circle className="dot" cx="14.5" cy="19.5" r="1.5" fill="#aaaaaa" />
+            <circle className="dot" cx="14.5" cy="28.5" r="1.5" fill="#aaaaaa" />
+            <circle className="dot" cx="14.5" cy="37.5" r="1.5" fill="#aaaaaa" />
           </svg>
           <svg className="table-icon-dark" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle id="icon-border" cx="28" cy="28" r="27" stroke="#033E57" strokeWidth="2" />
@@ -933,6 +953,36 @@ function SpeechConnect({ currPage, setCurrPage }) {
           still need special hardware for durability. This digital solution instead focuses on
           the design needs that software can address, aiming to meet a wide range of communication
           needs.
+        </div>
+        <button type="button" className="secondary-button" onClick={() => scrollToTop()}>
+          Scroll to top
+        </button>
+        <div className="subsection-header-bot">
+          OTHER PROJECTS
+        </div>
+        <div className="grid-row">
+          <div className="gcard-lwrap" onClick={() => goToProject('cookbooked')}>
+            <img className="grid-img" src={cookbooked} alt="cookbooked mockup" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                CookBooked
+              </div>
+              <div className="gcard-text">
+                Innovating on digital recipe interactions
+              </div>
+            </div>
+          </div>
+          <div className="gcard-rwrap" onClick={() => goToProject('meetup')}>
+            <img className="grid-img" src={meetup} alt="meetup mockup" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                Meetup
+              </div>
+              <div className="gcard-text">
+                Improving group meeting scheduling on mobile & web
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />

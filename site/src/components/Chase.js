@@ -1,9 +1,15 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable */
+
 import React, { useEffect } from 'react';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
 import chase from '../assets/chase-mockup-narrow.png';
+
+import cookbooked from '../assets/cookbooked-mockup.png';
+import speechconnect from '../assets/speechconnect-mockup.png';
+
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -17,6 +23,16 @@ function Chase({ currPage, setCurrPage }) {
     window.scrollTo(0, 0);
     document.title = 'Chase | Sylvia Zhao';
   }, []);
+
+  const navigate = useNavigate();
+
+  const goToProject = (name) => {
+    if (name === 'cookbooked') {
+      navigate('/cookbooked');
+    } else if (name === 'speechconnect') {
+      navigate('/speechconnect');
+    }
+  };
 
   return (
     <div className="Chase">
@@ -68,6 +84,33 @@ function Chase({ currPage, setCurrPage }) {
           be more thoughtful of how design can facilitate the presentation
           of information/resources to different audiences.
         </div> */}
+        <div className="subsection-header-bot">
+          EXPLORE PROJECTS
+        </div>
+        <div className="grid-row">
+          <div className="gcard-lwrap" onClick={() => goToProject('cookbooked')}>
+            <img className="grid-img" src={cookbooked} alt="cookbooked mockup" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                CookBooked
+              </div>
+              <div className="gcard-text">
+                Innovating on digital recipe interactions
+              </div>
+            </div>
+          </div>
+          <div className="gcard-rwrap" onClick={() => goToProject('speechconnect')}>
+            <img className="grid-img" src={speechconnect} alt="speechconnect mockup" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                SpeechConnect
+              </div>
+              <div className="gcard-text">
+                Creating a tablet experience for alternative communication tech
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <Footer />
     </div>

@@ -1,9 +1,15 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable */
+
 import React, { useEffect } from 'react';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
 import logi from '../assets/logi-mockup-narrow.png';
+
+import cookbooked from '../assets/cookbooked-mockup.png';
+import meetup from '../assets/meetup-mockup-dev.png';
+
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -17,6 +23,16 @@ function Logitech({ currPage, setCurrPage }) {
     window.scrollTo(0, 0);
     document.title = 'Logitech | Sylvia Zhao';
   }, []);
+
+  const navigate = useNavigate();
+
+  const goToProject = (name) => {
+    if (name === 'cookbooked') {
+      navigate('/cookbooked');
+    } else if (name === 'meetup') {
+      navigate('/meetup');
+    }
+  };
 
   return (
     <div className="Logitech">
@@ -79,6 +95,33 @@ function Logitech({ currPage, setCurrPage }) {
           types of teams within a design organization along with how to
           be more thoughtful of how design can facilitate the presentation
           of information/resources to different audiences.
+        </div>
+        <div className="subsection-header-bot">
+          EXPLORE PROJECTS
+        </div>
+        <div className="grid-row">
+          <div className="gcard-lwrap" onClick={() => goToProject('cookbooked')}>
+            <img className="grid-img" src={cookbooked} alt="cookbooked mockup" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                CookBooked
+              </div>
+              <div className="gcard-text">
+                Innovating on digital recipe interactions
+              </div>
+            </div>
+          </div>
+          <div className="gcard-rwrap" onClick={() => goToProject('meetup')}>
+            <img className="grid-img" src={meetup} alt="meetup mockup" />
+            <div className="gcard-label">
+              <div className="gcard-heading">
+                Meetup
+              </div>
+              <div className="gcard-text">
+                Improving group meeting scheduling on mobile & web
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />
