@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react';
 // import { useNavigate } from 'react-router-dom';
 import '../assets/index.css';
-import resume from '../assets/sylviazhao-resume2023.png';
+import resume from '../assets/sylviazhao-resume2024.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -26,7 +26,7 @@ function Resume({ currPage, setCurrPage }) {
           Resume
         </div>
         <div id="download-flex">
-          <a id="download" href="sylviazhao-resume2023.pdf" download="SylviaZhao-Resume">DOWNLOAD</a>
+          <a id="download" href="SylviaZhao-Resume2024.pdf" download="SylviaZhao-Resume">DOWNLOAD</a>
         </div>
         <img className="project-img" src={resume} alt="resume" />
         <Footer />

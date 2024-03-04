@@ -70,6 +70,7 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
       <div className="landing" id="landing">
         <div className="big-header">
           HI, I&apos;M SYLVIA ZHAO
+          {/* Hi, I'm Sylvia Zhao */}
         </div>
         <div className="paragraph">
           UX & Visual Designer &middot; UX Designer @ JPMorgan Chase & Co.
@@ -121,7 +122,7 @@ function Home({ currPage, setCurrPage, theme, setTheme }) {
           </div>
         </div>
       </div>
-      <div id="work">Projects</div>
+      <div id="projects">Projects</div>
       <div className="grid">
       <div className="grid-row">
           {/* <div className="gcard-lwrap" onClick={() => goToProject('chase')}>

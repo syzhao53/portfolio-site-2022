@@ -103,13 +103,25 @@ html {
 
 .big-header {
   font-size: 1.05rem;
+  /* font-size: 1.3rem; */
   text-align: left;
   margin: 10rem 0 0.75rem 4.8rem;
   letter-spacing: .3px;
   font-weight: 600;
+  /* font-weight: 500; */
   color: #033E57;
   /* font-family: 'Merriweather', serif; */
 }
+
+/*display: flex;
+width: 60%;
+flex-direction: row;
+align-items: flex-start;
+font-size: 1.25rem;
+margin: auto;
+padding: 6.25rem 0 0 0;
+margin-bottom: 2rem;
+font-weight: 500; */
 
 .big-header-alt {
   color: white;
@@ -466,7 +478,7 @@ html {
   margin-left: .5rem;
   font-size: 1rem;
   letter-spacing: .2px;
-  font-weight: 600;
+  font-weight: 500;
   color: #787878;
   /* font-family: 'Merriweather', serif; */
 }
@@ -536,6 +548,19 @@ html {
   
   /* text-align: left;
   margin: 0 0 2rem 12rem; */
+}
+
+
+#projects {
+  display: flex;
+  width: 60%;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 1.25rem;
+  margin: auto;
+  padding: 6.25rem 0 0 0;
+  margin-bottom: 2rem;
+  font-weight: 500;
 }
 
 .grid {
@@ -2021,6 +2046,10 @@ ul {
   }
   
   #work {
+    width: 80%;
+  }
+
+  #projects {
     width: 80%;
   }
 
